@@ -1,0 +1,4 @@
+.navbar {padding: 0;height: 90px;background-color: aliceblue;} 
+.navbar .navbar-logo {width: 120px;height: 90px;}
+.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}
+.navbar .settings-link img {width: 25px;height: 25px;}

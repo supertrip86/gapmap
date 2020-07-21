@@ -11,11 +11,38 @@ module.exports = {
 
   devtool: 'source-map',
 
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ["@babel/preset-env"]
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.hbs$/,
+        use: [
+          {
+            loader: "handlebars-loader",
+            options: {
+              helperDirs: path.resolve(__dirname, "./src/hbs/helpers")
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     watchContentBase: true,
-    historyApiFallback: true,
-    open: true
+    historyApiFallback: true
   }
 
 };

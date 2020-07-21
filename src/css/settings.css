@@ -1,0 +1,19 @@
+.modal .modal-dialog {max-width: 50%;min-width: 400px;}
+.modal .modal-dialog .modal-header {padding: 10px;}
+.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}
+.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}
+.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}
+.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}
+
+.modal .modal-dialog .modal-body {margin: 25px auto;width: 95%;border-radius: 5px;background-color: #eee;border: 1px solid #ccc;}
+.modal .modal-dialog .modal-body .modal-add ul {list-style: none;padding: 0;margin: 0;}
+.modal .modal-dialog .modal-body .modal-add .modal-required, .modal .modal-dialog .modal-body .modal-add .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}
+.modal .modal-dialog .modal-body .modal-add .modal-required::after {content:"*";color:red;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file {margin-bottom: 20px;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .modal-document > div {display: flex;margin-bottom: 5px;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-document {width: 20%;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-title {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-title input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.modal .modal-dialog .modal-body .modal-add .document-title {flex-grow: 1;}
