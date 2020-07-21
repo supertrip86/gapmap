@@ -3,9 +3,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="modal-title">
-                    <span class="modal-tab modal-active-tab">Add Resource</span>
-                    <span class="modal-tab">Edit Resource</span>
-                    <span class="modal-tab">Set Parameters</span>
+                    <span class="modal-tab modal-active-tab" data-tab="1">Add Resource</span>
+                    <span class="modal-tab" data-tab="2">Edit Resource</span>
+                    <span class="modal-tab" data-tab="3">Set Parameters</span>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
@@ -19,25 +19,74 @@
                                 <span class="modal-required">Upload Document</span>
                                 <div>
                                     <label class="btn btn-default btn-file">Browse<input type="file" class="vanish"></label>
-                                    <div class="form-control input-title" disabled=""><input type="text" disabled=""></div>
+                                    <div class="form-control input-filename" disabled="disabled">
+                                        <input type="text" disabled="disabled">
+                                    </div>
                                 </div>
                                 <span class="modal-required">Insert a Document Title</span>
                                 <div>
-                                    <input type="text" class="form-control" placeholder="Insert Document Title">
+                                    <input type="text" class="form-control modal-file-title" placeholder="Insert Document Title">
                                 </div>
                             </div>
                         </li>
                         <li class="modal-form-info">
+                            {{#if languages}}
+                            <label>
+                                <span class="modal-span-title">Language</span>
+                                <div class="form-select modal-language">
+                                    <select>
+                                        {{#each languages}}
+                                        <option>{{this}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                            </label>
+                            {{/if}}
+                            {{#if regions}}
+                            <label>
+                                <span class="modal-span-title">Region</span>
+                                <div class="form-select modal-region">
+                                    <select>
+                                        {{#each regions}}
+                                        <option>{{{this}}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                            </label>
+                            {{/if}}
+                            {{#if countries}}
+                            <label>
+                                <span class="modal-required">Country</span>
+                                <div id="modal-country"></div>
+                            </label>
+                            {{/if}}
                             <label>
                                 <span class="modal-required">Author</span>
-                                <input type="text" class="form-control modal-author" placeholder="Insert Document Author">
+                                <input type="text" class="form-control" id="modal-author" placeholder="Insert the Author">
                             </label>
                         </li>
                         <li class="modal-form-info">
                             <label>
-                                <span class="modal-span-title">Language</span>
-                                <div class="form-select modal-language">
-                                    <select><option>English</option><option>French</option><option>Spanish</option><option>Arabic</option></select>
+                                <span class="modal-required">Date</span>
+                                <input class="form-control" id="modal-datepicker" placeholder="Select a date">
+                            </label>
+                            <label>
+                                <span class="modal-required">Study type</span>
+                                <input class="form-control" id="modal-study" placeholder="Insert a study type">
+                            </label>
+                            <label>
+                                <span class="modal-required">Target Population</span>
+                                <input class="form-control" id="modal-population" placeholder="Insert the target population">
+                            </label>
+                        </li>
+                        <li class="modal-form-info">
+                            <label>
+                                <span class="modal-required">Control / Treated Sample</span>
+                                <div class="form-select" id="modal-control">
+                                    <select>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
                                 </div>
                             </label>
                         </li>
@@ -46,7 +95,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" id="add-resource" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

@@ -14,6 +14,8 @@
 .modal .modal-dialog .modal-body .modal-add .modal-form-file .input-document {width: 20%;}
 .modal .modal-dialog .modal-body .modal-add .modal-form-file .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
 .modal .modal-dialog .modal-body .modal-add .modal-form-file .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
-.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-title {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
-.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-title input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
-.modal .modal-dialog .modal-body .modal-add .document-title {flex-grow: 1;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-file .input-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-info {display: flex;justify-content: space-around;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-info #modal-country {width: 200px;height: 30px;}
+.modal .modal-dialog .modal-body .modal-add .modal-form-info #modal-datepicker {width: 100px;}
