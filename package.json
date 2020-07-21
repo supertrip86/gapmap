@@ -1,0 +1,17 @@
+{
+  "name": "gapmap",
+  "version": "1.0.0",
+  "description": "WCA Gapmap",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "bundle": "webpack --mode=development"
+  },
+  "author": "Giovanni Giunta",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
