@@ -93,8 +93,9 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('Hello!');\n\n//# sourceURL=webpack:///./src/index.js?");
+console.log('yahoo!');
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=bundle.js.map
