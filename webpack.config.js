@@ -40,7 +40,8 @@ module.exports = {
           {
             loader: "handlebars-loader",
             options: {
-              helperDirs: path.resolve(__dirname, "./src/hbs/helpers")
+              helperDirs: path.resolve(__dirname, "./src/hbs/helpers"),
+              partialDirs: path.join(__dirname, 'src/hbs/partials')
             }
           }
         ]

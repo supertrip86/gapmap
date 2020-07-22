@@ -12,86 +12,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="modal-add">
-                    <ul>
-                        <li class="modal-form-file">
-                            <div class="modal-document">
-                                <span class="modal-required">Upload Document</span>
-                                <div>
-                                    <label class="btn btn-default btn-file">Browse<input type="file" class="vanish"></label>
-                                    <div class="form-control input-filename" disabled="disabled">
-                                        <input type="text" disabled="disabled">
-                                    </div>
-                                </div>
-                                <span class="modal-required">Insert a Document Title</span>
-                                <div>
-                                    <input type="text" class="form-control modal-file-title" placeholder="Insert Document Title">
-                                </div>
-                            </div>
-                        </li>
-                        <li class="modal-form-info">
-                            {{#if languages}}
-                            <label>
-                                <span class="modal-span-title">Language</span>
-                                <div class="form-select modal-language">
-                                    <select>
-                                        {{#each languages}}
-                                        <option>{{this}}</option>
-                                        {{/each}}
-                                    </select>
-                                </div>
-                            </label>
-                            {{/if}}
-                            {{#if regions}}
-                            <label>
-                                <span class="modal-span-title">Region</span>
-                                <div class="form-select modal-region">
-                                    <select>
-                                        {{#each regions}}
-                                        <option>{{{this}}}</option>
-                                        {{/each}}
-                                    </select>
-                                </div>
-                            </label>
-                            {{/if}}
-                            {{#if countries}}
-                            <label>
-                                <span class="modal-required">Country</span>
-                                <div id="modal-country"></div>
-                            </label>
-                            {{/if}}
-                            <label>
-                                <span class="modal-required">Author</span>
-                                <input type="text" class="form-control" id="modal-author" placeholder="Insert the Author">
-                            </label>
-                        </li>
-                        <li class="modal-form-info">
-                            <label>
-                                <span class="modal-required">Date</span>
-                                <input class="form-control" id="modal-datepicker" placeholder="Select a date">
-                            </label>
-                            <label>
-                                <span class="modal-required">Study type</span>
-                                <input class="form-control" id="modal-study" placeholder="Insert a study type">
-                            </label>
-                            <label>
-                                <span class="modal-required">Target Population</span>
-                                <input class="form-control" id="modal-population" placeholder="Insert the target population">
-                            </label>
-                        </li>
-                        <li class="modal-form-info">
-                            <label>
-                                <span class="modal-required">Control / Treated Sample</span>
-                                <div class="form-select" id="modal-control">
-                                    <select>
-                                        <option>Yes</option>
-                                        <option>No</option>
-                                    </select>
-                                </div>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
+                {{> addResource}}
+                {{> editResource}}
+                {{> modifyParameters}}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,4 +1,22 @@
 {
+    "interventions": [
+        "Strengthening POs",
+        "Financial Education",
+        "Storage Facilities",
+        "Agricultural Extension Services",
+        "Rangeland Management Techniques",
+        "Irrigation Techniques",
+        "Provision of Agricultural Inputs",
+        "Market Information",
+        "Community Infrastructure",
+        "Strengthening FSAs",
+        "Climate Change Resilience Production Techniques"
+    ],
+    "outcomes": [
+        "Enhanced Productivity and Quality of Agricultural Production",
+        "Financial Inclusion",
+        "Climate Change Resilience"
+    ],
     "regions": ["APR", "ESA", "LAC", "NEN", "WCA"],
     "languages": ["English", "French", "Spanish", "Arabic"],
     "countries": [
