@@ -20,6 +20,6 @@ class ModalError {
         this.confirmButtonText = 'Save';
         this.html = errorList[value];
     }
-}
+};
 
 export { display };

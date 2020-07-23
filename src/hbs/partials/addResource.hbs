@@ -1,4 +1,4 @@
-<div class="container modal-add">                
+<div class="container" id="modal-add">                
     <div class="row">
         <div class="col">
             <span class="modal-required">Upload Document</span>
@@ -34,7 +34,7 @@
         <div class="col">
             <label>
                 <span class="modal-span-title">Language</span>
-                <div class="form-select modal-language">
+                <div class="form-select" id="modal-language">
                     <select>
                         {{#each languages}}
                         <option>{{this}}</option>
@@ -48,7 +48,7 @@
         <div class="col">
             <label>
                 <span class="modal-span-title">Region</span>
-                <div class="form-select modal-region">
+                <div class="form-select" id="modal-region">
                     <select>
                         {{#each regions}}
                         <option>{{{this}}}</option>
