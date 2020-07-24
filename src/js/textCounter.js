@@ -28,7 +28,7 @@ class Counter {
     }
     this.container.innerText = (length - 1) + ' ' + label;
   }
-};
+}
 
 quill.register('modules/counter', Counter);
 

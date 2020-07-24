@@ -1,3 +1,5 @@
+.modal-open .modal {overflow-y: scroll;}
+
 .modal .modal-dialog {max-width: 50%;min-width: 650px;}
 .modal .modal-dialog .modal-header {padding: 10px;}
 .modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}
@@ -8,15 +10,14 @@
 .modal .modal-dialog .modal-body {margin: 25px auto;width: 95%;border-radius: 5px;background-color: #eee;border: 1px solid #ccc;}
 .modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}
 .modal .modal-dialog .modal-body .row {padding-bottom: 1rem;}
-.modal .modal-dialog .modal-body #modal-add {padding: 0;}
-.modal .modal-dialog .modal-body #modal-add .modal-required, .modal .modal-dialog .modal-body #modal-add .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}
-.modal .modal-dialog .modal-body #modal-add .modal-required::after {content:"*";color:red;}
-.modal .modal-dialog .modal-body #modal-add .modal-attachment {display: flex;}
-.modal .modal-dialog .modal-body #modal-add .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
-.modal .modal-dialog .modal-body #modal-add .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
-.modal .modal-dialog .modal-body #modal-add .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
-.modal .modal-dialog .modal-body #modal-add .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
-.modal .modal-dialog .modal-body #modal-add #modal-country {height: 30px;}
+.modal .modal-dialog .modal-body .container {padding: 0;}
+.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}
+.modal .modal-dialog .modal-body .modal-required::after {content:"*";color:red;}
+.modal .modal-dialog .modal-body .modal-attachment {display: flex;}
+.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
+.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
+.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
+.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
 
 .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}
 .remove-document::before {content: url('/img/remove.svg');}
@@ -24,4 +25,4 @@
 .ql-toolbar.ql-snow + .ql-container.ql-snow {border-radius: 0;}
 .ql-editor {background-color: #fff;min-height: 100px;}
 .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}
-#counter {border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+.counter {border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}

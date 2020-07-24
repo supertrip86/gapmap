@@ -12,13 +12,26 @@
                 </button>
             </div>
             <div class="modal-body">
-                {{> addResource}}
-                {{> editResource}}
-                {{> modifyParameters}}
+                <div id="modal-add" class="container">
+                    {{> resourceForm}}
+                </div>
+                <div id="modal-edit" class="container vanish">
+                    <div class="row">
+                        <div class="col">
+                            <div class="modal-select-item"></div>
+                        </div>
+                    </div>
+                    <div id="edit-resource" class="vanish">
+                        {{> resourceForm}}
+                    </div>
+                </div>
+                <div id="modal-modify" class="container vanish">
+                    {{> modifyParameters}}
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" id="add-resource" class="btn btn-primary">Save changes</button>
+                <button type="button" id="close-modal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="save-changes" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

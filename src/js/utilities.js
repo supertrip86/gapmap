@@ -3,27 +3,32 @@ module.exports = {
 	currentMenu: currentMenu,
 	lock: lock,
 	unLock: unLock,
+	clearStyle: clearStyle,
+	preventPaste: preventPaste,
+	preventCopy: preventCopy,
 	get: {
 		getValue: getValue,
 		getText: getText,
 		getHTML: getHTML,
 		getDate: getDate,
+		getNodeList: getNodeList
   	},
   	check: {
 		isFileInvalid: isFileInvalid,
 		isFilenameInvalid: isFilenameInvalid,
-		isFilesizeExceeded: isFilesizeExceeded,
+		isFilesizeExceeded: isFilesizeExceeded
   	},
   	options: {
+		resourceListOptions: resourceListOptions,
 		selectOptions: selectOptions,
-		createDatePickerOptions: createDatePickerOptions,
-		createEditorOptions: createEditorOptions
+		datePickerOptions: datePickerOptions,
+		editorOptions: editorOptions
   	}
 };
 
 // add event listener to dynamically created DOM element
 function on(selector, eventType, childSelector, eventHandler) {
-    const elements = document.querySelectorAll(selector);
+	const elements = document.querySelectorAll(selector);
     
     for (element of elements) {
       	element.addEventListener(eventType, eventOnElement => {
@@ -52,27 +57,48 @@ function currentMenu() {
 // lock attached file
 function lock(filename) {
     const context = currentMenu();
-    const target = context.querySelectorAll('.attachment-filename')[0];
+    const target = context.querySelector('.attachment-filename');
+	const file = context.querySelector('.btn-file');
     const icon = '<span class="remove-document"></span>';
 
+	file.style = "";
     target.querySelector('input').value = filename;
     target.insertAdjacentHTML('beforeend', icon);
 }
 
 // unlock attached file
-function unLock() {
-    const context = currentMenu();
+function unLock(event, form) {
+    const context = form ? form : currentMenu();
     const target = context.querySelectorAll('.remove-document');
 
     if (target.length) {
 		const icon = target[0];
-		const file = document.getElementById('attachment-fileinput');
-		const filename = document.getElementById('attachment-filetitle');
+		const file = context.querySelector('.attachment-fileinput');
+		const filename = context.querySelector('.attachment-filetitle');
 
 		file.value = ""
 		filename.value = "";
 		icon.remove();
     }
+}
+
+function preventPaste() {
+	event.preventDefault();
+	return false;
+}
+
+function preventCopy() {
+	event.preventDefault();
+	return false;
+}
+
+function getNodeList(target) {
+	return Array.from(document.querySelectorAll(target));
+}
+
+// when inserting missing data in Settings Menu, this function removes red highlighting
+function clearStyle() {
+	event.target.style = "";
 }
 
 // get trimmed value from target DOM input
@@ -93,8 +119,14 @@ function getHTML(target) {
 // get date from datepicker and convert it to ISO 8601, SharePoint compatible
 function getDate(target) {
 	const value = document.querySelectorAll(target)[0].value.trim();
+	const dateParts = value.split("/").map((i) => parseInt(i));
 
-	return new Date(value).toISOString();
+	try {
+		return new Date(dateParts[2], dateParts[1] -1, dateParts[0]).toISOString();
+	} catch (error) {
+		return false;
+	}
+
 }
 
 // check filename for invalid extension
@@ -119,18 +151,39 @@ function isFilesizeExceeded(size) {
 	return convertedValue > 20;
 }
 
+function resourceListOptions(list, placeholder, auto, value) {
+	return {
+		options: list,
+		placeholder: placeholder,
+		autocomplete: auto,
+		value: value,
+		onChange: (value) => {
+			const target = document.getElementById('edit-resource');
+			const item = window.gapmap.data.items.filter( (i) => i.Title == value )[0];
+
+			target.querySelector('.attachment-title').value = item.Title;
+			target.querySelector('.modal-author').value = item.Author;
+			target.querySelector('.modal-study').value = item.Study;
+			target.querySelector('.modal-population').value = item.Population;
+			target.classList.remove('vanish');
+
+		}
+	};
+}
+
 // parameters for SelectPure instance in settings menu
 function selectOptions(list, placeholder, auto, value) {
 	return {
 		options: list,
 		placeholder: placeholder,
 		autocomplete: auto,
-		value: value
+		value: value,
+		onChange: () => getNodeList('.select-pure__select').forEach((i) => i.style = "")
 	};
 }
 
 // parameters for @chenfengyuan/datepicker instance in settings menu
-function createDatePickerOptions(format, autoHide) {
+function datePickerOptions(format, autoHide) {
 	return {
 		zIndex: 1100,
 		format: format,
@@ -139,7 +192,7 @@ function createDatePickerOptions(format, autoHide) {
 }
 
 // parameters for QuillJS instance in settings menu
-function createEditorOptions() {
+function editorOptions(target) {
 	return {
 		modules: {
 			'toolbar': [ 
@@ -148,7 +201,7 @@ function createEditorOptions() {
 				[{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'indent': '-1' }, { 'indent': '+1' }], 
 				[{ 'align': [] }], [ 'link'] 
 			],
-			counter: { container: '#counter', unit: 'character' }
+			counter: { container: `${target} .counter`, unit: 'character' }
 		},
 		placeholder: 'Insert a description',
 		theme: 'snow'

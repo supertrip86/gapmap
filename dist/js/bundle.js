@@ -8165,7 +8165,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #e7e7e7);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\n\r\n/* HTML custom select style */\r\n.form-select, .form-select > * {cursor: pointer;}\r\n.form-select {width: 100%;display: inline-block;border: 1px solid #e5e5e5;position: relative;border-radius: 5px;min-width: 90px;box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.4);background: -moz-linear-gradient(#ffffff, #fff);background: -webkit-linear-gradient(#ffffff, #fff);background: linear-gradient(#ffffff, #fff);}\r\n.form-select select {-moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing: content-box;background: transparent;border: 0;outline: 0;text-shadow: 1px 1px rgba(255, 255, 255, 0.7);padding: 6px 0 6px 8px;font-size: 12px;width: 92%;height: 18px;-webkit-user-select: none;-moz-user-select: -moz-none;-ms-user-select: none;user-select: none;-webkit-appearance: none;-moz-appearance: radio-container;appearance: none;}\r\n.form-select:after {content: '';width: 0;position: absolute;right: 7px;top: 50%;margin-top: -3px;border-width: 6px 4px;border-style: solid;pointer-events: none;border-color: #656565 transparent transparent transparent;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:100%;padding:0 10px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 12px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;margin-left: 2px;top: -1px;}\r\n.select-pure__selected-label img {cursor:pointer;display:inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}", ""]);
+exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #e7e7e7);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\n\r\n/* HTML custom select style */\r\n.form-select, .form-select > * {cursor: pointer;}\r\n.form-select {width: 100%;display: inline-block;border: 1px solid #e5e5e5;position: relative;border-radius: 5px;min-width: 90px;box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.4);background: -moz-linear-gradient(#ffffff, #fff);background: -webkit-linear-gradient(#ffffff, #fff);background: linear-gradient(#ffffff, #fff);}\r\n.form-select select {-moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing: content-box;background: transparent;border: 0;outline: 0;text-shadow: 1px 1px rgba(255, 255, 255, 0.7);padding: 6px 0 6px 8px;font-size: 12px;width: 92%;height: 18px;-webkit-user-select: none;-moz-user-select: -moz-none;-ms-user-select: none;user-select: none;-webkit-appearance: none;-moz-appearance: radio-container;appearance: none;}\r\n.form-select:after {content: '';width: 0;position: absolute;right: 7px;top: 50%;margin-top: -3px;border-width: 6px 4px;border-style: solid;pointer-events: none;border-color: #656565 transparent transparent transparent;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:30px;padding:0 10px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 12px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;margin-left: 2px;top: -1px;}\r\n.select-pure__selected-label img {cursor:pointer;display:inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -8183,7 +8183,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal .modal-dialog {max-width: 50%;min-width: 650px;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body {margin: 25px auto;width: 95%;border-radius: 5px;background-color: #eee;border: 1px solid #ccc;}\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 1rem;}\r\n.modal .modal-dialog .modal-body #modal-add {padding: 0;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-required, .modal .modal-dialog .modal-body #modal-add .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body #modal-add .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body #modal-add .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}\r\n.modal .modal-dialog .modal-body #modal-add #modal-country {height: 30px;}\r\n\r\n.remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.remove-document::before {content: url('/img/remove.svg');}\r\n.ql-toolbar.ql-snow {border-top-right-radius: 4px;border-top-left-radius: 4px;border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}\r\n.ql-toolbar.ql-snow + .ql-container.ql-snow {border-radius: 0;}\r\n.ql-editor {background-color: #fff;min-height: 100px;}\r\n.ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n#counter {border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}", ""]);
+exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 50%;min-width: 650px;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body {margin: 25px auto;width: 95%;border-radius: 5px;background-color: #eee;border: 1px solid #ccc;}\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 1rem;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}\r\n\r\n.remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.remove-document::before {content: url('/img/remove.svg');}\r\n.ql-toolbar.ql-snow {border-top-right-radius: 4px;border-top-left-radius: 4px;border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}\r\n.ql-toolbar.ql-snow + .ql-container.ql-snow {border-radius: 0;}\r\n.ql-editor {background-color: #fff;min-height: 100px;}\r\n.ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n.counter {border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -39233,10 +39233,21 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,"
 
 /***/ }),
 
-/***/ "./src/hbs/partials/addResource.hbs":
-/*!******************************************!*\
-  !*** ./src/hbs/partials/addResource.hbs ***!
-  \******************************************/
+/***/ "./src/hbs/partials/modifyParameters.hbs":
+/*!***********************************************!*\
+  !*** ./src/hbs/partials/modifyParameters.hbs ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(){return "";};
+
+/***/ }),
+
+/***/ "./src/hbs/partials/resourceForm.hbs":
+/*!*******************************************!*\
+  !*** ./src/hbs/partials/resourceForm.hbs ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39250,11 +39261,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Language</span>\r\n                <div class=\"form-select\" id=\"modal-language\">\r\n                    <select>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":39,"column":24},"end":{"line":41,"column":33}}})) != null ? stack1 : "")
-    + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
+  return "    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Language</span>\r\n            <div class=\"form-select modal-language\">\r\n                <select>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":38,"column":20},"end":{"line":40,"column":29}}})) != null ? stack1 : "")
+    + "                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
-    return "                        <option>"
+    return "                    <option>"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "</option>\r\n";
 },"4":function(container,depth0,helpers,partials,data) {
@@ -39265,17 +39276,17 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Region</span>\r\n                <div class=\"form-select\" id=\"modal-region\">\r\n                    <select>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":53,"column":24},"end":{"line":55,"column":33}}})) != null ? stack1 : "")
-    + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
+  return "    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Region</span>\r\n            <div class=\"form-select modal-region\">\r\n                <select>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":52,"column":20},"end":{"line":54,"column":29}}})) != null ? stack1 : "")
+    + "                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "                        <option>"
+  return "                    <option>"
     + ((stack1 = container.lambda(depth0, depth0)) != null ? stack1 : "")
     + "</option>\r\n";
 },"7":function(container,depth0,helpers,partials,data) {
-    return "        <div class=\"col-6\">\r\n            <label>\r\n                <span class=\"modal-required\">Country</span>\r\n                <div id=\"modal-country\"></div>\r\n            </label>\r\n        </div>\r\n";
+    return "    <div class=\"col-6\">\r\n        <label>\r\n            <span class=\"modal-required\">Country</span>\r\n            <div class=\"modal-country\"></div>\r\n        </label>\r\n    </div>\r\n";
 },"9":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -39284,9 +39295,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <div class=\"col-8\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Intervention</span>\r\n                <div class=\"form-select\" id=\"modal-intervention\">\r\n                    <select>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":128,"column":24},"end":{"line":130,"column":33}}})) != null ? stack1 : "")
-    + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
+  return "    <div class=\"col-8\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Intervention</span>\r\n            <div class=\"form-select modal-intervention\">\r\n                <select>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":127,"column":20},"end":{"line":129,"column":29}}})) != null ? stack1 : "")
+    + "                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n";
 },"11":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -39295,9 +39306,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome</span>\r\n                <div class=\"form-select\" id=\"modal-outcome\">\r\n                    <select>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":144,"column":24},"end":{"line":146,"column":33}}})) != null ? stack1 : "")
-    + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        <div class=\"text-editor\">\r\n            <div id=\"editor\"></div>\r\n            <div id=\"counter\"></div>\r\n        </div>\r\n    </div>\r\n";
+  return "<div class=\"row\">\r\n    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Outcome</span>\r\n            <div class=\"form-select modal-outcome\">\r\n                <select>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":143,"column":20},"end":{"line":145,"column":29}}})) != null ? stack1 : "")
+    + "                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n</div>\r\n<div>\r\n    <div class=\"text-editor\">\r\n        <div class=\"editor\"></div>\r\n        <div class=\"counter\"></div>\r\n    </div>\r\n</div>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -39306,45 +39317,14 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"container\" id=\"modal-add\">                \r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input id=\"attachment-fileinput\" type=\"file\" class=\"vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <input id=\"attachment-filetitle\" type=\"text\" disabled=\"disabled\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert a Document Title</span>\r\n            <div>\r\n                <input id=\"attachment-title\" type=\"text\" class=\"form-control\" placeholder=\"Insert Document Title\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Evidence</span>\r\n                <div class=\"form-select\" id=\"modal-evidence\">\r\n                    <select>\r\n                        <option>External</option>\r\n                        <option>Internal</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":33,"column":8},"end":{"line":46,"column":15}}})) != null ? stack1 : "")
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":47,"column":8},"end":{"line":60,"column":15}}})) != null ? stack1 : "")
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"countries") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":61,"column":8},"end":{"line":68,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-required\">Date</span>\r\n                <input class=\"form-control\" id=\"modal-datepicker\" placeholder=\"Select a date\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col col-40\">\r\n            <label>\r\n                <span class=\"modal-required\">Author</span>\r\n                <input type=\"text\" class=\"form-control\" id=\"modal-author\" placeholder=\"Insert the Author\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col col-40\">\r\n            <label>\r\n                <span class=\"modal-required\">Study type</span>\r\n                <input class=\"form-control\" id=\"modal-study\" placeholder=\"Insert a study type\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-required\">Target Population</span>\r\n                <input class=\"form-control\" id=\"modal-population\" placeholder=\"Insert the target population\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-required\">Estimators</span>\r\n                <input class=\"form-control\" id=\"modal-estimators\" placeholder=\"Insert the estimators\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col col-40\">\r\n            <label>\r\n                <span class=\"modal-required\">Outcome Metrics Used</span>\r\n                <input class=\"form-control\" id=\"modal-metrics\" placeholder=\"Insert the outcome metrics used\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Control / Treated Sample</span>\r\n                <div class=\"form-select\" id=\"modal-control\">\r\n                    <select>\r\n                        <option>Yes</option>\r\n                        <option>No</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":122,"column":8},"end":{"line":135,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":137,"column":4},"end":{"line":158,"column":11}}})) != null ? stack1 : "")
-    + "</div>";
-},"useData":true});
-
-/***/ }),
-
-/***/ "./src/hbs/partials/editResource.hbs":
-/*!*******************************************!*\
-  !*** ./src/hbs/partials/editResource.hbs ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(/*! ../../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"container vanish\" id=\"modal-edit\"></div>";
-},"useData":true});
-
-/***/ }),
-
-/***/ "./src/hbs/partials/modifyParameters.hbs":
-/*!***********************************************!*\
-  !*** ./src/hbs/partials/modifyParameters.hbs ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(/*! ../../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"container vanish\" id=\"modal-modify\"></div>";
+  return "<div class=\"row\">\r\n    <div class=\"col\">\r\n        <span class=\"modal-required\">Upload Document</span>\r\n        <div class=\"modal-attachment\">\r\n            <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n            <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                <input class=\"attachment-filetitle\" type=\"text\" disabled=\"disabled\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <span class=\"modal-required\">Insert a Document Title</span>\r\n        <div>\r\n            <input type=\"text\" class=\"form-control attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Evidence</span>\r\n            <div class=\"form-select modal-evidence\">\r\n                <select>\r\n                    <option>External</option>\r\n                    <option>Internal</option>\r\n                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":32,"column":4},"end":{"line":45,"column":11}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":46,"column":4},"end":{"line":59,"column":11}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"countries") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":60,"column":4},"end":{"line":67,"column":11}}})) != null ? stack1 : "")
+    + "</div>\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-required\">Date</span>\r\n            <input class=\"form-control modal-datepicker\" placeholder=\"Select a date\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n    <div class=\"col col-40\">\r\n        <label>\r\n            <span class=\"modal-required\">Author</span>\r\n            <input type=\"text\" class=\"form-control modal-author\" placeholder=\"Insert the Author\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n    <div class=\"col col-40\">\r\n        <label>\r\n            <span class=\"modal-required\">Study type</span>\r\n            <input class=\"form-control modal-study\" placeholder=\"Insert a study type\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-4\">\r\n        <label>\r\n            <span class=\"modal-required\">Target Population</span>\r\n            <input class=\"form-control modal-population\" placeholder=\"Insert the target population\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-required\">Estimators</span>\r\n            <input class=\"form-control modal-estimators\" placeholder=\"Insert the estimators\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n    <div class=\"col col-40\">\r\n        <label>\r\n            <span class=\"modal-required\">Outcome Metrics Used</span>\r\n            <input class=\"form-control modal-metrics\" placeholder=\"Insert the outcome metrics used\" autocomplete=\"off\">\r\n        </label>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <label>\r\n            <span class=\"modal-span-title\">Control / Treated Sample</span>\r\n            <div class=\"form-select modal-control\">\r\n                <select>\r\n                    <option>Yes</option>\r\n                    <option>No</option>\r\n                </select>\r\n            </div>\r\n        </label>\r\n    </div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":121,"column":4},"end":{"line":134,"column":11}}})) != null ? stack1 : "")
+    + "</div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":136,"column":0},"end":{"line":157,"column":7}}})) != null ? stack1 : "");
 },"useData":true});
 
 /***/ }),
@@ -39361,11 +39341,13 @@ function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj);
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"modal fade\" id=\"settingsMenu\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"settingsMenuLabel\" style=\"display: none;\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <div class=\"modal-title\">\r\n                    <span class=\"modal-tab modal-active-tab\" data-tab=\"1\">Add Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"2\">Edit Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"3\">Set Parameters</span>\r\n                </div>\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/addResource.hbs */ "./src/hbs/partials/addResource.hbs"),depth0,{"name":"addResource","data":data,"indent":"                ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/editResource.hbs */ "./src/hbs/partials/editResource.hbs"),depth0,{"name":"editResource","data":data,"indent":"                ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/modifyParameters.hbs */ "./src/hbs/partials/modifyParameters.hbs"),depth0,{"name":"modifyParameters","data":data,"indent":"                ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\r\n                <button type=\"button\" id=\"add-resource\" class=\"btn btn-primary\">Save changes</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+  return "<div class=\"modal fade\" id=\"settingsMenu\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"settingsMenuLabel\" style=\"display: none;\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <div class=\"modal-title\">\r\n                    <span class=\"modal-tab modal-active-tab\" data-tab=\"1\">Add Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"2\">Edit Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"3\">Set Parameters</span>\r\n                </div>\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div id=\"modal-add\" class=\"container\">\r\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/resourceForm.hbs */ "./src/hbs/partials/resourceForm.hbs"),depth0,{"name":"resourceForm","data":data,"indent":"                    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "                </div>\r\n                <div id=\"modal-edit\" class=\"container vanish\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <div class=\"modal-select-item\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"edit-resource\" class=\"vanish\">\r\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/resourceForm.hbs */ "./src/hbs/partials/resourceForm.hbs"),depth0,{"name":"resourceForm","data":data,"indent":"                        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "                    </div>\r\n                </div>\r\n                <div id=\"modal-modify\" class=\"container vanish\">\r\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/modifyParameters.hbs */ "./src/hbs/partials/modifyParameters.hbs"),depth0,{"name":"modifyParameters","data":data,"indent":"                    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" id=\"close-modal\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\r\n                <button type=\"button\" id=\"save-changes\" class=\"btn btn-primary\">Save changes</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 },"usePartial":true,"useData":true});
 
 /***/ }),
@@ -39412,7 +39394,8 @@ var swal = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/di
 var errorList = {
   invalidFile: '<p>You can only upload Word, Powerpoint, Excel or PDF documents</p>',
   invalidFilename: '<p>The selected file has any of the following invalid characters:</p><p>~, #, %, & , *, {, }, \, :, <, >, ?, /, |, \', "</p>',
-  invalidFileSize: '<p>The selected file exceeds the maximum limit of 20 Megabytes</p>'
+  invalidFileSize: '<p>The selected file exceeds the maximum limit of 20 Megabytes</p>',
+  addFormInvalid: '<p>Missing or invalid information has been provided</p>'
 };
 
 var display = (value, confirm) => {
@@ -39427,7 +39410,7 @@ class ModalError {
     this.showCancelButton = confirm ? true : false;
     this.confirmButtonColor = '#003870';
     this.confirmButtonText = 'Save';
-    this.html = errorList[value];
+    this.html = "<p>".concat(errorList[value], "</p>");
   }
 
 }
@@ -39471,29 +39454,29 @@ var utilities = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilitie
 
 class SharepointListItem {
   constructor(listMetadata) {
-    this.Title = utilities.get.getValue('#attachment-title');
-    this.Evidence = utilities.get.getValue('#modal-evidence select option:checked');
-    this.Language = utilities.get.getValue('#modal-language option:checked');
-    this.Region = utilities.get.getValue('#modal-region select option:checked');
-    this.Country = utilities.get.getText('#modal-country .select-pure__label');
-    this.Date = utilities.get.getDate('#modal-datepicker');
-    this.Author = utilities.get.getDate('#modal-datepicker');
-    this.Study = utilities.get.getValue('#modal-study');
-    this.Population = utilities.get.getValue('#modal-population');
-    this.Estimators = utilities.get.getValue('#modal-estimators');
-    this.Metrics = utilities.get.getValue('#modal-metrics');
-    this.Control = utilities.get.getValue('#modal-control select option:checked');
-    this.Intervention = utilities.get.getValue('#modal-intervention select option:checked');
-    this.Outcome = utilities.get.getValue('#modal-outcome select option:checked');
-    this.Description = utilities.get.getHTML('#editor .ql-editor');
+    this.Title = utilities.get.getValue('#modal-add .attachment-title');
+    this.label = utilities.get.getValue('#modal-add .attachment-title');
+    this.value = utilities.get.getValue('#modal-add .attachment-title');
+    this.Evidence = utilities.get.getValue('#modal-add .modal-evidence select option:checked');
+    this.Language = utilities.get.getValue('#modal-add .modal-language option:checked');
+    this.Region = utilities.get.getValue('#modal-add .modal-region select option:checked');
+    this.Country = utilities.get.getText('#modal-add .modal-country .select-pure__label');
+    this.Date = utilities.get.getDate('#modal-add .modal-datepicker');
+    this.Author = utilities.get.getDate('#modal-add .modal-author');
+    this.Study = utilities.get.getValue('#modal-add .modal-study');
+    this.Population = utilities.get.getValue('#modal-add .modal-population');
+    this.Estimators = utilities.get.getValue('#modal-add .modal-estimators');
+    this.Metrics = utilities.get.getValue('#modal-add .modal-metrics');
+    this.Control = utilities.get.getValue('#modal-add .modal-control select option:checked');
+    this.Intervention = utilities.get.getValue('#modal-add .modal-intervention select option:checked');
+    this.Outcome = utilities.get.getValue('#modal-add .modal-outcome select option:checked');
+    this.Description = utilities.get.getHTML('#modal-add .editor .ql-editor');
     this.__metadata = {
       type: listMetadata
     };
   }
 
 }
-
-;
 
 var receiveData = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(function* (url) {
@@ -39524,36 +39507,12 @@ var sendData = resource => {
   //     })
   // };
   // fetch(_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('gapmap')/items", par);
+  // send attachment
 };
 
 var addResource = () => {
   var item = new SharepointListItem('__Test');
-  sendData(item); // function createResource(listMetadata) {
-  //     /* 
-  //         * correct metadata properties
-  //         * fix queryselectorall to point to add resources tab 
-  //     */
-  //     return {
-  //         Title: utilities.get.getValue('#attachment-title'),
-  //         Evidence: utilities.get.getValue('#modal-evidence select option:checked'),
-  //         Language: utilities.get.getValue('.modal-language option:checked'),
-  //         Region: utilities.get.getValue('.modal-region select option:checked'),
-  //         Country: utilities.get.getText('#modal-country .select-pure__label'),
-  //         Date: utilities.get.getDate('#modal-datepicker'),
-  //         Author: utilities.get.getValue('#modal-author'),
-  //         Study: utilities.get.getValue('#modal-study'),
-  //         Population: utilities.get.getValue('#modal-population'),
-  //         Estimators: utilities.get.getValue('#modal-estimators'),
-  //         Metrics: utilities.get.getValue('#modal-metrics'),
-  //         Control: utilities.get.getValue('#modal-control select option:checked'),
-  //         Intervention: utilities.get.getValue('#modal-intervention select option:checked'),
-  //         Outcome: utilities.get.getValue('#modal-outcome select option:checked'),
-  //         Description: utilities.get.getHTML('#editor .ql-editor'),
-  //         __metadata: {
-  //             type: listMetadata
-  //         }
-  //     }
-  // }
+  sendData(item);
 };
 
 
@@ -39569,7 +39528,7 @@ var addResource = () => {
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-var select = __webpack_require__(/*! select-pure */ "./node_modules/select-pure/lib/index.js");
+var selectPure = __webpack_require__(/*! select-pure */ "./node_modules/select-pure/lib/index.js");
 
 var datepicker = __webpack_require__(/*! @chenfengyuan/datepicker/dist/datepicker.js */ "./node_modules/@chenfengyuan/datepicker/dist/datepicker.js");
 
@@ -39585,11 +39544,11 @@ var requests = __webpack_require__(/*! ../js/requests.js */ "./src/js/requests.j
 
 var css = __webpack_require__(/*! ../css/settings.css */ "./src/css/settings.css");
 
-var template = __webpack_require__(/*! ../hbs/settings.hbs */ "./src/hbs/settings.hbs"); // validate attachment file selected in dialog menu
-
+var template = __webpack_require__(/*! ../hbs/settings.hbs */ "./src/hbs/settings.hbs");
 
 var validateAttachment = () => {
-  var source = document.getElementById('attachment-fileinput');
+  var context = utilities.currentMenu();
+  var source = context.querySelector('.attachment-fileinput');
 
   if (source.files.length) {
     var filename = source.files[0].name;
@@ -39597,17 +39556,17 @@ var validateAttachment = () => {
 
     if (utilities.check.isFileInvalid(filename)) {
       rejectUpload('invalidFile', false);
-      return;
+      return false;
     }
 
     if (utilities.check.isFilenameInvalid(filename)) {
       rejectUpload('invalidFilename', false);
-      return;
+      return false;
     }
 
     if (utilities.check.isFilesizeExceeded(size)) {
       rejectUpload('invalidFileSize', false);
-      return;
+      return false;
     }
 
     utilities.lock(filename);
@@ -39623,24 +39582,72 @@ var validateAttachment = () => {
 };
 
 var validateNewResource = () => {
-  var form = document.getElementById('modal-add'); // const file = 
-
-  var input = form.querySelectorAll('input.form-control');
+  var date = document.querySelector('#modal-add .modal-datepicker');
+  var country = document.querySelector('#modal-add .select-pure__select');
+  var file = document.querySelector('#modal-add .btn-file');
+  var input = document.querySelectorAll('#modal-add input.form-control');
   var style = '1px solid red';
   var proceed = true;
+  !utilities.get.getDate('#modal-add .modal-datepicker') && rejectRequest(date);
+  !file.querySelector('input').files.length && rejectRequest(file);
+  !country.querySelector('.select-pure__label').innerText && rejectRequest(country);
 
   for (element of input) {
     !element.value.trim() && rejectRequest(element);
   }
 
-  proceed && requests.addResource();
+  proceed ? requests.addResource() : error.display('addFormInvalid', false);
 
   function rejectRequest(element) {
     proceed = false;
     element.style.border = style;
   }
-}; // save data from the active menu into a SharePoint List item
+};
 
+var validateEditResource = () => {
+  console.log('hello');
+};
+
+var validateModifyParameters = () => {
+  console.log('hello');
+};
+
+var resetForm = () => {
+  utilities.get.getNodeList('input.form-control').forEach(i => i.value = "");
+  utilities.get.getNodeList('.form-select select').forEach(i => i.selectedIndex = 0);
+  utilities.get.getNodeList('.btn-file input').forEach(i => utilities.unLock(null, i.closest('.container')));
+  utilities.get.getNodeList('.ql-editor').forEach(i => i.innerHTML = "");
+  utilities.get.getNodeList('input.form-control').forEach(i => i.removeAttribute('style'));
+  utilities.get.getNodeList('.btn-file').forEach(i => i.removeAttribute('style'));
+  utilities.get.getNodeList('.select-pure__select').forEach(i => i.removeAttribute('style'));
+  document.getElementById('edit-resource').classList.add('vanish');
+  window.gapmap.addCountry.reset();
+  window.gapmap.editCountry.reset();
+  window.gapmap.selectResource.reset();
+};
+
+var switchForm = () => {
+  utilities.get.getNodeList('.modal-tab').forEach(i => i.classList.remove('modal-active-tab'));
+  utilities.get.getNodeList('#gapmap-dialog .container').forEach(i => i.classList.add('vanish'));
+  event.target.classList.add('modal-active-tab');
+  utilities.currentMenu().classList.remove('vanish');
+};
+
+var addListeners = () => {
+  $('#gapmap-dialog').on('change', '.modal-datepicker', function () {
+    $(this).removeAttr('style');
+  }); // change event in @chenfengyuan/datepicker triggered by jQuery
+
+  $('#gapmap-dialog').on('hidden.bs.modal', resetForm); // change event in bootstrap triggered by jQuery
+
+  utilities.on('#gapmap-dialog', 'input', '.form-control', utilities.clearStyle);
+  utilities.on('#gapmap-dialog', 'click', '.remove-document', utilities.unLock);
+  utilities.on('#gapmap-dialog', 'paste', '.modal-datepicker', utilities.preventPaste);
+  utilities.on('#gapmap-dialog', 'keypress', '.modal-datepicker', utilities.preventCopy);
+  utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
+  utilities.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachment);
+  utilities.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
+};
 
 var saveChanges = () => {
   var target = utilities.currentMenu().id;
@@ -39650,26 +39657,43 @@ var saveChanges = () => {
       return validateNewResource();
 
     case 'modal-edit':
-      return 'Edit resource';
+      return validateEditResource();
 
     case 'modal-modify':
-      return 'Modify parameters';
+      return validateModifyParameters();
   }
 };
 
 requests.receiveData('/api/data.json').then(data => {
-  var selectOptions = utilities.options.selectOptions(data.countries, "Select a Country", true);
-  var datePickerOptions = utilities.options.createDatePickerOptions("dd/mm/yyyy", true);
-  var editorOptions = utilities.options.createEditorOptions();
   var dialog = document.getElementById("gapmap-dialog");
   dialog.innerHTML = template(data);
-  new select.default(document.getElementById('modal-country'), selectOptions);
-  new counter.quill('#editor', editorOptions);
-  $('#modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
+  var selectOptions = utilities.options.selectOptions(data.countries, "Select a Country", true);
+  var resourceListOptions = utilities.options.resourceListOptions(data.items, "Select a Resource", true);
+  var datePickerOptions = utilities.options.datePickerOptions("dd/mm/yyyy", true);
+  var editorOptions = utilities.options.editorOptions('#modal-add');
+  var addCountry = new selectPure.default(document.querySelector('#modal-add .modal-country'), selectOptions);
+  var addEditor = new counter.quill('#modal-add .editor', editorOptions);
+  var addDate = $('#modal-add .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
+
+  var selectResource = new selectPure.default(document.querySelector('.modal-select-item'), resourceListOptions);
+  var editCountry = new selectPure.default(document.querySelector('#modal-edit .modal-country'), selectOptions);
+  var editEditor = new counter.quill('#modal-edit .editor', editorOptions);
+  var editDate = $('#modal-edit .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
+
+  class GapMap {
+    constructor() {
+      this.data = data;
+      this.selectResource = selectResource;
+      this.addCountry = addCountry;
+      this.editCountry = editCountry;
+      this.editDate;
+    }
+
+  }
+
+  window.gapmap = new GapMap();
+  addListeners();
 });
-utilities.on('#gapmap-dialog', 'click', '.remove-document', utilities.unLock);
-utilities.on('#gapmap-dialog', 'click', '#add-resource', saveChanges);
-utilities.on('#gapmap-dialog', 'change', '#attachment-fileinput', validateAttachment);
 
 /***/ }),
 
@@ -39720,7 +39744,6 @@ class Counter {
 
 }
 
-;
 quill.register('modules/counter', Counter);
 
 
@@ -39738,11 +39761,15 @@ module.exports = {
   currentMenu: currentMenu,
   lock: lock,
   unLock: unLock,
+  clearStyle: clearStyle,
+  preventPaste: preventPaste,
+  preventCopy: preventCopy,
   get: {
     getValue: getValue,
     getText: getText,
     getHTML: getHTML,
-    getDate: getDate
+    getDate: getDate,
+    getNodeList: getNodeList
   },
   check: {
     isFileInvalid: isFileInvalid,
@@ -39750,9 +39777,10 @@ module.exports = {
     isFilesizeExceeded: isFilesizeExceeded
   },
   options: {
+    resourceListOptions: resourceListOptions,
     selectOptions: selectOptions,
-    createDatePickerOptions: createDatePickerOptions,
-    createEditorOptions: createEditorOptions
+    datePickerOptions: datePickerOptions,
+    editorOptions: editorOptions
   }
 }; // add event listener to dynamically created DOM element
 
@@ -39788,25 +39816,46 @@ function currentMenu() {
 
 function lock(filename) {
   var context = currentMenu();
-  var target = context.querySelectorAll('.attachment-filename')[0];
+  var target = context.querySelector('.attachment-filename');
+  var file = context.querySelector('.btn-file');
   var icon = '<span class="remove-document"></span>';
+  file.style = "";
   target.querySelector('input').value = filename;
   target.insertAdjacentHTML('beforeend', icon);
 } // unlock attached file
 
 
-function unLock() {
-  var context = currentMenu();
+function unLock(event, form) {
+  var context = form ? form : currentMenu();
   var target = context.querySelectorAll('.remove-document');
 
   if (target.length) {
     var icon = target[0];
-    var file = document.getElementById('attachment-fileinput');
-    var filename = document.getElementById('attachment-filetitle');
+    var file = context.querySelector('.attachment-fileinput');
+    var filename = context.querySelector('.attachment-filetitle');
     file.value = "";
     filename.value = "";
     icon.remove();
   }
+}
+
+function preventPaste() {
+  event.preventDefault();
+  return false;
+}
+
+function preventCopy() {
+  event.preventDefault();
+  return false;
+}
+
+function getNodeList(target) {
+  return Array.from(document.querySelectorAll(target));
+} // when inserting missing data in Settings Menu, this function removes red highlighting
+
+
+function clearStyle() {
+  event.target.style = "";
 } // get trimmed value from target DOM input
 
 
@@ -39827,7 +39876,13 @@ function getHTML(target) {
 
 function getDate(target) {
   var value = document.querySelectorAll(target)[0].value.trim();
-  return new Date(value).toISOString();
+  var dateParts = value.split("/").map(i => parseInt(i));
+
+  try {
+    return new Date(dateParts[2], dateParts[1] - 1, dateParts[0]).toISOString();
+  } catch (error) {
+    return false;
+  }
 } // check filename for invalid extension
 
 
@@ -39847,6 +39902,24 @@ function isFilenameInvalid(filename) {
 function isFilesizeExceeded(size) {
   var convertedValue = size / 1000000;
   return convertedValue > 20;
+}
+
+function resourceListOptions(list, placeholder, auto, value) {
+  return {
+    options: list,
+    placeholder: placeholder,
+    autocomplete: auto,
+    value: value,
+    onChange: value => {
+      var target = document.getElementById('edit-resource');
+      var item = window.gapmap.data.items.filter(i => i.Title == value)[0];
+      target.querySelector('.attachment-title').value = item.Title;
+      target.querySelector('.modal-author').value = item.Author;
+      target.querySelector('.modal-study').value = item.Study;
+      target.querySelector('.modal-population').value = item.Population;
+      target.classList.remove('vanish');
+    }
+  };
 } // parameters for SelectPure instance in settings menu
 
 
@@ -39855,12 +39928,13 @@ function selectOptions(list, placeholder, auto, value) {
     options: list,
     placeholder: placeholder,
     autocomplete: auto,
-    value: value
+    value: value,
+    onChange: () => getNodeList('.select-pure__select').forEach(i => i.style = "")
   };
 } // parameters for @chenfengyuan/datepicker instance in settings menu
 
 
-function createDatePickerOptions(format, autoHide) {
+function datePickerOptions(format, autoHide) {
   return {
     zIndex: 1100,
     format: format,
@@ -39869,7 +39943,7 @@ function createDatePickerOptions(format, autoHide) {
 } // parameters for QuillJS instance in settings menu
 
 
-function createEditorOptions() {
+function editorOptions(target) {
   return {
     modules: {
       'toolbar': [['bold', 'italic', 'underline'], [{
@@ -39892,7 +39966,7 @@ function createEditorOptions() {
         'align': []
       }], ['link']],
       counter: {
-        container: '#counter',
+        container: "".concat(target, " .counter"),
         unit: 'character'
       }
     },
