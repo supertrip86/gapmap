@@ -1,16 +1,22 @@
 .modal-open .modal {overflow-y: scroll;}
 
-.modal .modal-dialog {max-width: 50%;min-width: 650px;}
+.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}
 .modal .modal-dialog .modal-header {padding: 10px;}
 .modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}
 .modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}
 .modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}
 .modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}
 
-.modal .modal-dialog .modal-body {margin: 25px auto;width: 95%;border-radius: 5px;background-color: #eee;border: 1px solid #ccc;}
 .modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}
-.modal .modal-dialog .modal-body .row {padding-bottom: 1rem;}
-.modal .modal-dialog .modal-body .container {padding: 0;}
+.modal .modal-dialog .modal-body .row:not(:last-of-type) {padding-bottom: 1rem;}
+.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}
+.modal .modal-dialog .modal-body .card {margin-bottom: 15px;}
+.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;}
+.modal .modal-dialog .modal-body .card-body {background-color: #eee;}
+.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}
+.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}
+.modal .modal-dialog .modal-body .modal-parameter-button {font-size: 11px;border-radius: 20px;border: 1px solid #ddd;outline: none;padding: 4px 8px;height: 25px;width: 50px;background: linear-gradient(#ffffff, #e7e7e7);}
+.modal .modal-dialog .modal-body .modal-remove-parameter span {background-image: url('/img/trash.svg');background-size: 15px 15px;background-repeat: no-repeat;background-position: center;width: 15px;height: 15px;display: block;margin: auto;}
 .modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}
 .modal .modal-dialog .modal-body .modal-required::after {content:"*";color:red;}
 .modal .modal-dialog .modal-body .modal-attachment {display: flex;}
@@ -19,10 +25,12 @@
 .modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
 .modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
 
+.modal .modal-dialog .modal-footer {justify-content: space-between;}
+
 .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}
 .remove-document::before {content: url('/img/remove.svg');}
-.ql-toolbar.ql-snow {border-top-right-radius: 4px;border-top-left-radius: 4px;border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.ql-toolbar.ql-snow {border-top-right-radius: 4px;border-top-left-radius: 4px;border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;background-color: #eee;}
 .ql-toolbar.ql-snow + .ql-container.ql-snow {border-radius: 0;}
 .ql-editor {background-color: #fff;min-height: 100px;}
 .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}
-.counter {border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+.counter {background-color: #eee;border: 1px solid #ccc;border-width: 0px 1px 1px 1px;color: #aaa;padding: 5px 15px;text-align: right;font-size: 12px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}

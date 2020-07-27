@@ -30,12 +30,14 @@
         "Spanish",
         "Arabic"
     ],
-    "items": [
+    "resources": [
         {
             "Title": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
             "label": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
             "value": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-            "Evidence": "Internal",
+            "Attachment": "MissingReports.xlsx",
+            "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
+            "Evidence": "External",
             "Language": "French",
             "Region": "ESA",
             "Country": "Albania",
@@ -57,6 +59,8 @@
             "Title": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
             "label": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
             "value": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
+            "Attachment": "Whatever.docx",
+            "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
             "Evidence": "Internal",
             "Language": "English",
             "Region": "APR",

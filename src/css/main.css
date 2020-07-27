@@ -1,6 +1,7 @@
 :root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}
 body {color: #333;margin: 0;}
 .vanish {display: none;}
+.hidden {opacity: 0;}
 
 .main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}
 
@@ -15,12 +16,7 @@ body {color: #333;margin: 0;}
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #e7e7e7);}
 .form-control:focus {border-color: #ccc;box-shadow: none;}
 .form-control {height: 30px;padding: 2px 6px;font-size: 12px;}
-
-/* HTML custom select style */
-.form-select, .form-select > * {cursor: pointer;}
-.form-select {width: 100%;display: inline-block;border: 1px solid #e5e5e5;position: relative;border-radius: 5px;min-width: 90px;box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.4);background: -moz-linear-gradient(#ffffff, #fff);background: -webkit-linear-gradient(#ffffff, #fff);background: linear-gradient(#ffffff, #fff);}
-.form-select select {-moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing: content-box;background: transparent;border: 0;outline: 0;text-shadow: 1px 1px rgba(255, 255, 255, 0.7);padding: 6px 0 6px 8px;font-size: 12px;width: 92%;height: 18px;-webkit-user-select: none;-moz-user-select: -moz-none;-ms-user-select: none;user-select: none;-webkit-appearance: none;-moz-appearance: radio-container;appearance: none;}
-.form-select:after {content: '';width: 0;position: absolute;right: 7px;top: 50%;margin-top: -3px;border-width: 6px 4px;border-style: solid;pointer-events: none;border-color: #656565 transparent transparent transparent;}
+select.form-control {text-overflow: ellipsis;}
 
 /* SelectPure dependency style */
 .select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}

@@ -1,5 +1,6 @@
 module.exports = {
 	on: on,
+	removeClass: removeClass,
 	currentMenu: currentMenu,
 	lock: lock,
 	unLock: unLock,
@@ -29,7 +30,7 @@ module.exports = {
 // add event listener to dynamically created DOM element
 function on(selector, eventType, childSelector, eventHandler) {
 	const elements = document.querySelectorAll(selector);
-    
+
     for (element of elements) {
       	element.addEventListener(eventType, eventOnElement => {
 			if (eventOnElement.target.matches(childSelector)) {
@@ -37,6 +38,10 @@ function on(selector, eventType, childSelector, eventHandler) {
 			}
       	});
     }
+}
+
+function removeClass(target, nodeClass) {
+	getNodeList(target).forEach( (i) => i.classList.remove(nodeClass) );
 }
 
 // get current active form in Settings Menu
@@ -126,7 +131,6 @@ function getDate(target) {
 	} catch (error) {
 		return false;
 	}
-
 }
 
 // check filename for invalid extension
@@ -159,14 +163,38 @@ function resourceListOptions(list, placeholder, auto, value) {
 		value: value,
 		onChange: (value) => {
 			const target = document.getElementById('edit-resource');
-			const item = window.gapmap.data.items.filter( (i) => i.Title == value )[0];
+			const button = document.getElementById('remove-resource').parentNode;
+			const item = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
+
+			document.querySelector('.modal-select-item .select-pure__select').style = "";
+			getNodeList('input.form-control').forEach( (i) => i.style = "" );
+			removeClass('#modal-edit .select-pure__option', 'select-pure__option--selected');
+
+			lock(item.Attachment);
+
+			window.gapmap.editDate.datepicker('setDate', new Date(item.Date).toLocaleDateString('en-GB'));
 
 			target.querySelector('.attachment-title').value = item.Title;
+			target.querySelector('.modal-evidence select').value = item.Evidence;
+			target.querySelector('.modal-language select').value = item.Language;
+			target.querySelector('.modal-region select').value = item.Region;
+
+			target.querySelector('.select-pure__label').innerText = item.Country;
+			target.querySelector(`.select-pure__option[data-value="${item.Country}"]`).classList.add('select-pure__option--selected');
+			target.querySelector('.select-pure__placeholder').classList.add('select-pure__placeholder--hidden');
+
 			target.querySelector('.modal-author').value = item.Author;
 			target.querySelector('.modal-study').value = item.Study;
 			target.querySelector('.modal-population').value = item.Population;
-			target.classList.remove('vanish');
+			target.querySelector('.modal-estimators').value = item.Estimators;
+			target.querySelector('.modal-metrics').value = item.Metrics;
+			target.querySelector('.modal-control select').value = item.Control;
+			target.querySelector('.modal-intervention select').value = item.Intervention;
+			target.querySelector('.modal-outcome select').value = item.Outcome;
+			target.querySelector('.ql-editor').innerHTML = item.Description;
 
+			target.classList.remove('vanish');
+			button.classList.remove('hidden');
 		}
 	};
 }
@@ -178,7 +206,7 @@ function selectOptions(list, placeholder, auto, value) {
 		placeholder: placeholder,
 		autocomplete: auto,
 		value: value,
-		onChange: () => getNodeList('.select-pure__select').forEach((i) => i.style = "")
+		onChange: () => getNodeList('.select-pure__select').forEach( (i) => i.style = "" )
 	};
 }
 
