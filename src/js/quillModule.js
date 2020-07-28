@@ -1,5 +1,5 @@
-const quill = require('quill');
-const css = require('quill/dist/quill.snow.css');
+import quill from 'quill';
+import quillCSS from 'quill/dist/quill.snow.css';
 
 class Counter {
   constructor(quill, options) {

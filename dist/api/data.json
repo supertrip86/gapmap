@@ -1,21 +1,63 @@
 {
     "interventions": [
-        "Strengthening POs",
-        "Financial Education",
-        "Storage Facilities",
-        "Agricultural Extension Services",
-        "Rangeland Management Techniques",
-        "Irrigation Techniques",
-        "Provision of Agricultural Inputs",
-        "Market Information",
-        "Community Infrastructure",
-        "Strengthening FSAs",
-        "Climate Change Resilience Production Techniques"
+        {
+            "Title": "Strengthening POs",
+            "Id": 1
+        },
+        {
+            "Title": "Financial Education",
+            "Id": 2
+        },
+        {
+            "Title": "Storage Facilities",
+            "Id": 3
+        },
+        {
+            "Title": "Agricultural Extension Services",
+            "Id": 4
+        },
+        {
+            "Title": "Rangeland Management Techniques",
+            "Id": 5
+        },
+        {
+            "Title": "Irrigation Techniques",
+            "Id": 6
+        },
+        {
+            "Title": "Provision of Agricultural Inputs",
+            "Id": 7
+        },
+        {
+            "Title": "Market Information",
+            "Id": 8
+        },
+        {
+            "Title": "Community Infrastructure",
+            "Id": 9
+        },
+        {
+            "Title": "Strengthening FSAs",
+            "Id": 10
+        },
+        {
+            "Title": "Climate Change Resilience Production Techniques",
+            "Id": 11
+        }
     ],
     "outcomes": [
-        "Enhanced Productivity and Quality of Agricultural Production",
-        "Financial Inclusion",
-        "Climate Change Resilience"
+        {
+            "Title": "Enhanced Productivity and Quality of Agricultural Production",
+            "Id": 1
+        },
+        {
+            "Title": "Financial Inclusion",
+            "Id": 2
+        },
+        {
+            "Title": "Climate Change Resilience",
+            "Id": 3
+        }
     ],
     "regions": [
         "APR",
@@ -31,54 +73,6 @@
         "Arabic"
     ],
     "resources": [
-        {
-            "Title": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-            "label": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-            "value": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-            "Attachment": "MissingReports.xlsx",
-            "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
-            "Evidence": "External",
-            "Language": "French",
-            "Region": "ESA",
-            "Country": "Albania",
-            "Date": "2020-07-21T22:00:00.000Z",
-            "Author": "Giovanni Giunta",
-            "Study": "Impact",
-            "Population": "Nigeria",
-            "Estimators": "OCSE",
-            "Metrics": "Kilograms",
-            "Control": "Yes",
-            "Intervention": "Provision of Agricultural Inputs",
-            "Outcome": "Financial Inclusion",
-            "Description": "<p>This is a test!</p>",
-            "__metadata": {
-                "type": "__Test"
-            }
-        },
-        {
-            "Title": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
-            "label": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
-            "value": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
-            "Attachment": "Whatever.docx",
-            "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
-            "Evidence": "Internal",
-            "Language": "English",
-            "Region": "APR",
-            "Country": "Bahamas (the)",
-            "Date": "2020-07-06T22:00:00.000Z",
-            "Author": "Noelle Turtur",
-            "Study": "Project Completion",
-            "Population": "Bhutan",
-            "Estimators": "FMI",
-            "Metrics": "Pounds",
-            "Control": "No",
-            "Intervention": "Irrigation Techniques",
-            "Outcome": "Enhanced Productivity and Quality of Agricultural Production",
-            "Description": "<p>This is another Test</p>",
-            "__metadata": {
-              "type": "__Test"
-            }
-        }
     ],
     "countries": [
         {

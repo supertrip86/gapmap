@@ -22,6 +22,7 @@ module.exports = {
   	options: {
 		resourceListOptions: resourceListOptions,
 		selectOptions: selectOptions,
+		sortableOptions: sortableOptions,
 		datePickerOptions: datePickerOptions,
 		editorOptions: editorOptions
   	}
@@ -155,6 +156,17 @@ function isFilesizeExceeded(size) {
 	return convertedValue > 20;
 }
 
+// options for SortableJS instances in Settings Menu
+function sortableOptions(animation, direction, handle) {
+	return {
+		animation: animation,
+		direction: direction,
+		handle: handle,
+		dataIdAttr: 'data-row'
+	};
+}
+
+// options for SelectPure instances in Settings Menu
 function resourceListOptions(list, placeholder, auto, value) {
 	return {
 		options: list,
@@ -166,6 +178,7 @@ function resourceListOptions(list, placeholder, auto, value) {
 			const button = document.getElementById('remove-resource').parentNode;
 			const item = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
 
+			document.getElementById('edit-resource').dataset.item = item.Id;
 			document.querySelector('.modal-select-item .select-pure__select').style = "";
 			getNodeList('input.form-control').forEach( (i) => i.style = "" );
 			removeClass('#modal-edit .select-pure__option', 'select-pure__option--selected');
@@ -199,7 +212,6 @@ function resourceListOptions(list, placeholder, auto, value) {
 	};
 }
 
-// parameters for SelectPure instance in settings menu
 function selectOptions(list, placeholder, auto, value) {
 	return {
 		options: list,
@@ -210,7 +222,7 @@ function selectOptions(list, placeholder, auto, value) {
 	};
 }
 
-// parameters for @chenfengyuan/datepicker instance in settings menu
+// parameters for @chenfengyuan/datepicker instances in settings menu
 function datePickerOptions(format, autoHide) {
 	return {
 		zIndex: 1100,
@@ -219,7 +231,7 @@ function datePickerOptions(format, autoHide) {
 	};
 }
 
-// parameters for QuillJS instance in settings menu
+// parameters for QuillJS instances in settings menu
 function editorOptions(target) {
 	return {
 		modules: {

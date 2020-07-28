@@ -1,4 +1,4 @@
-const swal = require('sweetalert2');
+import Swal from 'sweetalert2'
 
 const errorList = {
     invalidFile: '<p>You can only upload Word, Powerpoint, Excel or PDF documents</p>',
@@ -8,7 +8,7 @@ const errorList = {
 };
 
 const display = (value, confirm) => {
-    swal.fire(new ModalError(value, confirm))
+    Swal.fire(new ModalError(value, confirm));
 };
 
 class ModalError {

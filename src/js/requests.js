@@ -1,4 +1,4 @@
-const utilities = require("../js/utilities.js");
+import utilities from "../js/utilities.js";
 
 class SharepointListItem {
     constructor(listMetadata) {
@@ -60,7 +60,14 @@ const addResource = () => {
     const item = new SharepointListItem('__Test');
 
     sendData(item);
-
 };
 
-export { receiveData, addResource };
+const editResource = (id) => {
+    console.log(id);
+};
+
+const modifyParameters = () => {
+    console.log(window.gapmap.settingsId);
+};
+
+export { receiveData, addResource, editResource, modifyParameters };

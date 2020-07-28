@@ -1,4 +1,4 @@
-const template = require("../hbs/header.hbs");
-const css = require("../css/header.css");
+import headerTemplate from "../hbs/header.hbs";
+import "../css/header.css";
 
-document.getElementById("gapmap-header").innerHTML = template();
+document.getElementById("gapmap-header").innerHTML = headerTemplate();

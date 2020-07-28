@@ -14,7 +14,7 @@
         <div class="col">
             <span class="modal-required">Insert a Document Title</span>
             <div>
-                <input type="text" class="form-control attachment-title" placeholder="Insert Document Title" autocomplete="off">
+                <input type="text" class="form-control form-resource attachment-title" placeholder="Insert Document Title" autocomplete="off">
             </div>
         </div>
     </div>
@@ -73,19 +73,19 @@
         <div class="col">
             <label>
                 <span class="modal-required">Date</span>
-                <input class="form-control modal-datepicker" placeholder="Select a date" autocomplete="off">
+                <input class="form-control form-resource modal-datepicker" placeholder="Select a date" autocomplete="off">
             </label>
         </div>
         <div class="col col-40">
             <label>
                 <span class="modal-required">Author</span>
-                <input type="text" class="form-control modal-author" placeholder="Insert the Author" autocomplete="off">
+                <input type="text" class="form-control form-resource modal-author" placeholder="Insert the Author" autocomplete="off">
             </label>
         </div>
         <div class="col col-40">
             <label>
                 <span class="modal-required">Study type</span>
-                <input class="form-control modal-study" placeholder="Insert a study type" autocomplete="off">
+                <input class="form-control form-resource modal-study" placeholder="Insert a study type" autocomplete="off">
             </label>
         </div>
     </div>
@@ -95,19 +95,19 @@
         <div class="col-4">
             <label>
                 <span class="modal-required">Target Population</span>
-                <input class="form-control modal-population" placeholder="Insert the target population" autocomplete="off">
+                <input class="form-control form-resource modal-population" placeholder="Insert the target population" autocomplete="off">
             </label>
         </div>
         <div class="col">
             <label>
                 <span class="modal-required">Estimators</span>
-                <input class="form-control modal-estimators" placeholder="Insert the estimators" autocomplete="off">
+                <input class="form-control form-resource modal-estimators" placeholder="Insert the estimators" autocomplete="off">
             </label>
         </div>
         <div class="col col-40">
             <label>
                 <span class="modal-required">Outcome Metrics Used</span>
-                <input class="form-control modal-metrics" placeholder="Insert the outcome metrics used" autocomplete="off">
+                <input class="form-control form-resource modal-metrics" placeholder="Insert the outcome metrics used" autocomplete="off">
             </label>
         </div>
     </div>
@@ -129,8 +129,8 @@
                 <span class="modal-span-title">Intervention</span>
                 <div class="modal-intervention">
                     <select class="form-control">
-                        {{#each interventions}}
-                        <option value="{{this}}">{{this}}</option>
+                        {{#each interventions }}
+                        <option value="{{Id}}">{{Title}}</option>
                         {{/each}}
                     </select>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="modal-outcome">
                     <select class="form-control">
                         {{#each outcomes}}
-                        <option value="{{this}}">{{this}}</option>
+                        <option value="{{Id}}">{{Title}}</option>
                         {{/each}}
                     </select>
                 </div>
