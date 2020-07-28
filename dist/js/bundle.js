@@ -43139,12 +43139,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_css_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/css/main.css */ "./src/css/main.css");
 /* harmony import */ var _src_css_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_css_main_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _src_js_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/js/header.js */ "./src/js/header.js");
-/* harmony import */ var _src_js_settings_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/js/settings.js */ "./src/js/settings.js");
+/* harmony import */ var _js_requests_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/requests.js */ "./src/js/requests.js");
+/* harmony import */ var _src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/js/settings.js */ "./src/js/settings.js");
 
 
 
 
 
+
+Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/users.json').then(user => {
+  var isAdmin = user.role == "Administrator";
+  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/data.json').then(settings => {
+    var data = settings;
+    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/resources.json').then(resources => {
+      var dialog = document.getElementById("gapmap-dialog");
+      var settingsButton = document.querySelector('.navbar-collapse');
+      data.resources = resources;
+
+      if (isAdmin) {
+        dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
+        Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data, 1);
+        Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addListeners"])();
+      } else {
+        settingsButton.remove();
+
+        class GapMap {
+          constructor() {
+            this.data = data;
+          }
+
+        }
+
+        window.gapmap = new GapMap();
+      }
+    });
+  });
+});
 
 /***/ }),
 
@@ -43368,11 +43398,13 @@ var modifyParameters = () => {
 /*!****************************!*\
   !*** ./src/js/settings.js ***!
   \****************************/
-/*! no exports provided */
+/*! exports provided: settingsTemplate, addSettingsMenu, addListeners */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addSettingsMenu", function() { return addSettingsMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addListeners", function() { return addListeners; });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var select_pure__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! select-pure */ "./node_modules/select-pure/lib/index.js");
@@ -43387,6 +43419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../hbs/settings.hbs */ "./src/hbs/settings.hbs");
 /* harmony import */ var _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "settingsTemplate", function() { return _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8___default.a; });
 /* harmony import */ var _chenfengyuan_datepicker_dist_datepicker_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @chenfengyuan/datepicker/dist/datepicker.css */ "./node_modules/@chenfengyuan/datepicker/dist/datepicker.css");
 /* harmony import */ var _chenfengyuan_datepicker_dist_datepicker_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_chenfengyuan_datepicker_dist_datepicker_css__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _css_settings_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../css/settings.css */ "./src/css/settings.css");
@@ -43601,19 +43634,7 @@ var addSettingsMenu = (data, settingsId) => {
   window.gapmap = new GapMap();
 };
 
-Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_6__["receiveData"])('/api/users.json').then(user => {
-  var isAdmin = user.role == "Administrator";
-  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_6__["receiveData"])('/api/data.json').then(settings => {
-    var data = settings;
-    var dialog = document.getElementById("gapmap-dialog");
-    dialog.innerHTML = _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8___default()(data);
-    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_6__["receiveData"])('/api/resources.json').then(resources => {
-      data.resources = resources;
-      addSettingsMenu(data, 1);
-      addListeners();
-    });
-  });
-});
+
 
 /***/ }),
 

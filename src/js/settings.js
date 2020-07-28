@@ -210,23 +210,4 @@ const addSettingsMenu = (data, settingsId) => {
     window.gapmap = new GapMap();
 };
 
-receiveData('/api/users.json').then( (user) => {
-    const isAdmin = (user.role == "Administrator");
-
-    receiveData('/api/data.json').then( (settings) => {
-        const data = settings;
-        const dialog = document.getElementById("gapmap-dialog");
-
-        dialog.innerHTML = settingsTemplate(data);
-
-        receiveData('/api/resources.json').then( (resources) => {
-            data.resources = resources;
-
-            
-            addSettingsMenu(data, 1);
-
-            addListeners();
-        });
-
-    });
-});
+export { settingsTemplate, addSettingsMenu, addListeners }
