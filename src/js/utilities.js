@@ -4,6 +4,7 @@ module.exports = {
 	currentMenu: currentMenu,
 	lock: lock,
 	unLock: unLock,
+	changeColor: changeColor,
 	clearStyle: clearStyle,
 	preventPaste: preventPaste,
 	preventCopy: preventCopy,
@@ -12,6 +13,7 @@ module.exports = {
 		getText: getText,
 		getHTML: getHTML,
 		getDate: getDate,
+		getCountries: getCountries,
 		getNodeList: getNodeList
   	},
   	check: {
@@ -20,7 +22,6 @@ module.exports = {
 		isFilesizeExceeded: isFilesizeExceeded
   	},
   	options: {
-		resourceListOptions: resourceListOptions,
 		selectOptions: selectOptions,
 		sortableOptions: sortableOptions,
 		datePickerOptions: datePickerOptions,
@@ -82,7 +83,7 @@ function unLock(event, form) {
 		const file = context.querySelector('.attachment-fileinput');
 		const filename = context.querySelector('.attachment-filetitle');
 
-		file.value = ""
+		file.value = "";
 		filename.value = "";
 		icon.remove();
     }
@@ -98,8 +99,10 @@ function preventCopy() {
 	return false;
 }
 
-function getNodeList(target) {
-	return Array.from(document.querySelectorAll(target));
+function getNodeList(value, context) {
+	const target = context ? context : document;
+
+	return Array.from(target.querySelectorAll(value));
 }
 
 // when inserting missing data in Settings Menu, this function removes red highlighting
@@ -107,30 +110,64 @@ function clearStyle() {
 	event.target.style = "";
 }
 
+function changeColor(event) {
+	const index = parseInt(event.target.value) - 1;
+	const color = window.gapmap.data.interventions[index].Color;
+	
+	event.target.closest('.card').setAttribute('style', `background-color: ${color}`);
+}
+
 // get trimmed value from target DOM input
-function getValue(target) {
-	return document.querySelectorAll(target)[0].value.trim();
+function getValue(value, context) {
+	const target = context ? context : document;
+
+	try {
+		return target.querySelectorAll(value)[0].value.trim();
+	} catch (error) {
+		return null;
+	}
 }
 
 // get innerText from target DOM element
-function getText(target) {
-	return document.querySelectorAll(target)[0].innerText;
+function getText(value, context) {
+	const target = context ? context : document;
+
+	try {
+		return target.querySelectorAll(value)[0].innerText;
+	} catch (error) {
+		return null;
+	}
 }
 
 // get HTML content from target DOM element
-function getHTML(target) {
-	return document.querySelectorAll(target)[0].innerHTML;
+function getHTML(value, context) {
+	const target = context ? context : document;
+
+	try {
+		return target.querySelectorAll(value)[0].innerHTML;
+	} catch (error) {
+		return null;
+	}
 }
 
 // get date from datepicker and convert it to ISO 8601, SharePoint compatible
-function getDate(target) {
-	const value = document.querySelectorAll(target)[0].value.trim();
-	const dateParts = value.split("/").map((i) => parseInt(i));
+function getDate(value, context) {
+	const target = context ? context : document;
+	const result = target.querySelectorAll(value)[0].value.trim();
+	const dateParts = result.split("/").map((i) => parseInt(i));
 
 	try {
-		return new Date(dateParts[2], dateParts[1] -1, dateParts[0]).toISOString();
+		return new Date(dateParts[1], dateParts[0] -1, 15).toISOString();
 	} catch (error) {
-		return false;
+		return null;
+	}
+}
+
+function getCountries(context) {
+	try {
+		return getNodeList('.select-pure__selected-label', context).map( (i) => i.innerText ).join(', ');
+	} catch (error) {
+		return null;
 	}
 }
 
@@ -166,58 +203,14 @@ function sortableOptions(animation, direction, handle) {
 	};
 }
 
-// options for SelectPure instances in Settings Menu
-function resourceListOptions(list, placeholder, auto, value) {
+function selectOptions(list, placeholder, auto, multiple, value) {
 	return {
 		options: list,
 		placeholder: placeholder,
 		autocomplete: auto,
+		multiple: multiple,
 		value: value,
-		onChange: (value) => {
-			const target = document.getElementById('edit-resource');
-			const button = document.getElementById('remove-resource').parentNode;
-			const item = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
-
-			document.getElementById('edit-resource').dataset.item = item.Id;
-			document.querySelector('.modal-select-item .select-pure__select').style = "";
-			getNodeList('input.form-control').forEach( (i) => i.style = "" );
-			removeClass('#modal-edit .select-pure__option', 'select-pure__option--selected');
-
-			lock(item.Attachment);
-
-			window.gapmap.editDate.datepicker('setDate', new Date(item.Date).toLocaleDateString('en-GB'));
-
-			target.querySelector('.attachment-title').value = item.Title;
-			target.querySelector('.modal-evidence select').value = item.Evidence;
-			target.querySelector('.modal-language select').value = item.Language;
-			target.querySelector('.modal-region select').value = item.Region;
-
-			target.querySelector('.select-pure__label').innerText = item.Country;
-			target.querySelector(`.select-pure__option[data-value="${item.Country}"]`).classList.add('select-pure__option--selected');
-			target.querySelector('.select-pure__placeholder').classList.add('select-pure__placeholder--hidden');
-
-			target.querySelector('.modal-author').value = item.Author;
-			target.querySelector('.modal-study').value = item.Study;
-			target.querySelector('.modal-population').value = item.Population;
-			target.querySelector('.modal-estimators').value = item.Estimators;
-			target.querySelector('.modal-metrics').value = item.Metrics;
-			target.querySelector('.modal-control select').value = item.Control;
-			target.querySelector('.modal-intervention select').value = item.Intervention;
-			target.querySelector('.modal-outcome select').value = item.Outcome;
-			target.querySelector('.ql-editor').innerHTML = item.Description;
-
-			target.classList.remove('vanish');
-			button.classList.remove('hidden');
-		}
-	};
-}
-
-function selectOptions(list, placeholder, auto, value) {
-	return {
-		options: list,
-		placeholder: placeholder,
-		autocomplete: auto,
-		value: value,
+		icon: "remove-country",
 		onChange: () => getNodeList('.select-pure__select').forEach( (i) => i.style = "" )
 	};
 }
@@ -232,7 +225,7 @@ function datePickerOptions(format, autoHide) {
 }
 
 // parameters for QuillJS instances in settings menu
-function editorOptions(target) {
+function editorOptions() {
 	return {
 		modules: {
 			'toolbar': [ 
@@ -240,8 +233,7 @@ function editorOptions(target) {
 				[{ 'color': [] }, { 'background': [] }, { 'script': 'sub'}, { 'script': 'super' }], 
 				[{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'indent': '-1' }, { 'indent': '+1' }], 
 				[{ 'align': [] }], [ 'link'] 
-			],
-			counter: { container: `${target} .counter`, unit: 'character' }
+			]
 		},
 		placeholder: 'Insert a description',
 		theme: 'snow'

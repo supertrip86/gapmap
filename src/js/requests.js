@@ -1,29 +1,48 @@
 import utilities from "../js/utilities.js";
 
 class SharepointListItem {
-    constructor(listMetadata) {
-        this.Title = utilities.get.getValue(`#${this.getContext()} .attachment-title`);
-        this.label = utilities.get.getValue(`#${this.getContext()} .attachment-title`);
-        this.value = utilities.get.getValue(`#${this.getContext()} .attachment-title`);
-        this.Evidence = utilities.get.getValue(`#${this.getContext()} .modal-evidence select option:checked`);
-        this.Language = utilities.get.getValue(`#${this.getContext()} .modal-language option:checked`);
-        this.Region = utilities.get.getValue(`#${this.getContext()} .modal-region select option:checked`);
-        this.Country = utilities.get.getText(`#${this.getContext()} .modal-country .select-pure__label`);
-        this.Date = utilities.get.getDate(`#${this.getContext()} .modal-datepicker`);
-        this.Author = utilities.get.getValue(`#${this.getContext()} .modal-author`);
-        this.Study = utilities.get.getValue(`#${this.getContext()} .modal-study`);
-        this.Population = utilities.get.getValue(`#${this.getContext()} .modal-population`);
-        this.Estimators = utilities.get.getValue(`#${this.getContext()} .modal-estimators`);
-        this.Metrics = utilities.get.getValue(`#${this.getContext()} .modal-metrics`);
-        this.Control = utilities.get.getValue(`#${this.getContext()} .modal-control select option:checked`);
-        this.Intervention = utilities.get.getValue(`#${this.getContext()} .modal-intervention select option:checked`);
-        this.Outcome = utilities.get.getValue(`#${this.getContext()} .modal-outcome select option:checked`);
-        this.Description = utilities.get.getHTML(`#${this.getContext()} .editor .ql-editor`);
-        this.__metadata = { type: listMetadata };
+    constructor() {
+        this.Title = utilities.get.getValue(`.attachment-title`, this.getContext());
+        this.label = utilities.get.getValue(`.attachment-title`, this.getContext());
+        this.value = utilities.get.getValue(`.attachment-title`, this.getContext());
+        this.Evidence = utilities.get.getValue(`.modal-evidence select option:checked`, this.getContext());
+        this.Language = utilities.get.getValue(`.modal-language option:checked`, this.getContext());
+        this.Date = utilities.get.getDate(`.modal-datepicker`, this.getContext());
+        this.Author = utilities.get.getValue(`.modal-author`, this.getContext());
+        this.Study = utilities.get.getValue(`.modal-study`, this.getContext());
+        this.Estimators = utilities.get.getValue(`.modal-estimators`, this.getContext());
+        this.Control = utilities.get.getValue(`.modal-control select option:checked`, this.getContext());
+        this.Data = this.getData();
+        // this.__metadata = { type: this.getMetadataType() };
     }
 
     getContext() {
-        return utilities.currentMenu().id;
+        return utilities.currentMenu();
+    }
+
+    getData() {
+        const data = [];
+        const context = `#${this.getContext().id} .card-resource`;
+
+        utilities.get.getNodeList(context).forEach( (i) => {
+            const item = {
+                Region: utilities.get.getValue(`.modal-region select option:checked`, i),
+                Country: utilities.get.getCountries(i),
+                Population: utilities.get.getValue(`.modal-population`, i),
+                Metrics: utilities.get.getValue(`.modal-metrics`, i),
+                Intervention: utilities.get.getValue(`.modal-intervention select option:checked`, i),
+                Outcome: utilities.get.getValue(`.modal-outcome select option:checked`, i),
+                Description: utilities.get.getHTML(`.editor .ql-editor`, i)
+            };
+
+            data.push(item);
+        });
+
+        return data;
+    }
+
+    getMetadataType() {
+        return window.gapmap.data.applicationDB.resourceMetadata;
     }
 }
 
@@ -32,42 +51,34 @@ const receiveData = async (url) => {
     return await response.json();
 };
 
-const sendData = (resource) => {
-    console.log(resource);
-    // const par = {
-    //     method: "POST",
-    //     credentials: 'same-origin',
-    //     headers: { 
-    //         "Accept": "application/json;odata=verbose",
-    //         "Content-Type": "application/json;odata=verbose",
-    //         "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
-    //     },
-    //     body: JSON.stringify({
-    //         Title: "asdasd",
-    //         Date: new Date().toISOString(),
-    //         __metadata: {
-    //             type: "SP.Data.GapmapListItem"
-    //         }
-    //     })
-    // };
+const saveResource = (id) => {
+    // const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
+    const resourceList = window.gapmap.data.applicationDB.resourceList;
 
-    // fetch(_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('gapmap')/items", par);
+    const item = new SharepointListItem();
+
+    const options = {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { 
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            // "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+        },
+        body: JSON.stringify(item)
+    };
+
+    id ? console.log('edit', item) : console.log('save', item); // fetch( webAbsoluteUrl + `/_api/web/lists/GetByTitle('${resourceList}')/items`, par);
 
     // send attachment
 };
 
-const addResource = () => {
-    const item = new SharepointListItem('__Test');
-
-    sendData(item);
-};
-
-const editResource = (id) => {
-    console.log(id);
+const deleteResource = (id) => {
+    console.log('deleteResource', id);
 };
 
 const modifyParameters = () => {
-    console.log(window.gapmap.settingsId);
+    console.log('modifyParameters', window.gapmap.settingsId);
 };
 
-export { receiveData, addResource, editResource, modifyParameters };
+export { receiveData, saveResource, deleteResource, modifyParameters };

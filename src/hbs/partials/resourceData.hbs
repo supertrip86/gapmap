@@ -1,0 +1,100 @@
+{{#each resources}}
+<div class="card card-body card-resource" style="background-color: {{getColor Intervention}};">
+    <div class="row">
+        {{#if ../interventions}}
+        <div class="col-5">
+            <label>
+                <span class="modal-span-title">Intervention</span>
+                <div class="modal-intervention">
+                    <select class="form-control">
+                        {{#each ../interventions }}
+                        <option value="{{Id}}">{{Title}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </label>
+        </div>
+        {{/if}}
+        {{#if ../outcomes}}
+        <div class="col-7">
+            <label>
+                <span class="modal-span-title">Outcome</span>
+                <div class="modal-outcome">
+                    <select class="form-control">
+                        {{#each ../outcomes}}
+                        <option value="{{Id}}">{{Title}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </label>
+        </div>
+        {{/if}}
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="text-editor">
+                <div class="editor"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{#if ../regions}}
+        <div class="col-2">
+            <label>
+                <span class="modal-span-title">Region</span>
+                <div class="modal-region">
+                    <select class="form-control">
+                        {{#each ../regions}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </label>
+        </div>
+        {{/if}}
+        {{#if ../countries}}
+        <div class="col-10">
+            <label>
+                <span class="modal-required">Country</span>
+                <div class="modal-country"></div>
+            </label>
+        </div>
+        {{/if}}
+    </div>
+    <div class="row">
+        <div class="col-auto">
+            <label>
+                <span class="modal-span-title">Impact</span>
+                <div class="modal-control">
+                    <select class="form-control">
+                        <option value="Positive">Positive</option>
+                        <option value="Mixed">Mixed</option>
+                        <option value="Negative">Negative</option>
+                    </select>
+                </div>
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <span class="modal-required">Target Population</span>
+                <input class="form-control form-resource modal-population" placeholder="Indicate target population" autocomplete="off">
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <span class="modal-required">Outcome Metrics Used</span>
+                <input class="form-control form-resource modal-metrics" placeholder="Indicate metrics used" autocomplete="off">
+            </label>
+        </div>
+        <div class="col-4">
+            <label>
+                <span class="modal-required">Paragraphs</span>
+                <input class="form-control form-resource modal-paragraphs" placeholder="Indicate pages/paragraphs of interest" autocomplete="off">
+            </label>
+        </div>
+    </div>
+    <div class="delete-resource-button-container">
+        <button class="delete-resource-button"></button>
+    </div>
+</div>
+{{/each}}

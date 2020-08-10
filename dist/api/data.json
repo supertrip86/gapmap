@@ -1,47 +1,66 @@
 {
+    "applicationDB": {
+        "settingsList": "Gapmap Settings",
+        "settingsMetadata": "SP.Data.GapmapListItem",
+        "resourceList": "Gapmap Resources",
+        "resourceMetadata": "SP.Data.GapmapListItem"
+    },
+    "resources": [
+    ],
     "interventions": [
         {
             "Title": "Strengthening POs",
+            "Color": "#f8f0ff",
             "Id": 1
         },
         {
             "Title": "Financial Education",
+            "Color": "#f0ffff",
             "Id": 2
         },
         {
             "Title": "Storage Facilities",
+            "Color": "#f0f1ff",
             "Id": 3
         },
         {
             "Title": "Agricultural Extension Services",
+            "Color": "#fffff0",
             "Id": 4
         },
         {
             "Title": "Rangeland Management Techniques",
+            "Color": "#fff0f1",
             "Id": 5
         },
         {
             "Title": "Irrigation Techniques",
+            "Color": "#f8fff0",
             "Id": 6
         },
         {
             "Title": "Provision of Agricultural Inputs",
+            "Color": "#fff0f8",
             "Id": 7
         },
         {
             "Title": "Market Information",
+            "Color": "#f0fff7",
             "Id": 8
         },
         {
             "Title": "Community Infrastructure",
+            "Color": "#ffffe0",
             "Id": 9
         },
         {
             "Title": "Strengthening FSAs",
+            "Color": "#fff7f0",
             "Id": 10
         },
         {
             "Title": "Climate Change Resilience Production Techniques",
+            "Color": "#f5f5f5",
             "Id": 11
         }
     ],
@@ -59,12 +78,9 @@
             "Id": 3
         }
     ],
-    "regions": [
-        "APR",
-        "ESA",
-        "LAC",
-        "NEN",
-        "WCA"
+    "evidence": [
+        "External",
+        "Internal"
     ],
     "languages": [
         "English",
@@ -72,7 +88,16 @@
         "Spanish",
         "Arabic"
     ],
-    "resources": [
+    "control": [
+        "No",
+        "Yes"
+    ],
+    "regions": [
+        "APR",
+        "ESA",
+        "LAC",
+        "NEN",
+        "WCA"
     ],
     "countries": [
         {

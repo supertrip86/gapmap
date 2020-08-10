@@ -10,16 +10,17 @@ receiveData('/api/users.json').then( (user) => {
 
     receiveData('/api/data.json').then( (settings) => {
         const data = settings;
+        const settingsId = 1; // modify with settings current Id
 
         receiveData('/api/resources.json').then( (resources) => {
             const dialog = document.getElementById("gapmap-dialog");
             const settingsButton = document.querySelector('.navbar-collapse');
 
             data.resources = resources;
-            
+
             if (isAdmin) {
                 dialog.innerHTML = settingsTemplate(data);
-                addSettingsMenu(data, 1);
+                addSettingsMenu(data, settingsId);
                 addListeners();
             } else {
                 settingsButton.remove();
@@ -29,7 +30,7 @@ receiveData('/api/users.json').then( (user) => {
                         this.data = data;
                     }
                 }
-            
+
                 window.gapmap = new GapMap();
             }
         });

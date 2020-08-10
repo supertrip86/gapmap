@@ -2,12 +2,13 @@ import $ from "jquery";
 import SelectPure from "select-pure";
 import Sortable from 'sortablejs';
 import datepicker from "@chenfengyuan/datepicker";
-import { quill } from "./quillModule.js";
+import quill from 'quill';
 import { display } from "../js/errorHandler.js";
-import { receiveData, addResource, editResource, modifyParameters } from "../js/requests.js";
+import { saveResource, deleteResource, modifyParameters } from "../js/requests.js";
 import utilities from "../js/utilities.js";
 import settingsTemplate from "../hbs/settings.hbs";
 import "@chenfengyuan/datepicker/dist/datepicker.css";
+import "quill/dist/quill.snow.css";
 import "../css/settings.css";
 
 const validateAttachment = () => {
@@ -53,11 +54,14 @@ const validateResource = (context, id) => {
     let proceed = true;
 
     !context.querySelector('.attachment-filetitle').value && rejectRequest(file);
-    !country.querySelector('.select-pure__label').innerText && rejectRequest(country);
     !utilities.get.getDate(`#${context.id} .modal-datepicker`) && rejectRequest(date);
 
     for (element of input) {
         !element.value.trim() && rejectRequest(element);
+    }
+
+    if (country) {
+        !country.querySelector('.select-pure__label').innerText && rejectRequest(country);
     }
 
     if (!proceed) {
@@ -65,7 +69,7 @@ const validateResource = (context, id) => {
         return false;
     }
 
-    id ? editResource(id) : addResource();
+    saveResource(id);
 
     function rejectRequest(element) {
         proceed = false;
@@ -101,8 +105,83 @@ const validateDeletion = () => {
     const id = document.getElementById('edit-resource').dataset.item;
 
     if (context && id) {
-        editResource( parseInt(id) );
+        deleteResource( parseInt(id) );
     }
+};
+
+const resourceList = (list, placeholder, auto, value) => {
+	return {
+		options: list,
+		placeholder: placeholder,
+		autocomplete: auto,
+		value: value,
+		onChange: (value) => {
+			const target = document.getElementById('edit-resource');
+			const button = document.getElementById('remove-resource').parentNode;
+			const element = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
+			const template = require('../hbs/partials/resourceData.hbs');
+
+			document.getElementById('edit-resource').dataset.item = element.Id;
+			document.querySelector('.modal-select-item .select-pure__select').style = "";
+			utilities.get.getNodeList('input.form-control').forEach( (i) => i.style = "" );
+
+			utilities.lock(element.Attachment);
+
+			window.gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+
+			target.querySelector('.attachment-title').value = element.Title;
+			target.querySelector('.modal-evidence select').value = element.Evidence;
+			target.querySelector('.modal-language select').value = element.Language;
+			target.querySelector('.modal-author').value = element.Author;
+			target.querySelector('.modal-study').value = element.Study;
+			target.querySelector('.modal-estimators').value = element.Estimators;
+			target.querySelector('.modal-control select').value = element.Control;
+
+			if (element.Data.length) {
+                const item = new ResourceData(window.gapmap.data, element.Data);
+
+				target.querySelector('.intervention-outcome-container').innerHTML = template(item);
+
+                element.Data.forEach( (i, j) => {
+                    const selectOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true, i.Country);
+                    const editorOptions = utilities.options.editorOptions();
+
+                    new SelectPure(target.querySelectorAll('.modal-country')[j], selectOptions);
+                    new quill(target.querySelectorAll('.editor')[j], editorOptions);
+
+                    target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
+                    target.querySelectorAll('.modal-region select')[j].value = i.Region;
+                    target.querySelectorAll('.modal-population')[j].value = i.Population;
+                    target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
+                    target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
+                    target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
+                });
+            }
+
+			target.classList.remove('vanish');
+			button.classList.remove('hidden');
+		}
+	};
+};
+
+const addResourceElement = () => {
+    const context = utilities.currentMenu();
+    const template = require('../hbs/partials/resourceData.hbs');
+
+    const item = new ResourceData(window.gapmap.data);
+
+    context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
+
+    const selectOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true);
+    const editorOptions = utilities.options.editorOptions();
+    const index = context.querySelectorAll('.modal-country').length - 1;
+
+    new SelectPure(context.querySelectorAll('.modal-country')[index], selectOptions);
+    new quill(context.querySelectorAll('.editor')[index], editorOptions);
+};
+
+const deleteResourceElement = (event) => {
+    event.target.closest('.card').remove();
 };
 
 const saveChanges = () => {
@@ -129,6 +208,7 @@ const resetForm = () => {
     utilities.get.getNodeList('input.form-control').forEach( (i) => i.removeAttribute('style') );
     utilities.get.getNodeList('.btn-file').forEach( (i) => i.removeAttribute('style') );
     utilities.get.getNodeList('.select-pure__select').forEach( (i) => i.removeAttribute('style') );
+    utilities.get.getNodeList('.intervention-outcome-container').forEach( (i) => i.innerHTML = "" );
 
     document.getElementById('edit-resource').classList.add('vanish');
     document.getElementById('edit-resource').removeAttribute('data-item');
@@ -137,8 +217,6 @@ const resetForm = () => {
     window.gapmap.sortInterventions.sort(window.gapmap.interventionsOrder);
     window.gapmap.sortOutcomes.sort(window.gapmap.outcomesOrder);
 
-    window.gapmap.addCountry.reset();
-    window.gapmap.editCountry.reset();
     window.gapmap.selectResource.reset();
 };
 
@@ -164,32 +242,29 @@ const addListeners = () => {
     utilities.on('#gapmap-dialog', 'click', '.remove-document', utilities.unLock);
     utilities.on('#gapmap-dialog', 'paste', '.modal-datepicker', utilities.preventPaste);
     utilities.on('#gapmap-dialog', 'keypress', '.modal-datepicker', utilities.preventCopy);
-    utilities.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
+    utilities.on('#gapmap-dialog', 'change', '.modal-intervention select', utilities.changeColor);
     utilities.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachment);
+    utilities.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceElement);
+    utilities.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceElement);
+    utilities.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
     utilities.on('#gapmap-dialog', 'click', '#remove-resource', validateDeletion);
     utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
 const addSettingsMenu = (data, settingsId) => {
-    const selectOptions = utilities.options.selectOptions(data.countries, "Select a Country", true);
-    const resourceListOptions = utilities.options.resourceListOptions(data.resources, "Select a Resource", true);
-    const datePickerOptions = utilities.options.datePickerOptions("dd/mm/yyyy", true);
+    const datePickerOptions = utilities.options.datePickerOptions("mm / yyyy", true);
     const sortableOptions = utilities.options.sortableOptions(150, 'vertical', '.modal-drag');
+    const resourceListOptions = resourceList(data.resources, "Select a Resource", true);
 
     const addDate = $('#modal-add .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
     const editDate = $('#modal-edit .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
 
-    const addCountry = new SelectPure(document.querySelector('#modal-add .modal-country'), selectOptions);
-    const editCountry = new SelectPure(document.querySelector('#modal-edit .modal-country'), selectOptions);
     const selectResource = new SelectPure(document.querySelector('.modal-select-item'), resourceListOptions);
 
     const sortInterventions = new Sortable(document.querySelector('.card-interventions'), sortableOptions);
     const interventionsOrder = sortInterventions.toArray();
     const sortOutcomes = new Sortable(document.querySelector('.card-outcomes'), sortableOptions);
     const outcomesOrder = sortOutcomes.toArray();
-
-    new quill('#modal-add .editor', utilities.options.editorOptions('#modal-add'));
-    new quill('#modal-edit .editor', utilities.options.editorOptions('#modal-edit'));
 
     class GapMap {
         constructor() {
@@ -198,8 +273,6 @@ const addSettingsMenu = (data, settingsId) => {
             this.selectResource = selectResource;
             this.addDate = addDate;
             this.editDate = editDate;
-            this.addCountry = addCountry;
-            this.editCountry = editCountry;
             this.sortInterventions = sortInterventions;
             this.sortOutcomes = sortOutcomes;
             this.interventionsOrder = interventionsOrder;
@@ -209,5 +282,23 @@ const addSettingsMenu = (data, settingsId) => {
 
     window.gapmap = new GapMap();
 };
+
+class ResourceData {
+    constructor(data, resources) {
+        this.interventions = data.interventions;
+        this.outcomes = data.outcomes;
+        this.countries = data.countries;
+        this.regions = data.regions;
+        this.resources = this.initResources(resources);
+    }
+
+    initResources(resources) {
+        if (resources) {
+            return resources;
+        }
+
+        return [{ Country: [], Description: "", Intervention: "1", Metrics: "", Outcome: "1", Population: "", Region: "" }];
+    }
+}
 
 export { settingsTemplate, addSettingsMenu, addListeners }

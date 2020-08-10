@@ -8,6 +8,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/bundle.js'
   },
+  
+  resolve: {
+    alias: {
+      jquery: "jquery/dist/jquery.slim.js",
+    }
+  },
 
   devtool: 'source-map',
 

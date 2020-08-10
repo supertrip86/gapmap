@@ -8,21 +8,22 @@
         "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
         "Evidence": "External",
         "Language": "French",
-        "Region": "ESA",
-        "Country": "Albania",
         "Date": "2020-07-21T22:00:00.000Z",
         "Author": "Giovanni Giunta",
         "Study": "Impact",
-        "Population": "Nigeria",
         "Estimators": "OCSE",
-        "Metrics": "Kilograms",
         "Control": "Yes",
-        "Intervention": "7",
-        "Outcome": "2",
-        "Description": "<p>This is a test!</p>",
-        "__metadata": {
-            "type": "__Test"
-        }
+        "Data": [
+            {
+                "Region": "ESA",
+                "Country": ["Albania"],
+                "Population": "Nigeria",
+                "Metrics": "Kilograms",
+                "Intervention": "7",
+                "Outcome": "2",
+                "Description": "<p>This is a test!</p>"
+            }
+        ]
     },
     {
         "Title": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
@@ -33,20 +34,30 @@
         "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
         "Evidence": "Internal",
         "Language": "English",
-        "Region": "APR",
-        "Country": "Bahamas (the)",
         "Date": "2020-07-06T22:00:00.000Z",
         "Author": "Noelle Turtur",
         "Study": "Project Completion",
-        "Population": "Bhutan",
         "Estimators": "FMI",
-        "Metrics": "Pounds",
         "Control": "No",
-        "Intervention": "6",
-        "Outcome": "1",
-        "Description": "<p>This is another Test</p>",
-        "__metadata": {
-          "type": "__Test"
-        }
+        "Data": [
+            {
+                "Region": "APR",
+                "Country": ["Bahamas (the)"],
+                "Population": "Bhutan",
+                "Metrics": "Pounds",
+                "Intervention": "6",
+                "Outcome": "1",
+                "Description": "<p>This is another Test</p>"
+            },
+            {
+                "Region": "ESA",
+                "Country": ["Albania", "Andorra"],
+                "Population": "Nigeria",
+                "Metrics": "Kilograms",
+                "Intervention": "7",
+                "Outcome": "2",
+                "Description": "<p>This is a test!</p>"
+            }
+        ]
     }
 ]
