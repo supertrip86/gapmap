@@ -112,7 +112,7 @@ function clearStyle() {
 
 function changeColor(event) {
 	const index = parseInt(event.target.value) - 1;
-	const color = window.gapmap.data.interventions[index].Color;
+	const color = gapmap.data.interventions[index].Color;
 	
 	event.target.closest('.card').setAttribute('style', `background-color: ${color}`);
 }

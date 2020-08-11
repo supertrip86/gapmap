@@ -20,7 +20,7 @@
     </div>
     <div class="row">
         {{#if evidence}}
-        <div class="col">
+        <div class="col col-14">
             <label>
                 <span class="modal-span-title">Evidence</span>
                 <div class="modal-evidence">
@@ -34,7 +34,7 @@
         </div>
         {{/if}}
         {{#if languages}}
-        <div class="col">
+        <div class="col col-14">
             <label>
                 <span class="modal-span-title">Language</span>
                 <div class="modal-language">
@@ -47,46 +47,24 @@
             </label>
         </div>
         {{/if}}
-        <div class="col">
+        <div class="col col-14">
             <label>
                 <span class="modal-span-title">Date</span>
                 <input class="form-control form-resource modal-datepicker" placeholder="Select a date" autocomplete="off">
             </label>
         </div>
-        <div class="col col-40">
+        <div class="col-3">
             <label>
                 <span class="modal-span-title">Author</span>
                 <input type="text" class="form-control form-resource modal-author" placeholder="Insert the Author" autocomplete="off">
             </label>
         </div>
-    </div>
-    <div class="row">
-        <div class="col col-40">
+        <div class="col">
             <label>
                 <span class="modal-span-title">Study type</span>
                 <input class="form-control form-resource modal-study" placeholder="Insert a study type" autocomplete="off">
             </label>
         </div>
-        <div class="col">
-            <label>
-                <span class="modal-span-title">Estimators</span>
-                <input class="form-control form-resource modal-estimators" placeholder="Insert the estimators" autocomplete="off">
-            </label>
-        </div>
-        {{#if control}}
-        <div class="col-auto">
-            <label>
-                <span class="modal-span-title">Control/Treated Sample</span>
-                <div class="modal-control">
-                    <select class="form-control">
-                        {{#each control}}
-                        <option value="{{this}}">{{this}}</option>
-                        {{/each}}
-                    </select>
-                </div>
-            </label>
-        </div>
-        {{/if}}
     </div>
 </div>
 <div class="add-resource-button-container">

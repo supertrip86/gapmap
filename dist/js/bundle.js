@@ -8165,7 +8165,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n.hidden {opacity: 0;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto {padding-right: 8px;padding-left: 8px;}\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #f0f8ff);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\nselect.form-control {text-overflow: ellipsis;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid #ccc;box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:30px;padding:0 10px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 12px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;}\r\n.select-pure__selected-label img {cursor: pointer;display: inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}", ""]);
+exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n.hidden {opacity: 0;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto {padding-right: 8px;padding-left: 8px;}\r\n.col-14 {-ms-flex: 0 0 14%;flex: 0 0 14%;max-width: 14%;}\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #f0f8ff);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\nselect.form-control {text-overflow: ellipsis;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid #ccc;box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:30px;padding:0 5px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 11px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;}\r\n.select-pure__selected-label img {cursor: pointer;display: inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -8183,7 +8183,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}\r\n\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding-top: 10px;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
+exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}\r\n\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -40947,7 +40947,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"regions") : depths[1]),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":41,"column":8},"end":{"line":48,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"countries") : depths[1]),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":49,"column":8},"end":{"line":56,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-control\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
+    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-control\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
 },"2":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -41017,7 +41017,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Evidence</span>\r\n                <div class=\"modal-evidence\">\r\n                    <select class=\"form-control\">\r\n"
+  return "        <div class=\"col col-14\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Evidence</span>\r\n                <div class=\"modal-evidence\">\r\n                    <select class=\"form-control\">\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":28,"column":24},"end":{"line":30,"column":33}}})) != null ? stack1 : "")
     + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
@@ -41036,19 +41036,8 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Language</span>\r\n                <div class=\"modal-language\">\r\n                    <select class=\"form-control\">\r\n"
+  return "        <div class=\"col col-14\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Language</span>\r\n                <div class=\"modal-language\">\r\n                    <select class=\"form-control\">\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":42,"column":24},"end":{"line":44,"column":33}}})) != null ? stack1 : "")
-    + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
-},"6":function(container,depth0,helpers,partials,data) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Control/Treated Sample</span>\r\n                <div class=\"modal-control\">\r\n                    <select class=\"form-control\">\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"control") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":82,"column":24},"end":{"line":84,"column":33}}})) != null ? stack1 : "")
     + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -41061,9 +41050,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
   return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-span-title\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <input class=\"attachment-filetitle\" type=\"text\" disabled=\"disabled\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Document Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":22,"column":8},"end":{"line":35,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":36,"column":8},"end":{"line":49,"column":15}}})) != null ? stack1 : "")
-    + "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Date</span>\r\n                <input class=\"form-control form-resource modal-datepicker\" placeholder=\"Select a date\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col col-40\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Author</span>\r\n                <input type=\"text\" class=\"form-control form-resource modal-author\" placeholder=\"Insert the Author\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col col-40\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Study type</span>\r\n                <input class=\"form-control form-resource modal-study\" placeholder=\"Insert a study type\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Estimators</span>\r\n                <input class=\"form-control form-resource modal-estimators\" placeholder=\"Insert the estimators\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"control") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":76,"column":8},"end":{"line":89,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n</div>\r\n<div class=\"add-resource-button-container\">\r\n    <button class=\"add-resource-button\">Add +</button>\r\n</div>\r\n<div class=\"intervention-outcome-container\"></div>";
+    + "        <div class=\"col col-14\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Date</span>\r\n                <input class=\"form-control form-resource modal-datepicker\" placeholder=\"Select a date\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-3\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Author</span>\r\n                <input type=\"text\" class=\"form-control form-resource modal-author\" placeholder=\"Insert the Author\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Study type</span>\r\n                <input class=\"form-control form-resource modal-study\" placeholder=\"Insert a study type\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"add-resource-button-container\">\r\n    <button class=\"add-resource-button\">Add +</button>\r\n</div>\r\n<div class=\"intervention-outcome-container\"></div>";
 },"useData":true});
 
 /***/ }),
@@ -41119,8 +41106,8 @@ Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/users.
   var isAdmin = user.role == "Administrator";
   Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/data.json').then(settings => {
     var data = settings;
-    var settingsId = 1; // modify with settings current Id
-
+    data.storage.settingsId = settings.Id;
+    delete data.Id;
     Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/resources.json').then(resources => {
       var dialog = document.getElementById("gapmap-dialog");
       var settingsButton = document.querySelector('.navbar-collapse');
@@ -41128,7 +41115,7 @@ Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/users.
 
       if (isAdmin) {
         dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
-        Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data, settingsId);
+        Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data);
       } else {
         settingsButton.remove();
 
@@ -41249,8 +41236,6 @@ class SharepointListItem {
     this.Date = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getDate(".modal-datepicker", this.getContext());
     this.Author = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-author", this.getContext());
     this.Study = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-study", this.getContext());
-    this.Estimators = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-estimators", this.getContext());
-    this.Control = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-control select option:checked", this.getContext());
     this.Data = this.getData();
     this.__metadata = {
       type: this.getMetadataType()
@@ -41280,7 +41265,7 @@ class SharepointListItem {
   }
 
   getMetadataType() {
-    return window.gapmap.data.applicationDB.resourceMetadata;
+    return gapmap.data.storage.resourceMetadata;
   }
 
 }
@@ -41298,7 +41283,7 @@ var receiveData = /*#__PURE__*/function () {
 
 var saveResource = id => {
   var webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
-  var resourceList = window.gapmap.data.applicationDB.resourceList;
+  var resourceList = gapmap.data.storage.resourceList;
   var url = "".concat(webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(resourceList, "')/items").concat(id ? "(".concat(id, ")") : "");
   var item = new SharepointListItem();
   var options = {
@@ -41320,7 +41305,7 @@ var deleteResource = id => {
 };
 
 var modifyParameters = () => {
-  console.log('modifyParameters', window.gapmap.settingsId);
+  console.log('modifyParameters', gapmap.Id);
 };
 
 
@@ -41414,8 +41399,8 @@ var validateResource = (target, id) => {
   var editors = target.querySelectorAll('.ql-editor');
   var title = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"));
   var editMode = target.id == "modal-edit";
-  var emptyValue = !window.gapmap.selectResource.value();
-  var findDuplication = !!window.gapmap.data.resources.filter(i => i.label == _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"))).length;
+  var emptyValue = !gapmap.selectResource.value();
+  var findDuplication = !!gapmap.data.resources.filter(i => i.label == _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"))).length;
   var modifiedTitle = !(title == titleElement.dataset.origin);
 
   if (editMode && emptyValue) {
@@ -41504,7 +41489,7 @@ var resourceList = (list, placeholder, auto, value) => {
     onChange: value => {
       var target = document.getElementById('edit-resource');
       var button = document.getElementById('remove-resource').parentNode;
-      var element = window.gapmap.data.resources.filter(i => i.Title == value)[0];
+      var element = gapmap.data.resources.filter(i => i.Title == value)[0];
 
       var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
 
@@ -41512,24 +41497,22 @@ var resourceList = (list, placeholder, auto, value) => {
       _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('input.form-control').forEach(i => i.style = "");
       target.dataset.item = element.Id;
       element.Attachment && _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(element.Attachment);
-      window.gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+      gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
       target.querySelector('.attachment-title').value = element.Title;
       target.querySelector('.attachment-title').dataset.origin = element.Title;
       target.querySelector('.modal-evidence select').value = element.Evidence;
       target.querySelector('.modal-language select').value = element.Language;
       target.querySelector('.modal-author').value = element.Author;
       target.querySelector('.modal-study').value = element.Study;
-      target.querySelector('.modal-estimators').value = element.Estimators;
-      target.querySelector('.modal-control select').value = element.Control;
 
       if (element.Data.length) {
-        var item = new ResourceData(window.gapmap.data, element.Data);
+        var item = new ResourceData(gapmap.data, element.Data);
         target.querySelector('.intervention-outcome-container').innerHTML = template(item);
         element.Data.forEach((i, j) => {
           var regionValue = i.Region ? i.Region.split(', ') : [];
           var countryValue = i.Country ? i.Country.split(', ') : [];
-          var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true, regionValue);
-          var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true, countryValue);
+          var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
+          var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
           var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
           new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
           new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
@@ -41553,10 +41536,10 @@ var addResourceElement = () => {
 
   var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
 
-  var item = new ResourceData(window.gapmap.data);
+  var item = new ResourceData(gapmap.data);
   context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
-  var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true);
-  var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true);
+  var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
+  var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
   var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
   var index = context.querySelectorAll('.modal-country').length - 1;
   new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-region')[index], regionOptions);
@@ -41597,9 +41580,9 @@ var resetForm = () => {
   target.removeAttribute('data-item');
   target.querySelector('.attachment-title').removeAttribute('data-origin');
   document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
-  window.gapmap.sortInterventions.sort(window.gapmap.interventionsOrder);
-  window.gapmap.sortOutcomes.sort(window.gapmap.outcomesOrder);
-  window.gapmap.selectResource.reset();
+  gapmap.sortInterventions.sort(gapmap.interventionsOrder);
+  gapmap.sortOutcomes.sort(gapmap.outcomesOrder);
+  gapmap.selectResource.reset();
 };
 
 var switchForm = () => {
@@ -41635,7 +41618,7 @@ var addListeners = () => {
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
-var addSettingsMenu = (data, settingsId) => {
+var addSettingsMenu = data => {
   var datePickerOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.datePickerOptions("mm / yyyy", true);
   var sortableOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.sortableOptions(150, 'vertical', '.modal-drag');
   var resourceListOptions = resourceList(data.resources, "Select a Resource", true);
@@ -41645,15 +41628,13 @@ var addSettingsMenu = (data, settingsId) => {
 
   var selectResource = new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(document.querySelector('.modal-select-item'), resourceListOptions);
   var sortInterventions = new sortablejs__WEBPACK_IMPORTED_MODULE_2__["default"](document.querySelector('.card-interventions'), sortableOptions);
-  var interventionsOrder = sortInterventions.toArray();
   var sortOutcomes = new sortablejs__WEBPACK_IMPORTED_MODULE_2__["default"](document.querySelector('.card-outcomes'), sortableOptions);
+  var interventionsOrder = sortInterventions.toArray();
   var outcomesOrder = sortOutcomes.toArray();
 
   class GapMap {
     constructor() {
       this.data = data;
-      this.settingsId = settingsId; // SharePoint List Item Id
-
       this.selectResource = selectResource;
       this.addDate = addDate;
       this.editDate = editDate;
@@ -41819,7 +41800,7 @@ function clearStyle() {
 
 function changeColor(event) {
   var index = parseInt(event.target.value) - 1;
-  var color = window.gapmap.data.interventions[index].Color;
+  var color = gapmap.data.interventions[index].Color;
   event.target.closest('.card').setAttribute('style', "background-color: ".concat(color));
 } // get trimmed value from target DOM input
 

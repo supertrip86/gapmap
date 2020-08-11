@@ -1,12 +1,11 @@
 {
-    "applicationDB": {
+    "Id": 1,
+    "storage": {
         "settingsList": "Gapmap Settings",
         "settingsMetadata": "SP.Data.GapmapListItem",
         "resourceList": "Gapmap Resources",
         "resourceMetadata": "SP.Data.GapmapListItem"
     },
-    "resources": [
-    ],
     "interventions": [
         {
             "Title": "Strengthening POs",
@@ -88,15 +87,7 @@
         "Spanish",
         "Arabic"
     ],
-    "control": [
-        "No",
-        "Yes"
-    ],
     "regions": [
-        {
-            "label": "All regions",
-            "value": "All regions"
-        },
         {
             "label": "APR",
             "value": "APR"
@@ -116,6 +107,26 @@
         {
             "label": "WCA",
             "value": "WCA"
+        },
+        {
+            "label": "All Regions",
+            "value": "All Regions"
+        },
+        {
+            "label": "Developing Countries",
+            "value": "Developing Countries"
+        },
+        {
+            "label": "Low-Income Countries",
+            "value": "Low-Income Countries"
+        },
+        {
+            "label": "Middle-Income Countries",
+            "value": "Middle-Income Countries"
+        },
+        {
+            "label": "High-Income Countries",
+            "value": "High-Income Countries"
         }
     ],
     "countries": [

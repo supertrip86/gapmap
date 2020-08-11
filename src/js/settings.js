@@ -39,7 +39,7 @@ const validateAttachment = () => {
             utilities.unLock();
             display(err, confirm);
         }
-        
+
     } else {
         utilities.unLock();
     }
@@ -53,8 +53,8 @@ const validateResource = (target, id) => {
 
     const title = utilities.get.getValue(`#${target.id} .attachment-title`);
     const editMode = (target.id == "modal-edit");
-    const emptyValue = !window.gapmap.selectResource.value();
-    const findDuplication = !!window.gapmap.data.resources.filter((i) => (i.label == utilities.get.getValue(`#${target.id} .attachment-title`))).length;
+    const emptyValue = !gapmap.selectResource.value();
+    const findDuplication = !!gapmap.data.resources.filter((i) => (i.label == utilities.get.getValue(`#${target.id} .attachment-title`))).length;
     const modifiedTitle = !(title == titleElement.dataset.origin);
 
     if (editMode && emptyValue) {
@@ -148,7 +148,7 @@ const resourceList = (list, placeholder, auto, value) => {
 		onChange: (value) => {
 			const target = document.getElementById('edit-resource');
 			const button = document.getElementById('remove-resource').parentNode;
-			const element = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
+			const element = gapmap.data.resources.filter( (i) => i.Title == value )[0];
 			const template = require('../hbs/partials/resourceData.hbs');
 
 			document.querySelector('.modal-select-item .select-pure__select').style = "";
@@ -156,7 +156,7 @@ const resourceList = (list, placeholder, auto, value) => {
 
             target.dataset.item = element.Id;
 			element.Attachment && utilities.lock(element.Attachment);
-            window.gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+            gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
 
             target.querySelector('.attachment-title').value = element.Title;
             target.querySelector('.attachment-title').dataset.origin = element.Title;
@@ -164,19 +164,17 @@ const resourceList = (list, placeholder, auto, value) => {
 			target.querySelector('.modal-language select').value = element.Language;
 			target.querySelector('.modal-author').value = element.Author;
 			target.querySelector('.modal-study').value = element.Study;
-			target.querySelector('.modal-estimators').value = element.Estimators;
-			target.querySelector('.modal-control select').value = element.Control;
 
 			if (element.Data.length) {
-                const item = new ResourceData(window.gapmap.data, element.Data);
+                const item = new ResourceData(gapmap.data, element.Data);
 
 				target.querySelector('.intervention-outcome-container').innerHTML = template(item);
 
                 element.Data.forEach( (i, j) => {
                     const regionValue = i.Region ? i.Region.split(', ') : [];
                     const countryValue = i.Country ? i.Country.split(', ') : [];
-                    const regionOptions = utilities.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true, regionValue);
-                    const countryOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true, countryValue);
+                    const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
+                    const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
                     const editorOptions = utilities.options.editorOptions();
 
                     new SelectPure(target.querySelectorAll('.modal-region')[j], regionOptions);
@@ -201,12 +199,12 @@ const addResourceElement = () => {
     const context = utilities.currentMenu();
     const template = require('../hbs/partials/resourceData.hbs');
 
-    const item = new ResourceData(window.gapmap.data);
+    const item = new ResourceData(gapmap.data);
 
     context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
 
-    const regionOptions = utilities.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true);
-    const countryOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true);
+    const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
+    const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
     const editorOptions = utilities.options.editorOptions();
     const index = context.querySelectorAll('.modal-country').length - 1;
 
@@ -251,10 +249,10 @@ const resetForm = () => {
     target.querySelector('.attachment-title').removeAttribute('data-origin');
     document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
 
-    window.gapmap.sortInterventions.sort(window.gapmap.interventionsOrder);
-    window.gapmap.sortOutcomes.sort(window.gapmap.outcomesOrder);
+    gapmap.sortInterventions.sort(gapmap.interventionsOrder);
+    gapmap.sortOutcomes.sort(gapmap.outcomesOrder);
 
-    window.gapmap.selectResource.reset();
+    gapmap.selectResource.reset();
 };
 
 const switchForm = () => {
@@ -288,7 +286,7 @@ const addListeners = () => {
     utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
-const addSettingsMenu = (data, settingsId) => {
+const addSettingsMenu = (data) => {
     const datePickerOptions = utilities.options.datePickerOptions("mm / yyyy", true);
     const sortableOptions = utilities.options.sortableOptions(150, 'vertical', '.modal-drag');
     const resourceListOptions = resourceList(data.resources, "Select a Resource", true);
@@ -297,16 +295,14 @@ const addSettingsMenu = (data, settingsId) => {
     const editDate = $('#modal-edit .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
 
     const selectResource = new SelectPure(document.querySelector('.modal-select-item'), resourceListOptions);
-
     const sortInterventions = new Sortable(document.querySelector('.card-interventions'), sortableOptions);
-    const interventionsOrder = sortInterventions.toArray();
     const sortOutcomes = new Sortable(document.querySelector('.card-outcomes'), sortableOptions);
+    const interventionsOrder = sortInterventions.toArray();
     const outcomesOrder = sortOutcomes.toArray();
 
     class GapMap {
         constructor() {
             this.data = data;
-            this.settingsId = settingsId; // SharePoint List Item Id
             this.selectResource = selectResource;
             this.addDate = addDate;
             this.editDate = editDate;

@@ -29,13 +29,13 @@
 .modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}
 .modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}
 
-.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 5px 0;}
+.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}
 .modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}
 .modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}
 .modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}
 
 .modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}
-.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding-top: 10px;}
+.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}
 .modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}
 
 .modal .modal-dialog .modal-footer {justify-content: space-between;}

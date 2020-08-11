@@ -9,8 +9,6 @@
         "Date": "2016-07-14T22:00:00.000Z",
         "Author": "Wanglin Ma",
         "Study": "Research paper (Impact Assessment)",
-        "Estimators": "ESM",
-        "Control": "Yes",
         "Data": [
             {
                 "Region": "APR",
@@ -33,8 +31,6 @@
         "Date": "2013-10-14T22:00:00.000Z",
         "Author": "Atkinson, A. and F. Messy",
         "Study": "Working paper (OECD)",
-        "Estimators": "None",
-        "Control": "No",
         "Data": [
             {
                 "Region": "WCA, NEN",

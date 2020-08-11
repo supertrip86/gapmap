@@ -10,7 +10,9 @@ receiveData('/api/users.json').then( (user) => {
 
     receiveData('/api/data.json').then( (settings) => {
         const data = settings;
-        const settingsId = 1; // modify with settings current Id
+        
+        data.storage.settingsId = settings.Id;
+        delete data.Id;
 
         receiveData('/api/resources.json').then( (resources) => {
             const dialog = document.getElementById("gapmap-dialog");
@@ -20,7 +22,7 @@ receiveData('/api/users.json').then( (user) => {
 
             if (isAdmin) {
                 dialog.innerHTML = settingsTemplate(data);
-                addSettingsMenu(data, settingsId);
+                addSettingsMenu(data);
 
             } else {
                 settingsButton.remove();

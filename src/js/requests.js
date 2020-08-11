@@ -10,8 +10,6 @@ class SharepointListItem {
         this.Date = utilities.get.getDate(`.modal-datepicker`, this.getContext());
         this.Author = utilities.get.getValue(`.modal-author`, this.getContext());
         this.Study = utilities.get.getValue(`.modal-study`, this.getContext());
-        this.Estimators = utilities.get.getValue(`.modal-estimators`, this.getContext());
-        this.Control = utilities.get.getValue(`.modal-control select option:checked`, this.getContext());
         this.Data = this.getData();
         this.__metadata = { type: this.getMetadataType() };
     }
@@ -42,7 +40,7 @@ class SharepointListItem {
     }
 
     getMetadataType() {
-        return window.gapmap.data.applicationDB.resourceMetadata;
+        return gapmap.data.storage.resourceMetadata;
     }
 }
 
@@ -53,7 +51,7 @@ const receiveData = async (url) => {
 
 const saveResource = (id) => {
     const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
-    const resourceList = window.gapmap.data.applicationDB.resourceList;
+    const resourceList = gapmap.data.storage.resourceList;
     const url = `${webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items${id ? `(${id})` : ``}`;
 
     const item = new SharepointListItem();
@@ -80,7 +78,7 @@ const deleteResource = (id) => {
 };
 
 const modifyParameters = () => {
-    console.log('modifyParameters', window.gapmap.settingsId);
+    console.log('modifyParameters', gapmap.Id);
 };
 
 export { receiveData, saveResource, deleteResource, modifyParameters };
