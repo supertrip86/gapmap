@@ -11,7 +11,7 @@
 .modal .modal-dialog .modal-body .row {padding-bottom: 10px;}
 .modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}
 .modal .modal-dialog .modal-body .card {margin-bottom: 15px;}
-.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;}
+.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}
 .modal .modal-dialog .modal-body .card-body {padding: 1rem;}
 .modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}
 .modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}
@@ -35,7 +35,7 @@
 .modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}
 
 .modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}
-.modal .modal-dialog .modal-body .delete-resource-button-container {text-align: right;}
+.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding-top: 10px;}
 .modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}
 
 .modal .modal-dialog .modal-footer {justify-content: space-between;}

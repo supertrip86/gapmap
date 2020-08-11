@@ -93,11 +93,30 @@
         "Yes"
     ],
     "regions": [
-        "APR",
-        "ESA",
-        "LAC",
-        "NEN",
-        "WCA"
+        {
+            "label": "All regions",
+            "value": "All regions"
+        },
+        {
+            "label": "APR",
+            "value": "APR"
+        },
+        {
+            "label": "ESA",
+            "value": "ESA"
+        },
+        {
+            "label": "LAC",
+            "value": "LAC"
+        },
+        {
+            "label": "NEN",
+            "value": "NEN"
+        },
+        {
+            "label": "WCA",
+            "value": "WCA"
+        }
     ],
     "countries": [
         {

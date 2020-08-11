@@ -13,7 +13,7 @@ class SharepointListItem {
         this.Estimators = utilities.get.getValue(`.modal-estimators`, this.getContext());
         this.Control = utilities.get.getValue(`.modal-control select option:checked`, this.getContext());
         this.Data = this.getData();
-        // this.__metadata = { type: this.getMetadataType() };
+        this.__metadata = { type: this.getMetadataType() };
     }
 
     getContext() {
@@ -52,8 +52,9 @@ const receiveData = async (url) => {
 };
 
 const saveResource = (id) => {
-    // const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
+    const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
     const resourceList = window.gapmap.data.applicationDB.resourceList;
+    const url = `${webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items${id ? `(${id})` : ``}`;
 
     const item = new SharepointListItem();
 
@@ -63,12 +64,13 @@ const saveResource = (id) => {
         headers: { 
             "Accept": "application/json;odata=verbose",
             "Content-Type": "application/json;odata=verbose",
-            // "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+            "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
         },
         body: JSON.stringify(item)
     };
 
-    id ? console.log('edit', item) : console.log('save', item); // fetch( webAbsoluteUrl + `/_api/web/lists/GetByTitle('${resourceList}')/items`, par);
+    // id ? console.log('edit', item) : console.log('save', item);
+    fetch(url, options);
 
     // send attachment
 };

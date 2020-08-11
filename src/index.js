@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/css/main.css";
 import "../src/js/header.js";
 import { receiveData } from "./js/requests.js";
-import { settingsTemplate, addSettingsMenu, addListeners } from "../src/js/settings.js";
+import { settingsTemplate, addSettingsMenu } from "../src/js/settings.js";
 
 receiveData('/api/users.json').then( (user) => {
     const isAdmin = (user.role == "Administrator");
@@ -21,7 +21,7 @@ receiveData('/api/users.json').then( (user) => {
             if (isAdmin) {
                 dialog.innerHTML = settingsTemplate(data);
                 addSettingsMenu(data, settingsId);
-                addListeners();
+
             } else {
                 settingsButton.remove();
 

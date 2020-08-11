@@ -1,63 +1,50 @@
 [
     {
-        "Title": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-        "label": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
-        "value": "Project Impact Evaluation - Agricultural Support Project (Georgia)",
         "Id": 1,
-        "Attachment": "MissingReports.xlsx",
-        "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
+        "Title": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
+        "label": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
+        "value": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
         "Evidence": "External",
-        "Language": "French",
-        "Date": "2020-07-21T22:00:00.000Z",
-        "Author": "Giovanni Giunta",
-        "Study": "Impact",
-        "Estimators": "OCSE",
+        "Language": "English",
+        "Date": "2016-07-14T22:00:00.000Z",
+        "Author": "Wanglin Ma",
+        "Study": "Research paper (Impact Assessment)",
+        "Estimators": "ESM",
         "Control": "Yes",
         "Data": [
             {
-                "Region": "ESA",
-                "Country": ["Albania"],
-                "Population": "Nigeria",
-                "Metrics": "Kilograms",
-                "Intervention": "7",
-                "Outcome": "2",
-                "Description": "<p>This is a test!</p>"
+                "Region": "APR",
+                "Country": "China, Cambodia",
+                "Population": "Farm households",
+                "Metrics": "Apple yield",
+                "Intervention": "1",
+                "Outcome": "1",
+                "Description": "<p> With respect to household welfare (measured by yield in apples) and investment profitability, the results reveal that cooperative membership exerts a positive and statistically significant impact on apple yields, farm net returns and household income, and small-scale farms tend to benefit more from cooperatives than medium and large farms</p>"
             }
         ]
     },
     {
-        "Title": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
-        "label": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
-        "value": "Impact Assessment - Agricultural Sector Development Programme – Livestock (ASDP-L) and the Agriculture Service Support Programme (ASSP)",
         "Id": 2,
-        "Attachment": "Whatever.docx",
-        "AttachmentURL": "https://xdesk.ifad.org/sites/pa/staging/documents/download/pcr.aspx",
-        "Evidence": "Internal",
+        "Title": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
+        "label": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
+        "value": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
+        "Evidence": "External",
         "Language": "English",
-        "Date": "2020-07-06T22:00:00.000Z",
-        "Author": "Noelle Turtur",
-        "Study": "Project Completion",
-        "Estimators": "FMI",
+        "Date": "2013-10-14T22:00:00.000Z",
+        "Author": "Atkinson, A. and F. Messy",
+        "Study": "Working paper (OECD)",
+        "Estimators": "None",
         "Control": "No",
         "Data": [
             {
-                "Region": "APR",
-                "Country": ["Bahamas (the)"],
-                "Population": "Bhutan",
-                "Metrics": "Pounds",
-                "Intervention": "6",
-                "Outcome": "1",
-                "Description": "<p>This is another Test</p>"
-            },
-            {
-                "Region": "ESA",
-                "Country": ["Albania", "Andorra"],
-                "Population": "Nigeria",
-                "Metrics": "Kilograms",
-                "Intervention": "7",
+                "Region": "WCA, NEN",
+                "Country": "Lebanon, Ghana",
+                "Population": "Country-level",
+                "Metrics": "Access to financial product/financial awareness",
+                "Intervention": "2",
                 "Outcome": "2",
-                "Description": "<p>This is a test!</p>"
+                "Description": "<p> In 2010, under the support of the Russian Trust Fund for Financial Literacy and Education, the OECD/INFE launched a project on the role of financial education in financial inclusion. The results of this work show that low levels of financial inclusion are associated with lower levels of financial literacy (measurement including lower levels of financial education)</p>"
             }
         ]
-    }
+      }
 ]

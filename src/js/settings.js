@@ -39,65 +39,95 @@ const validateAttachment = () => {
             utilities.unLock();
             display(err, confirm);
         }
+        
     } else {
         utilities.unLock();
     }
 };
 
-const validateResource = (context, id) => {
-    const date = context.querySelector('.modal-datepicker');
-    const country = context.querySelector('.select-pure__select');
-    const file = context.querySelector('.btn-file');
-    const input = context.querySelectorAll('input.form-control');
-    const style = '1px solid red';
+const validateResource = (target, id) => {
+    const titleElement = target.querySelector('.attachment-title');
+    const selectElement = target.querySelector('.modal-select-item .select-pure__select');
+    const input = target.querySelectorAll('input.form-control');
+    const editors = target.querySelectorAll('.ql-editor');
 
-    let proceed = true;
+    const title = utilities.get.getValue(`#${target.id} .attachment-title`);
+    const editMode = (target.id == "modal-edit");
+    const emptyValue = !window.gapmap.selectResource.value();
+    const findDuplication = !!window.gapmap.data.resources.filter((i) => (i.label == utilities.get.getValue(`#${target.id} .attachment-title`))).length;
+    const modifiedTitle = !(title == titleElement.dataset.origin);
 
-    !context.querySelector('.attachment-filetitle').value && rejectRequest(file);
-    !utilities.get.getDate(`#${context.id} .modal-datepicker`) && rejectRequest(date);
-
-    for (element of input) {
-        !element.value.trim() && rejectRequest(element);
-    }
-
-    if (country) {
-        !country.querySelector('.select-pure__label').innerText && rejectRequest(country);
-    }
-
-    if (!proceed) {
-        display('addFormInvalid', false);
+    if (editMode && emptyValue) {
+        rejectRequest(selectElement, 'selectResource', false);
         return false;
     }
 
-    saveResource(id);
-
-    function rejectRequest(element) {
-        proceed = false;
-        element.style.border = style;
+    if (!title) {
+        rejectRequest(titleElement, 'addFormInvalid', false);
+        return false;
     }
+
+    if ((editMode && modifiedTitle && findDuplication) || (!editMode && findDuplication)) {
+        rejectRequest(titleElement, 'invalidTitle', false);
+        return false;
+    }
+
+    for (element of input) {
+        if (element.value.length > 250) {
+            rejectRequest(element, 'invalidInput', false);
+            return false;
+        }
+    }
+
+    for (element of editors) {
+        if (element.innerHTML.length > 62000) {
+            rejectRequest(element.parentNode, 'invalidDescription', false);
+            return false;
+        }
+    }
+
+    display('saveResource', true, saveResource, id);
+
+    function rejectRequest(element, message, confirm) {
+        display(message, confirm);
+        element.style.border = '1px solid red';
+    }
+
 };
 
 const validateModifyParameters = (context) => {
     const input = context.querySelectorAll('input.form-control');
     const style = '1px solid red';
 
-    let proceed = true;
+    let empty = false;
+    let exceeded = false;
 
     for (element of input) {
-        !element.value.trim() && rejectRequest(element);
+
+        if (!element.value.trim()) {
+            empty = true;
+            element.style.border = style;
+        }
+
+        if (element.value.length > 250) {
+            exceeded = true;
+            element.style.border = style;
+        }
+
     }
 
-    if (!proceed) {
+    if (empty) {
         display('addFormInvalid', false);
         return false;
     }
 
-    modifyParameters();
-
-    function rejectRequest(element) {
-        proceed = false;
-        element.style.border = style;
+    if (exceeded) {
+        display('invalidInput', false);
+        return false;
     }
+
+    display('modifyParameters', true, modifyParameters);
+
 }
 
 const validateDeletion = () => {
@@ -121,15 +151,15 @@ const resourceList = (list, placeholder, auto, value) => {
 			const element = window.gapmap.data.resources.filter( (i) => i.Title == value )[0];
 			const template = require('../hbs/partials/resourceData.hbs');
 
-			document.getElementById('edit-resource').dataset.item = element.Id;
 			document.querySelector('.modal-select-item .select-pure__select').style = "";
-			utilities.get.getNodeList('input.form-control').forEach( (i) => i.style = "" );
+            utilities.get.getNodeList('input.form-control').forEach( (i) => i.style = "" );
 
-			utilities.lock(element.Attachment);
+            target.dataset.item = element.Id;
+			element.Attachment && utilities.lock(element.Attachment);
+            window.gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
 
-			window.gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
-
-			target.querySelector('.attachment-title').value = element.Title;
+            target.querySelector('.attachment-title').value = element.Title;
+            target.querySelector('.attachment-title').dataset.origin = element.Title;
 			target.querySelector('.modal-evidence select').value = element.Evidence;
 			target.querySelector('.modal-language select').value = element.Language;
 			target.querySelector('.modal-author').value = element.Author;
@@ -143,14 +173,17 @@ const resourceList = (list, placeholder, auto, value) => {
 				target.querySelector('.intervention-outcome-container').innerHTML = template(item);
 
                 element.Data.forEach( (i, j) => {
-                    const selectOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true, i.Country);
+                    const regionValue = i.Region ? i.Region.split(', ') : [];
+                    const countryValue = i.Country ? i.Country.split(', ') : [];
+                    const regionOptions = utilities.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true, regionValue);
+                    const countryOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true, countryValue);
                     const editorOptions = utilities.options.editorOptions();
 
-                    new SelectPure(target.querySelectorAll('.modal-country')[j], selectOptions);
+                    new SelectPure(target.querySelectorAll('.modal-region')[j], regionOptions);
+                    new SelectPure(target.querySelectorAll('.modal-country')[j], countryOptions);
                     new quill(target.querySelectorAll('.editor')[j], editorOptions);
 
                     target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
-                    target.querySelectorAll('.modal-region select')[j].value = i.Region;
                     target.querySelectorAll('.modal-population')[j].value = i.Population;
                     target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
                     target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
@@ -172,11 +205,13 @@ const addResourceElement = () => {
 
     context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
 
-    const selectOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true);
+    const regionOptions = utilities.options.selectOptions(window.gapmap.data.regions, "Select a Region", true, true);
+    const countryOptions = utilities.options.selectOptions(window.gapmap.data.countries, "Select a Country", true, true);
     const editorOptions = utilities.options.editorOptions();
     const index = context.querySelectorAll('.modal-country').length - 1;
 
-    new SelectPure(context.querySelectorAll('.modal-country')[index], selectOptions);
+    new SelectPure(context.querySelectorAll('.modal-region')[index], regionOptions)
+    new SelectPure(context.querySelectorAll('.modal-country')[index], countryOptions);
     new quill(context.querySelectorAll('.editor')[index], editorOptions);
 };
 
@@ -199,6 +234,8 @@ const saveChanges = () => {
 };
 
 const resetForm = () => {
+    const target = document.getElementById('edit-resource');
+
     utilities.get.getNodeList('select.form-control').forEach( (i) => i.selectedIndex = 0 );
     utilities.get.getNodeList('.form-resource').forEach( (i) => i.value = "" );
     utilities.get.getNodeList('.form-parameter').forEach( (i) => i.value = i.defaultValue );
@@ -206,12 +243,12 @@ const resetForm = () => {
     utilities.get.getNodeList('.ql-editor').forEach( (i) => i.innerHTML = "" );
 
     utilities.get.getNodeList('input.form-control').forEach( (i) => i.removeAttribute('style') );
-    utilities.get.getNodeList('.btn-file').forEach( (i) => i.removeAttribute('style') );
     utilities.get.getNodeList('.select-pure__select').forEach( (i) => i.removeAttribute('style') );
     utilities.get.getNodeList('.intervention-outcome-container').forEach( (i) => i.innerHTML = "" );
 
-    document.getElementById('edit-resource').classList.add('vanish');
-    document.getElementById('edit-resource').removeAttribute('data-item');
+    target.classList.add('vanish');
+    target.removeAttribute('data-item');
+    target.querySelector('.attachment-title').removeAttribute('data-origin');
     document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
 
     window.gapmap.sortInterventions.sort(window.gapmap.interventionsOrder);
@@ -280,6 +317,7 @@ const addSettingsMenu = (data, settingsId) => {
         }
     }
 
+    addListeners();
     window.gapmap = new GapMap();
 };
 
@@ -301,4 +339,4 @@ class ResourceData {
     }
 }
 
-export { settingsTemplate, addSettingsMenu, addListeners }
+export { settingsTemplate, addSettingsMenu }
