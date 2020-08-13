@@ -4,6 +4,10 @@
         "Title": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
         "label": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
         "value": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
+        "Attachments": false,
+        "AttachmentFiles": {
+            "results": []
+        },
         "Evidence": "External",
         "Language": "English",
         "Date": "2016-07-14T22:00:00.000Z",
@@ -15,6 +19,7 @@
                 "Country": "China, Cambodia",
                 "Population": "Farm households",
                 "Metrics": "Apple yield",
+                "Paragraphs": "121, 453",
                 "Intervention": "1",
                 "Outcome": "1",
                 "Description": "<p> With respect to household welfare (measured by yield in apples) and investment profitability, the results reveal that cooperative membership exerts a positive and statistically significant impact on apple yields, farm net returns and household income, and small-scale farms tend to benefit more from cooperatives than medium and large farms</p>"
@@ -26,6 +31,15 @@
         "Title": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
         "label": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
         "value": "Promoting Financial Inclusion through Financial Education: OECD/INFE Evidence, Policies and Practice, OECD Working Papers on Finance, Insurance and Private Pensions, No. 34, OECD Publishing",
+        "Attachments": true,
+        "AttachmentFiles": {
+            "results": [
+                {
+                    "FileName": "Evidence KGM_v12.xlsx",
+                    "ServerRelativeUrl": "/sites/pa/tools/Lists/gapmapdata/Attachments/23/Evidence KGM_v12.xlsx"   
+                }
+            ]
+        },
         "Evidence": "External",
         "Language": "English",
         "Date": "2013-10-14T22:00:00.000Z",
@@ -37,6 +51,7 @@
                 "Country": "Lebanon, Ghana",
                 "Population": "Country-level",
                 "Metrics": "Access to financial product/financial awareness",
+                "Paragraphs": "24, 56, 87",
                 "Intervention": "2",
                 "Outcome": "2",
                 "Description": "<p> In 2010, under the support of the Russian Trust Fund for Financial Literacy and Education, the OECD/INFE launched a project on the role of financial education in financial inclusion. The results of this work show that low levels of financial inclusion are associated with lower levels of financial literacy (measurement including lower levels of financial education)</p>"

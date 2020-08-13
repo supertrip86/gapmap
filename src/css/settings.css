@@ -10,7 +10,7 @@
 .modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}
 .modal .modal-dialog .modal-body .row {padding-bottom: 10px;}
 .modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}
-.modal .modal-dialog .modal-body .card {margin-bottom: 15px;}
+.modal .modal-dialog .modal-body .card {margin-bottom: 10px;}
 .modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}
 .modal .modal-dialog .modal-body .card-body {padding: 1rem;}
 .modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}
@@ -22,7 +22,7 @@
 .modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
 .modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
 .modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
-.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;width: 95%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;}
 
 .modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}
 .modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}
@@ -34,7 +34,7 @@
 .modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}
 .modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}
 
-.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}
+.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 10px;}
 .modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}
 .modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}
 

@@ -1,16 +1,18 @@
 import Swal from 'sweetalert2'
 
 const errorList = {
-    invalidFile: '<p>You can only upload Word, Powerpoint, Excel or PDF documents</p>',
-    invalidFilename: '<p>The selected file has any of the following invalid characters:</p><p>~, #, %, & , *, {, }, \, :, <, >, ?, /, |, \', "</p>',
-    invalidFileSize: '<p>The selected file exceeds the maximum limit of 20 Megabytes</p>',
-    invalidTitle: '<p>This Resource exists already</p>',
-    invalidInput: '<p>The maximum number of characters for each input field is 250</p>',
-    invalidDescription: '<p>You exceeded the maximum number of characters of the Description field</p>',
-    addFormInvalid: '<p>Missing or invalid information</p>',
-    selectResource: '<p>Select a Resource from the menu</p>',
-    saveResource: '<p>Are you sure you want to save?</p>',
-    modifyParameters: '<p>You are about to modify the Gapmap core parameters. Do you want to proceed?</p>',
+    invalidFile: 'You can only upload Word, Powerpoint, Excel or PDF documents',
+    invalidFilename: 'The selected file has any of the following invalid characters:<br>~, #, %, & , *, {, }, \, :, <, >, ?, /, |, \', "',
+    invalidFileSize: 'The selected file exceeds the maximum limit of 20 Megabytes',
+    invalidTitle: 'This Resource exists already',
+    invalidInput: 'The maximum number of characters for each input field is 250',
+    invalidDescription: 'You exceeded the maximum number of characters of the Description field',
+    addFormInvalid: 'Missing or invalid information',
+    selectResource: 'Select a Resource from the menu',
+    saveResource: 'Are you sure you want to save?',
+    deleteResource: 'Are you sure you want to delete this Resource?',
+    deleteAttachment: 'Do you want to delete this Document?',
+    modifyParameters: 'You are about to modify the Gapmap core parameters. Do you want to proceed?',
 };
 
 const display = (value, confirm, callback, arg) => {
@@ -31,7 +33,7 @@ class ModalError {
         this.showCancelButton = confirm ? true : false;
         this.confirmButtonColor = '#003870';
         this.confirmButtonText = 'Save';
-        this.html = `<div>${errorList[value]}</div>`;
+        this.html = `<div><p>${errorList[value]}</p></div>`;
     }
 };
 

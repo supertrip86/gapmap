@@ -4,14 +4,14 @@ import Sortable from 'sortablejs';
 import datepicker from "@chenfengyuan/datepicker";
 import quill from 'quill';
 import { display } from "../js/errorHandler.js";
-import { saveResource, deleteResource, modifyParameters } from "../js/requests.js";
+import { saveResource, deleteResource, deleteAttachment, modifyParameters } from "../js/requests.js";
 import utilities from "../js/utilities.js";
 import settingsTemplate from "../hbs/settings.hbs";
 import "@chenfengyuan/datepicker/dist/datepicker.css";
 import "quill/dist/quill.snow.css";
 import "../css/settings.css";
 
-const validateAttachment = () => {
+const validateAttachmentCreation = () => {
     const context = utilities.currentMenu();
     const source = context.querySelector('.attachment-fileinput');
 
@@ -45,7 +45,27 @@ const validateAttachment = () => {
     }
 };
 
-const validateResource = (target, id) => {
+const validateAttachmentDeletion = () => {
+    const context = utilities.currentMenu();
+    const isEdit = (context.id == "modal-edit");
+
+    if (isEdit) {
+        const index = context.querySelector('#edit-resource').dataset.item;
+        const selectedResource = gapmap.data.resources.filter((i) => (i.Id == index))[0];
+        const hasAttachment = selectedResource.Attachments;
+
+        if (hasAttachment) {
+            const attachmentName = selectedResource.AttachmentFiles.results[0].FileName;
+
+            return display('deleteAttachment', true, deleteAttachment, attachmentName);
+        }
+
+    }
+
+    return utilities.unLock();
+};
+
+const validateResourceCreation = (target, id) => {
     const titleElement = target.querySelector('.attachment-title');
     const selectElement = target.querySelector('.modal-select-item .select-pure__select');
     const input = target.querySelectorAll('input.form-control');
@@ -54,7 +74,7 @@ const validateResource = (target, id) => {
     const title = utilities.get.getValue(`#${target.id} .attachment-title`);
     const editMode = (target.id == "modal-edit");
     const emptyValue = !gapmap.selectResource.value();
-    const findDuplication = !!gapmap.data.resources.filter((i) => (i.label == utilities.get.getValue(`#${target.id} .attachment-title`))).length;
+    const findDuplication = !!gapmap.data.resources.filter((i) => (i.label == title)).length;
     const modifiedTitle = !(title == titleElement.dataset.origin);
 
     if (editMode && emptyValue) {
@@ -95,7 +115,16 @@ const validateResource = (target, id) => {
 
 };
 
-const validateModifyParameters = (context) => {
+const validateResourceDeletion = () => {
+    const context = (utilities.currentMenu().id == "modal-edit");
+    const id = document.getElementById('edit-resource').dataset.item;
+
+    if (context && id) {
+        display('deleteResource', true, deleteResource, parseInt(id));
+    }
+};
+
+const validateParametersModification = (context) => {
     const input = context.querySelectorAll('input.form-control');
     const style = '1px solid red';
 
@@ -130,72 +159,7 @@ const validateModifyParameters = (context) => {
 
 }
 
-const validateDeletion = () => {
-    const context = (utilities.currentMenu().id == "modal-edit");
-    const id = document.getElementById('edit-resource').dataset.item;
-
-    if (context && id) {
-        deleteResource( parseInt(id) );
-    }
-};
-
-const resourceList = (list, placeholder, auto, value) => {
-	return {
-		options: list,
-		placeholder: placeholder,
-		autocomplete: auto,
-		value: value,
-		onChange: (value) => {
-			const target = document.getElementById('edit-resource');
-			const button = document.getElementById('remove-resource').parentNode;
-			const element = gapmap.data.resources.filter( (i) => i.Title == value )[0];
-			const template = require('../hbs/partials/resourceData.hbs');
-
-			document.querySelector('.modal-select-item .select-pure__select').style = "";
-            utilities.get.getNodeList('input.form-control').forEach( (i) => i.style = "" );
-
-            target.dataset.item = element.Id;
-			element.Attachment && utilities.lock(element.Attachment);
-            gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
-
-            target.querySelector('.attachment-title').value = element.Title;
-            target.querySelector('.attachment-title').dataset.origin = element.Title;
-			target.querySelector('.modal-evidence select').value = element.Evidence;
-			target.querySelector('.modal-language select').value = element.Language;
-			target.querySelector('.modal-author').value = element.Author;
-			target.querySelector('.modal-study').value = element.Study;
-
-			if (element.Data.length) {
-                const item = new ResourceData(gapmap.data, element.Data);
-
-				target.querySelector('.intervention-outcome-container').innerHTML = template(item);
-
-                element.Data.forEach( (i, j) => {
-                    const regionValue = i.Region ? i.Region.split(', ') : [];
-                    const countryValue = i.Country ? i.Country.split(', ') : [];
-                    const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
-                    const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
-                    const editorOptions = utilities.options.editorOptions();
-
-                    new SelectPure(target.querySelectorAll('.modal-region')[j], regionOptions);
-                    new SelectPure(target.querySelectorAll('.modal-country')[j], countryOptions);
-                    new quill(target.querySelectorAll('.editor')[j], editorOptions);
-
-                    target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
-                    target.querySelectorAll('.modal-population')[j].value = i.Population;
-                    target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
-                    target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
-                    target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
-                });
-            }
-
-			target.classList.remove('vanish');
-			button.classList.remove('hidden');
-		}
-	};
-};
-
-const addResourceElement = () => {
+const addResourceForm = () => {
     const context = utilities.currentMenu();
     const template = require('../hbs/partials/resourceData.hbs');
 
@@ -213,7 +177,7 @@ const addResourceElement = () => {
     new quill(context.querySelectorAll('.editor')[index], editorOptions);
 };
 
-const deleteResourceElement = (event) => {
+const deleteResourceForm = (event) => {
     event.target.closest('.card').remove();
 };
 
@@ -222,13 +186,13 @@ const saveChanges = () => {
     const resourceId = document.getElementById('edit-resource').dataset.item;
 
     if (target.id == 'modal-modify') {
-        return validateModifyParameters(target);
+        return validateParametersModification(target);
     }
     if (target.id == 'modal-edit') {
-        return validateResource(target, resourceId);
+        return validateResourceCreation(target, resourceId);
     }
 
-    return validateResource(target);
+    return validateResourceCreation(target);
 };
 
 const resetForm = () => {
@@ -269,20 +233,86 @@ const switchForm = () => {
     }
 };
 
+const resourceList = (list, placeholder, auto, value) => {
+	return {
+		options: list,
+		placeholder: placeholder,
+		autocomplete: auto,
+		value: value,
+		onChange: (value) => {
+			const target = document.getElementById('edit-resource');
+			const button = document.getElementById('remove-resource').parentNode;
+			const element = gapmap.data.resources.filter( (i) => i.Title == value )[0];
+			const template = require('../hbs/partials/resourceData.hbs');
+
+			document.querySelector('.modal-select-item .select-pure__select').style = "";
+            utilities.get.getNodeList('input.form-control').forEach( (i) => i.style = "" );
+
+            target.dataset.item = element.Id;
+            gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+
+            target.querySelector('.attachment-title').value = element.Title;
+            target.querySelector('.attachment-title').dataset.origin = element.Title;
+			target.querySelector('.modal-evidence select').value = element.Evidence;
+			target.querySelector('.modal-language select').value = element.Language;
+			target.querySelector('.modal-author').value = element.Author;
+            target.querySelector('.modal-study').value = element.Study;
+
+            if (element.Attachments) {
+                const fileName = element.AttachmentFiles.results[0].FileName;
+                const fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
+
+                utilities.unLock();
+                utilities.lock(fileName, fileURL);
+            } else {
+                utilities.unLock();
+            }
+
+			if (element.Data.length) {
+                const item = new ResourceData(gapmap.data, element.Data);
+
+				target.querySelector('.intervention-outcome-container').innerHTML = template(item);
+
+                element.Data.forEach( (i, j) => {
+                    const regionValue = i.Region ? i.Region.split(', ') : [];
+                    const countryValue = i.Country ? i.Country.split(', ') : [];
+                    const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
+                    const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
+                    const editorOptions = utilities.options.editorOptions();
+
+                    new SelectPure(target.querySelectorAll('.modal-region')[j], regionOptions);
+                    new SelectPure(target.querySelectorAll('.modal-country')[j], countryOptions);
+                    new quill(target.querySelectorAll('.editor')[j], editorOptions);
+
+                    target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
+                    target.querySelectorAll('.modal-population')[j].value = i.Population;
+                    target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
+                    target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;
+                    target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
+                    target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
+                });
+            }
+
+			target.classList.remove('vanish');
+			button.classList.remove('hidden');
+		}
+	};
+};
+
 const addListeners = () => {
     $('#gapmap-dialog').on('change', '.modal-datepicker', function() { $(this).removeAttr('style') }); // change event in @chenfengyuan/datepicker triggered by jQuery
     $('#gapmap-dialog').on('hidden.bs.modal', resetForm); // change event in bootstrap triggered by jQuery
 
     utilities.on('#gapmap-dialog', 'input', '.form-control', utilities.clearStyle);
-    utilities.on('#gapmap-dialog', 'click', '.remove-document', utilities.unLock);
     utilities.on('#gapmap-dialog', 'paste', '.modal-datepicker', utilities.preventPaste);
     utilities.on('#gapmap-dialog', 'keypress', '.modal-datepicker', utilities.preventCopy);
     utilities.on('#gapmap-dialog', 'change', '.modal-intervention select', utilities.changeColor);
-    utilities.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachment);
-    utilities.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceElement);
-    utilities.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceElement);
+    utilities.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachmentCreation);
+    utilities.on('#gapmap-dialog', 'click', '.remove-document', validateAttachmentDeletion);
+    utilities.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
+    utilities.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
     utilities.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
-    utilities.on('#gapmap-dialog', 'click', '#remove-resource', validateDeletion);
+    utilities.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
     utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 

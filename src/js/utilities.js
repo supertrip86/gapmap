@@ -2,6 +2,7 @@ module.exports = {
 	on: on,
 	removeClass: removeClass,
 	currentMenu: currentMenu,
+	startLoader: startLoader,
 	lock: lock,
 	unLock: unLock,
 	changeColor: changeColor,
@@ -13,7 +14,7 @@ module.exports = {
 		getText: getText,
 		getHTML: getHTML,
 		getDate: getDate,
-		getCountries: getCountries,
+		getOptions: getOptions,
 		getNodeList: getNodeList
   	},
   	check: {
@@ -61,21 +62,38 @@ function currentMenu() {
     }
 }
 
-// lock attached file
-function lock(filename) {
-    const context = currentMenu();
-    const target = context.querySelector('.attachment-filename');
-	const file = context.querySelector('.btn-file');
-    const icon = '<span class="remove-document"></span>';
+function startLoader() {
+	const body = document.getElementsByTagName('body')[0];
+	const dialog = document.getElementById('settingsMenu');
+	const settingsIcon = document.querySelector('.settings-link');
+	const spinner = '<div class="spinner"></div>';
 
+	dialog.setAttribute('style', 'display: none;');
+	settingsIcon.setAttribute('style', 'display: none;');
+	body.setAttribute('style', 'user-select: none; overflow: hidden;')
+	body.insertAdjacentHTML('beforeend', spinner);
+}
+
+// lock attached file
+function lock(filename, url) {
+    const context = currentMenu();
+	const attachmentContainer = context.querySelector('.attachment-filename');
+	const attachment = attachmentContainer.querySelector('.attachment-filetitle');
+	const file = context.querySelector('.btn-file');
+	const icon = '<span class="remove-document"></span>';
+
+	attachmentContainer.insertAdjacentHTML('beforeend', icon);
+	attachment.innerText = filename;
+
+	url && attachment.setAttribute('href', url);
+
+	file.querySelector('input').setAttribute('disabled', 'disabled');
 	file.style = "";
-    target.querySelector('input').value = filename;
-    target.insertAdjacentHTML('beforeend', icon);
 }
 
 // unlock attached file
-function unLock(event, form) {
-    const context = form ? form : currentMenu();
+function unLock(event, menu) {
+    const context = menu ? menu : currentMenu();
     const target = context.querySelectorAll('.remove-document');
 
     if (target.length) {
@@ -83,8 +101,10 @@ function unLock(event, form) {
 		const file = context.querySelector('.attachment-fileinput');
 		const filename = context.querySelector('.attachment-filetitle');
 
+		file.removeAttribute('disabled');
 		file.value = "";
-		filename.value = "";
+		filename.innerText = "";
+		filename.removeAttribute('href');
 		icon.remove();
     }
 }
@@ -163,9 +183,9 @@ function getDate(value, context) {
 	}
 }
 
-function getCountries(context) {
+function getOptions(value, context) {
 	try {
-		return getNodeList('.select-pure__selected-label', context).map( (i) => i.innerText ).join(', ');
+		return getNodeList(`${value} .select-pure__selected-label`, context).map( (i) => i.innerText ).join(', ');
 	} catch (error) {
 		return null;
 	}
