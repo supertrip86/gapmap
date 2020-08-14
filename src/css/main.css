@@ -1,4 +1,4 @@
-:root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}
+:root {--main-bright-blue: #003870; --main-dark-blue: #1C4269; --main-nav-height: 60px;}
 body {color: #333;margin: 0;}
 .vanish {display: none;}
 .hidden {opacity: 0;}

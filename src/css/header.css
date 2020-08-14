@@ -1,4 +1,13 @@
-.navbar {padding: 0;height: 90px;background-color: aliceblue;} 
-.navbar .navbar-logo {width: 120px;height: 90px;}
+.navbar {padding: 0;height: var(--main-nav-height);background-color: var(--main-dark-blue);} 
+.navbar .navbar-logo {width: 100px;height: var(--main-nav-height);}
 .navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}
 .navbar .settings-link img {width: 25px;height: 25px;}
+.navbar .navbar-brand {color: #fff;width: 30%;text-align: center;font-size: 1.2rem;font-weight: 600;margin: auto;padding-top: 16px;}
+.navbar .navbar-collapse {margin-top: 14px;}
+.ifad-bar {height: 4px;margin-top: var(--main-nav-height);}
+.ifad-bar > div {width: 20%;height: 100%;float: left;}
+.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}
+.ifad-bar .ifad-bar-lac {background-color: #3bae15;}
+.ifad-bar .ifad-bar-esa {background-color: #f59400;}
+.ifad-bar .ifad-bar-wca {background-color: #eb5400;}
+.ifad-bar .ifad-bar-apr {background-color: #df0221;}

@@ -255,7 +255,7 @@ const resourceList = (list, placeholder, auto, value) => {
             target.querySelector('.attachment-title').dataset.origin = element.Title;
 			target.querySelector('.modal-evidence select').value = element.Evidence;
 			target.querySelector('.modal-language select').value = element.Language;
-			target.querySelector('.modal-author').value = element.Author;
+			target.querySelector('.modal-author').value = element.Author0;
             target.querySelector('.modal-study').value = element.Study;
 
             if (element.Attachments) {
@@ -285,6 +285,7 @@ const resourceList = (list, placeholder, auto, value) => {
                     new quill(target.querySelectorAll('.editor')[j], editorOptions);
 
                     target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
+                    target.querySelectorAll('.modal-impact select')[j].value = i.Impact;
                     target.querySelectorAll('.modal-population')[j].value = i.Population;
                     target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
                     target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;

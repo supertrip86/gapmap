@@ -12,11 +12,10 @@ const receiveData = async (url) => {
 };
 
 const saveResource = (id) => {
-    const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
     const resourceList = gapmap.data.storage.resourceList;
-    const url = `${webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items${id ? `(${id})` : ``}`;
+    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items${id ? `(${id})` : ``}`;
 
-    const item = new SharepointListItem();
+    const item = new SharepointResourceItem();
 
     const options = {
         method: "POST",
@@ -50,19 +49,28 @@ const saveResource = (id) => {
 
         }
     });
-
 };
 
 const deleteResource = (id) => {
-    console.log('deleteResource', id);
+    const resourceList = gapmap.data.storage.resourceList;
+    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/getbytitle('${resourceList}')/items(${id})/recycle()`;
+
+    const options = {
+        method: "DELETE",
+        credentials: "same-origin",
+        headers: {
+            "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+        }
+    };
+
+    fetch(url, options).then( () => location.reload() );
 };
 
 const saveAttachment = (itemId, attachment) => {
-    const webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
-    const resourceList = gapmap.data.storage.resourceList;
 
     getFileBuffer(attachment[0]).then( (buffer) => {
-        const attachmentURL = `${webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items(${itemId})/AttachmentFiles/add(FileName='${attachment[0].name}')`;
+        const resourceList = gapmap.data.storage.resourceList;
+        const attachmentURL = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items(${itemId})/AttachmentFiles/add(FileName='${attachment[0].name}')`;
         const createitem = new SP.RequestExecutor(webAbsoluteUrl);
         const bytes = new Uint8Array(buffer);
 
@@ -103,18 +111,44 @@ const saveAttachment = (itemId, attachment) => {
     }
 };
 
-const deleteAttachment = (attachment) => {
-    console.log('delete', attachment);
+const deleteAttachment = (attachmentUrl) => {
+    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/getFileByServerRelativeUrl('${attachmentUrl}')/recycle()`;
 
-    // TODO: delete attachment from list, then call location.reload() // no need for utilities.unLock()
-    utilities.unLock();
+    const options = {
+        method: "DELETE",
+        credentials: "same-origin",
+        headers: {
+            "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+        }
+    };
+
+    fetch(url, options).then( () => location.reload() );
 };
 
 const modifyParameters = () => {
-    console.log('modifyParameters', gapmap.data.storage.settingsId);
+    const settingsList = gapmap.data.storage.settingsList;
+    const id = gapmap.data.storage.settingsId;
+    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${settingsList}')/items(${id})`;
+
+    const item = new SharepointSettingsItem();
+
+    const options = {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { 
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "MERGE",
+            "IF-MATCH": "*",
+            "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+        },
+        body: JSON.stringify(item)
+    };
+
+    fetch(url, options).then( () => location.reload() );
 };
 
-class SharepointListItem {
+class SharepointResourceItem {
     constructor() {
         this.Title = utilities.get.getValue(`.attachment-title`, this.getContext());
         this.label = utilities.get.getValue(`.attachment-title`, this.getContext());
@@ -122,7 +156,7 @@ class SharepointListItem {
         this.Evidence = utilities.get.getValue(`.modal-evidence select option:checked`, this.getContext());
         this.Language = utilities.get.getValue(`.modal-language option:checked`, this.getContext());
         this.Date = utilities.get.getDate(`.modal-datepicker`, this.getContext());
-        this.Author = utilities.get.getValue(`.modal-author`, this.getContext());
+        this.Author0 = utilities.get.getValue(`.modal-author`, this.getContext());
         this.Study = utilities.get.getValue(`.modal-study`, this.getContext());
         this.Data = this.getData();
         this.__metadata = { type: this.getMetadataType() };
@@ -154,6 +188,27 @@ class SharepointListItem {
     }
     getMetadataType() {
         return gapmap.data.storage.resourceMetadata;
+    }
+}
+
+class SharepointSettingsItem {
+    constructor() {
+        this.interventions = this.getInterventions();
+        this.outcomes = this.getOutcomes();
+        this.__metadata = { type: this.getMetadataType() };
+    }
+    getInterventions() {
+        const items = Array.from(document.querySelectorAll('.modal-intervention-title input'));
+
+        return items.map( (i, j) => { return {Title: i.value, Id: (j + 1), Color: i.dataset.color} } );
+    }
+    getOutcomes() {
+        const items = Array.from(document.querySelectorAll('.modal-outcome-title input'));
+
+        return items.map( (i, j) => { return {Title: i.value, Id: (j + 1)} } );
+    }
+    getMetadataType() {
+        return gapmap.data.storage.settingsMetadata;
     }
 }
 

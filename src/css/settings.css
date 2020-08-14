@@ -22,7 +22,7 @@
 .modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}
 .modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}
 .modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}
-.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;width: 95%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;}
+.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;width: 95%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;text-decoration: none;}
 
 .modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}
 .modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}

@@ -11,10 +11,11 @@
         "Evidence": "External",
         "Language": "English",
         "Date": "2016-07-14T22:00:00.000Z",
-        "Author": "Wanglin Ma",
+        "Author0": "Wanglin Ma",
         "Study": "Research paper (Impact Assessment)",
         "Data": [
             {
+                "Impact": "Positive",
                 "Region": "APR",
                 "Country": "China, Cambodia",
                 "Population": "Farm households",
@@ -43,10 +44,11 @@
         "Evidence": "External",
         "Language": "English",
         "Date": "2013-10-14T22:00:00.000Z",
-        "Author": "Atkinson, A. and F. Messy",
+        "Author0": "Atkinson, A. and F. Messy",
         "Study": "Working paper (OECD)",
         "Data": [
             {
+                "Impact": "Negative",
                 "Region": "WCA, NEN",
                 "Country": "Lebanon, Ghana",
                 "Population": "Country-level",

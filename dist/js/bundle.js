@@ -8147,7 +8147,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".navbar {padding: 0;height: 90px;background-color: aliceblue;} \r\n.navbar .navbar-logo {width: 120px;height: 90px;}\r\n.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}", ""]);
+exports.push([module.i, ".navbar {padding: 0;height: var(--main-nav-height);background-color: var(--main-dark-blue);} \r\n.navbar .navbar-logo {width: 100px;height: var(--main-nav-height);}\r\n.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}\r\n.navbar .navbar-brand {color: #fff;width: 30%;text-align: center;font-size: 1.2rem;font-weight: 600;margin: auto;padding-top: 16px;}\r\n.navbar .navbar-collapse {margin-top: 14px;}\r\n.ifad-bar {height: 4px;margin-top: var(--main-nav-height);}\r\n.ifad-bar > div {width: 20%;height: 100%;float: left;}\r\n.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}\r\n.ifad-bar .ifad-bar-lac {background-color: #3bae15;}\r\n.ifad-bar .ifad-bar-esa {background-color: #f59400;}\r\n.ifad-bar .ifad-bar-wca {background-color: #eb5400;}\r\n.ifad-bar .ifad-bar-apr {background-color: #df0221;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -8165,7 +8165,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n.hidden {opacity: 0;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto {padding-right: 8px;padding-left: 8px;}\r\n.col-14 {-ms-flex: 0 0 14%;flex: 0 0 14%;max-width: 14%;}\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #f0f8ff);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\nselect.form-control {text-overflow: ellipsis;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid #ccc;box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:30px;padding:0 5px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 11px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;}\r\n.select-pure__selected-label img {cursor: pointer;display: inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}", ""]);
+exports.push([module.i, ":root {--main-bright-blue: #003870; --main-dark-blue: #1C4269; --main-nav-height: 60px;}\r\nbody {color: #333;margin: 0;}\r\n.vanish {display: none;}\r\n.hidden {opacity: 0;}\r\n\r\n.main-container {padding-top: 90px;width: 100%;height: 100%;max-width: 100%;}\r\n\r\n/* bootstrap 4.5 custom */\r\n.btn {font-size: 12px;}\r\n.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {color:#fff;background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {background-color: var(--main-dark-blue);border-color: var(--main-dark-blue);}\r\n.btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover {color: #333;background-color: #fff;border-color: #fff;border: 1px solid #ccc;}\r\n.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto {padding-right: 8px;padding-left: 8px;}\r\n.col-14 {-ms-flex: 0 0 14%;flex: 0 0 14%;max-width: 14%;}\r\n.col-40 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {background: linear-gradient(#ffffff, #f0f8ff);}\r\n.form-control:focus {border-color: #ccc;box-shadow: none;}\r\n.form-control {height: 30px;padding: 2px 6px;font-size: 12px;}\r\nselect.form-control {text-overflow: ellipsis;}\r\n\r\n/* SelectPure dependency style */\r\n.select-wrapper {margin: auto;max-width: 600px;width: calc(100% - 40px);}\r\n.select-pure__label {font-size: 14px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;}\r\n.select-pure__select {align-items:center;background:#fff;border-radius:4px;border:1px solid #ccc;box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;cursor:pointer;display:flex;font-size:16px;font-weight:500;justify-content:left;height:30px;padding:0 5px;position:relative;transition:.2s;width:100%}\r\n.select-pure__options {border-radius:4px;border:1px solid rgba(0,0,0,.15);box-shadow:0 2px 4px rgba(0,0,0,.04);box-sizing:border-box;color:#363b3e;display:none;left:0;max-height:221px;overflow-y:scroll;position:absolute;top:28px;width:100%;z-index:5}\r\n.select-pure__select--opened .select-pure__options {display: block;}\r\n.select-pure__option {background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;min-height:30px;line-height:16px;padding:10px;font-size: 14px;}\r\n.select-pure__option--selected {color: #e4e4e4;cursor: initial;pointer-events: none;}\r\n.select-pure__option--hidden {display: none;}\r\n.select-pure__selected-label {align-items:center;background:#5e6264;border-radius:4px;color:#fff;cursor:initial;display:inline-flex;justify-content:center;margin:5px 2px 5px 0;padding:0 5px;font-size: 11px;}\r\n.select-pure__selected-label:last-of-type {margin-right: 0;}\r\n.select-pure__selected-label i {cursor: pointer;display: inline-block;}\r\n.select-pure__selected-label img {cursor: pointer;display: inline-block;height:18px;margin-left:7px;width:14px}\r\n.select-pure__selected-label i:hover {color: #e4e4e4;}\r\n.select-pure__autocomplete {background:#f9f9f8;border-bottom:1px solid #e4e4e4;border-left:none;border-right:none;border-top:none;box-sizing:border-box;font-size:14px;outline:0;padding:10px;width:100%}\r\n.select-pure__placeholder {font-size: 12px;color: #808080;font-weight: 400;}\r\n.select-pure__placeholder--hidden {display: none;}\r\n\r\n/* loading Spinner */\r\n.spinner {position: absolute;left: 46%;top: 46%;height:60px;width:60px;-webkit-animation: rotation .6s infinite linear;-moz-animation: rotation .6s infinite linear;-o-animation: rotation .6s infinite linear;animation: rotation .6s infinite linear;border-left:4px solid rgba(0,174,239,.15);border-right:4px solid rgba(0,174,239,.15);border-bottom:4px solid rgba(0,174,239,.15);border-top:4px solid var(--main-dark-blue);border-radius:100%;z-index: 11000;}\r\n@-webkit-keyframes rotation {from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(359deg);}}\r\n@-moz-keyframes rotation {from {-moz-transform: rotate(0deg);} to {-moz-transform: rotate(359deg);}}\r\n@-o-keyframes rotation {from {-o-transform: rotate(0deg);} to {-o-transform: rotate(359deg);}}\r\n@keyframes rotation {from {transform: rotate(0deg);} to {transform: rotate(359deg);}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -8183,7 +8183,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename input {background-color: transparent;border: none;height: 22px;padding: 0;width: 95%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}\r\n\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 15px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
+exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;width: 95%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;text-decoration: none;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}\r\n\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -40848,7 +40848,7 @@ module.exports = content.locals || {};
 var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"img/ifad.svg\">\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"img/cogs.svg\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>";
+    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"img/ifad.svg\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"img/cogs.svg\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -40885,10 +40885,12 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 
   return "                <div data-row=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"key") || (data && lookupProperty(data,"key"))) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data,"loc":{"start":{"line":7,"column":31},"end":{"line":7,"column":39}}}) : helper)))
-    + "\" class=\"row align-items-center\">\r\n                    <div>\r\n                        <span class=\"modal-drag\"></span>\r\n                    </div>\r\n                    <div class=\"col modal-intervention-title\">\r\n                        <input type=\"text\" class=\"form-control form-parameter\" placeholder=\"Add an Intervention\" data-id=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"Id") || (depth0 != null ? lookupProperty(depth0,"Id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Id","hash":{},"data":data,"loc":{"start":{"line":12,"column":122},"end":{"line":12,"column":128}}}) : helper)))
+    + "\" class=\"row align-items-center\">\r\n                    <div>\r\n                        <span class=\"modal-drag\"></span>\r\n                    </div>\r\n                    <div class=\"col modal-intervention-title\">\r\n                        <input type=\"text\" class=\"form-control form-parameter\" placeholder=\"Add an Intervention\" data-color=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"Color") || (depth0 != null ? lookupProperty(depth0,"Color") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Color","hash":{},"data":data,"loc":{"start":{"line":12,"column":125},"end":{"line":12,"column":134}}}) : helper)))
+    + "\" data-id=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"Id") || (depth0 != null ? lookupProperty(depth0,"Id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Id","hash":{},"data":data,"loc":{"start":{"line":12,"column":145},"end":{"line":12,"column":151}}}) : helper)))
     + "\" value=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"Title") || (depth0 != null ? lookupProperty(depth0,"Title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Title","hash":{},"data":data,"loc":{"start":{"line":12,"column":137},"end":{"line":12,"column":146}}}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"Title") || (depth0 != null ? lookupProperty(depth0,"Title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Title","hash":{},"data":data,"loc":{"start":{"line":12,"column":160},"end":{"line":12,"column":169}}}) : helper)))
     + "\">\r\n                    </div>\r\n                </div>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -40947,7 +40949,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"regions") : depths[1]),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":41,"column":8},"end":{"line":48,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"countries") : depths[1]),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":49,"column":8},"end":{"line":56,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-control\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
+    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-impact\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
 },"2":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -41047,7 +41049,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-span-title\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <input class=\"attachment-filetitle\" type=\"text\" disabled=\"disabled\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Document Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
+  return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-span-title\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <a class=\"attachment-filetitle\"></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Document Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":22,"column":8},"end":{"line":35,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":36,"column":8},"end":{"line":49,"column":15}}})) != null ? stack1 : "")
     + "        <div class=\"col col-14\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Date</span>\r\n                <input class=\"form-control form-resource modal-datepicker\" placeholder=\"Select a date\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-3\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Author</span>\r\n                <input type=\"text\" class=\"form-control form-resource modal-author\" placeholder=\"Insert the Author\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Study type</span>\r\n                <input class=\"form-control form-resource modal-study\" placeholder=\"Insert a study type\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"add-resource-button-container\">\r\n    <button class=\"add-resource-button\">Add +</button>\r\n</div>\r\n<div class=\"intervention-outcome-container\"></div>";
@@ -41148,16 +41150,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_0__);
 
 var errorList = {
-  invalidFile: '<p>You can only upload Word, Powerpoint, Excel or PDF documents</p>',
-  invalidFilename: '<p>The selected file has any of the following invalid characters:</p><p>~, #, %, & , *, {, }, \, :, <, >, ?, /, |, \', "</p>',
-  invalidFileSize: '<p>The selected file exceeds the maximum limit of 20 Megabytes</p>',
-  invalidTitle: '<p>This Resource exists already</p>',
-  invalidInput: '<p>The maximum number of characters for each input field is 250</p>',
-  invalidDescription: '<p>You exceeded the maximum number of characters of the Description field</p>',
-  addFormInvalid: '<p>Missing or invalid information</p>',
-  selectResource: '<p>Select a Resource from the menu</p>',
-  saveResource: '<p>Are you sure you want to save?</p>',
-  modifyParameters: '<p>You are about to modify the Gapmap core parameters. Do you want to proceed?</p>'
+  invalidFile: 'You can only upload Word, Powerpoint, Excel or PDF documents',
+  invalidFilename: 'The selected file has any of the following invalid characters:<br>~, #, %, & , *, {, }, \, :, <, >, ?, /, |, \', "',
+  invalidFileSize: 'The selected file exceeds the maximum limit of 20 Megabytes',
+  invalidTitle: 'This Resource exists already',
+  invalidInput: 'The maximum number of characters for each input field is 250',
+  invalidDescription: 'You exceeded the maximum number of characters of the Description field',
+  addFormInvalid: 'Missing or invalid information',
+  selectResource: 'Select a Resource from the menu',
+  saveResource: 'Are you sure you want to save?',
+  deleteResource: 'Are you sure you want to delete this Resource?',
+  deleteAttachment: 'Do you want to delete this Document?',
+  modifyParameters: 'You are about to modify the Gapmap core parameters. Do you want to proceed?'
 };
 
 var display = (value, confirm, callback, arg) => {
@@ -41176,7 +41180,7 @@ class ModalError {
     this.showCancelButton = confirm ? true : false;
     this.confirmButtonColor = '#003870';
     this.confirmButtonText = 'Save';
-    this.html = "<div>".concat(errorList[value], "</div>");
+    this.html = "<div><p>".concat(errorList[value], "</p></div>");
   }
 
 }
@@ -41209,7 +41213,7 @@ document.getElementById("gapmap-header").innerHTML = _hbs_header_hbs__WEBPACK_IM
 /*!****************************!*\
   !*** ./src/js/requests.js ***!
   \****************************/
-/*! exports provided: receiveData, saveResource, deleteResource, modifyParameters */
+/*! exports provided: receiveData, saveResource, deleteResource, deleteAttachment, modifyParameters */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -41217,6 +41221,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "receiveData", function() { return receiveData; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveResource", function() { return saveResource; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteResource", function() { return deleteResource; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteAttachment", function() { return deleteAttachment; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modifyParameters", function() { return modifyParameters; });
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -41226,7 +41231,147 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
-class SharepointListItem {
+var receiveData = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator(function* (url) {
+    var options = {
+      method: "GET",
+      credentials: "same-origin",
+      headers: {
+        "Accept": "application/json;odata=verbose"
+      }
+    };
+    var response = yield fetch(url, options);
+    return yield response.json();
+  });
+
+  return function receiveData(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+var saveResource = id => {
+  var resourceList = gapmap.data.storage.resourceList;
+  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(resourceList, "')/items").concat(id ? "(".concat(id, ")") : "");
+  var item = new SharepointResourceItem();
+  var options = {
+    method: "POST",
+    credentials: "same-origin",
+    headers: {
+      "Accept": "application/json;odata=verbose",
+      "Content-Type": "application/json;odata=verbose",
+      "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+    },
+    body: JSON.stringify(item)
+  };
+
+  if (id) {
+    options.headers["IF-MATCH"] = "*";
+    options.headers["X-Http-Method"] = "MERGE";
+  }
+
+  fetch(url, options).then(data => {
+    var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.getContext();
+    var attachment = context.querySelector('.attachment-fileinput').files;
+
+    if (attachment.length) {
+      if (id) {
+        saveAttachment(id, attachment);
+      } else {
+        data.json().then(result => {
+          saveAttachment(result.d.Id, attachment);
+        });
+      }
+    }
+  });
+};
+
+var deleteResource = id => {
+  var resourceList = gapmap.data.storage.resourceList;
+  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/getbytitle('").concat(resourceList, "')/items(").concat(id, ")/recycle()");
+  var options = {
+    method: "DELETE",
+    credentials: "same-origin",
+    headers: {
+      "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+    }
+  };
+  fetch(url, options).then(() => location.reload());
+};
+
+var saveAttachment = (itemId, attachment) => {
+  getFileBuffer(attachment[0]).then(buffer => {
+    var resourceList = gapmap.data.storage.resourceList;
+    var attachmentURL = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(resourceList, "')/items(").concat(itemId, ")/AttachmentFiles/add(FileName='").concat(attachment[0].name, "')");
+    var createitem = new SP.RequestExecutor(webAbsoluteUrl);
+    var bytes = new Uint8Array(buffer);
+    var binary = '';
+    bytes.forEach(i => binary += String.fromCharCode(i));
+    createitem.executeAsync({
+      url: attachmentURL,
+      method: "POST",
+      binaryStringRequestBody: true,
+      state: "Update",
+      body: binary,
+      success: () => {
+        location.reload();
+      },
+      error: () => {
+        throw new TypeError("Failed to upload the attachment");
+      }
+    });
+  });
+
+  function getFileBuffer(attachment) {
+    var promise = new Promise((resolve, reject) => {
+      var reader = new FileReader();
+
+      reader.onload = e => {
+        resolve(e.target.result);
+      };
+
+      reader.onerror = e => {
+        reject(e.target.error);
+      };
+
+      reader.readAsArrayBuffer(attachment);
+    });
+    return promise;
+  }
+};
+
+var deleteAttachment = attachmentUrl => {
+  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/getFileByServerRelativeUrl('").concat(attachmentUrl, "')/recycle()");
+  var options = {
+    method: "DELETE",
+    credentials: "same-origin",
+    headers: {
+      "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+    }
+  };
+  fetch(url, options).then(() => location.reload());
+};
+
+var modifyParameters = () => {
+  var settingsList = gapmap.data.storage.settingsList;
+  var id = gapmap.data.storage.settingsId;
+  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(settingsList, "')/items(").concat(id, ")");
+  var item = new SharepointSettingsItem();
+  var options = {
+    method: "POST",
+    credentials: "same-origin",
+    headers: {
+      "Accept": "application/json;odata=verbose",
+      "Content-Type": "application/json;odata=verbose",
+      "X-Http-Method": "MERGE",
+      "IF-MATCH": "*",
+      "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
+    },
+    body: JSON.stringify(item)
+  };
+  fetch(url, options).then(() => location.reload());
+};
+
+class SharepointResourceItem {
   constructor() {
     this.Title = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".attachment-title", this.getContext());
     this.label = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".attachment-title", this.getContext());
@@ -41234,7 +41379,7 @@ class SharepointListItem {
     this.Evidence = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-evidence select option:checked", this.getContext());
     this.Language = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-language option:checked", this.getContext());
     this.Date = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getDate(".modal-datepicker", this.getContext());
-    this.Author = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-author", this.getContext());
+    this.Author0 = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-author", this.getContext());
     this.Study = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-study", this.getContext());
     this.Data = this.getData();
     this.__metadata = {
@@ -41251,10 +41396,12 @@ class SharepointListItem {
     var context = "#".concat(this.getContext().id, " .card-resource");
     _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList(context).forEach(i => {
       var item = {
-        Region: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-region select option:checked", i),
-        Country: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getCountries(i),
+        Region: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getOptions('.modal-region', i),
+        Country: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getOptions('.modal-country', i),
+        Impact: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-impact option:checked", i),
         Population: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-population", i),
         Metrics: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-metrics", i),
+        Paragraphs: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-paragraphs", i),
         Intervention: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-intervention select option:checked", i),
         Outcome: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getValue(".modal-outcome select option:checked", i),
         Description: _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getHTML(".editor .ql-editor", i)
@@ -41270,43 +41417,41 @@ class SharepointListItem {
 
 }
 
-var receiveData = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator(function* (url) {
-    var response = yield fetch(url);
-    return yield response.json();
-  });
+class SharepointSettingsItem {
+  constructor() {
+    this.interventions = this.getInterventions();
+    this.outcomes = this.getOutcomes();
+    this.__metadata = {
+      type: this.getMetadataType()
+    };
+  }
 
-  return function receiveData(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
+  getInterventions() {
+    var items = Array.from(document.querySelectorAll('.modal-intervention-title input'));
+    return items.map((i, j) => {
+      return {
+        Title: i.value,
+        Id: j + 1,
+        Color: i.dataset.color
+      };
+    });
+  }
 
-var saveResource = id => {
-  var webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
-  var resourceList = gapmap.data.storage.resourceList;
-  var url = "".concat(webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(resourceList, "')/items").concat(id ? "(".concat(id, ")") : "");
-  var item = new SharepointListItem();
-  var options = {
-    method: "POST",
-    credentials: "same-origin",
-    headers: {
-      "Accept": "application/json;odata=verbose",
-      "Content-Type": "application/json;odata=verbose",
-      "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
-    },
-    body: JSON.stringify(item)
-  }; // id ? console.log('edit', item) : console.log('save', item);
+  getOutcomes() {
+    var items = Array.from(document.querySelectorAll('.modal-outcome-title input'));
+    return items.map((i, j) => {
+      return {
+        Title: i.value,
+        Id: j + 1
+      };
+    });
+  }
 
-  fetch(url, options); // send attachment
-};
+  getMetadataType() {
+    return gapmap.data.storage.settingsMetadata;
+  }
 
-var deleteResource = id => {
-  console.log('deleteResource', id);
-};
-
-var modifyParameters = () => {
-  console.log('modifyParameters', gapmap.Id);
-};
+}
 
 
 
@@ -41357,7 +41502,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var validateAttachment = () => {
+var validateAttachmentCreation = () => {
   var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
   var source = context.querySelector('.attachment-fileinput');
 
@@ -41392,7 +41537,25 @@ var validateAttachment = () => {
   }
 };
 
-var validateResource = (target, id) => {
+var validateAttachmentDeletion = () => {
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
+  var isEdit = context.id == "modal-edit";
+
+  if (isEdit) {
+    var index = context.querySelector('#edit-resource').dataset.item;
+    var selectedResource = gapmap.data.resources.filter(i => i.Id == index)[0];
+    var hasAttachment = selectedResource.Attachments;
+
+    if (hasAttachment) {
+      var attachmentName = selectedResource.AttachmentFiles.results[0].FileName;
+      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteAttachment', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteAttachment"], attachmentName);
+    }
+  }
+
+  return _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
+};
+
+var validateResourceCreation = (target, id) => {
   var titleElement = target.querySelector('.attachment-title');
   var selectElement = target.querySelector('.modal-select-item .select-pure__select');
   var input = target.querySelectorAll('input.form-control');
@@ -41400,7 +41563,7 @@ var validateResource = (target, id) => {
   var title = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"));
   var editMode = target.id == "modal-edit";
   var emptyValue = !gapmap.selectResource.value();
-  var findDuplication = !!gapmap.data.resources.filter(i => i.label == _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"))).length;
+  var findDuplication = !!gapmap.data.resources.filter(i => i.label == title).length;
   var modifiedTitle = !(title == titleElement.dataset.origin);
 
   if (editMode && emptyValue) {
@@ -41440,7 +41603,16 @@ var validateResource = (target, id) => {
   }
 };
 
-var validateModifyParameters = context => {
+var validateResourceDeletion = () => {
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu().id == "modal-edit";
+  var id = document.getElementById('edit-resource').dataset.item;
+
+  if (context && id) {
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteResource', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteResource"], parseInt(id));
+  }
+};
+
+var validateParametersModification = context => {
   var input = context.querySelectorAll('input.form-control');
   var style = '1px solid red';
   var empty = false;
@@ -41471,67 +41643,7 @@ var validateModifyParameters = context => {
   Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('modifyParameters', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["modifyParameters"]);
 };
 
-var validateDeletion = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu().id == "modal-edit";
-  var id = document.getElementById('edit-resource').dataset.item;
-
-  if (context && id) {
-    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteResource"])(parseInt(id));
-  }
-};
-
-var resourceList = (list, placeholder, auto, value) => {
-  return {
-    options: list,
-    placeholder: placeholder,
-    autocomplete: auto,
-    value: value,
-    onChange: value => {
-      var target = document.getElementById('edit-resource');
-      var button = document.getElementById('remove-resource').parentNode;
-      var element = gapmap.data.resources.filter(i => i.Title == value)[0];
-
-      var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
-
-      document.querySelector('.modal-select-item .select-pure__select').style = "";
-      _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('input.form-control').forEach(i => i.style = "");
-      target.dataset.item = element.Id;
-      element.Attachment && _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(element.Attachment);
-      gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
-      target.querySelector('.attachment-title').value = element.Title;
-      target.querySelector('.attachment-title').dataset.origin = element.Title;
-      target.querySelector('.modal-evidence select').value = element.Evidence;
-      target.querySelector('.modal-language select').value = element.Language;
-      target.querySelector('.modal-author').value = element.Author;
-      target.querySelector('.modal-study').value = element.Study;
-
-      if (element.Data.length) {
-        var item = new ResourceData(gapmap.data, element.Data);
-        target.querySelector('.intervention-outcome-container').innerHTML = template(item);
-        element.Data.forEach((i, j) => {
-          var regionValue = i.Region ? i.Region.split(', ') : [];
-          var countryValue = i.Country ? i.Country.split(', ') : [];
-          var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
-          var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
-          var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
-          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
-          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
-          new quill__WEBPACK_IMPORTED_MODULE_4___default.a(target.querySelectorAll('.editor')[j], editorOptions);
-          target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
-          target.querySelectorAll('.modal-population')[j].value = i.Population;
-          target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
-          target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
-          target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
-        });
-      }
-
-      target.classList.remove('vanish');
-      button.classList.remove('hidden');
-    }
-  };
-};
-
-var addResourceElement = () => {
+var addResourceForm = () => {
   var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
 
   var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
@@ -41547,7 +41659,7 @@ var addResourceElement = () => {
   new quill__WEBPACK_IMPORTED_MODULE_4___default.a(context.querySelectorAll('.editor')[index], editorOptions);
 };
 
-var deleteResourceElement = event => {
+var deleteResourceForm = event => {
   event.target.closest('.card').remove();
 };
 
@@ -41556,14 +41668,14 @@ var saveChanges = () => {
   var resourceId = document.getElementById('edit-resource').dataset.item;
 
   if (target.id == 'modal-modify') {
-    return validateModifyParameters(target);
+    return validateParametersModification(target);
   }
 
   if (target.id == 'modal-edit') {
-    return validateResource(target, resourceId);
+    return validateResourceCreation(target, resourceId);
   }
 
-  return validateResource(target);
+  return validateResourceCreation(target);
 };
 
 var resetForm = () => {
@@ -41598,6 +41710,67 @@ var switchForm = () => {
   }
 };
 
+var resourceList = (list, placeholder, auto, value) => {
+  return {
+    options: list,
+    placeholder: placeholder,
+    autocomplete: auto,
+    value: value,
+    onChange: value => {
+      var target = document.getElementById('edit-resource');
+      var button = document.getElementById('remove-resource').parentNode;
+      var element = gapmap.data.resources.filter(i => i.Title == value)[0];
+
+      var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
+
+      document.querySelector('.modal-select-item .select-pure__select').style = "";
+      _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('input.form-control').forEach(i => i.style = "");
+      target.dataset.item = element.Id;
+      gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+      target.querySelector('.attachment-title').value = element.Title;
+      target.querySelector('.attachment-title').dataset.origin = element.Title;
+      target.querySelector('.modal-evidence select').value = element.Evidence;
+      target.querySelector('.modal-language select').value = element.Language;
+      target.querySelector('.modal-author').value = element.Author0;
+      target.querySelector('.modal-study').value = element.Study;
+
+      if (element.Attachments) {
+        var fileName = element.AttachmentFiles.results[0].FileName;
+        var fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
+        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
+        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(fileName, fileURL);
+      } else {
+        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
+      }
+
+      if (element.Data.length) {
+        var item = new ResourceData(gapmap.data, element.Data);
+        target.querySelector('.intervention-outcome-container').innerHTML = template(item);
+        element.Data.forEach((i, j) => {
+          var regionValue = i.Region ? i.Region.split(', ') : [];
+          var countryValue = i.Country ? i.Country.split(', ') : [];
+          var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
+          var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
+          var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
+          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
+          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
+          new quill__WEBPACK_IMPORTED_MODULE_4___default.a(target.querySelectorAll('.editor')[j], editorOptions);
+          target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
+          target.querySelectorAll('.modal-impact select')[j].value = i.Impact;
+          target.querySelectorAll('.modal-population')[j].value = i.Population;
+          target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
+          target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;
+          target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
+          target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
+        });
+      }
+
+      target.classList.remove('vanish');
+      button.classList.remove('hidden');
+    }
+  };
+};
+
 var addListeners = () => {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-dialog').on('change', '.modal-datepicker', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeAttr('style');
@@ -41606,15 +41779,15 @@ var addListeners = () => {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-dialog').on('hidden.bs.modal', resetForm); // change event in bootstrap triggered by jQuery
 
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'input', '.form-control', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.clearStyle);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.remove-document', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'paste', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.preventPaste);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'keypress', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.preventCopy);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'change', '.modal-intervention select', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.changeColor);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachment);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceElement);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceElement);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachmentCreation);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.remove-document', validateAttachmentDeletion);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#remove-resource', validateDeletion);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
@@ -41692,6 +41865,7 @@ module.exports = {
   on: on,
   removeClass: removeClass,
   currentMenu: currentMenu,
+  startLoader: startLoader,
   lock: lock,
   unLock: unLock,
   changeColor: changeColor,
@@ -41703,7 +41877,7 @@ module.exports = {
     getText: getText,
     getHTML: getHTML,
     getDate: getDate,
-    getCountries: getCountries,
+    getOptions: getOptions,
     getNodeList: getNodeList
   },
   check: {
@@ -41750,30 +41924,46 @@ function currentMenu() {
     case 3:
       return document.getElementById('modal-modify');
   }
+}
+
+function startLoader() {
+  var body = document.getElementsByTagName('body')[0];
+  var dialog = document.getElementById('settingsMenu');
+  var settingsIcon = document.querySelector('.settings-link');
+  var spinner = '<div class="spinner"></div>';
+  dialog.setAttribute('style', 'display: none;');
+  settingsIcon.setAttribute('style', 'display: none;');
+  body.setAttribute('style', 'user-select: none; overflow: hidden;');
+  body.insertAdjacentHTML('beforeend', spinner);
 } // lock attached file
 
 
-function lock(filename) {
+function lock(filename, url) {
   var context = currentMenu();
-  var target = context.querySelector('.attachment-filename');
+  var attachmentContainer = context.querySelector('.attachment-filename');
+  var attachment = attachmentContainer.querySelector('.attachment-filetitle');
   var file = context.querySelector('.btn-file');
   var icon = '<span class="remove-document"></span>';
+  attachmentContainer.insertAdjacentHTML('beforeend', icon);
+  attachment.innerText = filename;
+  url && attachment.setAttribute('href', url);
+  file.querySelector('input').setAttribute('disabled', 'disabled');
   file.style = "";
-  target.querySelector('input').value = filename;
-  target.insertAdjacentHTML('beforeend', icon);
 } // unlock attached file
 
 
-function unLock(event, form) {
-  var context = form ? form : currentMenu();
+function unLock(event, menu) {
+  var context = menu ? menu : currentMenu();
   var target = context.querySelectorAll('.remove-document');
 
   if (target.length) {
     var icon = target[0];
     var file = context.querySelector('.attachment-fileinput');
     var filename = context.querySelector('.attachment-filetitle');
+    file.removeAttribute('disabled');
     file.value = "";
-    filename.value = "";
+    filename.innerText = "";
+    filename.removeAttribute('href');
     icon.remove();
   }
 }
@@ -41850,9 +42040,9 @@ function getDate(value, context) {
   }
 }
 
-function getCountries(context) {
+function getOptions(value, context) {
   try {
-    return getNodeList('.select-pure__selected-label', context).map(i => i.innerText).join(', ');
+    return getNodeList("".concat(value, " .select-pure__selected-label"), context).map(i => i.innerText).join(', ');
   } catch (error) {
     return null;
   }

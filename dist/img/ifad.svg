@@ -1,5 +1,5 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="-80 30 500 280">
-    <g transform="translate(-50,280) scale(0.1,-0.1)" fill="#000" stroke="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 30 500 280">
+    <g transform="translate(-50,280) scale(0.1,-0.1)" fill="#fff" stroke="none">
         <path d="M390 2068 c0 -256 -3 -331 -15 -363 -50 -140 15 -266 179 -345 77
         -37 120 -71 144 -115 6 -11 12 -15 12 -8 0 29 67 86 144 123 166 79 231 204
         181 345 -12 32 -15 107 -15 363 0 208 -4 322 -10 322 -6 0 -10 -121 -10 -342
