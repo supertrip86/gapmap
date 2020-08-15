@@ -55,9 +55,9 @@ const validateAttachmentDeletion = () => {
         const hasAttachment = selectedResource.Attachments;
 
         if (hasAttachment) {
-            const attachmentName = selectedResource.AttachmentFiles.results[0].FileName;
+            const attachmentURL = selectedResource.AttachmentFiles.results[0].ServerRelativeUrl;
 
-            return display('deleteAttachment', true, deleteAttachment, attachmentName);
+            return display('deleteAttachment', true, deleteAttachment, attachmentURL);
         }
 
     }
@@ -259,11 +259,10 @@ const resourceList = (list, placeholder, auto, value) => {
             target.querySelector('.modal-study').value = element.Study;
 
             if (element.Attachments) {
-                const fileName = element.AttachmentFiles.results[0].FileName;
                 const fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
 
                 utilities.unLock();
-                utilities.lock(fileName, fileURL);
+                utilities.lock(element.Title, fileURL);
             } else {
                 utilities.unLock();
             }
@@ -275,7 +274,7 @@ const resourceList = (list, placeholder, auto, value) => {
 
                 element.Data.forEach( (i, j) => {
                     const regionValue = i.Region ? i.Region.split(', ') : [];
-                    const countryValue = i.Country ? i.Country.split(', ') : [];
+                    const countryValue = i.Country ? i.Country.split('; ') : [];
                     const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
                     const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
                     const editorOptions = utilities.options.editorOptions();

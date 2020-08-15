@@ -8183,7 +8183,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-image: url('/img/drag.svg');background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;width: 95%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;text-decoration: none;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('/img/cancel.svg');}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('/img/remove.svg');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('/img/delete.svg');}\r\n\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
+exports.push([module.i, ".modal-open .modal {overflow-y: scroll;}\r\n\r\n.modal .modal-dialog {max-width: 1000px;min-width: 650px;width: 60%;}\r\n.modal .modal-dialog .modal-header {padding: 10px;}\r\n.modal .modal-dialog .modal-header .close {padding: 0;margin: 0 1rem;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab {margin: 2px 10px 0px 5px;padding-bottom: 13px;cursor: pointer;font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}\r\n.modal .modal-dialog .modal-header .modal-title .modal-tab:hover, .modal .modal-dialog .modal-header .modal-title .modal-active-tab {border-bottom: 1px solid var(--main-bright-blue);}\r\n.modal .modal-dialog .modal-header .modal-title .modal-active-tab {font-weight: bold;}\r\n\r\n.modal .modal-dialog .modal-body label {margin-bottom: 0;width: 100%;}\r\n.modal .modal-dialog .modal-body .row {padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .container {padding: 0;max-width: 100%;}\r\n.modal .modal-dialog .modal-body .card {margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .card-header {display: flex;justify-content: space-between;padding-right: .4rem;background-color: aliceblue;}\r\n.modal .modal-dialog .modal-body .card-body {padding: 1rem;}\r\n.modal .modal-dialog .modal-body .card-main {background-color: #f0f8ff;}\r\n.modal .modal-dialog .modal-body .modal-drag {display: block;background-repeat: no-repeat;background-size: 15px;background-position: center;cursor: grab;width: 25px;height: 25px;background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHdpZHRoPSI5MTAuMDAwMDAwcHQiIGhlaWdodD0iOTEwLjAwMDAwMHB0IiB2aWV3Qm94PSIwIDAgOTEwLjAwMDAwMCA5MTAuMDAwMDAwIgogcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCw5MTAuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIgogICAgZmlsbD0iZ3JheSIgc3Ryb2tlPSJub25lIj4KICAgICAgICA8cGF0aCBkPSJNOTQwIDc0NTQgYy0yMTQgLTMyIC0zNzcgLTE0NCAtNDU5IC0zMTcgLTUwIC0xMDUgLTY1IC0xNzIgLTY1IC0yNzgKICAgICAgICAyIC0yNTAgMTcyIC00NzMgNDE5IC01NTIgbDcwIC0yMiAzNjQ1IDAgMzY0NSAwIDcwIDIyIGMyODUgOTAgNDYyIDM3NSA0MTEKICAgICAgICA2NjAgLTQwIDIyNyAtMTk0IDQwMCAtNDIxIDQ3MiAtNDUgMTQgLTM5NSAxNiAtMzY3MCAxNyAtMTk5MSAxIC0zNjMxIDAgLTM2NDUKICAgICAgICAtMnoiLz4KICAgICAgICA8cGF0aCBkPSJNODUxIDQ5ODAgYy0xOTMgLTUxIC0zNDEgLTE5MSAtNDA3IC0zODUgLTIyIC02NiAtMjcgLTk4IC0yNyAtMTgwIDAKICAgICAgICAtMjczIDE2OCAtNDkxIDQzOSAtNTcxIDU1IC0xNiAyNzggLTE3IDM2OTkgLTE3IGwzNjQwIDAgODAgMjcgYzEwMCAzNCAxNDggNjIKICAgICAgICAyMTkgMTI2IDEyNCAxMTUgMTg5IDI2MiAxODkgNDM1IDAgODMgLTQgMTE0IC0yNiAxNzggLTY5IDIwMCAtMjE0IDMzNiAtNDEyCiAgICAgICAgMzg3IC03NyAyMCAtMTEyIDIwIC0zNjk5IDE5IC0zNTQ3IDAgLTM2MjMgMCAtMzY5NSAtMTl6Ii8+CiAgICAgICAgPHBhdGggZD0iTTg0MyAyNTIxIGMtMTkxIC01NSAtMzM4IC0xOTYgLTM5OSAtMzg0IC01NiAtMTcxIC0yOCAtMzYwIDczIC01MTEKICAgICAgICA4MiAtMTIwIDE5NiAtMjAwIDM0MSAtMjM3IDc0IC0xOSAxNDkgLTE5IDM2OTIgLTE5IDM1NDMgMCAzNjE4IDAgMzY5MiAxOSAxNDUKICAgICAgICAzNyAyNTkgMTE3IDM0MSAyMzcgMTAyIDE1MSAxMjkgMzM5IDc0IDUwOSAtNTggMTc3IC0xOTEgMzE0IC0zNjcgMzc3IGwtNjUgMjMKICAgICAgICAtMzY2MCAyIGMtMzQ3MCAyIC0zNjYzIDEgLTM3MjIgLTE2eiIvPgogICAgPC9nPgo8L3N2Zz4=');}\r\n.modal .modal-dialog .modal-body .modal-intervention-title, .modal .modal-dialog .modal-body .modal-outcome-title {padding-left: 2px;padding-right: 4px;}\r\n.modal .modal-dialog .modal-body .modal-required, .modal .modal-dialog .modal-body .modal-span-title {display: block;margin-bottom: 4px;font-size: 12px;font-weight: bold;}\r\n.modal .modal-dialog .modal-body .modal-required::after {content:\"*\";color:red;}\r\n.modal .modal-dialog .modal-body .modal-attachment {display: flex;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file {width: 150px;border-top-right-radius: 0;border-bottom-right-radius: 0;padding: 4px 12px;color: #333;background-color: #fff;border-color: #ccc;font-size: 12px;height: 30px;}\r\n.modal .modal-dialog .modal-body .modal-attachment .btn-file:hover {color: #fff;background-color: var(--main-dark-blue);}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename {flex-grow: 1;position: relative;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: none;}\r\n.modal .modal-dialog .modal-body .modal-attachment .attachment-filename .attachment-filetitle {display: block;max-width: 540px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;line-height: 2;text-decoration: none;}\r\n\r\n.modal .modal-dialog .modal-body .remove-document {position: absolute;left: 95%;top: 7px;cursor: pointer;}\r\n.modal .modal-dialog .modal-body .remove-document::before {content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgdmlld0JveD0iMCAwIDE2IDE2IiBjbGFzcz0iYmkgYmkteCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS44NTQgNC4xNDZhLjUuNSAwIDAgMSAwIC43MDhsLTcgN2EuNS41IDAgMCAxLS43MDgtLjcwOGw3LTdhLjUuNSAwIDAgMSAuNzA4IDB6Ii8+DQogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNC4xNDYgNC4xNDZhLjUuNSAwIDAgMCAwIC43MDhsNyA3YS41LjUgMCAwIDAgLjcwOC0uNzA4bC03LTdhLjUuNSAwIDAgMC0uNzA4IDB6Ii8+DQo8L3N2Zz4=');}\r\n.modal .modal-dialog .modal-body .remove-country {margin-top: -5px;}\r\n.modal .modal-dialog .modal-body .remove-country::before {content: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIGNsYXNzPSJiaSBiaS14IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjg1NCA0LjE0NmEuNS41IDAgMCAxIDAgLjcwOGwtNyA3YS41LjUgMCAwIDEtLjcwOC0uNzA4bDctN2EuNS41IDAgMCAxIC43MDggMHoiLz4NCiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjE0NiA0LjE0NmEuNS41IDAgMCAwIDAgLjcwOGw3IDdhLjUuNSAwIDAgMCAuNzA4LS43MDhsLTctN2EuNS41IDAgMCAwLS43MDggMHoiLz4NCjwvc3ZnPg==');}\r\n.modal .modal-dialog .modal-body .delete-resource-button::before {content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgdmlld0JveD0iMCAwIDE2IDE2IiBjbGFzcz0iYmkgYmktdHJhc2giIGZpbGw9ImN1cnJlbnRDb2xvciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cGF0aCBkPSJNNS41IDUuNUEuNS41IDAgMCAxIDYgNnY2YS41LjUgMCAwIDEtMSAwVjZhLjUuNSAwIDAgMSAuNS0uNXptMi41IDBhLjUuNSAwIDAgMSAuNS41djZhLjUuNSAwIDAgMS0xIDBWNmEuNS41IDAgMCAxIC41LS41em0zIC41YS41LjUgMCAwIDAtMSAwdjZhLjUuNSAwIDAgMCAxIDBWNnoiLz4NCiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC41IDNhMSAxIDAgMCAxLTEgMUgxM3Y5YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjRoLS41YTEgMSAwIDAgMS0xLTFWMmExIDEgMCAwIDEgMS0xSDZhMSAxIDAgMCAxIDEtMWgyYTEgMSAwIDAgMSAxIDFoMy41YTEgMSAwIDAgMSAxIDF2MXpNNC4xMTggNEw0IDQuMDU5VjEzYTEgMSAwIDAgMCAxIDFoNmExIDEgMCAwIDAgMS0xVjQuMDU5TDExLjg4MiA0SDQuMTE4ek0yLjUgM1YyaDExdjFoLTExeiIvPg0KPC9zdmc+');}\r\n\r\n.modal .modal-dialog .modal-body .editor-container {margin: 0 -7px;padding-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow {border: none;padding: 0 0 5px 0;}\r\n.modal .modal-dialog .modal-body .ql-toolbar.ql-snow + .ql-container.ql-snow {background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}\r\n.modal .modal-dialog .modal-body .ql-editor {min-height: 90px;font-size: 12px;}\r\n.modal .modal-dialog .modal-body .ql-editor.ql-blank::before {color: #6c757d;font-style: normal;font-size: 12px;}\r\n\r\n.modal .modal-dialog .modal-body .add-resource-button-container {text-align: right;margin-bottom: 10px;}\r\n.modal .modal-dialog .modal-body .delete-resource-button-container {justify-content: flex-end;padding: 10px 0 0 0;}\r\n.modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}\r\n\r\n.modal .modal-dialog .modal-footer {justify-content: space-between;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -40848,7 +40848,7 @@ module.exports = content.locals || {};
 var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"img/ifad.svg\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"img/cogs.svg\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
+    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"/sites/pa/tools/gapmap/img/ifad.svg\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"/sites/pa/tools/gapmap/img/cogs.svg\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -40946,7 +40946,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + ";\">\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"interventions") : depths[1]),{"name":"if","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":8},"end":{"line":17,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"outcomes") : depths[1]),{"name":"if","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":18,"column":8},"end":{"line":31,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
+    + "    </div>\r\n    <div class=\"editor-container\">\r\n        <div>\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"regions") : depths[1]),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":41,"column":8},"end":{"line":48,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"countries") : depths[1]),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":49,"column":8},"end":{"line":56,"column":15}}})) != null ? stack1 : "")
     + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-impact\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
@@ -41049,7 +41049,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-span-title\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <a class=\"attachment-filetitle\"></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Document Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
+  return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-span-title\">Upload Document</span>\r\n            <div class=\"modal-attachment\">\r\n                <label class=\"btn btn-default btn-file\">Browse<input type=\"file\" class=\"attachment-fileinput vanish\"></label>\r\n                <div class=\"form-control attachment-filename\" disabled=\"disabled\">\r\n                    <a target=\"_blank\" class=\"attachment-filetitle\"></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Document Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource attachment-title\" placeholder=\"Insert Document Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":22,"column":8},"end":{"line":35,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"languages") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":36,"column":8},"end":{"line":49,"column":15}}})) != null ? stack1 : "")
     + "        <div class=\"col col-14\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Date</span>\r\n                <input class=\"form-control form-resource modal-datepicker\" placeholder=\"Select a date\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-3\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Author</span>\r\n                <input type=\"text\" class=\"form-control form-resource modal-author\" placeholder=\"Insert the Author\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Study type</span>\r\n                <input class=\"form-control form-resource modal-study\" placeholder=\"Insert a study type\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"add-resource-button-container\">\r\n    <button class=\"add-resource-button\">Add +</button>\r\n</div>\r\n<div class=\"intervention-outcome-container\"></div>";
@@ -41104,16 +41104,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/users.json').then(user => {
-  var isAdmin = user.role == "Administrator";
-  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/data.json').then(settings => {
-    var data = settings;
-    data.storage.settingsId = settings.Id;
-    delete data.Id;
-    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/resources.json').then(resources => {
+var settingsList = 'gapmap-settings';
+var resourceList = 'gapmap-data';
+var resourceMetadata = 'SP.Data.GapmapdataListItem'; // const site = _spPageContextInfo.webServerRelativeUrl;
+// const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+// const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+// const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+
+var userData = '/api/user.json';
+var settingsData = '/api/data.json';
+var resourceData = '/api/resources.json';
+Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(userData).then(user => {
+  var isAdmin = !!user.d.Groups.results.filter(i => i.Title == "Tools Owners").length;
+  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(settingsData).then(settings => {
+    var data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
+    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(resourceData).then(resources => {
       var dialog = document.getElementById("gapmap-dialog");
       var settingsButton = document.querySelector('.navbar-collapse');
-      data.resources = resources;
+      data.resources = resources.d.results.map(item => {
+        var resource = item;
+        resource.Data = JSON.parse(item.Data);
+        return resource;
+      });
 
       if (isAdmin) {
         dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
@@ -41128,11 +41140,41 @@ Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])('/api/users.
 
         }
 
-        window.gapmap = new GapMap();
+        window.gapmap = new GapMap(); // setInterval( () => {
+        //     UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
+        // }, 15 * 60000);
       }
     });
   });
 });
+
+function queryOptions(target) {
+  var columns = {
+    settings: ["Id", "regions", "countries", "languages", "evidence", "interventions", "outcomes"],
+    resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
+  };
+  var expand = "$expand=AttachmentFiles";
+  var select = "$select=".concat(columns[target].join());
+  return "?".concat(expand, "&").concat(select);
+}
+
+function createData(data, settingsList, resourceList, resourceMetadata) {
+  var result = {};
+  result.regions = JSON.parse(data.regions);
+  result.countries = JSON.parse(data.countries);
+  result.languages = JSON.parse(data.languages);
+  result.evidence = JSON.parse(data.evidence);
+  result.interventions = JSON.parse(data.interventions);
+  result.outcomes = JSON.parse(data.outcomes);
+  result.storage = {
+    settingsId: data.Id,
+    settingsList: settingsList,
+    settingsMetadata: data.__metadata.type,
+    resourceList: resourceList,
+    resourceMetadata: resourceMetadata
+  };
+  return result;
+}
 
 /***/ }),
 
@@ -41179,7 +41221,7 @@ class ModalError {
     this.heightAuto = false;
     this.showCancelButton = confirm ? true : false;
     this.confirmButtonColor = '#003870';
-    this.confirmButtonText = 'Save';
+    this.confirmButtonText = 'Yes';
     this.html = "<div><p>".concat(errorList[value], "</p></div>");
   }
 
@@ -41269,8 +41311,9 @@ var saveResource = id => {
     options.headers["X-Http-Method"] = "MERGE";
   }
 
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.startLoader();
   fetch(url, options).then(data => {
-    var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.getContext();
+    var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.currentMenu();
     var attachment = context.querySelector('.attachment-fileinput').files;
 
     if (attachment.length) {
@@ -41281,6 +41324,8 @@ var saveResource = id => {
           saveAttachment(result.d.Id, attachment);
         });
       }
+    } else {
+      location.reload();
     }
   });
 };
@@ -41295,6 +41340,7 @@ var deleteResource = id => {
       "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
     }
   };
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.startLoader();
   fetch(url, options).then(() => location.reload());
 };
 
@@ -41302,7 +41348,7 @@ var saveAttachment = (itemId, attachment) => {
   getFileBuffer(attachment[0]).then(buffer => {
     var resourceList = gapmap.data.storage.resourceList;
     var attachmentURL = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/GetByTitle('").concat(resourceList, "')/items(").concat(itemId, ")/AttachmentFiles/add(FileName='").concat(attachment[0].name, "')");
-    var createitem = new SP.RequestExecutor(webAbsoluteUrl);
+    var createitem = new SP.RequestExecutor(_spPageContextInfo.webAbsoluteUrl);
     var bytes = new Uint8Array(buffer);
     var binary = '';
     bytes.forEach(i => binary += String.fromCharCode(i));
@@ -41348,6 +41394,7 @@ var deleteAttachment = attachmentUrl => {
       "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
     }
   };
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.startLoader();
   fetch(url, options).then(() => location.reload());
 };
 
@@ -41368,6 +41415,7 @@ var modifyParameters = () => {
     },
     body: JSON.stringify(item)
   };
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.startLoader();
   fetch(url, options).then(() => location.reload());
 };
 
@@ -41408,7 +41456,7 @@ class SharepointResourceItem {
       };
       data.push(item);
     });
-    return data;
+    return JSON.stringify(data);
   }
 
   getMetadataType() {
@@ -41427,24 +41475,26 @@ class SharepointSettingsItem {
   }
 
   getInterventions() {
-    var items = Array.from(document.querySelectorAll('.modal-intervention-title input'));
-    return items.map((i, j) => {
+    var DOMelements = Array.from(document.querySelectorAll('.modal-intervention-title input'));
+    var items = DOMelements.map((i, j) => {
       return {
         Title: i.value,
         Id: j + 1,
         Color: i.dataset.color
       };
     });
+    return JSON.stringify(items);
   }
 
   getOutcomes() {
-    var items = Array.from(document.querySelectorAll('.modal-outcome-title input'));
-    return items.map((i, j) => {
+    var DOMelements = Array.from(document.querySelectorAll('.modal-outcome-title input'));
+    var items = DOMelements.map((i, j) => {
       return {
         Title: i.value,
         Id: j + 1
       };
     });
+    return JSON.stringify(items);
   }
 
   getMetadataType() {
@@ -41547,8 +41597,8 @@ var validateAttachmentDeletion = () => {
     var hasAttachment = selectedResource.Attachments;
 
     if (hasAttachment) {
-      var attachmentName = selectedResource.AttachmentFiles.results[0].FileName;
-      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteAttachment', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteAttachment"], attachmentName);
+      var attachmentURL = selectedResource.AttachmentFiles.results[0].ServerRelativeUrl;
+      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteAttachment', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteAttachment"], attachmentURL);
     }
   }
 
@@ -41735,10 +41785,9 @@ var resourceList = (list, placeholder, auto, value) => {
       target.querySelector('.modal-study').value = element.Study;
 
       if (element.Attachments) {
-        var fileName = element.AttachmentFiles.results[0].FileName;
         var fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
         _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
-        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(fileName, fileURL);
+        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(element.Title, fileURL);
       } else {
         _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
       }
@@ -41748,7 +41797,7 @@ var resourceList = (list, placeholder, auto, value) => {
         target.querySelector('.intervention-outcome-container').innerHTML = template(item);
         element.Data.forEach((i, j) => {
           var regionValue = i.Region ? i.Region.split(', ') : [];
-          var countryValue = i.Country ? i.Country.split(', ') : [];
+          var countryValue = i.Country ? i.Country.split('; ') : [];
           var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
           var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
           var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
@@ -41938,14 +41987,14 @@ function startLoader() {
 } // lock attached file
 
 
-function lock(filename, url) {
+function lock(title, url) {
   var context = currentMenu();
   var attachmentContainer = context.querySelector('.attachment-filename');
   var attachment = attachmentContainer.querySelector('.attachment-filetitle');
   var file = context.querySelector('.btn-file');
   var icon = '<span class="remove-document"></span>';
   attachmentContainer.insertAdjacentHTML('beforeend', icon);
-  attachment.innerText = filename;
+  attachment.innerText = title;
   url && attachment.setAttribute('href', url);
   file.querySelector('input').setAttribute('disabled', 'disabled');
   file.style = "";
@@ -42042,7 +42091,7 @@ function getDate(value, context) {
 
 function getOptions(value, context) {
   try {
-    return getNodeList("".concat(value, " .select-pure__selected-label"), context).map(i => i.innerText).join(', ');
+    return getNodeList("".concat(value, " .select-pure__selected-label"), context).map(i => i.innerText).join('; ');
   } catch (error) {
     return null;
   }

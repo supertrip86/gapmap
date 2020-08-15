@@ -33,8 +33,10 @@ const saveResource = (id) => {
         options.headers["X-Http-Method"] = "MERGE";
     }
 
+    utilities.startLoader();
+
     fetch(url, options).then( (data) => {
-        const context = utilities.getContext();
+        const context = utilities.currentMenu();
         const attachment = context.querySelector('.attachment-fileinput').files;
         
         if (attachment.length) {
@@ -47,6 +49,8 @@ const saveResource = (id) => {
                 });
             }
 
+        } else {
+            location.reload();
         }
     });
 };
@@ -63,6 +67,8 @@ const deleteResource = (id) => {
         }
     };
 
+    utilities.startLoader();
+
     fetch(url, options).then( () => location.reload() );
 };
 
@@ -71,7 +77,7 @@ const saveAttachment = (itemId, attachment) => {
     getFileBuffer(attachment[0]).then( (buffer) => {
         const resourceList = gapmap.data.storage.resourceList;
         const attachmentURL = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items(${itemId})/AttachmentFiles/add(FileName='${attachment[0].name}')`;
-        const createitem = new SP.RequestExecutor(webAbsoluteUrl);
+        const createitem = new SP.RequestExecutor(_spPageContextInfo.webAbsoluteUrl);
         const bytes = new Uint8Array(buffer);
 
         let binary = '';
@@ -122,6 +128,8 @@ const deleteAttachment = (attachmentUrl) => {
         }
     };
 
+    utilities.startLoader();
+
     fetch(url, options).then( () => location.reload() );
 };
 
@@ -144,6 +152,8 @@ const modifyParameters = () => {
         },
         body: JSON.stringify(item)
     };
+
+    utilities.startLoader();
 
     fetch(url, options).then( () => location.reload() );
 };
@@ -184,7 +194,7 @@ class SharepointResourceItem {
             data.push(item);
         });
 
-        return data;
+        return JSON.stringify(data);
     }
     getMetadataType() {
         return gapmap.data.storage.resourceMetadata;
@@ -198,14 +208,16 @@ class SharepointSettingsItem {
         this.__metadata = { type: this.getMetadataType() };
     }
     getInterventions() {
-        const items = Array.from(document.querySelectorAll('.modal-intervention-title input'));
+        const DOMelements = Array.from(document.querySelectorAll('.modal-intervention-title input'));
+        const items = DOMelements.map( (i, j) => { return {Title: i.value, Id: (j + 1), Color: i.dataset.color} } );
 
-        return items.map( (i, j) => { return {Title: i.value, Id: (j + 1), Color: i.dataset.color} } );
+        return JSON.stringify(items);
     }
     getOutcomes() {
-        const items = Array.from(document.querySelectorAll('.modal-outcome-title input'));
+        const DOMelements = Array.from(document.querySelectorAll('.modal-outcome-title input'));
+        const items = DOMelements.map( (i, j) => { return {Title: i.value, Id: (j + 1)} } );
 
-        return items.map( (i, j) => { return {Title: i.value, Id: (j + 1)} } );
+        return JSON.stringify(items);
     }
     getMetadataType() {
         return gapmap.data.storage.settingsMetadata;

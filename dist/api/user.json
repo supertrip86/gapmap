@@ -1,0 +1,306 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/GetUserById(1021)",
+            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/GetUserById(1021)",
+            "type": "SP.User"
+        },
+        "Groups": {
+            "results": [
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1926)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1926)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1926)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1926)/Users"
+                        }
+                    },
+                    "Id": 1926,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Calendar Admins",
+                    "Title": "Calendar Admins",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "",
+                    "OnlyAllowMembersViewMembership": true,
+                    "OwnerTitle": "Giunta, Giovanni",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1927)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1927)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1927)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1927)/Users"
+                        }
+                    },
+                    "Id": 1927,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Calendar Members",
+                    "Title": "Calendar Members",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "",
+                    "OnlyAllowMembersViewMembership": true,
+                    "OwnerTitle": "Giunta, Giovanni",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1925)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1925)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1925)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1925)/Users"
+                        }
+                    },
+                    "Id": 1925,
+                    "IsHiddenInUI": false,
+                    "LoginName": "COI",
+                    "Title": "COI",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "",
+                    "OnlyAllowMembersViewMembership": true,
+                    "OwnerTitle": "Giunta, Giovanni",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1734)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1734)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1734)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1734)/Users"
+                        }
+                    },
+                    "Id": 1734,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Owners",
+                    "Title": "Owners",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people full control permissions to the SharePoint site: ScoreCards System",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1806)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1806)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1806)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1806)/Users"
+                        }
+                    },
+                    "Id": 1806,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Staging Members",
+                    "Title": "Staging Members",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people contribute permissions to the SharePoint site: Staging",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "Staging Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1805)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1805)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1805)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1805)/Users"
+                        }
+                    },
+                    "Id": 1805,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Staging Owners",
+                    "Title": "Staging Owners",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people full control permissions to the SharePoint site: Staging",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "Staging Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1810)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1810)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1810)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1810)/Users"
+                        }
+                    },
+                    "Id": 1810,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Tools Owners",
+                    "Title": "Tools Owners",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people full control permissions to the SharePoint site: Tools",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "Tools Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1834)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1834)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1834)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1834)/Users"
+                        }
+                    },
+                    "Id": 1834,
+                    "IsHiddenInUI": false,
+                    "LoginName": "WCA Procurement Members",
+                    "Title": "WCA Procurement Members",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people contribute permissions to the SharePoint site: WCA Procurement",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "WCA Procurement Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1833)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1833)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1833)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(1833)/Users"
+                        }
+                    },
+                    "Id": 1833,
+                    "IsHiddenInUI": false,
+                    "LoginName": "WCA Procurement Owners",
+                    "Title": "WCA Procurement Owners",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to grant people full control permissions to the SharePoint site: WCA Procurement",
+                    "OnlyAllowMembersViewMembership": false,
+                    "OwnerTitle": "WCA Procurement Owners",
+                    "RequestToJoinLeaveEmailSetting": null
+                },
+                {
+                    "__metadata": {
+                        "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(4)",
+                        "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(4)",
+                        "type": "SP.Group"
+                    },
+                    "Owner": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(4)/Owner"
+                        }
+                    },
+                    "Users": {
+                        "__deferred": {
+                            "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/SiteGroups/GetById(4)/Users"
+                        }
+                    },
+                    "Id": 4,
+                    "IsHiddenInUI": false,
+                    "LoginName": "Western and Central Africa (PA) Owners",
+                    "Title": "Western and Central Africa (PA) Owners",
+                    "PrincipalType": 8,
+                    "AllowMembersEditMembership": false,
+                    "AllowRequestToJoinLeave": false,
+                    "AutoAcceptRequestToJoinLeave": false,
+                    "Description": "Use this group to give people full control permissions to the SharePoint site: Western and Central Africa (PA)",
+                    "OnlyAllowMembersViewMembership": true,
+                    "OwnerTitle": "Western and Central Africa (PA) Owners",
+                    "RequestToJoinLeaveEmailSetting": ""
+                }
+            ]
+        },
+        "Title": "Giunta, Giovanni",
+        "Email": "g.giunta@ifad.org",
+        "IsSiteAdmin": true
+    }
+}

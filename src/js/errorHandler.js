@@ -32,7 +32,7 @@ class ModalError {
         this.heightAuto = false;
         this.showCancelButton = confirm ? true : false;
         this.confirmButtonColor = '#003870';
-        this.confirmButtonText = 'Save';
+        this.confirmButtonText = 'Yes';
         this.html = `<div><p>${errorList[value]}</p></div>`;
     }
 };

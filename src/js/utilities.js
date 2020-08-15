@@ -75,7 +75,7 @@ function startLoader() {
 }
 
 // lock attached file
-function lock(filename, url) {
+function lock(title, url) {
     const context = currentMenu();
 	const attachmentContainer = context.querySelector('.attachment-filename');
 	const attachment = attachmentContainer.querySelector('.attachment-filetitle');
@@ -83,7 +83,7 @@ function lock(filename, url) {
 	const icon = '<span class="remove-document"></span>';
 
 	attachmentContainer.insertAdjacentHTML('beforeend', icon);
-	attachment.innerText = filename;
+	attachment.innerText = title;
 
 	url && attachment.setAttribute('href', url);
 
@@ -185,7 +185,7 @@ function getDate(value, context) {
 
 function getOptions(value, context) {
 	try {
-		return getNodeList(`${value} .select-pure__selected-label`, context).map( (i) => i.innerText ).join(', ');
+		return getNodeList(`${value} .select-pure__selected-label`, context).map( (i) => i.innerText ).join('; ');
 	} catch (error) {
 		return null;
 	}
