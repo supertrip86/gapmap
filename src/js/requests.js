@@ -1,4 +1,5 @@
 import utilities from "../js/utilities.js";
+import { display } from "../js/errorHandler.js";
 
 const receiveData = async (url) => {
     const options = {
@@ -8,6 +9,11 @@ const receiveData = async (url) => {
     };
 
     const response = await fetch(url, options);
+
+    if (response.status == 404) {
+        return display('resourceNotFound', false);
+    }
+
     return await response.json();
 };
 

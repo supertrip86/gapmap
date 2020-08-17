@@ -40848,7 +40848,7 @@ module.exports = content.locals || {};
 var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"/sites/pa/tools/gapmap/img/ifad.svg\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"/sites/pa/tools/gapmap/img/cogs.svg\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
+    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -41199,6 +41199,8 @@ var errorList = {
   invalidInput: 'The maximum number of characters for each input field is 250',
   invalidDescription: 'You exceeded the maximum number of characters of the Description field',
   addFormInvalid: 'Missing or invalid information',
+  resourceNotFound: 'The changes you made cannot be saved.<br>This Resource has been deleted by another user while you were working on it.<br><br>Reload the Gapmap to update the list of available Resources',
+  resourceModified: 'The selected Resource has been modified by another user while you were working on it.<br><br>To prevent overriding changes, reload the Gapmap and access this Resource again.',
   selectResource: 'Select a Resource from the menu',
   saveResource: 'Are you sure you want to save?',
   deleteResource: 'Are you sure you want to delete this Resource?',
@@ -41267,9 +41269,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modifyParameters", function() { return modifyParameters; });
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_errorHandler_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/errorHandler.js */ "./src/js/errorHandler.js");
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 
 
 
@@ -41283,6 +41287,11 @@ var receiveData = /*#__PURE__*/function () {
       }
     };
     var response = yield fetch(url, options);
+
+    if (response.status == 404) {
+      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_1__["display"])('resourceNotFound', false);
+    }
+
     return yield response.json();
   });
 
@@ -41526,10 +41535,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _chenfengyuan_datepicker__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_chenfengyuan_datepicker__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var quill__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! quill */ "./node_modules/quill/dist/quill.js");
 /* harmony import */ var quill__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(quill__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/errorHandler.js */ "./src/js/errorHandler.js");
-/* harmony import */ var _js_requests_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/requests.js */ "./src/js/requests.js");
-/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
-/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/errorHandler.js */ "./src/js/errorHandler.js");
+/* harmony import */ var _js_requests_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/requests.js */ "./src/js/requests.js");
 /* harmony import */ var _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../hbs/settings.hbs */ "./src/hbs/settings.hbs");
 /* harmony import */ var _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "settingsTemplate", function() { return _hbs_settings_hbs__WEBPACK_IMPORTED_MODULE_8___default.a; });
@@ -41553,42 +41562,42 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var validateAttachmentCreation = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu();
   var source = context.querySelector('.attachment-fileinput');
 
   if (source.files.length) {
     var filename = source.files[0].name;
     var size = source.files[0].size;
 
-    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.check.isFileInvalid(filename)) {
+    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.check.isFileInvalid(filename)) {
       rejectUpload('invalidFile', false);
       return false;
     }
 
-    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.check.isFilenameInvalid(filename)) {
+    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.check.isFilenameInvalid(filename)) {
       rejectUpload('invalidFilename', false);
       return false;
     }
 
-    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.check.isFilesizeExceeded(size)) {
+    if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.check.isFilesizeExceeded(size)) {
       rejectUpload('invalidFileSize', false);
       return false;
     }
 
-    _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(filename);
+    _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.lock(filename);
 
     function rejectUpload(err, confirm) {
       source.value = "";
-      _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
-      Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])(err, confirm);
+      _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock();
+      Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])(err, confirm);
     }
   } else {
-    _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
+    _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock();
   }
 };
 
 var validateAttachmentDeletion = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu();
   var isEdit = context.id == "modal-edit";
 
   if (isEdit) {
@@ -41598,11 +41607,11 @@ var validateAttachmentDeletion = () => {
 
     if (hasAttachment) {
       var attachmentURL = selectedResource.AttachmentFiles.results[0].ServerRelativeUrl;
-      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteAttachment', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteAttachment"], attachmentURL);
+      return Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('deleteAttachment', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["deleteAttachment"], attachmentURL);
     }
   }
 
-  return _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
+  return _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock();
 };
 
 var validateResourceCreation = (target, id) => {
@@ -41610,7 +41619,7 @@ var validateResourceCreation = (target, id) => {
   var selectElement = target.querySelector('.modal-select-item .select-pure__select');
   var input = target.querySelectorAll('input.form-control');
   var editors = target.querySelectorAll('.ql-editor');
-  var title = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getValue("#".concat(target.id, " .attachment-title"));
+  var title = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getValue("#".concat(target.id, " .attachment-title"));
   var editMode = target.id == "modal-edit";
   var emptyValue = !gapmap.selectResource.value();
   var findDuplication = !!gapmap.data.resources.filter(i => i.label == title).length;
@@ -41645,20 +41654,20 @@ var validateResourceCreation = (target, id) => {
     }
   }
 
-  Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('saveResource', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["saveResource"], id);
+  Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('saveResource', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["saveResource"], id);
 
   function rejectRequest(element, message, confirm) {
-    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])(message, confirm);
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])(message, confirm);
     element.style.border = '1px solid red';
   }
 };
 
 var validateResourceDeletion = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu().id == "modal-edit";
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().id == "modal-edit";
   var id = document.getElementById('edit-resource').dataset.item;
 
   if (context && id) {
-    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('deleteResource', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["deleteResource"], parseInt(id));
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('deleteResource', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["deleteResource"], parseInt(id));
   }
 };
 
@@ -41681,28 +41690,28 @@ var validateParametersModification = context => {
   }
 
   if (empty) {
-    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('addFormInvalid', false);
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('addFormInvalid', false);
     return false;
   }
 
   if (exceeded) {
-    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('invalidInput', false);
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('invalidInput', false);
     return false;
   }
 
-  Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_5__["display"])('modifyParameters', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_6__["modifyParameters"]);
+  Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('modifyParameters', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["modifyParameters"]);
 };
 
 var addResourceForm = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu();
 
   var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
 
   var item = new ResourceData(gapmap.data);
   context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
-  var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
-  var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
-  var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
+  var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
+  var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
+  var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.editorOptions();
   var index = context.querySelectorAll('.modal-country').length - 1;
   new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-region')[index], regionOptions);
   new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-country')[index], countryOptions);
@@ -41714,30 +41723,50 @@ var deleteResourceForm = event => {
 };
 
 var saveChanges = () => {
-  var target = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu();
+  var target = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu();
   var resourceId = document.getElementById('edit-resource').dataset.item;
+
+  if (target.id == 'modal-add') {
+    return validateResourceCreation(target);
+  }
 
   if (target.id == 'modal-modify') {
     return validateParametersModification(target);
   }
 
   if (target.id == 'modal-edit') {
-    return validateResourceCreation(target, resourceId);
-  }
+    var _resourceList = gapmap.data.storage.resourceList;
+    var options = "?$select=Modified,Editor/Title&$expand=Editor";
+    var url = "".concat(_spPageContextInfo.webServerRelativeUrl, "/_api/web/lists/getbytitle('").concat(_resourceList, "')/items(").concat(resourceId, ")").concat(options);
+    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_7__["receiveData"])(url).then(result => {
+      try {
+        var etag = result.d.__metadata.etag.replace(/"/g, '');
 
-  return validateResourceCreation(target);
+        var current = document.getElementById('edit-resource').dataset.etag;
+
+        if (etag != current) {
+          Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('resourceModified', false);
+          return false;
+        }
+
+        return validateResourceCreation(target, resourceId);
+      } catch (error) {
+        throw new TypeError('Resource concurrently deleted by other user');
+      }
+    });
+  }
 };
 
 var resetForm = () => {
   var target = document.getElementById('edit-resource');
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('select.form-control').forEach(i => i.selectedIndex = 0);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.form-resource').forEach(i => i.value = "");
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.form-parameter').forEach(i => i.value = i.defaultValue);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.btn-file input').forEach(i => _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock(null, i.closest('.container')));
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.ql-editor').forEach(i => i.innerHTML = "");
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('input.form-control').forEach(i => i.removeAttribute('style'));
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.select-pure__select').forEach(i => i.removeAttribute('style'));
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.intervention-outcome-container').forEach(i => i.innerHTML = "");
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('select.form-control').forEach(i => i.selectedIndex = 0);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.form-resource').forEach(i => i.value = "");
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.form-parameter').forEach(i => i.value = i.defaultValue);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.btn-file input').forEach(i => _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock(null, i.closest('.container')));
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.ql-editor').forEach(i => i.innerHTML = "");
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('input.form-control').forEach(i => i.removeAttribute('style'));
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.select-pure__select').forEach(i => i.removeAttribute('style'));
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.intervention-outcome-container').forEach(i => i.innerHTML = "");
   target.classList.add('vanish');
   target.removeAttribute('data-item');
   target.querySelector('.attachment-title').removeAttribute('data-origin');
@@ -41748,16 +41777,69 @@ var resetForm = () => {
 };
 
 var switchForm = () => {
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('.modal-tab').forEach(i => i.classList.remove('modal-active-tab'));
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('#gapmap-dialog .container').forEach(i => i.classList.add('vanish'));
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('.modal-tab').forEach(i => i.classList.remove('modal-active-tab'));
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('#gapmap-dialog .container').forEach(i => i.classList.add('vanish'));
   event.target.classList.add('modal-active-tab');
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu().classList.remove('vanish');
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().classList.remove('vanish');
 
-  if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.currentMenu().id == 'modal-edit') {
+  if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().id == 'modal-edit') {
     document.getElementById('remove-resource').parentNode.classList.remove('invisible');
   } else {
     document.getElementById('remove-resource').parentNode.classList.add('invisible');
   }
+};
+
+var loadResource = value => {
+  var target = document.getElementById('edit-resource');
+  var button = document.getElementById('remove-resource').parentNode;
+  var element = gapmap.data.resources.filter(i => i.Title == value)[0];
+
+  var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
+
+  document.querySelector('.modal-select-item .select-pure__select').style = "";
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.get.getNodeList('input.form-control').forEach(i => i.style = "");
+  target.dataset.item = element.Id;
+  target.dataset.etag = element.__metadata.etag.replace(/"/g, '');
+  gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+  target.querySelector('.attachment-title').value = element.Title;
+  target.querySelector('.attachment-title').dataset.origin = element.Title;
+  target.querySelector('.modal-evidence select').value = element.Evidence;
+  target.querySelector('.modal-language select').value = element.Language;
+  target.querySelector('.modal-author').value = element.Author0;
+  target.querySelector('.modal-study').value = element.Study;
+
+  if (element.Attachments) {
+    var fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
+    _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock();
+    _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.lock(element.Title, fileURL);
+  } else {
+    _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.unLock();
+  }
+
+  if (element.Data.length) {
+    var item = new ResourceData(gapmap.data, element.Data);
+    target.querySelector('.intervention-outcome-container').innerHTML = template(item);
+    element.Data.forEach((i, j) => {
+      var regionValue = i.Region ? i.Region.split(', ') : [];
+      var countryValue = i.Country ? i.Country.split('; ') : [];
+      var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
+      var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
+      var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.editorOptions();
+      new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
+      new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
+      new quill__WEBPACK_IMPORTED_MODULE_4___default.a(target.querySelectorAll('.editor')[j], editorOptions);
+      target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
+      target.querySelectorAll('.modal-impact select')[j].value = i.Impact;
+      target.querySelectorAll('.modal-population')[j].value = i.Population;
+      target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
+      target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;
+      target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
+      target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
+    });
+  }
+
+  target.classList.remove('vanish');
+  button.classList.remove('hidden');
 };
 
 var resourceList = (list, placeholder, auto, value) => {
@@ -41766,57 +41848,7 @@ var resourceList = (list, placeholder, auto, value) => {
     placeholder: placeholder,
     autocomplete: auto,
     value: value,
-    onChange: value => {
-      var target = document.getElementById('edit-resource');
-      var button = document.getElementById('remove-resource').parentNode;
-      var element = gapmap.data.resources.filter(i => i.Title == value)[0];
-
-      var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
-
-      document.querySelector('.modal-select-item .select-pure__select').style = "";
-      _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.get.getNodeList('input.form-control').forEach(i => i.style = "");
-      target.dataset.item = element.Id;
-      gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
-      target.querySelector('.attachment-title').value = element.Title;
-      target.querySelector('.attachment-title').dataset.origin = element.Title;
-      target.querySelector('.modal-evidence select').value = element.Evidence;
-      target.querySelector('.modal-language select').value = element.Language;
-      target.querySelector('.modal-author').value = element.Author0;
-      target.querySelector('.modal-study').value = element.Study;
-
-      if (element.Attachments) {
-        var fileURL = element.AttachmentFiles.results[0].ServerRelativeUrl;
-        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
-        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.lock(element.Title, fileURL);
-      } else {
-        _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.unLock();
-      }
-
-      if (element.Data.length) {
-        var item = new ResourceData(gapmap.data, element.Data);
-        target.querySelector('.intervention-outcome-container').innerHTML = template(item);
-        element.Data.forEach((i, j) => {
-          var regionValue = i.Region ? i.Region.split(', ') : [];
-          var countryValue = i.Country ? i.Country.split('; ') : [];
-          var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
-          var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
-          var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.editorOptions();
-          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
-          new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
-          new quill__WEBPACK_IMPORTED_MODULE_4___default.a(target.querySelectorAll('.editor')[j], editorOptions);
-          target.querySelectorAll('.editor')[j].querySelector('.ql-editor').innerHTML = i.Description;
-          target.querySelectorAll('.modal-impact select')[j].value = i.Impact;
-          target.querySelectorAll('.modal-population')[j].value = i.Population;
-          target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
-          target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;
-          target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
-          target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
-        });
-      }
-
-      target.classList.remove('vanish');
-      button.classList.remove('hidden');
-    }
+    onChange: value => loadResource(value)
   };
 };
 
@@ -41827,22 +41859,22 @@ var addListeners = () => {
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-dialog').on('hidden.bs.modal', resetForm); // change event in bootstrap triggered by jQuery
 
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'input', '.form-control', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.clearStyle);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'paste', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.preventPaste);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'keypress', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.preventCopy);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'change', '.modal-intervention select', _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.changeColor);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachmentCreation);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.remove-document', validateAttachmentDeletion);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'input', '.form-control', _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.clearStyle);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'paste', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.preventPaste);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'keypress', '.modal-datepicker', _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.preventCopy);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'change', '.modal-intervention select', _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.changeColor);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'change', '.attachment-fileinput', validateAttachmentCreation);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.remove-document', validateAttachmentDeletion);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
 var addSettingsMenu = data => {
-  var datePickerOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.datePickerOptions("mm / yyyy", true);
-  var sortableOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_7___default.a.options.sortableOptions(150, 'vertical', '.modal-drag');
+  var datePickerOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.datePickerOptions("mm / yyyy", true);
+  var sortableOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.sortableOptions(150, 'vertical', '.modal-drag');
   var resourceListOptions = resourceList(data.resources, "Select a Resource", true);
   var addDate = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#modal-add .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
 

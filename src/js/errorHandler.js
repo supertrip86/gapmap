@@ -8,6 +8,8 @@ const errorList = {
     invalidInput: 'The maximum number of characters for each input field is 250',
     invalidDescription: 'You exceeded the maximum number of characters of the Description field',
     addFormInvalid: 'Missing or invalid information',
+    resourceNotFound: 'The changes you made cannot be saved.<br>This Resource has been deleted by another user while you were working on it.<br><br>Reload the Gapmap to update the list of available Resources',
+    resourceModified: 'The selected Resource has been modified by another user while you were working on it.<br><br>To prevent overriding changes, reload the Gapmap and access this Resource again.',
     selectResource: 'Select a Resource from the menu',
     saveResource: 'Are you sure you want to save?',
     deleteResource: 'Are you sure you want to delete this Resource?',
