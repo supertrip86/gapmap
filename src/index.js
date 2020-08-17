@@ -5,58 +5,57 @@ import "../src/js/header.js";
 import { receiveData } from "./js/requests.js";
 import { settingsTemplate, addSettingsMenu } from "../src/js/settings.js";
 
-const settingsList = 'gapmap-settings';
-const resourceList = 'gapmap-data';
-const resourceMetadata = 'SP.Data.GapmapdataListItem';
-// const site = _spPageContextInfo.webServerRelativeUrl;
+initGapmap();
 
-// const userData = `${site}/_api/web/currentuser/?$expand=groups`;
-// const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
-// const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+function initGapmap() {
+    const site = _spPageContextInfo.webServerRelativeUrl;
+    const settingsList = 'gapmap-settings';
+    const resourceList = 'gapmap-data';
+    const resourceMetadata = 'SP.Data.GapmapdataListItem';
 
-const userData = '/api/user.json';
-const settingsData = '/api/data.json';
-const resourceData = '/api/resources.json';
+    const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+    const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+    const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
 
-receiveData(userData).then( (user) => {
-    const isAdmin = !!user.d.Groups.results.filter( (i) => (i.Title == "Tools Owners")).length;
+    // const userData = '/api/user.json';
+    // const settingsData = '/api/data.json';
+    // const resourceData = '/api/resources.json';
 
-    receiveData(settingsData).then( (settings) => {
-        const data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
+    receiveData(userData).then( (user) => {
+        const isAdmin = !!user.d.Groups.results.filter( (i) => (i.Title == "Tools Owners")).length;
 
-        receiveData(resourceData).then( (resources) => {
-            const dialog = document.getElementById("gapmap-dialog");
-            const settingsButton = document.querySelector('.navbar-collapse');
+        receiveData(settingsData).then( (settings) => {
+            const data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
 
-            data.resources = resources.d.results.map( (item) => {
-                let resource = item;
-                resource.Data = JSON.parse(item.Data);
+            receiveData(resourceData).then( (resources) => {
+                const dialog = document.getElementById("gapmap-dialog");
+                const settingsButton = document.querySelector('.navbar-collapse');
 
-                return resource;
-            });
+                data.resources = resources.d.results.map( (item) => {
+                    let resource = item;
+                    resource.Data = JSON.parse(item.Data);
 
-            if (isAdmin) {
-                dialog.innerHTML = settingsTemplate(data);
-                addSettingsMenu(data);
+                    return resource;
+                });
 
-            } else {
-                settingsButton.remove();
+                if (isAdmin) {
+                    dialog.innerHTML = settingsTemplate(data);
+                    addSettingsMenu(data);
 
-                class GapMap {
-                    constructor() {
-                        this.data = data;
-                    }
+                } else {
+                    settingsButton.remove();
+
+                    window.gapmap = new GapMap(data);
                 }
 
-                window.gapmap = new GapMap();
+                setInterval( () => {
+                    UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
+                }, 15 * 60000);
 
-                // setInterval( () => {
-                //     UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
-                // }, 15 * 60000);
-            }
+            });
         });
     });
-});
+}
 
 function queryOptions(target) {
     const columns = {
@@ -88,4 +87,10 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
     };
 
     return result;
+}
+
+class GapMap {
+    constructor(data) {
+        this.data = data;
+    }
 }

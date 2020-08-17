@@ -8147,7 +8147,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".navbar {padding: 0;height: var(--main-nav-height);background-color: var(--main-dark-blue);} \r\n.navbar .navbar-logo {width: 100px;height: var(--main-nav-height);}\r\n.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}\r\n.navbar .navbar-brand {color: #fff;width: 30%;text-align: center;font-size: 1.2rem;font-weight: 600;margin: auto;padding-top: 16px;}\r\n.navbar .navbar-collapse {margin-top: 14px;}\r\n.ifad-bar {height: 4px;margin-top: var(--main-nav-height);}\r\n.ifad-bar > div {width: 20%;height: 100%;float: left;}\r\n.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}\r\n.ifad-bar .ifad-bar-lac {background-color: #3bae15;}\r\n.ifad-bar .ifad-bar-esa {background-color: #f59400;}\r\n.ifad-bar .ifad-bar-wca {background-color: #eb5400;}\r\n.ifad-bar .ifad-bar-apr {background-color: #df0221;}", ""]);
+exports.push([module.i, ".navbar {padding: 0;height: var(--main-nav-height);background-color: var(--main-dark-blue);} \r\n.navbar .navbar-logo {width: 100px;height: var(--main-nav-height);}\r\n.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}\r\n.navbar .navbar-brand {color: #fff;margin-left: 25px;font-size: 1.2rem;font-weight: 600;padding-top: 16px;}\r\n.navbar .navbar-collapse {margin-top: 14px;}\r\n.ifad-bar {height: 4px;margin-top: var(--main-nav-height);}\r\n.ifad-bar > div {width: 20%;height: 100%;float: left;}\r\n.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}\r\n.ifad-bar .ifad-bar-lac {background-color: #3bae15;}\r\n.ifad-bar .ifad-bar-esa {background-color: #f59400;}\r\n.ifad-bar .ifad-bar-wca {background-color: #eb5400;}\r\n.ifad-bar .ifad-bar-apr {background-color: #df0221;}", ""]);
 // Exports
 module.exports = exports;
 
@@ -41104,49 +41104,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var settingsList = 'gapmap-settings';
-var resourceList = 'gapmap-data';
-var resourceMetadata = 'SP.Data.GapmapdataListItem'; // const site = _spPageContextInfo.webServerRelativeUrl;
-// const userData = `${site}/_api/web/currentuser/?$expand=groups`;
-// const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
-// const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+initGapmap();
 
-var userData = '/api/user.json';
-var settingsData = '/api/data.json';
-var resourceData = '/api/resources.json';
-Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(userData).then(user => {
-  var isAdmin = !!user.d.Groups.results.filter(i => i.Title == "Tools Owners").length;
-  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(settingsData).then(settings => {
-    var data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
-    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(resourceData).then(resources => {
-      var dialog = document.getElementById("gapmap-dialog");
-      var settingsButton = document.querySelector('.navbar-collapse');
-      data.resources = resources.d.results.map(item => {
-        var resource = item;
-        resource.Data = JSON.parse(item.Data);
-        return resource;
-      });
+function initGapmap() {
+  var site = _spPageContextInfo.webServerRelativeUrl;
+  var settingsList = 'gapmap-settings';
+  var resourceList = 'gapmap-data';
+  var resourceMetadata = 'SP.Data.GapmapdataListItem';
+  var userData = "".concat(site, "/_api/web/currentuser/?$expand=groups");
+  var settingsData = "".concat(site, "/_api/web/lists/getbytitle('").concat(settingsList, "')/items").concat(queryOptions('settings'));
+  var resourceData = "".concat(site, "/_api/web/lists/getbytitle('").concat(resourceList, "')/items").concat(queryOptions('resources')); // const userData = '/api/user.json';
+  // const settingsData = '/api/data.json';
+  // const resourceData = '/api/resources.json';
 
-      if (isAdmin) {
-        dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
-        Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data);
-      } else {
-        settingsButton.remove();
+  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(userData).then(user => {
+    var isAdmin = !!user.d.Groups.results.filter(i => i.Title == "Tools Owners").length;
+    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(settingsData).then(settings => {
+      var data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
+      Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(resourceData).then(resources => {
+        var dialog = document.getElementById("gapmap-dialog");
+        var settingsButton = document.querySelector('.navbar-collapse');
+        data.resources = resources.d.results.map(item => {
+          var resource = item;
+          resource.Data = JSON.parse(item.Data);
+          return resource;
+        });
 
-        class GapMap {
-          constructor() {
-            this.data = data;
-          }
-
+        if (isAdmin) {
+          dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
+          Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data);
+        } else {
+          settingsButton.remove();
+          window.gapmap = new GapMap(data);
         }
 
-        window.gapmap = new GapMap(); // setInterval( () => {
-        //     UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
-        // }, 15 * 60000);
-      }
+        setInterval(() => {
+          UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
+        }, 15 * 60000);
+      });
     });
   });
-});
+}
 
 function queryOptions(target) {
   var columns = {
@@ -41174,6 +41172,13 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
     resourceMetadata: resourceMetadata
   };
   return result;
+}
+
+class GapMap {
+  constructor(data) {
+    this.data = data;
+  }
+
 }
 
 /***/ }),
