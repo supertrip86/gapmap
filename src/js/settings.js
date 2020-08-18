@@ -324,7 +324,7 @@ const resourceList = (list, placeholder, auto, value) => {
 	};
 };
 
-const addListeners = () => {
+const addSettingsListeners = () => {
     $('#gapmap-dialog').on('change', '.modal-datepicker', function() { $(this).removeAttr('style') }); // change event in @chenfengyuan/datepicker triggered by jQuery
     $('#gapmap-dialog').on('hidden.bs.modal', resetForm); // change event in bootstrap triggered by jQuery
 
@@ -341,7 +341,7 @@ const addListeners = () => {
     utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
-const addSettingsMenu = (data) => {
+const settingsOptions = (data) => {
     const datePickerOptions = utilities.options.datePickerOptions("mm / yyyy", true);
     const sortableOptions = utilities.options.sortableOptions(150, 'vertical', '.modal-drag');
     const resourceListOptions = resourceList(data.resources, "Select a Resource", true);
@@ -355,21 +355,17 @@ const addSettingsMenu = (data) => {
     const interventionsOrder = sortInterventions.toArray();
     const outcomesOrder = sortOutcomes.toArray();
 
-    class GapMap {
-        constructor() {
-            this.data = data;
-            this.selectResource = selectResource;
-            this.addDate = addDate;
-            this.editDate = editDate;
-            this.sortInterventions = sortInterventions;
-            this.sortOutcomes = sortOutcomes;
-            this.interventionsOrder = interventionsOrder;
-            this.outcomesOrder = outcomesOrder;
-        }
-    }
-
-    addListeners();
-    window.gapmap = new GapMap();
+    return {
+        data: data,
+        selectResource: selectResource,
+        addDate: addDate,
+        editDate: editDate,
+        selectResource: selectResource,
+        sortInterventions: sortInterventions,
+        sortOutcomes: sortOutcomes,
+        interventionsOrder: interventionsOrder,
+        outcomesOrder: outcomesOrder
+    };
 };
 
 class ResourceData {
@@ -390,4 +386,4 @@ class ResourceData {
     }
 }
 
-export { settingsTemplate, addSettingsMenu }
+export { settingsTemplate, addSettingsListeners, settingsOptions }

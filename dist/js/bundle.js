@@ -8147,7 +8147,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".navbar {padding: 0;height: var(--main-nav-height);background-color: var(--main-dark-blue);} \r\n.navbar .navbar-logo {width: 100px;height: var(--main-nav-height);}\r\n.navbar .settings-link {padding: 0 5rem!important;cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}\r\n.navbar .navbar-brand {color: #fff;margin-left: 25px;font-size: 1.2rem;font-weight: 600;padding-top: 16px;}\r\n.navbar .navbar-collapse {margin-top: 14px;}\r\n.ifad-bar {height: 4px;margin-top: var(--main-nav-height);}\r\n.ifad-bar > div {width: 20%;height: 100%;float: left;}\r\n.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}\r\n.ifad-bar .ifad-bar-lac {background-color: #3bae15;}\r\n.ifad-bar .ifad-bar-esa {background-color: #f59400;}\r\n.ifad-bar .ifad-bar-wca {background-color: #eb5400;}\r\n.ifad-bar .ifad-bar-apr {background-color: #df0221;}", ""]);
+exports.push([module.i, ".navbar {background-color: var(--main-dark-blue);}\r\n.navbar .container-fluid {padding: 0;}\r\n.navbar .navbar-brand {padding-top: 0;padding-bottom: 0;margin: 0;}\r\n.navbar .navbar-brand img {width: 100px;height: 60px;}\r\n.navbar .navbar-collapse {padding-top: 12px;}\r\n.navbar .nav-title {cursor: default;font-style: italic;font-size: 1.2rem;text-align: center;margin-right: 20px;}\r\n.navbar .navbar-options {padding-top: 3px;}\r\n.navbar .navbar-nav .nav-link {color: #fff;}\r\n.navbar .dropdown-item {font-size: 0.85rem;user-select: none;-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;-ms-user-select: none;}\r\n.navbar .dropdown-item-clear {display: flex;padding-left: 15px;height: 28px;}\r\n.navbar .dropdown-item .dropdown-item-checkbox {margin-right: 4px;}\r\n.navbar .dropdown-item .dropdown-item-checkbox:checked {filter: grayscale(0.7)}\r\n.navbar .dropdown-item .clear-filters::after {content: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAtMTIgNDAgODAiPjxwYXRoIGQ9Ik01MC45NTcsN2MwLTQuNTk2LTEyLjU3Ny03LTI1LTdzLTI1LDIuNDA0LTI1LDdjMCwxLjA0MiwwLjY1MiwxLjk3LDEuNzk2LDIuNzg0bDE3LjIwNCwyMy41NDJ2MTcuNTI1bDAuMDYyLDEuMDYyaDEgIGwwLjQ1Ny0wLjAxOGwxMC40ODEtMTAuNDgxdi04LjA4OEw0OS4xNiw5Ljc4NEM1MC4zMDUsOC45Nyw1MC45NTcsOC4wNDIsNTAuOTU3LDd6IE0yNS45NTcsMmMxNC4wNCwwLDIzLDIuOTYxLDIzLDVzLTguOTYsNS0yMyw1ICBzLTIzLTIuOTYxLTIzLTVTMTEuOTE3LDIsMjUuOTU3LDJ6Ij48L3BhdGg+PC9zdmc+\")}\r\n.navbar .dropdown-item.active, .navbar .dropdown-item:active {background-color: var(--main-dark-blue);color: #fff;}\r\n.navbar .dropdown-country .dropdown-menu {max-height: 400px;overflow-y: scroll;}\r\n.navbar .dropdown-country .dropdown-item {white-space: break-spaces;min-width: 200px;}\r\n.navbar .navbar-nav .nav-item:not(.nav-title) .nav-link {font-size: 14px;padding: 10px 16px;}\r\n.navbar .navbar-toggler {margin-top: 6px;padding: .25rem .5rem;border: 1px solid #fff;}\r\n.navbar .navbar-toggler-icon {background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");}\r\n.navbar .settings-link, .navbar .dropdown-item {cursor: pointer;}\r\n.navbar .settings-link img {width: 25px;height: 25px;}\r\n.ifad-bar {height: 4px;}\r\n.ifad-bar > div {width: 20%;height: 100%;float: left;}\r\n.ifad-bar .ifad-bar-nen {background-color: #11b5d5;}\r\n.ifad-bar .ifad-bar-lac {background-color: #3bae15;}\r\n.ifad-bar .ifad-bar-esa {background-color: #f59400;}\r\n.ifad-bar .ifad-bar-wca {background-color: #eb5400;}\r\n.ifad-bar .ifad-bar-apr {background-color: #df0221;}\r\n\r\n@media (min-width: 992px) {\r\n    .settings-container, .navbar-brand {\r\n        display: block!important;\r\n    }\r\n    .navbar .nav-title {\r\n        padding-top: 12px;\r\n    }\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -40847,8 +40847,36 @@ module.exports = content.locals || {};
 
 var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<nav class=\"navbar fixed-top navbar-expand-lg scrolling-navbar\">\r\n    <img class=\"navbar-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n    <span class=\"navbar-brand\">WCA | Knowledge GapMap</span>\r\n    <div class=\"navbar-collapse collapse w-100 order-3 dual-collapse2\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    return "                        <span class=\"dropdown-item dropdown-item-element\"><input class=\"dropdown-item-checkbox\" type=\"checkbox\" checked=\"checked\">"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "</span>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "                        <span class=\"dropdown-item dropdown-item-element\"><input class=\"dropdown-item-checkbox\" type=\"checkbox\" checked=\"checked\">"
+    + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"value") : depth0), depth0))
+    + "</span>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<nav class=\"navbar navbar-expand-lg\">\r\n    <div class=\"container-fluid\">\r\n        <a class=\"navbar-brand collapse\">\r\n            <img class=\"logo horizontal-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n        </a>\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item nav-title\">\r\n                <a class=\"nav-link\">WCA | Knowledge Gapmap</a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#gapmapNavbar\" aria-controls=\"gapmapNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"gapmapNavbar\">\r\n            <ul class=\"navbar-nav mr-auto navbar-options\">\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"view\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Select View</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item\">Study Type</span>\r\n                        <span class=\"dropdown-item\">Direction of Impact</span>\r\n                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"type\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Study Type</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":28,"column":24},"end":{"line":30,"column":33}}})) != null ? stack1 : "")
+    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"region\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Regions</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":38,"column":24},"end":{"line":40,"column":33}}})) != null ? stack1 : "")
+    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-country\" data-dropdown=\"country\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Countries</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"countries") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":48,"column":24},"end":{"line":50,"column":33}}})) != null ? stack1 : "")
+    + "                    </div>\r\n                </li>\r\n            </ul>\r\n            <ul class=\"navbar-nav ml-auto collapse settings-container\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -41095,9 +41123,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _src_css_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/css/main.css */ "./src/css/main.css");
 /* harmony import */ var _src_css_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_css_main_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_js_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/js/header.js */ "./src/js/header.js");
-/* harmony import */ var _js_requests_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/requests.js */ "./src/js/requests.js");
-/* harmony import */ var _src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/js/settings.js */ "./src/js/settings.js");
+/* harmony import */ var _js_requests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/requests.js */ "./src/js/requests.js");
+/* harmony import */ var _src_js_settings_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/js/settings.js */ "./src/js/settings.js");
+/* harmony import */ var _src_js_header_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/js/header.js */ "./src/js/header.js");
 
 
 
@@ -41107,21 +41135,21 @@ __webpack_require__.r(__webpack_exports__);
 initGapmap();
 
 function initGapmap() {
-  var site = _spPageContextInfo.webServerRelativeUrl;
+  // const site = _spPageContextInfo.webServerRelativeUrl;
   var settingsList = 'gapmap-settings';
   var resourceList = 'gapmap-data';
-  var resourceMetadata = 'SP.Data.GapmapdataListItem';
-  var userData = "".concat(site, "/_api/web/currentuser/?$expand=groups");
-  var settingsData = "".concat(site, "/_api/web/lists/getbytitle('").concat(settingsList, "')/items").concat(queryOptions('settings'));
-  var resourceData = "".concat(site, "/_api/web/lists/getbytitle('").concat(resourceList, "')/items").concat(queryOptions('resources')); // const userData = '/api/user.json';
-  // const settingsData = '/api/data.json';
-  // const resourceData = '/api/resources.json';
+  var resourceMetadata = 'SP.Data.GapmapdataListItem'; // const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+  // const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+  // const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
 
-  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(userData).then(user => {
+  var userData = '/api/user.json';
+  var settingsData = '/api/data.json';
+  var resourceData = '/api/resources.json';
+  Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_3__["receiveData"])(userData).then(user => {
     var isAdmin = !!user.d.Groups.results.filter(i => i.Title == "Tools Owners").length;
-    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(settingsData).then(settings => {
+    Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_3__["receiveData"])(settingsData).then(settings => {
       var data = createData(settings.d.results[0], settingsList, resourceList, resourceMetadata);
-      Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(resourceData).then(resources => {
+      Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_3__["receiveData"])(resourceData).then(resources => {
         var dialog = document.getElementById("gapmap-dialog");
         var settingsButton = document.querySelector('.navbar-collapse');
         data.resources = resources.d.results.map(item => {
@@ -41129,18 +41157,20 @@ function initGapmap() {
           resource.Data = JSON.parse(item.Data);
           return resource;
         });
+        document.getElementById("gapmap-header").innerHTML = Object(_src_js_header_js__WEBPACK_IMPORTED_MODULE_5__["headerTemplate"])(data);
+        Object(_src_js_header_js__WEBPACK_IMPORTED_MODULE_5__["addHeaderListeners"])();
 
         if (isAdmin) {
-          dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
-          Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["addSettingsMenu"])(data);
+          dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_4__["settingsTemplate"])(data);
+          window.gapmap = new Settings(data, Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_4__["settingsOptions"])(data));
+          Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_4__["addSettingsListeners"])();
         } else {
           settingsButton.remove();
           window.gapmap = new GapMap(data);
-        }
+        } // setInterval( () => {
+        //     UpdateFormDigest(site, _spFormDigestRefreshInterval);
+        // }, 15 * 60000);
 
-        setInterval(() => {
-          UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
-        }, 15 * 60000);
       });
     });
   });
@@ -41177,6 +41207,20 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
 class GapMap {
   constructor(data) {
     this.data = data;
+  }
+
+}
+
+class Settings extends GapMap {
+  constructor(data, options) {
+    super(data);
+    this.selectResource = options.selectResource;
+    this.addDate = options.addDate;
+    this.editDate = options.editDate;
+    this.sortInterventions = options.sortInterventions;
+    this.sortOutcomes = options.sortOutcomes;
+    this.interventionsOrder = options.interventionsOrder;
+    this.outcomesOrder = options.outcomesOrder;
   }
 
 }
@@ -41243,18 +41287,52 @@ class ModalError {
 /*!**************************!*\
   !*** ./src/js/header.js ***!
   \**************************/
-/*! no exports provided */
+/*! exports provided: headerTemplate, addHeaderListeners */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../hbs/header.hbs */ "./src/hbs/header.hbs");
-/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hbs_header_hbs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/header.css */ "./src/css/header.css");
-/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_header_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addHeaderListeners", function() { return addHeaderListeners; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.slim.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hbs/header.hbs */ "./src/hbs/header.hbs");
+/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "headerTemplate", function() { return _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default.a; });
+/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/header.css */ "./src/css/header.css");
+/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_header_css__WEBPACK_IMPORTED_MODULE_3__);
 
 
-document.getElementById("gapmap-header").innerHTML = _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_0___default()();
+
+
+
+var onDropdownClose = e => {
+  // console.log(e.target.querySelectorAll('.dropdown-item'))
+  var dropdown = e.target.dataset.dropdown;
+  console.log(dropdown);
+};
+
+var dropdownClear = e => {
+  var target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
+  target.forEach(i => i.querySelector('input').checked = true);
+};
+
+var dropdownItemSelection = e => {
+  var input = e.target.querySelector('input');
+  var inputValue = input.checked;
+  input.checked = !inputValue;
+  e.stopPropagation();
+};
+
+var addHeaderListeners = () => {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-header').on('hide.bs.dropdown', onDropdownClose); // change event in bootstrap triggered by jQuery
+
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-clear', dropdownClear);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
+};
+
+
 
 /***/ }),
 
@@ -41525,12 +41603,13 @@ class SharepointSettingsItem {
 /*!****************************!*\
   !*** ./src/js/settings.js ***!
   \****************************/
-/*! exports provided: settingsTemplate, addSettingsMenu */
+/*! exports provided: settingsTemplate, addSettingsListeners, settingsOptions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addSettingsMenu", function() { return addSettingsMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addSettingsListeners", function() { return addSettingsListeners; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "settingsOptions", function() { return settingsOptions; });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.slim.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var select_pure__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! select-pure */ "./node_modules/select-pure/lib/index.js");
@@ -41857,7 +41936,7 @@ var resourceList = (list, placeholder, auto, value) => {
   };
 };
 
-var addListeners = () => {
+var addSettingsListeners = () => {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-dialog').on('change', '.modal-datepicker', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeAttr('style');
   }); // change event in @chenfengyuan/datepicker triggered by jQuery
@@ -41877,7 +41956,7 @@ var addListeners = () => {
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
-var addSettingsMenu = data => {
+var settingsOptions = data => {
   var datePickerOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.datePickerOptions("mm / yyyy", true);
   var sortableOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.sortableOptions(150, 'vertical', '.modal-drag');
   var resourceListOptions = resourceList(data.resources, "Select a Resource", true);
@@ -41890,23 +41969,17 @@ var addSettingsMenu = data => {
   var sortOutcomes = new sortablejs__WEBPACK_IMPORTED_MODULE_2__["default"](document.querySelector('.card-outcomes'), sortableOptions);
   var interventionsOrder = sortInterventions.toArray();
   var outcomesOrder = sortOutcomes.toArray();
-
-  class GapMap {
-    constructor() {
-      this.data = data;
-      this.selectResource = selectResource;
-      this.addDate = addDate;
-      this.editDate = editDate;
-      this.sortInterventions = sortInterventions;
-      this.sortOutcomes = sortOutcomes;
-      this.interventionsOrder = interventionsOrder;
-      this.outcomesOrder = outcomesOrder;
-    }
-
-  }
-
-  addListeners();
-  window.gapmap = new GapMap();
+  return {
+    data: data,
+    selectResource: selectResource,
+    addDate: addDate,
+    editDate: editDate,
+    selectResource: selectResource,
+    sortInterventions: sortInterventions,
+    sortOutcomes: sortOutcomes,
+    interventionsOrder: interventionsOrder,
+    outcomesOrder: outcomesOrder
+  };
 };
 
 class ResourceData {

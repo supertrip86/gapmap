@@ -1,25 +1,25 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/css/main.css";
-import "../src/js/header.js";
 import { receiveData } from "./js/requests.js";
-import { settingsTemplate, addSettingsMenu } from "../src/js/settings.js";
+import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/js/settings.js";
+import { headerTemplate, addHeaderListeners } from "../src/js/header.js";
 
 initGapmap();
 
 function initGapmap() {
-    const site = _spPageContextInfo.webServerRelativeUrl;
+    // const site = _spPageContextInfo.webServerRelativeUrl;
     const settingsList = 'gapmap-settings';
     const resourceList = 'gapmap-data';
     const resourceMetadata = 'SP.Data.GapmapdataListItem';
 
-    const userData = `${site}/_api/web/currentuser/?$expand=groups`;
-    const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
-    const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+    // const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+    // const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+    // const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
 
-    // const userData = '/api/user.json';
-    // const settingsData = '/api/data.json';
-    // const resourceData = '/api/resources.json';
+    const userData = '/api/user.json';
+    const settingsData = '/api/data.json';
+    const resourceData = '/api/resources.json';
 
     receiveData(userData).then( (user) => {
         const isAdmin = !!user.d.Groups.results.filter( (i) => (i.Title == "Tools Owners")).length;
@@ -38,9 +38,14 @@ function initGapmap() {
                     return resource;
                 });
 
+                document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
+                addHeaderListeners();
+
                 if (isAdmin) {
                     dialog.innerHTML = settingsTemplate(data);
-                    addSettingsMenu(data);
+
+                    window.gapmap = new Settings(data, settingsOptions(data));
+                    addSettingsListeners();
 
                 } else {
                     settingsButton.remove();
@@ -48,9 +53,9 @@ function initGapmap() {
                     window.gapmap = new GapMap(data);
                 }
 
-                setInterval( () => {
-                    UpdateFormDigest(_spPageContextInfo.webServerRelativeUrl, _spFormDigestRefreshInterval);
-                }, 15 * 60000);
+                // setInterval( () => {
+                //     UpdateFormDigest(site, _spFormDigestRefreshInterval);
+                // }, 15 * 60000);
 
             });
         });
@@ -92,5 +97,18 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
 class GapMap {
     constructor(data) {
         this.data = data;
+    }
+}
+
+class Settings extends GapMap {
+    constructor(data, options) {
+        super(data);
+        this.selectResource = options.selectResource;
+        this.addDate = options.addDate;
+        this.editDate = options.editDate;
+        this.sortInterventions = options.sortInterventions;
+        this.sortOutcomes = options.sortOutcomes;
+        this.interventionsOrder = options.interventionsOrder;
+        this.outcomesOrder = options.outcomesOrder;
     }
 }
