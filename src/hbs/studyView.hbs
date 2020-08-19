@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="gapmap-table table">
+        <thead>
+            <tr>
+                <th scope="col" class="border-top-0 border-right border-bottom-0"></th>
+                {{#each outcomes}}
+                <th scope="col" class="border-top-0 border-right border-bottom-0">{{this.Title}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each interventions}}
+            <tr>
+                <td scope="row" class="border-right">{{this.Title}}</td>
+                {{#each ../outcomes}}
+                <td class="border-right"><div>{{{filterData @../index @index 0}}}</div></td>
+                {{/each}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

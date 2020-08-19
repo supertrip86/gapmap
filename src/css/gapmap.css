@@ -1,0 +1,22 @@
+.gapmap-table {margin-top: 3rem;}
+.gapmap-table tbody td, .gapmap-table thead th {padding: .75rem .5rem;max-width: 180px;font-size: .8rem;vertical-align: middle;}
+.gapmap-table td:not(:first-of-type), .gapmap-table th:not(:first-of-type) {text-align: center;}
+.gapmap-table tr:last-of-type td {border-bottom: 1px solid #dee2e6;}
+.gapmap-table td div {display: flex;justify-content: center;}
+
+.gapmap-table .gapmap-dot {display: block;border: 1px solid;border-radius: 50%;margin: 0;}
+
+.gapmap-table .gapmap-dot.gapmap-dot-red {border-color: rgb(200, 55, 55);background-color: rgba(200, 55, 55, 0.5);}
+.gapmap-table .gapmap-dot.gapmap-dot-red:hover {box-shadow: 0 0 0 4px rgba(200, 55, 55, 0.2);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-blue {border-color: rgb(32, 55, 125);background-color: rgba(32, 55, 125, 0.5);}
+.gapmap-table .gapmap-dot.gapmap-dot-blue:hover {box-shadow: 0 0 0 4px rgba(32, 55, 125, 0.2);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-green {border-color: rgb(216, 105, 33);background-color: rgba(216, 105, 33, 0.5);}
+.gapmap-table .gapmap-dot.gapmap-dot-green:hover {box-shadow: 0 0 0 4px rgba(216, 105, 33, 0.2)}
+
+.gapmap-table .gapmap-dot.gapmap-dot-yellow {border-color: rgb(143, 177, 0);background-color: rgba(143, 177, 0, 0.5);}
+.gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px rgba(143, 177, 0, 0.2);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-grey {border-color: rgb(176, 176, 176);background-color: rgba(176, 176, 176, 0.5);}
+.gapmap-table .gapmap-dot.gapmap-dot-grey:hover {box-shadow: 0 0 0 4px rgba(176, 176, 176, 0.2);}

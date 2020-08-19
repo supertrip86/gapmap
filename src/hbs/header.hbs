@@ -13,41 +13,47 @@
         </button>
         <div class="collapse navbar-collapse" id="gapmapNavbar">
             <ul class="navbar-nav mr-auto navbar-options">
-                <li class="nav-item dropdown" data-dropdown="view">
-                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select View</a>
-                    <div class="dropdown-menu">
-                        <span class="dropdown-item">Study Type</span>
-                        <span class="dropdown-item">Direction of Impact</span>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" data-dropdown="type">
-                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Study Type</a>
-                    <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear filter</span>
-                        <div class="dropdown-divider"></div>
-                        {{#each evidence}}
-                        <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this}}</span>
-                        {{/each}}
-                    </div>
-                </li>
-                <li class="nav-item dropdown" data-dropdown="region">
+                <li class="nav-item dropdown" data-dropdown="Region">
                     <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Regions</a>
                     <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear filter</span>
+                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <div class="dropdown-divider"></div>
+                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
                         <div class="dropdown-divider"></div>
                         {{#each regions}}
                         <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this.value}}</span>
                         {{/each}}
                     </div>
                 </li>
-                <li class="nav-item dropdown dropdown-country" data-dropdown="country">
+                <li class="nav-item dropdown dropdown-country" data-dropdown="Country">
                     <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Countries</a>
                     <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear filter</span>
+                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <div class="dropdown-divider"></div>
+                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
                         <div class="dropdown-divider"></div>
                         {{#each countries}}
                         <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this.value}}</span>
                         {{/each}}
+                    </div>
+                </li>
+                <li class="nav-item dropdown" data-dropdown="Evidence">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Study Type</a>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <div class="dropdown-divider"></div>
+                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
+                        <div class="dropdown-divider"></div>
+                        {{#each evidence}}
+                        <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this}}</span>
+                        {{/each}}
+                    </div>
+                </li>
+                <li class="nav-item dropdown" data-dropdown="View">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select View</a>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item">Study Type</span>
+                        <span class="dropdown-item">Direction of Impact</span>
                     </div>
                 </li>
             </ul>

@@ -4,6 +4,7 @@ import "../src/css/main.css";
 import { receiveData } from "./js/requests.js";
 import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/js/settings.js";
 import { headerTemplate, addHeaderListeners } from "../src/js/header.js";
+import { studyView, GapMap, Settings } from "../src/js/gapmap.js";
 
 initGapmap();
 
@@ -38,9 +39,6 @@ function initGapmap() {
                     return resource;
                 });
 
-                document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
-                addHeaderListeners();
-
                 if (isAdmin) {
                     dialog.innerHTML = settingsTemplate(data);
 
@@ -52,14 +50,23 @@ function initGapmap() {
 
                     window.gapmap = new GapMap(data);
                 }
+                
+                document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
+                document.getElementById("gapmap-content").innerHTML = studyView(data);
 
-                // setInterval( () => {
-                //     UpdateFormDigest(site, _spFormDigestRefreshInterval);
-                // }, 15 * 60000);
+                addHeaderListeners();
+                
+                // autoUpdateToken();
 
             });
         });
     });
+}
+
+function autoUpdateToken() {
+    setInterval( () => {
+        UpdateFormDigest(site, _spFormDigestRefreshInterval);
+    }, 15 * 60000);
 }
 
 function queryOptions(target) {
@@ -92,23 +99,4 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
     };
 
     return result;
-}
-
-class GapMap {
-    constructor(data) {
-        this.data = data;
-    }
-}
-
-class Settings extends GapMap {
-    constructor(data, options) {
-        super(data);
-        this.selectResource = options.selectResource;
-        this.addDate = options.addDate;
-        this.editDate = options.editDate;
-        this.sortInterventions = options.sortInterventions;
-        this.sortOutcomes = options.sortOutcomes;
-        this.interventionsOrder = options.interventionsOrder;
-        this.outcomesOrder = options.outcomesOrder;
-    }
 }
