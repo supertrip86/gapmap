@@ -21,7 +21,7 @@ module.exports = function(interventionIndex, outcomeIndex, context) {
     };
 
     const getSize = (length, context) => {
-        const max = context ? gapmap.maxStudyViewValue : gapmap.maxImpactViewValue;
+        const max = (context == 0) ? gapmap.maxStudyViewValue : gapmap.maxImpactViewValue;
         const scaleRange = [12, 24];
         const minMax = [1, max];
         const size = parseInt( ((scaleRange[1] - scaleRange[0]) * (length - minMax[0]) / (minMax[1] - minMax[0])) + scaleRange[0] );

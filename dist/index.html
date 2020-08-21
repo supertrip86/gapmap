@@ -1,22 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <%@ Page language="C#" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> -->
 
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en">
     <head>
+        <!--[if gte mso 9]>
+            <SharePoint:CTFieldRefs>
+                <xml>
+                    <mso:CustomDocumentProperties>
+                        <mso:_dlc_DocId msdt:dt="string">0006-1326765640-23</mso:_dlc_DocId>
+                        <mso:_dlc_DocIdItemGuid msdt:dt="string">c5d86095-8c2e-4e1e-b264-0e1ee282909c</mso:_dlc_DocIdItemGuid>
+                        <mso:_dlc_DocIdUrl msdt:dt="string">https://xdesk.ifad.org/sites/pa/tools/_layouts/15/DocIdRedir.aspx?ID=0006-1326765640-23, 0006-1326765640-23</mso:_dlc_DocIdUrl>
+                    </mso:CustomDocumentProperties>
+                </xml>
+            </SharePoint:CTFieldRefs>
+        <![endif]-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <title>WCA Gapmap</title>
+        <link rel="stylesheet" href="css/bundle.css">
+        <title>Knowledge Gapmap</title>
     </head>
 
     <body>
+
+        <!-- <form class="vanish" runat="server">
+            <SharePoint:FormDigest id="FormDigest1" runat="server"></SharePoint:FormDigest>
+        </form> -->
+
         <header id="gapmap-header"></header>
 
         <main id="gapmap-content"></main>
 
         <div id="gapmap-dialog"></div>
-        
-        <!-- enable script below to define SP.RequestExecutor global variable -->
+
         <!-- <script src="/_layouts/15/SP.RequestExecutor.js"></script> -->
         <script src="js/bundle.js"></script>
     </body>

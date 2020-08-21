@@ -6,9 +6,7 @@ import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/
 import { headerTemplate, addHeaderListeners } from "../src/js/header.js";
 import { studyView, GapMap, Settings } from "../src/js/gapmap.js";
 
-initGapmap();
-
-function initGapmap() {
+const initGapmap = () => {
     // const site = _spPageContextInfo.webServerRelativeUrl;
     const settingsList = 'gapmap-settings';
     const resourceList = 'gapmap-data';
@@ -56,20 +54,20 @@ function initGapmap() {
 
                 addHeaderListeners();
                 
-                // autoUpdateToken();
+                // autoUpdateToken(site);
 
             });
         });
     });
 }
 
-function autoUpdateToken() {
+const autoUpdateToken = (site) => {
     setInterval( () => {
         UpdateFormDigest(site, _spFormDigestRefreshInterval);
     }, 15 * 60000);
 }
 
-function queryOptions(target) {
+const queryOptions = (target) => {
     const columns = {
         settings: ["Id", "regions", "countries", "languages", "evidence", "interventions", "outcomes"],
         resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
@@ -81,7 +79,7 @@ function queryOptions(target) {
     return `?${expand}&${select}`;
 }
 
-function createData(data, settingsList, resourceList, resourceMetadata) {
+const createData = (data, settingsList, resourceList, resourceMetadata) => {
     let result = {};
 
     result.regions = JSON.parse(data.regions);
@@ -100,3 +98,5 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
 
     return result;
 }
+
+initGapmap();

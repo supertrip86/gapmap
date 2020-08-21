@@ -1,4 +1,7 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
 
@@ -16,6 +19,19 @@ module.exports = {
   },
 
   devtool: 'source-map',
+
+  optimization: {
+    minimizer: [
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin()
+    ]
+  },
+
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "css/bundle.css"
+    })
+  ],
 
   module: {
     rules: [
@@ -38,7 +54,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader"
+        ]
       },
       {
         test: /\.hbs$/,

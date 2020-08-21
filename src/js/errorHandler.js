@@ -1,4 +1,5 @@
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2/dist/sweetalert2.min.js';
+import "sweetalert2/dist/sweetalert2.min.css";
 
 const errorList = {
     invalidFile: 'You can only upload Word, Powerpoint, Excel or PDF documents',
