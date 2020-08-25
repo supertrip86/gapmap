@@ -162,16 +162,17 @@ const validateParametersModification = (context) => {
 const addResourceForm = () => {
     const context = utilities.currentMenu();
     const template = require('../hbs/partials/resourceData.hbs');
-
     const item = new ResourceData(gapmap.data);
 
     context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
 
+    const incomeOptions = utilities.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true);
     const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
     const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
     const editorOptions = utilities.options.editorOptions();
     const index = context.querySelectorAll('.modal-country').length - 1;
 
+    new SelectPure(context.querySelectorAll('.modal-income')[index], incomeOptions);
     new SelectPure(context.querySelectorAll('.modal-region')[index], regionOptions)
     new SelectPure(context.querySelectorAll('.modal-country')[index], countryOptions);
     new quill(context.querySelectorAll('.editor')[index], editorOptions);
@@ -290,12 +291,15 @@ const loadResource = (value) => {
         target.querySelector('.intervention-outcome-container').innerHTML = template(item);
 
         element.Data.forEach( (i, j) => {
+            const incomeValue = i.Income ? i.Income.split(', ') : [];
             const regionValue = i.Region ? i.Region.split(', ') : [];
             const countryValue = i.Country ? i.Country.split('; ') : [];
+            const incomeOptions = utilities.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true, incomeValue);
             const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
             const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
             const editorOptions = utilities.options.editorOptions();
 
+            new SelectPure(target.querySelectorAll('.modal-income')[j], incomeOptions);
             new SelectPure(target.querySelectorAll('.modal-region')[j], regionOptions);
             new SelectPure(target.querySelectorAll('.modal-country')[j], countryOptions);
             new quill(target.querySelectorAll('.editor')[j], editorOptions);
@@ -372,6 +376,7 @@ class ResourceData {
     constructor(data, resources) {
         this.interventions = data.interventions;
         this.outcomes = data.outcomes;
+        this.incomes = data.incomes;
         this.countries = data.countries;
         this.regions = data.regions;
         this.resources = this.initResources(resources);

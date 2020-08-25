@@ -1,5 +1,6 @@
-module.exports = function(interventionIndex, outcomeIndex, context) {
-    const resources = gapmap.current ? gapmap.current : gapmap.data.resources;
+module.exports = function(interventionIndex, outcomeIndex) {
+    const context = gapmap.view;
+    const resources = gapmap.data.current ? gapmap.data.current : gapmap.data.resources;
     const intervention = gapmap.data.interventions[parseInt(interventionIndex)].Title;
     const outcome = gapmap.data.outcomes[parseInt(outcomeIndex)].Title;
 
@@ -61,11 +62,11 @@ module.exports = function(interventionIndex, outcomeIndex, context) {
 
             if (a == intervention && b == outcome && !isInArray.includes(id)) {
                 if (context == 0 && !isInArray.includes(id)) {
-                    switch (i.Study) {
-                        case "Systematic review":
+                    switch (i.Study.toLowerCase()) {
+                        case "systematic review":
                             result.a.push(i);
                             break;
-                        case "Impact evaluations":
+                        case "impact evaluation":
                             result.b.push(i);
                             break;
                         default:
@@ -78,13 +79,13 @@ module.exports = function(interventionIndex, outcomeIndex, context) {
                 } else if (context == 1) {
                     switch (d.Impact) {
                         case "Positive":
-                            x.push(i);
+                            result.a.push(i);
                             break;
                         case "Mixed":
-                            y.push(i);
+                            result.b.push(i);
                             break;
                         case "Negative":
-                            z.push(i);
+                            result.c.push(i);
                             break;
                     }
                 }

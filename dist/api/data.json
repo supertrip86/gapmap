@@ -5,7 +5,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'59ba6027-4f35-4706-844a-10476febf5f7')/Items(1)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'59ba6027-4f35-4706-844a-10476febf5f7')/Items(1)",
-                    "etag": "\"12\"",
+                    "etag": "\"21\"",
                     "type": "SP.Data.GapmapsettingsListItem"
                 },
                 "Id": 1,
@@ -14,7 +14,8 @@
                 "languages": "[\"English\",\"French\",\"Spanish\",\"Arabic\"]",
                 "evidence": "[\"External\",\"Internal\"]",
                 "outcomes": "[{\"Title\":\"Enhanced Productivity and Quality of Agricultural Production\",\"Id\":1},{\"Title\":\"Financial Inclusion\",\"Id\":2},{\"Title\":\"Climate Change Resilience\",\"Id\":3}]",
-                "interventions": "[{\"Title\":\"Strengthening POs\",\"Color\":\"#f8f0ff\",\"Id\":1},{\"Title\":\"Financial Education\",\"Color\":\"#f0ffff\",\"Id\":2},{\"Title\":\"Storage Facilities\",\"Color\":\"#f0f1ff\",\"Id\":3},{\"Title\":\"Agricultural Extension Services\",\"Color\":\"#fffff0\",\"Id\":4},{\"Title\":\"Rangeland Management Techniques\",\"Color\":\"#fff0f1\",\"Id\":5},{\"Title\":\"Irrigation Techniques\",\"Color\":\"#f8fff0\",\"Id\":6},{\"Title\":\"Provision of Agricultural Inputs\",\"Color\":\"#fff0f8\",\"Id\":7},{\"Title\":\"Market Information\",\"Color\":\"#f0fff7\",\"Id\":8},{\"Title\":\"Community Infrastructure\",\"Color\":\"#ffffe0\",\"Id\":9},{\"Title\":\"Strengthening FSAs\",\"Color\":\"#fff7f0\",\"Id\":10},{\"Title\":\"Climate Change Resilience Production Techniques\",\"Color\":\"#f5f5f5\",\"Id\":11}]",
+                "interventions": "[{\"Title\":\"Strengthening POs\",\"Id\":1,\"Color\":\"#f8f0ff\"},{\"Title\":\"Financial Education\",\"Id\":2,\"Color\":\"#f0ffff\"},{\"Title\":\"Storage Facilities\",\"Id\":3,\"Color\":\"#f0f1ff\"},{\"Title\":\"Agricultural Extension Services\",\"Id\":4,\"Color\":\"#fffff0\"},{\"Title\":\"Rangeland Management Techniques\",\"Id\":5,\"Color\":\"#fff0f1\"},{\"Title\":\"Irrigation Techniques\",\"Id\":6,\"Color\":\"#f8fff0\"},{\"Title\":\"Provision of Agricultural Inputs\",\"Id\":7,\"Color\":\"#fff0f8\"},{\"Title\":\"Market Information\",\"Id\":8,\"Color\":\"#f0fff7\"},{\"Title\":\"Community Infrastructure\",\"Id\":9,\"Color\":\"#ffffe0\"},{\"Title\":\"Strengthening FSAs\",\"Id\":10,\"Color\":\"#fff7f0\"},{\"Title\":\"Climate Change Resilience Production Techniques\",\"Id\":11,\"Color\":\"#f5f5f5\"}]",
+                "incomes": "[{\"label\":\"Low Income\",\"value\":\"Low Income\"},{\"label\":\"Lower-Middle Income\",\"value\":\"Lower-Middle Income\"},{\"label\":\"Upper-Middle Income\",\"value\":\"Upper-Middle Income\"},{\"label\":\"Middle Income\",\"value\":\"Middle Income\"},{\"label\":\"High Income\",\"value\":\"High Income\"}]",
                 "ID": 1
             }
         ]

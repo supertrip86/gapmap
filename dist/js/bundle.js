@@ -37080,6 +37080,67 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/hbs/gapmap.hbs":
+/*!****************************!*\
+  !*** ./src/hbs/gapmap.hbs ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
+function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "                <th scope=\"col\" class=\"border-top-0 border-right border-bottom-0\">"
+    + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"Title") : depth0), depth0))
+    + "</th>\r\n";
+},"3":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "            <tr>\r\n                <td scope=\"row\" class=\"border-right\">"
+    + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"Title") : depth0), depth0))
+    + "</td>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? lookupProperty(depths[1],"outcomes") : depths[1]),{"name":"each","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":15,"column":16},"end":{"line":17,"column":25}}})) != null ? stack1 : "")
+    + "            </tr>\r\n";
+},"4":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "                <td class=\"border-right\"><div>"
+    + ((stack1 = __default(__webpack_require__(/*! ./helpers/filterData.js */ "./src/hbs/helpers/filterData.js")).call(depth0 != null ? depth0 : (container.nullContext || {}),(container.data(data, 1) && lookupProperty(container.data(data, 1),"index")),(data && lookupProperty(data,"index")),{"name":"filterData","hash":{},"data":data,"loc":{"start":{"line":16,"column":46},"end":{"line":16,"column":79}}})) != null ? stack1 : "")
+    + "</div></td>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div class=\"container\">\r\n    <table class=\"gapmap-table table\">\r\n        <thead>\r\n            <tr>\r\n                <th scope=\"col\" class=\"border-top-0 border-right border-bottom-0\"></th>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":16},"end":{"line":8,"column":25}}})) != null ? stack1 : "")
+    + "            </tr>\r\n        </thead>\r\n        <tbody>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":12,"column":12},"end":{"line":19,"column":21}}})) != null ? stack1 : "")
+    + "        </tbody>\r\n    </table>\r\n</div>";
+},"useData":true,"useDepths":true});
+
+/***/ }),
+
 /***/ "./src/hbs/header.hbs":
 /*!****************************!*\
   !*** ./src/hbs/header.hbs ***!
@@ -37112,13 +37173,13 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<nav class=\"navbar navbar-expand-lg\">\r\n    <div class=\"container-fluid\">\r\n        <a class=\"navbar-brand collapse\">\r\n            <img class=\"logo horizontal-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n        </a>\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item nav-title\">\r\n                <a class=\"nav-link\">WCA | Knowledge Gapmap</a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#gapmapNavbar\" aria-controls=\"gapmapNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"gapmapNavbar\">\r\n            <ul class=\"navbar-nav mr-auto navbar-options\">\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"Region\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Regions</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+  return "<nav class=\"navbar navbar-expand-lg\">\r\n    <div class=\"container-fluid\">\r\n        <a class=\"navbar-brand collapse\">\r\n            <img class=\"logo horizontal-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n        </a>\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item nav-title\">\r\n                <a class=\"nav-link\">WCA | Knowledge Gap Map</a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#gapmapNavbar\" aria-controls=\"gapmapNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"gapmapNavbar\">\r\n            <ul class=\"navbar-nav mr-auto navbar-options\">\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"Region\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Regions</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":23,"column":24},"end":{"line":25,"column":33}}})) != null ? stack1 : "")
     + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-country\" data-dropdown=\"Country\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Countries</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"countries") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":35,"column":24},"end":{"line":37,"column":33}}})) != null ? stack1 : "")
     + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"Evidence\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Study Type</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":47,"column":24},"end":{"line":49,"column":33}}})) != null ? stack1 : "")
-    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"View\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Select View</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item\">Study Type</span>\r\n                        <span class=\"dropdown-item\">Direction of Impact</span>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n            <ul class=\"navbar-nav ml-auto collapse settings-container\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
+    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"View\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Select View</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-change-view\" data-view=\"0\">Study Type</span>\r\n                        <span class=\"dropdown-item dropdown-change-view\" data-view=\"1\">Direction of Impact</span>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n            <ul class=\"navbar-nav ml-auto collapse settings-container\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -37130,8 +37191,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = function (interventionIndex, outcomeIndex, context) {
-  var resources = gapmap.current ? gapmap.current : gapmap.data.resources;
+module.exports = function (interventionIndex, outcomeIndex) {
+  var context = gapmap.view;
+  var resources = gapmap.data.current ? gapmap.data.current : gapmap.data.resources;
   var intervention = gapmap.data.interventions[parseInt(interventionIndex)].Title;
   var outcome = gapmap.data.outcomes[parseInt(outcomeIndex)].Title;
 
@@ -37167,14 +37229,12 @@ module.exports = function (interventionIndex, outcomeIndex, context) {
 
   var createDot = (length, interventionIndex, outcomeIndex, dotIndex, context) => {
     if (length) {
-      var _x = interventionIndex;
-      var _y = outcomeIndex;
+      var x = interventionIndex;
+      var y = outcomeIndex;
       var v = dotIndex;
       var w = getSize(length, context);
-
-      var _z = getClass(v, context);
-
-      return "<span id=\"dot-".concat(_x, "-").concat(_y, "-").concat(v, "\" class=\"gapmap-dot ").concat(_z, "\" style=\"").concat(w, "\"></span>");
+      var z = getClass(v, context);
+      return "<span id=\"dot-".concat(x, "-").concat(y, "-").concat(v, "\" class=\"gapmap-dot ").concat(z, "\" style=\"").concat(w, "\"></span>");
     } else {
       return '';
     }
@@ -37194,12 +37254,12 @@ module.exports = function (interventionIndex, outcomeIndex, context) {
 
       if (a == intervention && b == outcome && !isInArray.includes(id)) {
         if (context == 0 && !isInArray.includes(id)) {
-          switch (i.Study) {
-            case "Systematic review":
+          switch (i.Study.toLowerCase()) {
+            case "systematic review":
               result.a.push(i);
               break;
 
-            case "Impact evaluations":
+            case "impact evaluation":
               result.b.push(i);
               break;
 
@@ -37212,15 +37272,15 @@ module.exports = function (interventionIndex, outcomeIndex, context) {
         } else if (context == 1) {
           switch (d.Impact) {
             case "Positive":
-              x.push(i);
+              result.a.push(i);
               break;
 
             case "Mixed":
-              y.push(i);
+              result.b.push(i);
               break;
 
             case "Negative":
-              z.push(i);
+              result.c.push(i);
               break;
           }
         }
@@ -37328,10 +37388,12 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + ";\">\r\n    <div class=\"row\">\r\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"interventions") : depths[1]),{"name":"if","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":8},"end":{"line":17,"column":15}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"outcomes") : depths[1]),{"name":"if","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":18,"column":8},"end":{"line":31,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"editor-container\">\r\n        <div>\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"regions") : depths[1]),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":41,"column":8},"end":{"line":48,"column":15}}})) != null ? stack1 : "")
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"countries") : depths[1]),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":49,"column":8},"end":{"line":56,"column":15}}})) != null ? stack1 : "")
-    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-impact\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages/paragraphs of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
+    + "    </div>\r\n    <div class=\"editor-container\">\r\n        <div>\r\n            <div class=\"text-editor\">\r\n                <div class=\"editor\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-auto\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Impact</span>\r\n                <div class=\"modal-impact\">\r\n                    <select class=\"form-control\">\r\n                        <option value=\"Positive\">Positive</option>\r\n                        <option value=\"Mixed\">Mixed</option>\r\n                        <option value=\"Negative\">Negative</option>\r\n                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"incomes") : depths[1]),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":53,"column":8},"end":{"line":60,"column":15}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"regions") : depths[1]),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":61,"column":8},"end":{"line":68,"column":15}}})) != null ? stack1 : "")
+    + "    </div>\r\n    <div class=\"row\">\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"countries") : depths[1]),{"name":"if","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":71,"column":8},"end":{"line":78,"column":15}}})) != null ? stack1 : "")
+    + "    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Target Population</span>\r\n                <input class=\"form-control form-resource modal-population\" placeholder=\"Indicate target population\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Crop</span>\r\n                <input class=\"form-control form-resource modal-crop\" placeholder=\"Indicate type of Crop\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Outcome Metrics Used</span>\r\n                <input class=\"form-control form-resource modal-metrics\" placeholder=\"Indicate metrics used\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Pages / Paragraphs</span>\r\n                <input class=\"form-control form-resource modal-paragraphs\" placeholder=\"Indicate pages of interest\" autocomplete=\"off\">\r\n            </label>\r\n        </div>\r\n    </div>\r\n    <div class=\"row delete-resource-button-container\">\r\n        <button class=\"delete-resource-button\"></button>\r\n    </div>\r\n</div>\r\n";
 },"2":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -37368,9 +37430,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? lookupProperty(depths[1],"outcomes") : depths[1]),{"name":"each","hash":{},"fn":container.program(3, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":24,"column":24},"end":{"line":26,"column":33}}})) != null ? stack1 : "")
     + "                    </select>\r\n                </div>\r\n            </label>\r\n        </div>\r\n";
 },"7":function(container,depth0,helpers,partials,data) {
-    return "        <div class=\"col-3\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Region</span>\r\n                <div class=\"modal-region\"></div>\r\n            </label>\r\n        </div>\r\n";
+    return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Income Group(s)</span>\r\n                <div class=\"modal-income\"></div>\r\n            </label>\r\n        </div>\r\n";
 },"9":function(container,depth0,helpers,partials,data) {
-    return "        <div class=\"col-9\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Country</span>\r\n                <div class=\"modal-country\"></div>\r\n            </label>\r\n        </div>\r\n";
+    return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Region(s)</span>\r\n                <div class=\"modal-region\"></div>\r\n            </label>\r\n        </div>\r\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    return "        <div class=\"col\">\r\n            <label>\r\n                <span class=\"modal-span-title\">Country(ies)</span>\r\n                <div class=\"modal-country\"></div>\r\n            </label>\r\n        </div>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -37379,7 +37443,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"resources") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":94,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"resources") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":110,"column":9}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true});
 
 /***/ }),
@@ -37462,67 +37526,6 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,"
 
 /***/ }),
 
-/***/ "./src/hbs/studyView.hbs":
-/*!*******************************!*\
-  !*** ./src/hbs/studyView.hbs ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(/*! ../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
-    var lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "                <th scope=\"col\" class=\"border-top-0 border-right border-bottom-0\">"
-    + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"Title") : depth0), depth0))
-    + "</th>\r\n";
-},"3":function(container,depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "            <tr>\r\n                <td scope=\"row\" class=\"border-right\">"
-    + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"Title") : depth0), depth0))
-    + "</td>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? lookupProperty(depths[1],"outcomes") : depths[1]),{"name":"each","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":15,"column":16},"end":{"line":17,"column":25}}})) != null ? stack1 : "")
-    + "            </tr>\r\n";
-},"4":function(container,depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "                <td class=\"border-right\"><div>"
-    + ((stack1 = __default(__webpack_require__(/*! ./helpers/filterData.js */ "./src/hbs/helpers/filterData.js")).call(depth0 != null ? depth0 : (container.nullContext || {}),(container.data(data, 1) && lookupProperty(container.data(data, 1),"index")),(data && lookupProperty(data,"index")),0,{"name":"filterData","hash":{},"data":data,"loc":{"start":{"line":16,"column":46},"end":{"line":16,"column":81}}})) != null ? stack1 : "")
-    + "</div></td>\r\n";
-},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "<div class=\"container\">\r\n    <table class=\"gapmap-table table\">\r\n        <thead>\r\n            <tr>\r\n                <th scope=\"col\" class=\"border-top-0 border-right border-bottom-0\"></th>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"outcomes") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":16},"end":{"line":8,"column":25}}})) != null ? stack1 : "")
-    + "            </tr>\r\n        </thead>\r\n        <tbody>\r\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"interventions") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":12,"column":12},"end":{"line":19,"column":21}}})) != null ? stack1 : "")
-    + "        </tbody>\r\n    </table>\r\n</div>";
-},"useData":true,"useDepths":true});
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -37585,7 +37588,7 @@ function initGapmap() {
         }
 
         document.getElementById("gapmap-header").innerHTML = Object(_src_js_header_js__WEBPACK_IMPORTED_MODULE_5__["headerTemplate"])(data);
-        document.getElementById("gapmap-content").innerHTML = Object(_src_js_gapmap_js__WEBPACK_IMPORTED_MODULE_6__["studyView"])(data);
+        document.getElementById("gapmap-content").innerHTML = Object(_src_js_gapmap_js__WEBPACK_IMPORTED_MODULE_6__["gapmapView"])(data);
         Object(_src_js_header_js__WEBPACK_IMPORTED_MODULE_5__["addHeaderListeners"])(); // autoUpdateToken(site);
       });
     });
@@ -37600,7 +37603,7 @@ function autoUpdateToken(site) {
 
 function queryOptions(target) {
   var columns = {
-    settings: ["Id", "regions", "countries", "languages", "evidence", "interventions", "outcomes"],
+    settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "interventions", "outcomes"],
     resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
   };
   var expand = "$expand=AttachmentFiles";
@@ -37614,6 +37617,7 @@ function createData(data, settingsList, resourceList, resourceMetadata) {
   result.countries = JSON.parse(data.countries);
   result.languages = JSON.parse(data.languages);
   result.evidence = JSON.parse(data.evidence);
+  result.incomes = JSON.parse(data.incomes);
   result.interventions = JSON.parse(data.interventions);
   result.outcomes = JSON.parse(data.outcomes);
   result.storage = {
@@ -37691,7 +37695,7 @@ class ModalError {
 /*!**************************!*\
   !*** ./src/js/gapmap.js ***!
   \**************************/
-/*! exports provided: studyView, GapMap, Settings */
+/*! exports provided: gapmapView, GapMap, Settings */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37700,9 +37704,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Settings", function() { return Settings; });
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hbs_studyView_hbs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hbs/studyView.hbs */ "./src/hbs/studyView.hbs");
-/* harmony import */ var _hbs_studyView_hbs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_hbs_studyView_hbs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "studyView", function() { return _hbs_studyView_hbs__WEBPACK_IMPORTED_MODULE_1___default.a; });
+/* harmony import */ var _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hbs/gapmap.hbs */ "./src/hbs/gapmap.hbs");
+/* harmony import */ var _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "gapmapView", function() { return _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_1___default.a; });
 /* harmony import */ var _css_gapmap_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/gapmap.css */ "./src/css/gapmap.css");
 /* harmony import */ var _css_gapmap_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_gapmap_css__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -37712,6 +37716,7 @@ __webpack_require__.r(__webpack_exports__);
 class GapMap {
   constructor(data) {
     this.data = data;
+    this.view = 0;
     this.maxStudyViewValue = this.getMax(data, "studyView");
     this.maxImpactViewValue = this.getMax(data, "impactView");
   }
@@ -37807,15 +37812,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hbs/header.hbs */ "./src/hbs/header.hbs");
-/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "headerTemplate", function() { return _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default.a; });
-/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/header.css */ "./src/css/header.css");
-/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_header_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hbs/gapmap.hbs */ "./src/hbs/gapmap.hbs");
+/* harmony import */ var _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hbs/header.hbs */ "./src/hbs/header.hbs");
+/* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_hbs_header_hbs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "headerTemplate", function() { return _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_3___default.a; });
+/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/header.css */ "./src/css/header.css");
+/* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_header_css__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
+
+
+var switchView = e => {
+  gapmap.view = e.target.dataset.view;
+  document.getElementById("gapmap-content").innerHTML = _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2___default()(gapmap.data);
+};
 
 var updateData = (filter, values) => {
   var result = [];
@@ -37848,10 +37861,17 @@ var dropdownClose = e => {
   var filter = e.target.dataset.dropdown;
 
   if (filter != "View") {
-    var elements = Array.from(e.target.querySelectorAll('.dropdown-item-element input:checked'));
-    var values = elements.map(i => i.parentNode.innerText);
-    gapmap.current = updateData(filter, values);
-    console.log(gapmap.current); // rerender gapmap-content: document.getElementById("gapmap-content").innerHTML = studyView(updateData(filter, values));
+    var total = Array.from(e.target.querySelectorAll('.dropdown-item-element input'));
+    var checked = Array.from(e.target.querySelectorAll('.dropdown-item-element input:checked'));
+    var values = checked.map(i => i.parentNode.innerText);
+
+    if (values.length != total.length) {
+      gapmap.data.current = updateData(filter, values);
+      document.getElementById("gapmap-content").innerHTML = _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2___default()(gapmap.data);
+    } else {
+      gapmap.data.current = null;
+      document.getElementById("gapmap-content").innerHTML = _hbs_gapmap_hbs__WEBPACK_IMPORTED_MODULE_2___default()(gapmap.data);
+    }
   }
 };
 
@@ -37864,6 +37884,7 @@ var dropdownUncheck = e => {
 var dropdownReset = e => {
   var target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
   target.forEach(i => i.querySelector('input').checked = true);
+  e.stopPropagation();
 };
 
 var dropdownItemSelection = e => {
@@ -37876,6 +37897,7 @@ var dropdownItemSelection = e => {
 var addHeaderListeners = () => {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gapmap-header').on('hide.bs.dropdown', dropdownClose); // change event in bootstrap triggered by jQuery
 
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-uncheck', dropdownUncheck);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-clear', dropdownReset);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
@@ -38342,10 +38364,12 @@ var addResourceForm = () => {
 
   var item = new ResourceData(gapmap.data);
   context.querySelector('.intervention-outcome-container').insertAdjacentHTML('beforeend', template(item));
+  var incomeOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true);
   var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true);
   var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true);
   var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.editorOptions();
   var index = context.querySelectorAll('.modal-country').length - 1;
+  new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-income')[index], incomeOptions);
   new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-region')[index], regionOptions);
   new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(context.querySelectorAll('.modal-country')[index], countryOptions);
   new quill__WEBPACK_IMPORTED_MODULE_4___default.a(context.querySelectorAll('.editor')[index], editorOptions);
@@ -38453,11 +38477,14 @@ var loadResource = value => {
     var item = new ResourceData(gapmap.data, element.Data);
     target.querySelector('.intervention-outcome-container').innerHTML = template(item);
     element.Data.forEach((i, j) => {
+      var incomeValue = i.Income ? i.Income.split(', ') : [];
       var regionValue = i.Region ? i.Region.split(', ') : [];
       var countryValue = i.Country ? i.Country.split('; ') : [];
+      var incomeOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true, incomeValue);
       var regionOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
       var countryOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
       var editorOptions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.options.editorOptions();
+      new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-income')[j], incomeOptions);
       new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-region')[j], regionOptions);
       new select_pure__WEBPACK_IMPORTED_MODULE_1___default.a(target.querySelectorAll('.modal-country')[j], countryOptions);
       new quill__WEBPACK_IMPORTED_MODULE_4___default.a(target.querySelectorAll('.editor')[j], editorOptions);
@@ -38535,6 +38562,7 @@ class ResourceData {
   constructor(data, resources) {
     this.interventions = data.interventions;
     this.outcomes = data.outcomes;
+    this.incomes = data.incomes;
     this.countries = data.countries;
     this.regions = data.regions;
     this.resources = this.initResources(resources);

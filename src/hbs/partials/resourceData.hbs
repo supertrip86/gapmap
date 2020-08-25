@@ -38,24 +38,6 @@
         </div>
     </div>
     <div class="row">
-        {{#if ../regions}}
-        <div class="col-3">
-            <label>
-                <span class="modal-span-title">Region</span>
-                <div class="modal-region"></div>
-            </label>
-        </div>
-        {{/if}}
-        {{#if ../countries}}
-        <div class="col-9">
-            <label>
-                <span class="modal-span-title">Country</span>
-                <div class="modal-country"></div>
-            </label>
-        </div>
-        {{/if}}
-    </div>
-    <div class="row">
         <div class="col-auto">
             <label>
                 <span class="modal-span-title">Impact</span>
@@ -68,6 +50,34 @@
                 </div>
             </label>
         </div>
+        {{#if ../incomes}}
+        <div class="col">
+            <label>
+                <span class="modal-span-title">Income Group(s)</span>
+                <div class="modal-income"></div>
+            </label>
+        </div>
+        {{/if}}
+        {{#if ../regions}}
+        <div class="col">
+            <label>
+                <span class="modal-span-title">Region(s)</span>
+                <div class="modal-region"></div>
+            </label>
+        </div>
+        {{/if}}
+    </div>
+    <div class="row">
+        {{#if ../countries}}
+        <div class="col">
+            <label>
+                <span class="modal-span-title">Country(ies)</span>
+                <div class="modal-country"></div>
+            </label>
+        </div>
+        {{/if}}
+    </div>
+    <div class="row">
         <div class="col">
             <label>
                 <span class="modal-span-title">Target Population</span>
@@ -76,14 +86,20 @@
         </div>
         <div class="col">
             <label>
+                <span class="modal-span-title">Crop</span>
+                <input class="form-control form-resource modal-crop" placeholder="Indicate type of Crop" autocomplete="off">
+            </label>
+        </div>
+        <div class="col">
+            <label>
                 <span class="modal-span-title">Outcome Metrics Used</span>
                 <input class="form-control form-resource modal-metrics" placeholder="Indicate metrics used" autocomplete="off">
             </label>
         </div>
-        <div class="col-4">
+        <div class="col">
             <label>
                 <span class="modal-span-title">Pages / Paragraphs</span>
-                <input class="form-control form-resource modal-paragraphs" placeholder="Indicate pages/paragraphs of interest" autocomplete="off">
+                <input class="form-control form-resource modal-paragraphs" placeholder="Indicate pages of interest" autocomplete="off">
             </label>
         </div>
     </div>

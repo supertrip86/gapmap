@@ -1,7 +1,13 @@
 import $ from "jquery";
 import utilities from "../js/utilities.js";
+import gapmapView from "../hbs/gapmap.hbs";
 import headerTemplate from "../hbs/header.hbs";
 import "../css/header.css";
+
+const switchView = (e) => {
+    gapmap.view = e.target.dataset.view;
+    document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
+};
 
 const updateData = (filter, values) => {
     let result = [];
@@ -38,12 +44,18 @@ const dropdownClose = (e) => {
     const filter = e.target.dataset.dropdown;
 
     if (filter != "View") {
-        const elements = Array.from(e.target.querySelectorAll('.dropdown-item-element input:checked'));
-        const values = elements.map( (i) => i.parentNode.innerText );
+        const total = Array.from(e.target.querySelectorAll('.dropdown-item-element input'));
+        const checked = Array.from(e.target.querySelectorAll('.dropdown-item-element input:checked'));
+        const values = checked.map( (i) => i.parentNode.innerText );
 
-        gapmap.current = updateData(filter, values);
-        console.log(gapmap.current)
-        // rerender gapmap-content: document.getElementById("gapmap-content").innerHTML = studyView(updateData(filter, values));
+        if (values.length != total.length) {
+            gapmap.data.current = updateData(filter, values);
+            document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
+
+        } else {
+            gapmap.data.current = null;
+            document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
+        }
     }
 };
 
@@ -58,6 +70,7 @@ const dropdownReset = (e) => {
     const target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
 
     target.forEach( (i) => i.querySelector('input').checked = true );
+    e.stopPropagation();
 };
 
 const dropdownItemSelection = (e) => {
@@ -71,6 +84,7 @@ const dropdownItemSelection = (e) => {
 const addHeaderListeners = () => {
     $('#gapmap-header').on('hide.bs.dropdown', dropdownClose); // change event in bootstrap triggered by jQuery
 
+    utilities.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
     utilities.on('#gapmap-header', 'click', '.dropdown-item-uncheck', dropdownUncheck);
     utilities.on('#gapmap-header', 'click', '.dropdown-item-clear', dropdownReset);
     utilities.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);

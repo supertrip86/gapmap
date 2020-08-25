@@ -4,9 +4,11 @@ import "../src/css/main.css";
 import { receiveData } from "./js/requests.js";
 import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/js/settings.js";
 import { headerTemplate, addHeaderListeners } from "../src/js/header.js";
-import { studyView, GapMap, Settings } from "../src/js/gapmap.js";
+import { gapmapView, GapMap, Settings } from "../src/js/gapmap.js";
 
-const initGapmap = () => {
+initGapmap();
+
+function initGapmap() {
     // const site = _spPageContextInfo.webServerRelativeUrl;
     const settingsList = 'gapmap-settings';
     const resourceList = 'gapmap-data';
@@ -48,12 +50,12 @@ const initGapmap = () => {
 
                     window.gapmap = new GapMap(data);
                 }
-                
+
                 document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
-                document.getElementById("gapmap-content").innerHTML = studyView(data);
+                document.getElementById("gapmap-content").innerHTML = gapmapView(data);
 
                 addHeaderListeners();
-                
+
                 // autoUpdateToken(site);
 
             });
@@ -61,15 +63,15 @@ const initGapmap = () => {
     });
 }
 
-const autoUpdateToken = (site) => {
+function autoUpdateToken(site) {
     setInterval( () => {
         UpdateFormDigest(site, _spFormDigestRefreshInterval);
     }, 15 * 60000);
 }
 
-const queryOptions = (target) => {
+function queryOptions(target) {
     const columns = {
-        settings: ["Id", "regions", "countries", "languages", "evidence", "interventions", "outcomes"],
+        settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "interventions", "outcomes"],
         resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
     };
 
@@ -79,13 +81,14 @@ const queryOptions = (target) => {
     return `?${expand}&${select}`;
 }
 
-const createData = (data, settingsList, resourceList, resourceMetadata) => {
+function createData(data, settingsList, resourceList, resourceMetadata) {
     let result = {};
 
     result.regions = JSON.parse(data.regions);
     result.countries = JSON.parse(data.countries);
     result.languages = JSON.parse(data.languages);
     result.evidence = JSON.parse(data.evidence);
+    result.incomes = JSON.parse(data.incomes);
     result.interventions = JSON.parse(data.interventions);
     result.outcomes = JSON.parse(data.outcomes);
     result.storage = {
@@ -98,5 +101,3 @@ const createData = (data, settingsList, resourceList, resourceMetadata) => {
 
     return result;
 }
-
-initGapmap();

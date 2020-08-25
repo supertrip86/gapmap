@@ -1,10 +1,11 @@
 import utilities from "../js/utilities.js";
-import studyView from "../hbs/studyView.hbs";
+import gapmapView from "../hbs/gapmap.hbs";
 import "../css/gapmap.css";
 
 class GapMap {
     constructor(data) {
         this.data = data;
+        this.view = 0;
         this.maxStudyViewValue = this.getMax(data, "studyView");
         this.maxImpactViewValue = this.getMax(data, "impactView");
     }
@@ -29,7 +30,7 @@ class GapMap {
                     i.Data.forEach((d) => {
                         const a = data.interventions[parseInt(d.Intervention) -1].Title;
                         const b = data.outcomes[parseInt(d.Outcome) -1].Title;
-        
+
                         if (a == intervention && b == outcome) {
                             
                             if (context == "studyView" && !isInArray.includes(id)) {
@@ -85,4 +86,4 @@ class Settings extends GapMap {
     }
 }
 
-export { studyView, GapMap, Settings }
+export { gapmapView, GapMap, Settings }

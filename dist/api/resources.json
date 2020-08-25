@@ -5,7 +5,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(1)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(1)",
-                    "etag": "\"9\"",
+                    "etag": "\"11\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -22,14 +22,14 @@
                     ]
                 },
                 "Id": 1,
-                "Title": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany ",
-                "label": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany ",
-                "value": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany ",
+                "Title": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
+                "label": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
+                "value": "The Impact of Agricultural Cooperatives on the Adoption of Technologies and Farm Performance of Apple Farmers in China. Doctoral dissertation, Keil Unversity, Germany",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2016-07-14T22:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\"Impact\":\"Positive\",\"Region\":\"APR\",\"Country\":\"China\",\"Population\":\"Farm households\",\"Metrics\":\"Apple yield\",\"Paragraphs\":\"\",\"Intervention\":\"1\",\"Outcome\":\"1\",\"Description\":\"<p>With respect to household welfare (measured by yield in apples) and investment profitability, the results reveal that cooperative membership exerts a positive and statistically significant impact on apple yields, farm net returns and household income, and small-scale farms tend to benefit more from cooperatives than medium and large farms</p>\"}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"China\",\"Impact\":\"Positive\",\"Population\":\"Farm households\",\"Metrics\":\"Apple yield\",\"Paragraphs\":\"\",\"Intervention\":\"1\",\"Outcome\":\"1\",\"Description\":\"<p>With respect to household welfare (measured by yield in apples) and investment profitability, the results reveal that cooperative membership exerts a positive and statistically significant impact on apple yields, farm net returns and household income, and small-scale farms tend to benefit more from cooperatives than medium and large farms</p>\"}]",
                 "Author0": "Wanglin Ma",
                 "ID": 1,
                 "Attachments": true
@@ -38,7 +38,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(2)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(2)",
-                    "etag": "\"13\"",
+                    "etag": "\"15\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -62,7 +62,7 @@
                 "Language": "English",
                 "Date": "2013-10-14T22:00:00Z",
                 "Study": "Working paper (OECD)",
-                "Data": "[{\n  \"Region\": \"Developing Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Country-level\",\n  \"Metrics\": \"Access to financial product/financial awareness\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>In 2010, under the support of the Russian Trust Fund for Financial Literacy and Education, the OECD/INFE launched a project on the role of financial education in financial inclusion. The results of this work show that low levels of financial inclusion are associated with lower levels of financial literacy (measurement including lower levels of financial education)</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"Developing Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Country-level\",\n  \"Income\":\"\",\n  \"Crop\":\"\",\n  \"Metrics\": \"Access to financial product/financial awareness\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>In 2010, under the support of the Russian Trust Fund for Financial Literacy and Education, the OECD/INFE launched a project on the role of financial education in financial inclusion. The results of this work show that low levels of financial inclusion are associated with lower levels of financial literacy (measurement including lower levels of financial education)</p>\"\n}]",
                 "Author0": "Atkinson, A. and F. Messy",
                 "ID": 2,
                 "Attachments": true
@@ -71,7 +71,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(3)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(3)",
-                    "etag": "\"8\"",
+                    "etag": "\"10\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -95,7 +95,7 @@
                 "Language": "English",
                 "Date": "2011-11-14T23:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[{\n  \"Region\": \"Developing Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farm households in Ghana, Uganda, Malawi, Sri Lanka and Bolivia\",\n  \"Metrics\": \"Number of savings account holders or reported saving\",\n  \"Paragraphs\": \"pp.14-17\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>Implementers of financial education have attributed several changes in client behavior to their training. SPEED Ghana notes an increase in the number of bank accounts; AMFIU (Uganda) and OIBM (Malawi) attribute an increase in savers as well as changes in self-esteem directly to financial education efforts. In the case of AMFIU, evidence shows a 69.6% increase in number of respondents holding savings accounts and a 66.2% increase in the number of people reporting it is possible to save</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"Developing Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farm households in Ghana, Uganda, Malawi, Sri Lanka and Bolivia\",\n  \"Income\":\"\",\n  \"Crop\":\"\",\n  \"Metrics\": \"Number of savings account holders or reported saving\",\n  \"Paragraphs\": \"pp.14-17\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>Implementers of financial education have attributed several changes in client behavior to their training. SPEED Ghana notes an increase in the number of bank accounts; AMFIU (Uganda) and OIBM (Malawi) attribute an increase in savers as well as changes in self-esteem directly to financial education efforts. In the case of AMFIU, evidence shows a 69.6% increase in number of respondents holding savings accounts and a 66.2% increase in the number of people reporting it is possible to save</p>\"\n}]",
                 "Author0": "Cohen, M. and Nelson, C.",
                 "ID": 3,
                 "Attachments": true
@@ -104,7 +104,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(4)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(4)",
-                    "etag": "\"24\"",
+                    "etag": "\"25\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -128,7 +128,7 @@
                 "Language": "English",
                 "Date": "2010-12-14T23:00:00Z",
                 "Study": "Research paper",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"India\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farm households 4 districts\",\n  \"Metrics\": \"Use of financial products (accounts)\",\n  \"Paragraphs\": \"pp. 1-11\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>The high and middle earnings workers in the financial inclusion sites had the highest levels of financial literacy (measuring including financial education). They also had more diverse sets of financial portfolios. The low earning and National Rural Employment Guarantee Act (NREGA) dependent workers in non-financial inclusion sites had the lowest levels of financial literacy. They also had less diverse portfolios of mechanisms</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"India\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farm households 4 districts\",\n  \"Income\":\"Lower-Middle Income\",\n  \"Crop\":\"\",\n  \"Metrics\": \"Use of financial products (accounts)\",\n  \"Paragraphs\": \"pp. 1-11\",\n  \"Intervention\": \"2\",\n  \"Outcome\": \"2\",\n  \"Description\": \"<p>The high and middle earnings workers in the financial inclusion sites had the highest levels of financial literacy (measuring including financial education). They also had more diverse sets of financial portfolios. The low earning and National Rural Employment Guarantee Act (NREGA) dependent workers in non-financial inclusion sites had the lowest levels of financial literacy. They also had less diverse portfolios of mechanisms</p>\"\n}]",
                 "Author0": "Morawczynski, O., Hutchful, D., Cutrell, E. and Rangaswamy, N.",
                 "ID": 4,
                 "Attachments": true
@@ -137,7 +137,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(5)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(5)",
-                    "etag": "\"16\"",
+                    "etag": "\"18\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -159,9 +159,9 @@
                 "value": "Storage infrastructure and agricultural yield: evidence from a capital investment subsidy scheme. Economics: The Open-Access, Open-Assessment E-Journal, 12 (2018-65): 1–19",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2018-10-14T22:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"India\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rice producing districts\",\n  \"Metrics\": \"Crop yield (rice)\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"3\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>This paper provides empirical evidence on a lesser studied impact of storage infrastructure, viz, agricultural yield. The author exploits potentially exogenous variation generated by the intensity of access to a capital investment subsidy program for construction and renovation of rural godowns in India to identify causal effects of better storage on yield. He finds that the program led to an increase in rice yield by 0.3 tons per hectare, approximately a 20% increase compared to the baseline.</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"India\",\"Impact\":\"Positive\",\"Population\":\"Rice producing districts\",\"Metrics\":\"Crop yield (rice)\",\"Paragraphs\":\"\",\"Intervention\":\"3\",\"Outcome\":\"1\",\"Description\":\"<p>This paper provides empirical evidence on a lesser studied impact of storage infrastructure, viz, agricultural yield. The author exploits potentially exogenous variation generated by the intensity of access to a capital investment subsidy program for construction and renovation of rural godowns in India to identify causal effects of better storage on yield. He finds that the program led to an increase in rice yield by 0.3 tons per hectare, approximately a 20% increase compared to the baseline.</p>\"}]",
                 "Author0": "Somdeep C.",
                 "ID": 5,
                 "Attachments": true
@@ -170,7 +170,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(6)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(6)",
-                    "etag": "\"5\"",
+                    "etag": "\"8\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -194,7 +194,7 @@
                 "Language": "English",
                 "Date": "2014-08-14T22:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[{\n  \"Region\": \"ESA, WCA\",\n  \"Country\": \"Benin; Ghana; Kenya; Malawi; Mozambique; Tanzania, United Republic of\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Benin, Ghana, Kenya, Malawi, Mozambique and Tanzania (Farm households)\",\n  \"Metrics\": \"Productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"3\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>A meta-analysis has been conducted to expose nature and magnitude of PHL, and the kindsof interventions that have been attempted to mitigate the losses. Out of the 213 documents, 139 estimated quantity losses, either as weight of edible mass lost or the volume of food that became discarded due to apparent damage or spoilage. These have been derived by computing the means and SD of estimates provided inthe various documents. The majority of the loss estimates (80.4%) were related to storage</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"ESA, WCA\",\n  \"Country\": \"Benin; Ghana; Kenya; Malawi; Mozambique; Tanzania, United Republic of\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Benin, Ghana, Kenya, Malawi, Mozambique and Tanzania (Farm households)\",\n  \"Income\":\"\",\n  \"Crop\":\"\",\n  \"Metrics\": \"Productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"3\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>A meta-analysis has been conducted to expose nature and magnitude of PHL, and the kindsof interventions that have been attempted to mitigate the losses. Out of the 213 documents, 139 estimated quantity losses, either as weight of edible mass lost or the volume of food that became discarded due to apparent damage or spoilage. These have been derived by computing the means and SD of estimates provided inthe various documents. The majority of the loss estimates (80.4%) were related to storage</p>\"\n}]",
                 "Author0": "Hippolyte A., Mutungi, C., Sanginga, P., and Borgemeister, C.",
                 "ID": 6,
                 "Attachments": true
@@ -203,11 +203,21 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(7)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(7)",
-                    "etag": "\"12\"",
+                    "etag": "\"18\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
-                    "results": []
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(7)/AttachmentFiles('57363.pdf')",
+                                "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(7)/AttachmentFiles('57363.pdf')",
+                                "type": "SP.Attachment"
+                            },
+                            "FileName": "57363.pdf",
+                            "ServerRelativeUrl": "/sites/pa/tools/Lists/gapmapdata/Attachments/7/57363.pdf"
+                        }
+                    ]
                 },
                 "Id": 7,
                 "Title": "Factors influencing farmers׳ adoption of energy-based water pumps and impact son crop productivity and household income in Pakistan, Renewable and Sustainable Energy Reviews, Volume 54, Pages 48-57, ISSN 1364-0321",
@@ -215,18 +225,18 @@
                 "value": "Factors influencing farmers׳ adoption of energy-based water pumps and impact son crop productivity and household income in Pakistan, Renewable and Sustainable Energy Reviews, Volume 54, Pages 48-57, ISSN 1364-0321",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2016-09-14T22:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"Pakistan\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm households in 4 provinces\",\n  \"Metrics\": \"Crop yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The paper uses the multivariate probit model and propensity score matching approach in order to achieve these objectives. The empirical results indicate that educated, younger, and wealthier farmers are more likely to adopt alternate energy-based water pumps for irrigation. Access to credit facilities and frequent hours of load shedding are key factors influencing a farmer's decision to adopt alternative energy-based water pumps rather than relying on electricity. Alternative energy sources have positive and significant impacts on the productivity of wheat, rice and maize crops and on household income. The use of alternative energy sources for water pumping has resulted in the reduction of poverty in the range of 11-20%</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"Pakistan\",\"Impact\":\"Positive\",\"Population\":\"Farm households in 4 provinces\",\"Metrics\":\"Crop yield\",\"Paragraphs\":\"\",\"Intervention\":\"7\",\"Outcome\":\"1\",\"Description\":\"<p>The paper uses the multivariate probit model and propensity score matching approach in order to achieve these objectives. The empirical results indicate that educated, younger, and wealthier farmers are more likely to adopt alternate energy-based water pumps for irrigation. Access to credit facilities and frequent hours of load shedding are key factors influencing a farmer's decision to adopt alternative energy-based water pumps rather than relying on electricity. Alternative energy sources have positive and significant impacts on the productivity of wheat, rice and maize crops and on household income. The use of alternative energy sources for water pumping has resulted in the reduction of poverty in the range of 11-20%</p>\"}]",
                 "Author0": "Ali, A., Rahut, D B., and Behera, B.",
                 "ID": 7,
-                "Attachments": false
+                "Attachments": true
             },
             {
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(8)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(8)",
-                    "etag": "\"21\"",
+                    "etag": "\"22\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -240,7 +250,7 @@
                 "Language": "English",
                 "Date": "2014-03-14T23:00:00Z",
                 "Study": "Working paper (IFPRI)",
-                "Data": "[{\n  \"Region\": \"WCA\",\n  \"Country\": \"Ghana\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm households\",\n  \"Metrics\": \"Crop yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>Many developing country governments—including Ghana, the case study of this paper—have resumed support for agricultural mechanization, typically in the form of providing subsidies for tractor purchase and establishment of private-sector-run agricultural mechanization service centers (AMSECs). The aim of this paper is to assess the impact of Ghana’s AMSEC program on various outcomes, using data from household surveys that were conducted with 270 farmers, some of them located in areas with the AMSEC program (treatment) and others located in areas without the program (control). The results indicate that the AMSEC program has had a mixed impact on different outcome indicators. For example, whereas the program has contributed to improving availability of mechanization services, reducing drudgery, promoting adoption of good practices, and raising yield, it has had no impact on the change in the prices paid by farmers for the services used and the change in the amount of area plowed</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"WCA\",\n  \"Country\": \"Ghana\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm households\",\n  \"Income\":\"Lower-Middle Income\",\n  \"Crop\":\"\",\n  \"Metrics\": \"Crop yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>Many developing country governments—including Ghana, the case study of this paper—have resumed support for agricultural mechanization, typically in the form of providing subsidies for tractor purchase and establishment of private-sector-run agricultural mechanization service centers (AMSECs). The aim of this paper is to assess the impact of Ghana’s AMSEC program on various outcomes, using data from household surveys that were conducted with 270 farmers, some of them located in areas with the AMSEC program (treatment) and others located in areas without the program (control). The results indicate that the AMSEC program has had a mixed impact on different outcome indicators. For example, whereas the program has contributed to improving availability of mechanization services, reducing drudgery, promoting adoption of good practices, and raising yield, it has had no impact on the change in the prices paid by farmers for the services used and the change in the amount of area plowed</p>\"\n}]",
                 "Author0": "Benin, S.",
                 "ID": 8,
                 "Attachments": false
@@ -249,7 +259,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(9)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(9)",
-                    "etag": "\"2\"",
+                    "etag": "\"4\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -263,7 +273,7 @@
                 "Language": "English",
                 "Date": "2012-01-14T23:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya; Uganda; Tanzania, United Republic of\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm districts Kenya, Uganda and Tanzania\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>FFSs were shown to be especially beneficial to women, people with low literacy levels, and farmers with medium-size land holdings. FFS participants had significant differences in outcomes with respect to value of crops produced per acre, livestock value gain per capita, and agricultural income per capita. FFSs had a greater impact on crop productivity for those in the middle land area (land poverty) tercile. Participation in FFSs increased income by 61 percent when pooling the three countries. FFSs improved income and productivity overall, but differences were seen at the country level. Participation in FFSs led to increased production, productivity, and income in nearly all cases: Kenya, Tanzania, and at the project level, (all three countries combined). The most significant change was seen in Kenya for crops (80 percent increase) and in Tanzania for agricultural income (more than 100 percent increase). A lack of significant increases in Uganda was likely due to Uganda’s National Agricultural Advisory Services</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya; Uganda; Tanzania, United Republic of\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm districts Kenya, Uganda and Tanzania\",\n  \"Income\": \"\",\n  \"Crop\": \"\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>FFSs were shown to be especially beneficial to women, people with low literacy levels, and farmers with medium-size land holdings. FFS participants had significant differences in outcomes with respect to value of crops produced per acre, livestock value gain per capita, and agricultural income per capita. FFSs had a greater impact on crop productivity for those in the middle land area (land poverty) tercile. Participation in FFSs increased income by 61 percent when pooling the three countries. FFSs improved income and productivity overall, but differences were seen at the country level. Participation in FFSs led to increased production, productivity, and income in nearly all cases: Kenya, Tanzania, and at the project level, (all three countries combined). The most significant change was seen in Kenya for crops (80 percent increase) and in Tanzania for agricultural income (more than 100 percent increase). A lack of significant increases in Uganda was likely due to Uganda’s National Agricultural Advisory Services</p>\"\n}]",
                 "Author0": "Davis, K., Nkonya, E., Kato, E., Mekonnen, D. A., Odendo, M., Miiro, R. and Nkuba, J.",
                 "ID": 9,
                 "Attachments": false
@@ -272,7 +282,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(10)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(10)",
-                    "etag": "\"3\"",
+                    "etag": "\"5\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -296,7 +306,7 @@
                 "Language": "English",
                 "Date": "2014-09-14T22:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[{\n  \"Region\": \"Low-Income Countries, Middle-Income Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farming communties\",\n  \"Metrics\": \"Agricultural yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>Farmer field schools improve farmers' knowledge and adoption of beneficial practices, and reduce overuse of pesticides. This leads to positive outcomes for farmers: on average, a 13% increase in agricultural yields and a 20% increase in income</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"Low-Income Countries, Middle-Income Countries\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farming communties\",\n  \"Income\": \"Low Income, Middle Income\",\n  \"Crop\": \"\",\n  \"Metrics\": \"Agricultural yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>Farmer field schools improve farmers' knowledge and adoption of beneficial practices, and reduce overuse of pesticides. This leads to positive outcomes for farmers: on average, a 13% increase in agricultural yields and a 20% increase in income</p>\"\n}]",
                 "Author0": "Waddington, H., Snilstveit, B., Hombrados, J., Vojtkova, M., Phillips, D., Davies, P. and White, H.",
                 "ID": 10,
                 "Attachments": true
@@ -305,7 +315,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(11)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(11)",
-                    "etag": "\"6\"",
+                    "etag": "\"7\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -329,7 +339,7 @@
                 "Language": "English",
                 "Date": "2007-07-14T22:00:00Z",
                 "Study": "Research paper",
-                "Data": "[{\n  \"Region\": \"WCA, ESA\",\n  \"Country\": \"\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Farm households\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>In Kenya, although previous evaluations had indicated remarkably high positive economic returns to extension investments, a comprehensive evaluation based on improved and new data revealed a disappointing performance of extension, with a finding of an ineffective, inefficient, and unsustainable T&amp;V-based extension system (for the present purpose not treated here as a “new” approach) and, disturbingly, no measurable impact on farmer efficiency or crop productivity (Gautam 2000)</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"WCA, ESA\",\n  \"Country\": \"\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Farm households\",\n  \"Income\": \"\",\n  \"Crop\": \"\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"4\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>In Kenya, although previous evaluations had indicated remarkably high positive economic returns to extension investments, a comprehensive evaluation based on improved and new data revealed a disappointing performance of extension, with a finding of an ineffective, inefficient, and unsustainable T&amp;V-based extension system (for the present purpose not treated here as a “new” approach) and, disturbingly, no measurable impact on farmer efficiency or crop productivity (Gautam 2000)</p>\"\n}]",
                 "Author0": "Anderson, J.R.",
                 "ID": 11,
                 "Attachments": true
@@ -338,7 +348,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(12)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(12)",
-                    "etag": "\"2\"",
+                    "etag": "\"5\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -362,7 +372,7 @@
                 "Language": "English",
                 "Date": "2011-12-14T23:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Households/National level surveys\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"4\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Extension forms the interface between research and farmers. Out of seven selected cases, six show a positive outcome on crop production, three show a positive proxy impact at the household level, and one shows a positive impact on household food security</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Households/National level surveys\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Of the 38 selected studies, nineteen studies evaluated interventions aimed at increasing production as their main pathway, in Asia and Africa. Of these nineteen, ten impacted through research and extension, four through irrigation, and five through input provision as the main strategy. Irrigation in Asia not only increased production but also the stability of production between years and seasons</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Mixed\",\n    \"Population\": \"Households/National level surveys\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"7\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>During the 1990s, the Government of Zimbabwe implemented the Agricultural Recovery Programme to help smallholder farmers recover from repeated severe droughts. The programme aimed to provide drought-affected smallholders with crop packs (free seeds and fertiliser) and mechanised tillage services. The crop packs increased the crop area by 20%. Crop yields did not increase, so the household food production increased by 20%, which is about 200 kg maize per household per year….Munro (2003)</p>\"\n  }\n]",
+                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Households/National level surveys\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"4\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Extension forms the interface between research and farmers. Out of seven selected cases, six show a positive outcome on crop production, three show a positive proxy impact at the household level, and one shows a positive impact on household food security</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Households/National level surveys\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Of the 38 selected studies, nineteen studies evaluated interventions aimed at increasing production as their main pathway, in Asia and Africa. Of these nineteen, ten impacted through research and extension, four through irrigation, and five through input provision as the main strategy. Irrigation in Asia not only increased production but also the stability of production between years and seasons</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Mixed\",\n    \"Population\": \"Households/National level surveys\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Crop yield, National average yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"7\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>During the 1990s, the Government of Zimbabwe implemented the Agricultural Recovery Programme to help smallholder farmers recover from repeated severe droughts. The programme aimed to provide drought-affected smallholders with crop packs (free seeds and fertiliser) and mechanised tillage services. The crop packs increased the crop area by 20%. Crop yields did not increase, so the household food production increased by 20%, which is about 200 kg maize per household per year….Munro (2003)</p>\"\n  }\n]",
                 "Author0": "The Hague, Netherlands: Ministry of Foreign Affairs of the Netherlands, the Policy and Operations Evaluation Department (IOB)",
                 "ID": 12,
                 "Attachments": true
@@ -371,7 +381,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(13)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(13)",
-                    "etag": "\"2\"",
+                    "etag": "\"4\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -383,9 +393,9 @@
                 "value": "Farmers’ Access to Certified Wheat Seed and its Effect on Poverty Reduction in Pakistan. Journal of Crop Improvement, 29(2), 247-265",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2015-04-14T22:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"Pakistan\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farm households\",\n  \"Metrics\": \"Crop yield\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The empirical results indicated that farmers who had access to certified wheat seeds were able to achieve higher crop yields, higher income and lower poverty as compared to farmers having no access to certified wheat seeds</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"Pakistan\",\"Impact\":\"Positive\",\"Population\":\"Rural farm households\",\"Metrics\":\"Crop yield\",\"Paragraphs\":\"\",\"Intervention\":\"7\",\"Outcome\":\"1\",\"Description\":\"<p>The empirical results indicated that farmers who had access to certified wheat seeds were able to achieve higher crop yields, higher income and lower poverty as compared to farmers having no access to certified wheat seeds</p>\"}]",
                 "Author0": "Ali, A., Rahut, D. B., Behera, B., & Imtiaz, M.",
                 "ID": 13,
                 "Attachments": false
@@ -394,7 +404,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(14)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(14)",
-                    "etag": "\"2\"",
+                    "etag": "\"3\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -418,7 +428,7 @@
                 "Language": "English",
                 "Date": "2015-05-14T22:00:00Z",
                 "Study": "Research paper",
-                "Data": "[{\n  \"Region\": \"ESA, WCA\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farming area\",\n  \"Metrics\": \"Total seasonal precipitation\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"11\",\n  \"Outcome\": \"3\",\n  \"Description\": \"<p>Observations of agricultural performance after extreme climatic events (hurricanes and droughts) in the last two decades have revealed that resiliency to climate disasters is closely linked to farms with increased levels of biodiversity. Field surveys and results reported in the literature suggest that agroecosystems are more resilient when inserted in a complex landscape matrix, featuring adapted local germplasm deployed in diversified cropping systems managed with organic matter rich soils and water conservation-harvesting techniques.</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"ESA, WCA\",\n  \"Country\": \"\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rural farming area\",\n  \"Income\": \"\",\n  \"Crop\": \"\",\n  \"Metrics\": \"Total seasonal precipitation\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"11\",\n  \"Outcome\": \"3\",\n  \"Description\": \"<p>Observations of agricultural performance after extreme climatic events (hurricanes and droughts) in the last two decades have revealed that resiliency to climate disasters is closely linked to farms with increased levels of biodiversity. Field surveys and results reported in the literature suggest that agroecosystems are more resilient when inserted in a complex landscape matrix, featuring adapted local germplasm deployed in diversified cropping systems managed with organic matter rich soils and water conservation-harvesting techniques.</p>\"\n}]",
                 "Author0": "Altieri",
                 "ID": 14,
                 "Attachments": true
@@ -427,7 +437,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(15)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(15)",
-                    "etag": "\"4\"",
+                    "etag": "\"5\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -451,7 +461,7 @@
                 "Language": "English",
                 "Date": "2006-05-14T22:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Farming household nationwide\",\n    \"Metrics\": \"Agricultural GDP, rice production\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>We divide physical infrastructure into two groups, water supply and sanitation sectors and other sectors (i.e., irrigation, energy, telecommunication, and transportation sectors), because the channels through which the sectors influence agricultural development are different. While the latter contributes to more options for production, the former contributes to improving health conditions and productivity3. Based on this conceptual framework, we examine direct and indirect effects of infrastructure investments on agricultural output and productivity. According to their estimates, investments in roads and irrigation significantly contribute to agricultural growth</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Farming household nationwide\",\n    \"Metrics\": \"Agricultural GDP, rice production\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"9\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>We divide physical infrastructure into two groups, water supply and sanitation sectors and other sectors (i.e., irrigation, energy, telecommunication, and transportation sectors), because the channels through which the sectors influence agricultural development are different. While the latter contributes to more options for production, the former contributes to improving health conditions and productivity3. Based on this conceptual framework, we examine direct and indirect effects of infrastructure investments on agricultural output and productivity. According to their estimates, investments in roads and irrigation significantly contribute to agricultural growth</p>\"\n  }\n]",
+                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Farming household nationwide\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Agricultural GDP, rice production\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>We divide physical infrastructure into two groups, water supply and sanitation sectors and other sectors (i.e., irrigation, energy, telecommunication, and transportation sectors), because the channels through which the sectors influence agricultural development are different. While the latter contributes to more options for production, the former contributes to improving health conditions and productivity3. Based on this conceptual framework, we examine direct and indirect effects of infrastructure investments on agricultural output and productivity. According to their estimates, investments in roads and irrigation significantly contribute to agricultural growth</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Farming household nationwide\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Agricultural GDP, rice production\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"9\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>We divide physical infrastructure into two groups, water supply and sanitation sectors and other sectors (i.e., irrigation, energy, telecommunication, and transportation sectors), because the channels through which the sectors influence agricultural development are different. While the latter contributes to more options for production, the former contributes to improving health conditions and productivity3. Based on this conceptual framework, we examine direct and indirect effects of infrastructure investments on agricultural output and productivity. According to their estimates, investments in roads and irrigation significantly contribute to agricultural growth</p>\"\n  }\n]",
                 "Author0": "Pinstrup-Andersen, P. and Shimokawa, S.",
                 "ID": 15,
                 "Attachments": true
@@ -460,7 +470,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(16)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(16)",
-                    "etag": "\"6\"",
+                    "etag": "\"7\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -484,7 +494,7 @@
                 "Language": "English",
                 "Date": "2013-04-14T22:00:00Z",
                 "Study": "Systematic review",
-                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Rural farm communities/district/nation wide\",\n    \"Metrics\": \"Crop yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Finally, for irrigation infrastructure, a third of all evidence related to this aspect, with the majority of impacts on agricultural productivity being positive, especially in relation to income and poverty reduction. For road infrastruce, most evidence (37% observations) related to this investment, with the majority of reported impacts on agricultural productivity being positive, particularly in relation to GDP gains and poverty reduction. For electricity infrastructure, there was limited evidence (16% observation) but again positive, especially for poverty reduction. For telecommunication infrastructure, there was very limited evidence (6% observations) but the majority were positive. The impact for this area are most likely to be mixed in with other forms of infrastructure investment</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Rural farm communities/district/nation wide\",\n    \"Metrics\": \"Crop yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"9\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p> Finally, for irrigation infrastructure, a third of all evidence related to this aspect, with the majority of impacts on agricultural productivity being positive, especially in relation to income and poverty reduction. For road infrastruce, most evidence (37% observations) related to this investment, with the majority of reported impacts on agricultural productivity being positive, particularly in relation to GDP gains and poverty reduction. For electricity infrastructure, there was limited evidence (16% observation) but again positive, especially for poverty reduction. For telecommunication infrastructure, there was very limited evidence (6% observations) but the majority were positive. The impact for this area are most likely to be mixed in with other forms of infrastructure investment</p>\"\n  }\n]",
+                "Data": "[\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Rural farm communities/district/nation wide\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Crop yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"6\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p>Finally, for irrigation infrastructure, a third of all evidence related to this aspect, with the majority of impacts on agricultural productivity being positive, especially in relation to income and poverty reduction. For road infrastruce, most evidence (37% observations) related to this investment, with the majority of reported impacts on agricultural productivity being positive, particularly in relation to GDP gains and poverty reduction. For electricity infrastructure, there was limited evidence (16% observation) but again positive, especially for poverty reduction. For telecommunication infrastructure, there was very limited evidence (6% observations) but the majority were positive. The impact for this area are most likely to be mixed in with other forms of infrastructure investment</p>\"\n  },\n  {\n    \"Region\": \"Developing Countries\",\n    \"Country\": \"\",\n    \"Impact\": \"Positive\",\n    \"Population\": \"Rural farm communities/district/nation wide\",\n    \"Income\": \"\",\n    \"Crop\": \"\",\n    \"Metrics\": \"Crop yield\",\n    \"Paragraphs\": \"\",\n    \"Intervention\": \"9\",\n    \"Outcome\": \"1\",\n    \"Description\": \"<p> Finally, for irrigation infrastructure, a third of all evidence related to this aspect, with the majority of impacts on agricultural productivity being positive, especially in relation to income and poverty reduction. For road infrastruce, most evidence (37% observations) related to this investment, with the majority of reported impacts on agricultural productivity being positive, particularly in relation to GDP gains and poverty reduction. For electricity infrastructure, there was limited evidence (16% observation) but again positive, especially for poverty reduction. For telecommunication infrastructure, there was very limited evidence (6% observations) but the majority were positive. The impact for this area are most likely to be mixed in with other forms of infrastructure investment</p>\"\n  }\n]",
                 "Author0": "Knox, J., Daccache, A. and Hess, T.",
                 "ID": 16,
                 "Attachments": true
@@ -493,7 +503,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(17)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(17)",
-                    "etag": "\"2\"",
+                    "etag": "\"4\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -515,9 +525,9 @@
                 "value": "The Impact of a Feeder Road Project on Cash Crop Production in Zambia’s Eastern Province between 1997 and 2002, CSAE Conference, Oxford, March 2012",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2012-03-14T23:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Zambia\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Medium and small scale farm households\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"9\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>This paper investigates the dynamic impacts of rural road improvements on farm productivity and crop choices in Zambia’s Eastern Province. We use maize productivity to difference out unobserved household and aggregate agricultural year effects. Through our descriptive analysis, we do find that changes in land allocation and in yields to Eastern Province’s most important cash crop – cotton did occur at the district level. However, it is difficult to conclude that these changes are linked directly to the improved accessibility obtained from the implementation of the EPFRP based on our differences-in-differences estimator or our Tobit model</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"ESA\",\"Country\":\"Zambia\",\"Impact\":\"Positive\",\"Population\":\"Medium and small scale farm households\",\"Metrics\":\"Crop productivity\",\"Paragraphs\":\"\",\"Intervention\":\"9\",\"Outcome\":\"1\",\"Description\":\"<p>This paper investigates the dynamic impacts of rural road improvements on farm productivity and crop choices in Zambia’s Eastern Province. We use maize productivity to difference out unobserved household and aggregate agricultural year effects. Through our descriptive analysis, we do find that changes in land allocation and in yields to Eastern Province’s most important cash crop – cotton did occur at the district level. However, it is difficult to conclude that these changes are linked directly to the improved accessibility obtained from the implementation of the EPFRP based on our differences-in-differences estimator or our Tobit model</p>\"}]",
                 "Author0": "Kingombe, C. K.M. and di Falco S.",
                 "ID": 17,
                 "Attachments": true
@@ -526,7 +536,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(18)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(18)",
-                    "etag": "\"4\"",
+                    "etag": "\"5\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -550,7 +560,7 @@
                 "Language": "English",
                 "Date": "2012-01-14T23:00:00Z",
                 "Study": "Research paper",
-                "Data": "[{\n  \"Region\": \"NEN, ESA, WCA\",\n  \"Country\": \"\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Rural farm areas\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"8\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>This paper looks at the evidence on the role of emerging ICTs in the agricultural sector in Africa with lessons from Asia with respect to farmers’ access to information and other services that would help improve agricultural productivity, practices, and farmer livelihoods</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"NEN, ESA, WCA\",\n  \"Country\": \"\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Rural farm areas\",\n  \"Income\": \"\",\n  \"Crop\": \"\",\n  \"Metrics\": \"Crop productivity\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"8\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>This paper looks at the evidence on the role of emerging ICTs in the agricultural sector in Africa with lessons from Asia with respect to farmers’ access to information and other services that would help improve agricultural productivity, practices, and farmer livelihoods</p>\"\n}]",
                 "Author0": "Asenso-Okyere, K. and Mekonnen, D.A.",
                 "ID": 18,
                 "Attachments": true
@@ -559,7 +569,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(19)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(19)",
-                    "etag": "\"3\"",
+                    "etag": "\"5\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -581,9 +591,9 @@
                 "value": "Impact of ICT-based Market Information Service Projects on Smallholder Farm Input Use and Productivity in Kenya, 2012 Eighth AFMA Congress, November 25-29, 2012, Nairobi, Kenya 159429, African Farm Management Association (AFMA).",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2012-11-14T23:00:00Z",
-                "Study": "Research paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Farm households in 3 counties\",\n  \"Metrics\": \"Crop yield (output per acre)\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"8\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The study finds that participation in an ICT-based MIS project has a positive and significant impact on the quantity of seeds and fertilizers used and improves land and labour productivity. Specifically, participants in an ICT-based project spent between Kshs 282.45 and 359.21 and Kshs 952.67 and 1035.10 more than non-participants on purchased seed and fertilizer per acre, respectively. Additionally, participants in the ICTbased MIS project have relatively higher land productivity (between Kshs 7,007.14 and 8,605.84) per acre than non-participants. Participation in an ICT-based MIS project also increases labour productivity by between Kshs 367.46 and Kshs 406.95 per acre.</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"ESA\",\"Country\":\"Kenya\",\"Impact\":\"Positive\",\"Population\":\"Farm households in 3 counties\",\"Metrics\":\"Crop yield (output per acre)\",\"Paragraphs\":\"\",\"Intervention\":\"8\",\"Outcome\":\"1\",\"Description\":\"<p>The study finds that participation in an ICT-based MIS project has a positive and significant impact on the quantity of seeds and fertilizers used and improves land and labour productivity. Specifically, participants in an ICT-based project spent between Kshs 282.45 and 359.21 and Kshs 952.67 and 1035.10 more than non-participants on purchased seed and fertilizer per acre, respectively. Additionally, participants in the ICTbased MIS project have relatively higher land productivity (between Kshs 7,007.14 and 8,605.84) per acre than non-participants. Participation in an ICT-based MIS project also increases labour productivity by between Kshs 367.46 and Kshs 406.95 per acre.</p>\"}]",
                 "Author0": "Ochieng’, S. O., Okello, J. J.,  and Otieno, D. J.",
                 "ID": 19,
                 "Attachments": true
@@ -592,7 +602,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(20)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(20)",
-                    "etag": "\"6\"",
+                    "etag": "\"8\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -614,9 +624,9 @@
                 "value": "Grain Today, Gain Tomorrow: Evidence from a Storage Experiment with Savings Clubs in Kenya",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2017-07-14T22:00:00Z",
-                "Study": "Research Paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Smallholder farmers\",\n  \"Metrics\": \"Sales, income\",\n  \"Paragraphs\": \"Pg 11, 12\",\n  \"Intervention\": \"3\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>Table 4 shows effect on maize sales and farm cash income (all measures were only collected at endline). Column 1 shows that the GSRA had a large effect on the extensive margin of selling at least some maize: GSRA farmers were about twice as likely to sell maize in the year after the harvest as their control counterparts (74% vs. 36%). Though quantities and revenues are not significant, point estimates show increases in sales of about 20-25% on the control group. Of people who sold, Columns 4-5 show that GSRA farmers sold later (by about a month, on average, significant at 5%) and received higher prices for output (about 4% on average, significant at 10%).</p><p> </p><p>This paper shows that a group-based savings scheme can increase storage among smallholder farmers – providing savings clubs with a simple way to set aside maize increased the likelihood that a farmer stored maize by 23 percentage points, increased the amount stored by 17%, and doubled the likelihood of maize sales. Potentially this increase in storage could have a substantial effect on cash income from the farm: we find an increase in revenue of about 15% (though not statistically significant).</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"ESA\",\"Country\":\"Kenya\",\"Impact\":\"Positive\",\"Population\":\"Smallholder farmers\",\"Metrics\":\"Sales, income\",\"Paragraphs\":\"Pg 11, 12\",\"Intervention\":\"3\",\"Outcome\":\"1\",\"Description\":\"<p>Table 4 shows effect on maize sales and farm cash income (all measures were only collected at endline). Column 1 shows that the GSRA had a large effect on the extensive margin of selling at least some maize: GSRA farmers were about twice as likely to sell maize in the year after the harvest as their control counterparts (74% vs. 36%). Though quantities and revenues are not significant, point estimates show increases in sales of about 20-25% on the control group. Of people who sold, Columns 4-5 show that GSRA farmers sold later (by about a month, on average, significant at 5%) and received higher prices for output (about 4% on average, significant at 10%).</p><p> </p><p>This paper shows that a group-based savings scheme can increase storage among smallholder farmers – providing savings clubs with a simple way to set aside maize increased the likelihood that a farmer stored maize by 23 percentage points, increased the amount stored by 17%, and doubled the likelihood of maize sales. Potentially this increase in storage could have a substantial effect on cash income from the farm: we find an increase in revenue of about 15% (though not statistically significant).</p>\"}]",
                 "Author0": "Shilpa Aggarwal, Eilin Francis, Jonathan Robinson",
                 "ID": 20,
                 "Attachments": true
@@ -625,7 +635,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(21)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(21)",
-                    "etag": "\"2\"",
+                    "etag": "\"3\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -649,7 +659,7 @@
                 "Language": "English",
                 "Date": "2008-01-14T23:00:00Z",
                 "Study": "Research Paper",
-                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Farmers\",\n  \"Metrics\": \"Production, rate of return\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The increases in yield are generally consistent with the results obtained in experimental farm trials: using ¼, ½, and 1 teaspoon of fertilizer increases yield by 28 percent, 48 percent, and 63 percent, respectively. The full package recommended by the Ministry of Agriculture increases yield by 91 percent, on average. While the median increase in yield remains high, it is significantly lower than the mean (9 percent, 24 percent, 31 percent, and 49 percent, respectively).</p>\"\n}]",
+                "Data": "[{\n  \"Region\": \"ESA\",\n  \"Country\": \"Kenya\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Farmers\",\n  \"Income\":\"Lower-Middle Income\",\n  \"Crop\":\"Maize\",\n  \"Metrics\": \"Production, rate of return\",\n  \"Paragraphs\": \"\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The increases in yield are generally consistent with the results obtained in experimental farm trials: using ¼, ½, and 1 teaspoon of fertilizer increases yield by 28 percent, 48 percent, and 63 percent, respectively. The full package recommended by the Ministry of Agriculture increases yield by 91 percent, on average. While the median increase in yield remains high, it is significantly lower than the mean (9 percent, 24 percent, 31 percent, and 49 percent, respectively).</p>\"\n}]",
                 "Author0": "Esther Duflo, Michael Kremer, and Jonathan Robinson",
                 "ID": 21,
                 "Attachments": true
@@ -658,7 +668,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(22)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(22)",
-                    "etag": "\"2\"",
+                    "etag": "\"4\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -670,9 +680,9 @@
                 "value": "Impact of SMS-Based Agricultural Information on Indian Farmers",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2012-02-14T23:00:00Z",
-                "Study": "Research Paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"India\",\n  \"Impact\": \"Mixed\",\n  \"Population\": \"Farmers\",\n  \"Metrics\": \"Prices, crop losses, cultivation practices\",\n  \"Paragraphs\": \"Pg 412\",\n  \"Intervention\": \"8\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>We find no statistically significant average treatment effect on the price received by farmers, crop losses resulting from rainstorms, or the likelihood of changing crop varieties and cultivation practices. Treated farmers appear to make use of the RML service and they associate RML information with a number of decisions they have made. But, based on the available evidence, on average they would have obtained a similar price or revenue, with or without RML.</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"India\",\"Impact\":\"Mixed\",\"Population\":\"Farmers\",\"Metrics\":\"Prices, crop losses, cultivation practices\",\"Paragraphs\":\"Pg 412\",\"Intervention\":\"8\",\"Outcome\":\"1\",\"Description\":\"<p>We find no statistically significant average treatment effect on the price received by farmers, crop losses resulting from rainstorms, or the likelihood of changing crop varieties and cultivation practices. Treated farmers appear to make use of the RML service and they associate RML information with a number of decisions they have made. But, based on the available evidence, on average they would have obtained a similar price or revenue, with or without RML.</p>\"}]",
                 "Author0": "Marcel Fafchamps, Bart Minten",
                 "ID": 22,
                 "Attachments": false
@@ -681,7 +691,7 @@
                 "__metadata": {
                     "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(23)",
                     "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(23)",
-                    "etag": "\"4\"",
+                    "etag": "\"10\"",
                     "type": "SP.Data.GapmapdataListItem"
                 },
                 "AttachmentFiles": {
@@ -703,11 +713,77 @@
                 "value": "Flood-tolerant rice reduces yield variability and raises expected yield, differentially benefitting socially disadvantaged groups",
                 "Evidence": "External",
                 "Language": "English",
-                "Date": "2013-11-14T23:00:00Z",
-                "Study": "Research Paper (Impact Assessment)",
-                "Data": "[{\n  \"Region\": \"APR\",\n  \"Country\": \"India\",\n  \"Impact\": \"Positive\",\n  \"Population\": \"Rice farmers\",\n  \"Metrics\": \"Production\",\n  \"Paragraphs\": \"Pg 2\",\n  \"Intervention\": \"7\",\n  \"Outcome\": \"1\",\n  \"Description\": \"<p>The yield advantage of Swarna-Sub1 over Swarna by duration of submergence is depicted graphically in Figure 1. The Methods section gives a description of the statistical estimation. As can be seen in Figure 1a, the yield gain of Swarna-Sub1 is clearly increasing in the duration of flooding. While the estimated yield of Swarna-Sub1 is slightly lower than that of Swarna under non-flood conditions, there is a noticeable yield advantage that increases in the number of days flooded, up to 12–13 days. Figure 1b displays the treatment effect as the estimated yield advantage of Swarna-Sub1 (vertical difference between the two lines in Fig. 1a) along with its 95% confidence interval (6 1.96*SE). The estimated yield decrease of 180 kg per ha when plots are not flooded – an approximate 5.3% decline – is not statistically significant from zero. The yield advantage of Swarna-Sub1 increases as flood severity worsens, with a maximum advantage of around 718 kg per ha, an approximate 66% increase, occurring at approximately 13 days of flooding</p>\"\n}]",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Impact Evaluation",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"India\",\"Impact\":\"Positive\",\"Population\":\"Rice farmers\",\"Metrics\":\"Production\",\"Paragraphs\":\"Pg 2\",\"Intervention\":\"7\",\"Outcome\":\"1\",\"Description\":\"<p>The yield advantage of Swarna-Sub1 over Swarna by duration of submergence is depicted graphically in Figure 1. The Methods section gives a description of the statistical estimation. As can be seen in Figure 1a, the yield gain of Swarna-Sub1 is clearly increasing in the duration of flooding. While the estimated yield of Swarna-Sub1 is slightly lower than that of Swarna under non-flood conditions, there is a noticeable yield advantage that increases in the number of days flooded, up to 12–13 days. Figure 1b displays the treatment effect as the estimated yield advantage of Swarna-Sub1 (vertical difference between the two lines in Fig. 1a) along with its 95% confidence interval (6 1.96*SE). The estimated yield decrease of 180 kg per ha when plots are not flooded – an approximate 5.3% decline – is not statistically significant from zero. The yield advantage of Swarna-Sub1 increases as flood severity worsens, with a maximum advantage of around 718 kg per ha, an approximate 66% increase, occurring at approximately 13 days of flooding</p>\"}]",
                 "Author0": "Manzoor H. Dar, Alain de Janvry, Kyle Emerick, David Raitzer & Elisabeth Sadoulet",
                 "ID": 23,
+                "Attachments": true
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(24)",
+                    "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(24)",
+                    "etag": "\"4\"",
+                    "type": "SP.Data.GapmapdataListItem"
+                },
+                "AttachmentFiles": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(24)/AttachmentFiles('09-117.pdf')",
+                                "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(24)/AttachmentFiles('09-117.pdf')",
+                                "type": "SP.Attachment"
+                            },
+                            "FileName": "09-117.pdf",
+                            "ServerRelativeUrl": "/sites/pa/tools/Lists/gapmapdata/Attachments/24/09-117.pdf"
+                        }
+                    ]
+                },
+                "Id": 24,
+                "Title": "Prices or Knowledge? What Drives Demand for Financial Services in Emerging Markets?",
+                "label": "Prices or Knowledge? What Drives Demand for Financial Services in Emerging Markets?",
+                "value": "Prices or Knowledge? What Drives Demand for Financial Services in Emerging Markets?",
+                "Evidence": "External",
+                "Language": "English",
+                "Date": "2011-11-14T23:00:00Z",
+                "Study": "Research Paper",
+                "Data": "[{\"Region\":\"APR\",\"Country\":\"India; Indonesia\",\"Impact\":\"Mixed\",\"Population\":\"Poor agricultural labourers in villages\",\"Income\": \"\",\"Crop\": \"\",\"Metrics\":\"Members\",\"Paragraphs\":\"Pg 38 - 39\",\"Intervention\":\"2\",\"Outcome\":\"2\",\"Description\":\"<p>We find that the education program has modest effects, stimulating demand for bank accounts among uneducated and less financially literate households. A second intervention providing small subsidies for opening an account demonstrates that, given proper incentives, many individuals could open accounts, even without financial literacy training. A follow-up study conducted two years after the initial intervention shows that those who were originally offered the high incentives are significantly more likely to have used bank accounts in the past year to deposit, withdraw, send or receive funds. </p><p><br></p><p>Yet, our experimental results show that this financial education program is not an effective tool for promoting the use of bank accounts. It is useful to think about a simple cost-benefit analysis. Even if targeted to those for whom the intervention is most effective, the program is not cost effective. The literacy training cost approximately US $17 per head to deliver. Among those with low levels of initial financial literacy (i.e. below median score on baseline financial literacy assessment), the training program increased the share opening a bank savings account by approximately 5 percentage points. Thus, inducing the opening of one bank account cost $17/.05 = $340. In contrast, for this same sub-sample, increasing the subsidy from $3 to $14 led to an increase in probability of opening a bank savings account of 7.6 percentage points, suggesting a cost per bank savings account opened of $11/0.076 = $145. Thus, subsidies are almost two and one-half times more cost effective than financial literacy education.</p>\"}]",
+                "Author0": "Shawn Cole, Thomas Sampson and Bilal Zia",
+                "ID": 24,
+                "Attachments": true
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(25)",
+                    "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(25)",
+                    "etag": "\"7\"",
+                    "type": "SP.Data.GapmapdataListItem"
+                },
+                "AttachmentFiles": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(25)/AttachmentFiles('125293.pdf')",
+                                "uri": "https://xdesk.ifad.org/sites/pa/tools/_api/Web/Lists(guid'fe453855-f373-45c7-bc25-536732dcb157')/Items(25)/AttachmentFiles('125293.pdf')",
+                                "type": "SP.Attachment"
+                            },
+                            "FileName": "125293.pdf",
+                            "ServerRelativeUrl": "/sites/pa/tools/Lists/gapmapdata/Attachments/25/125293.pdf"
+                        }
+                    ]
+                },
+                "Id": 25,
+                "Title": "Assessing the Impact of the National Agricultural Advisory Services (NAADS) in the Uganda Rural Livelihoods",
+                "label": "Assessing the Impact of the National Agricultural Advisory Services (NAADS) in the Uganda Rural Livelihoods",
+                "value": "Assessing the Impact of the National Agricultural Advisory Services (NAADS) in the Uganda Rural Livelihoods",
+                "Evidence": "External",
+                "Language": "English",
+                "Date": "2020-08-14T22:00:00Z",
+                "Study": "Research paper",
+                "Data": "[{\"Region\":\"ESA\",\"Country\":\"Uganda\",\"Impact\":\"Mixed\",\"Population\":\"Economically active poor - farmer groups\",\"Income\":\"Lower-Middle Income\",\"Crop\":\"Maize, groundnut, rice, cassava, beans, banana, sorghum and others\",\"Metrics\":\"Production, income\",\"Paragraphs\":\"Pg 43\",\"Intervention\":\"1\",\"Outcome\":\"1\",\"Description\":\"<p>Despite positive effects of NAADS on adoption of improved production technologies and practices, no significant differences were found in yield growth between NAADS and non-NAADS subcounties for most crops, reflecting the still low levels of adoption of these technologies even in NAADS sub-counties, as well as other factors affecting productivity. However, NAADS appears to have helped farmers to avoid the large declines in farm income that affected most farmers between 2000 and 2004, especially in the trailblazing NAADS districts. Given the generally limited and mixed impacts observed of NAADS on yields of different crops, this beneficial impact (i.e. avoiding large declines in farm income) probably was due more to encouraging farmers to diversify into profitable new farming enterprises such as groundnuts, maize and rice than to increases in productivity caused by NAADS.</p>\"}]",
+                "Author0": "Benin et al.",
+                "ID": 25,
                 "Attachments": true
             }
         ]
