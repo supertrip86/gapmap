@@ -4,9 +4,18 @@ class GapMap {
     constructor(data) {
         this.data = data;
         this.view = 0;
+        this.tooltips = null;
+        this.matrix = {0 : {}, 1: {}};
         this.current = this.getCurrent(data);
         this.maxStudyViewValue = this.getMax(data, "studyView");
         this.maxImpactViewValue = this.getMax(data, "impactView");
+    }
+
+    initMatrix() {
+        this.matrix = {
+            0: {},
+            1: {}
+        };
     }
 
     getCurrent(data) {
@@ -80,6 +89,10 @@ class GapMap {
         });
     
         return Math.max(...maxValues);
+    }
+
+    removeTooltips() {
+        Object.values(gapmap.tooltips).forEach( (i) => i.destroy() );
     }
 }
 

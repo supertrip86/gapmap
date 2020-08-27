@@ -2515,6 +2515,55 @@ body[class*=" jBox-blockScroll-"] {
 .modal .modal-dialog .modal-body .add-resource-button, .modal .modal-dialog .modal-body .delete-resource-button {width: 50px;height: 25px;outline: none;padding: 4px 8px;font-size: 11px;border: 1px solid #ddd;border-radius: 20px;background: linear-gradient(#ffffff, #e7e7e7);}
 
 .modal .modal-dialog .modal-footer {justify-content: space-between;}
+.gapmap-table {margin-top: 3rem;}
+.gapmap-table tbody td, .gapmap-table thead th {padding: .75rem .5rem;max-width: 180px;font-size: .8rem;vertical-align: middle;}
+.gapmap-table td:not(:first-of-type), .gapmap-table th:not(:first-of-type) {text-align: center;}
+.gapmap-table tr:last-of-type td {border-bottom: 1px solid #dee2e6;}
+.gapmap-table td div {display: flex;justify-content: center;}
+
+.gapmap-table .gapmap-dot {display: block;border: 1px solid;border-radius: 50%;margin: 0;}
+.gapmap-table .gapmap-dot:hover {border: 2px solid;}
+.gapmap-table .gapmap-dot.gapmap-dot-red {border-color: var(--gapmap-red);background-color: var(--gapmap-background-red);}
+.gapmap-table .gapmap-dot.gapmap-dot-red:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-red);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-blue {border-color: var(--gapmap-blue);background-color: var(--gapmap-background-blue);}
+.gapmap-table .gapmap-dot.gapmap-dot-blue:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-blue);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-grey {border-color: var(--gapmap-grey);background-color: var(--gapmap-background-grey);}
+.gapmap-table .gapmap-dot.gapmap-dot-grey:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-grey);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-green {border-color: var(--gapmap-green);background-color: var(--gapmap-background-green);}
+.gapmap-table .gapmap-dot.gapmap-dot-green:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-green);}
+
+.gapmap-table .gapmap-dot.gapmap-dot-yellow {border-color: var(--gapmap-yellow);background-color: var(--gapmap-background-yellow);}
+.gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-yellow);}
+
+.jBox-container .tooltip-title {display: flex;margin-bottom: 10px;}
+.jBox-container .tooltip-title h5 {margin: auto 0;}
+.jBox-container .tooltip-title span {margin: auto 10px auto 0;display: block;padding: 2px 10px;text-align: center;border-radius: 8px;font-weight: bold;color: #fff;}
+
+.jBox-container .tooltip-body ul li {font-size: 12px;margin-bottom: 5px;}
+.jBox-container .tooltip-body ul li a {text-decoration: none;color: #4079b6;}
+
+.jBox-gapmap-dot-red .jBox-container {box-shadow: 0 0 3px var(--gapmap-red);}
+.jBox-gapmap-dot-red .jBox-container .tooltip-title h5 {color: var(--gapmap-red);}
+.jBox-gapmap-dot-red .jBox-container .tooltip-title span {background-color: var(--gapmap-red);}
+
+.jBox-gapmap-dot-blue .jBox-container {box-shadow: 0 0 3px var(--gapmap-blue);}
+.jBox-gapmap-dot-blue .jBox-container .tooltip-title h5 {color: var(--gapmap-blue);}
+.jBox-gapmap-dot-blue .jBox-container .tooltip-title span {background-color: var(--gapmap-blue);}
+
+.jBox-gapmap-dot-grey .jBox-container {box-shadow: 0 0 3px var(--gapmap-grey);}
+.jBox-gapmap-dot-grey .jBox-container .tooltip-title h5 {color: var(--gapmap-grey);}
+.jBox-gapmap-dot-grey .jBox-container .tooltip-title span {background-color: var(--gapmap-grey);}
+
+.jBox-gapmap-dot-green .jBox-container {box-shadow: 0 0 3px var(--gapmap-green);}
+.jBox-gapmap-dot-green .jBox-container .tooltip-title h5 {color: var(--gapmap-green);}
+.jBox-gapmap-dot-green .jBox-container .tooltip-title span {background-color: var(--gapmap-green);}
+
+.jBox-gapmap-dot-yellow .jBox-container {box-shadow: 0 0 3px var(--gapmap-yellow);}
+.jBox-gapmap-dot-yellow .jBox-container .tooltip-title h5 {color: var(--gapmap-yellow);}
+.jBox-gapmap-dot-yellow .jBox-container .tooltip-title span {background-color: var(--gapmap-yellow);}
 .navbar {background-color: var(--main-dark-blue);}
 .navbar .container-fluid {padding: 0;}
 .navbar .navbar-brand {padding-top: 0;padding-bottom: 0;margin: 0;}
@@ -2553,51 +2602,5 @@ body[class*=" jBox-blockScroll-"] {
         padding-top: 16px;
     }
 }
-.gapmap-table {margin-top: 3rem;}
-.gapmap-table tbody td, .gapmap-table thead th {padding: .75rem .5rem;max-width: 180px;font-size: .8rem;vertical-align: middle;}
-.gapmap-table td:not(:first-of-type), .gapmap-table th:not(:first-of-type) {text-align: center;}
-.gapmap-table tr:last-of-type td {border-bottom: 1px solid #dee2e6;}
-.gapmap-table td div {display: flex;justify-content: center;}
-
-.gapmap-table .gapmap-dot {display: block;border: 1px solid;border-radius: 50%;margin: 0;}
-.gapmap-table .gapmap-dot:hover {border: 2px solid;}
-.gapmap-table .gapmap-dot.gapmap-dot-red {border-color: var(--gapmap-red);background-color: var(--gapmap-background-red);}
-.gapmap-table .gapmap-dot.gapmap-dot-red:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-red);}
-
-.gapmap-table .gapmap-dot.gapmap-dot-blue {border-color: var(--gapmap-blue);background-color: var(--gapmap-background-blue);}
-.gapmap-table .gapmap-dot.gapmap-dot-blue:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-blue);}
-
-.gapmap-table .gapmap-dot.gapmap-dot-grey {border-color: var(--gapmap-grey);background-color: var(--gapmap-background-grey);}
-.gapmap-table .gapmap-dot.gapmap-dot-grey:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-grey);}
-
-.gapmap-table .gapmap-dot.gapmap-dot-green {border-color: var(--gapmap-green);background-color: var(--gapmap-background-green);}
-.gapmap-table .gapmap-dot.gapmap-dot-green:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-green);}
-
-.gapmap-table .gapmap-dot.gapmap-dot-yellow {border-color: var(--gapmap-yellow);background-color: var(--gapmap-background-yellow);}
-.gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-yellow);}
-
-.jBox-container .tooltip-title {display: flex;margin-bottom: 10px;}
-.jBox-container .tooltip-title h5 {margin: auto 0;}
-.jBox-container .tooltip-title span {margin: auto 10px auto 0;display: block;padding: 2px 10px;text-align: center;border-radius: 8px;font-weight: bold;color: #fff;}
-
-.jBox-gapmap-dot-red .jBox-container {box-shadow: 0 0 3px var(--gapmap-red);}
-.jBox-gapmap-dot-red .jBox-container .tooltip-title h5 {color: var(--gapmap-red);}
-.jBox-gapmap-dot-red .jBox-container .tooltip-title span {background-color: var(--gapmap-red);}
-
-.jBox-gapmap-dot-blue .jBox-container {box-shadow: 0 0 3px var(--gapmap-blue);}
-.jBox-gapmap-dot-blue .jBox-container .tooltip-title h5 {color: var(--gapmap-blue);}
-.jBox-gapmap-dot-blue .jBox-container .tooltip-title span {background-color: var(--gapmap-blue);}
-
-.jBox-gapmap-dot-grey .jBox-container {box-shadow: 0 0 3px var(--gapmap-grey);}
-.jBox-gapmap-dot-grey .jBox-container .tooltip-title h5 {color: var(--gapmap-grey);}
-.jBox-gapmap-dot-grey .jBox-container .tooltip-title span {background-color: var(--gapmap-grey);}
-
-.jBox-gapmap-dot-green .jBox-container {box-shadow: 0 0 3px var(--gapmap-green);}
-.jBox-gapmap-dot-green .jBox-container .tooltip-title h5 {color: var(--gapmap-green);}
-.jBox-gapmap-dot-green .jBox-container .tooltip-title span {background-color: var(--gapmap-green);}
-
-.jBox-gapmap-dot-yellow .jBox-container {box-shadow: 0 0 3px var(--gapmap-yellow);}
-.jBox-gapmap-dot-yellow .jBox-container .tooltip-title h5 {color: var(--gapmap-yellow);}
-.jBox-gapmap-dot-yellow .jBox-container .tooltip-title span {background-color: var(--gapmap-yellow);}
 
 /*# sourceMappingURL=bundle.css.map*/

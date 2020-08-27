@@ -79,6 +79,7 @@ const dropdownItemSelection = (e) => {
     input.checked = !inputValue;
     gapmap.current = updateData(e);
     utilities.updateView();
+    
     e.stopPropagation();
 };
 

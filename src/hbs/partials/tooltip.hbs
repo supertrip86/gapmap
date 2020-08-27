@@ -1,7 +1,26 @@
 <div class="tooltip-title">
-    <span></span>
-    <h5>Test</h5>
+    <span>{{length}}</span>
+    <h5>{{title}}</h5>
 </div>
-<div>
-    <p>This is a test</p>
+<div class="tooltip-body">
+    {{#if externals}}
+    <div>
+        <h6>Externals</h6>
+        <ul>
+            {{#each externals}}
+            <li><a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+    {{#if internals}}
+    <div>
+        <h6>Internals</h6>
+        <ul>
+            {{#each internals}}
+            <li><a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
 </div>

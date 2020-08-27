@@ -25,6 +25,9 @@
 .jBox-container .tooltip-title h5 {margin: auto 0;}
 .jBox-container .tooltip-title span {margin: auto 10px auto 0;display: block;padding: 2px 10px;text-align: center;border-radius: 8px;font-weight: bold;color: #fff;}
 
+.jBox-container .tooltip-body ul li {font-size: 12px;margin-bottom: 5px;}
+.jBox-container .tooltip-body ul li a {text-decoration: none;color: #4079b6;}
+
 .jBox-gapmap-dot-red .jBox-container {box-shadow: 0 0 3px var(--gapmap-red);}
 .jBox-gapmap-dot-red .jBox-container .tooltip-title h5 {color: var(--gapmap-red);}
 .jBox-gapmap-dot-red .jBox-container .tooltip-title span {background-color: var(--gapmap-red);}

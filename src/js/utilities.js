@@ -55,8 +55,10 @@ function updateView() {
 	let tooltips = {};
 
 	if (gapmap.tooltips) {
-		Object.values(gapmap.tooltips).forEach( (i) => i.destroy() );
+		gapmap.removeTooltips();
 	}
+
+	gapmap.initMatrix();
 
 	document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
 
@@ -263,12 +265,47 @@ function selectOptions(list, placeholder, auto, multiple, value) {
 }
 
 function tooltipOptions(id, style) {
-	const description = tooltipTemplate();
+    const view = gapmap.view;
+    const coordinates = id.replace('dot-', '').split('-');
+    const position = `${coordinates[0]}-${coordinates[1]}`;
+	const type = parseInt(coordinates[2]);
+	const externals = gapmap.matrix[view][position][type].filter( (i) => i.Evidence == "External");
+	const internals = gapmap.matrix[view][position][type].filter( (i) => i.Evidence == "Internal");
+    const length = gapmap.matrix[view][position][type].length;
+
+    let title;
+
+    switch (true) {
+        case type == 0 && view == 0:
+            title = "Systematic Reviews";
+            break;
+    
+        case type == 1 && view == 0:
+            title = "Impact Evaluations";
+            break;
+
+        case type == 2 && view == 0:
+            title = "Other";
+            break;
+
+        case type == 0 && view == 1:
+            title = "Positive";
+            break;
+    
+        case type == 1 && view == 1:
+            title = "Mixed";
+            break;
+
+        case type == 2 && view == 1:
+            title = "Negative";
+            break;
+
+	}
 
 	return {
 		theme: style,
 		attach: `#${id}`,
-		content: description,
+		content: tooltipTemplate( {length: length, title: title, internals: internals, externals: externals} ),
 		closeOnMouseleave: true,
 		maxWidth: 600,
 		minWidth: 200,

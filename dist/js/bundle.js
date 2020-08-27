@@ -42192,11 +42192,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<nav class=\"navbar navbar-expand-lg\">\r\n    <div class=\"container-fluid\">\r\n        <a class=\"navbar-brand collapse\">\r\n            <img class=\"logo horizontal-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n        </a>\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item nav-title\">\r\n                <a class=\"nav-link\">WCA | Knowledge Gap Map</a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#gapmapNavbar\" aria-controls=\"gapmapNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"gapmapNavbar\">\r\n            <ul class=\"navbar-nav mr-auto navbar-options\">\r\n                <li class=\"nav-item dropdown dropdown-region dropdown-filter\" data-dropdown=\"Region\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Regions</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+  return "<nav class=\"navbar navbar-expand-lg\">\r\n    <div class=\"container-fluid\">\r\n        <a class=\"navbar-brand collapse\">\r\n            <img class=\"logo horizontal-logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii04MCAzMCA1MDAgMjgwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAsMjgwKSBzY2FsZSgwLjEsLTAuMSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0ibm9uZSI+DQogICAgICAgIDxwYXRoIGQ9Ik0zOTAgMjA2OCBjMCAtMjU2IC0zIC0zMzEgLTE1IC0zNjMgLTUwIC0xNDAgMTUgLTI2NiAxNzkgLTM0NSA3Nw0KICAgICAgICAtMzcgMTIwIC03MSAxNDQgLTExNSA2IC0xMSAxMiAtMTUgMTIgLTggMCAyOSA2NyA4NiAxNDQgMTIzIDE2NiA3OSAyMzEgMjA0DQogICAgICAgIDE4MSAzNDUgLTEyIDMyIC0xNSAxMDcgLTE1IDM2MyAwIDIwOCAtNCAzMjIgLTEwIDMyMiAtNiAwIC0xMCAtMTIxIC0xMCAtMzQyDQogICAgICAgIDAgLTQxNSA2IC0zOTMgLTExOCAtNDU0IC00OCAtMjQgLTEwMyAtNjEgLTEzMCAtODcgbC00NyAtNDcgLTQ3IDQ2IGMtMjYgMjcNCiAgICAgICAgLTgwIDY0IC0xMjggODggLTEyNiA2MiAtMTIwIDQwIC0xMjAgNDUzIDAgMjIyIC00IDM0MyAtMTAgMzQzIC02IDAgLTEwIC0xMTQNCiAgICAgICAgLTEwIC0zMjJ6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik00NTAgMjE3OSBjMCAtMTM0IC00IC0yMTggLTExIC0yMzEgLTE2IC0zMCAtMTMgLTEzMCA1IC0xODUgMjIgLTY1DQogICAgICAgIDYzIC0xMTMgMTQ0IC0xNjYgMzcgLTI1IDc4IC02MCA5MSAtNzcgbDIzIC0zMiAzNyAzOSBjMjAgMjIgNjEgNTYgOTIgNzYgNzANCiAgICAgICAgNDUgMTE0IDk3IDEzNSAxNjAgMTggNTUgMjEgMTU1IDUgMTg1IC03IDEzIC0xMSA5NyAtMTEgMjMxIDAgMTM0IC00IDIxMSAtMTANCiAgICAgICAgMjExIC02IDAgLTEwIC04NyAtMTAgLTI0MSAwIC0xNDYgLTQgLTI0OCAtMTAgLTI2MCAtNiAtMTAgLTI4IC0yOCAtNDkgLTM4DQogICAgICAgIC01MiAtMjcgLTk2IC02NSAtMTQyIC0xMjQgLTIyIC0yNyAtMzkgLTQ1IC0zOSAtNDAgMCAyMSAtMTA3IDEyNyAtMTU3IDE1NQ0KICAgICAgICAtMjkgMTcgLTU4IDM4IC02MyA0OCAtNiAxMSAtMTAgMTIyIC0xMCAyNTkgMCAxNTQgLTQgMjQxIC0xMCAyNDEgLTYgMCAtMTANCiAgICAgICAgLTc3IC0xMCAtMjExeiIvPg0KICAgICAgICA8cGF0aCBkPSJNNTMwIDIyNDYgYzAgLTEwOSAtNCAtMTUzIC0xNiAtMTgyIC0zMyAtNzkgNiAtMTkzIDc5IC0yMzIgMTcgLTEwDQogICAgICAgIDQ5IC0zMyA3MSAtNTQgbDQxIC0zNiA0MSAzNiBjMjIgMjEgNTQgNDQgNzEgNTQgNzMgMzggMTEyIDE1MyA3OSAyMzIgLTEyIDI5DQogICAgICAgIC0xNiA3MyAtMTYgMTgyIDAgMjEwIC0xOCAxODAgLTIyIC0zNSAtMyAtMTc0IC00IC0xODAgLTI3IC0yMDUgLTM0IC0zNiAtNDgNCiAgICAgICAgLTMzIC00NyAxMiAyIDE2MiAtNiAzNzIgLTE0IDM3MiAtNiAwIC0xMCAtNTMgLTEwIC0xNDAgbDAgLTE0MCAtMjYgMTcgYy0yNQ0KICAgICAgICAxNiAtMjggMTYgLTU1IDAgbC0yOSAtMTYgMCAxMzkgYzAgODcgLTQgMTQwIC0xMCAxNDAgLTggMCAtMTcgLTIzNSAtMTMgLTM3Nw0KICAgICAgICAwIC00MCAtMTUgLTQyIC00OCAtNyAtMjMgMjUgLTI0IDMxIC0yNyAyMDUgLTQgMjE1IC0yMiAyNDUgLTIyIDM1eiIvPg0KICAgICAgICA8cGF0aCBkPSJNMzk4IDg4MiBsLTMgLTMxOSAtMjcgLTQwIGMtNDEgLTYyIC03NSAtNzMgLTIyMiAtNzMgbC0xMjYgMCAwIC05Ng0KICAgICAgICAwIC05NiAxNDggNCBjMTQzIDMgMTQ5IDQgMjE0IDM2IDgwIDM5IDEzOCAxMDEgMTcwIDE4MSAyMiA1NCAyMyA2NiAyMyAzODYgbDANCiAgICAgICAgMzMwIC04NyAzIC04NyAzIC0zIC0zMTl6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik02MTcgMTE5NCBjLTQgLTQgLTcgLTE1NCAtNyAtMzM0IDAgLTI5OSAtMiAtMzMyIC0yMCAtMzg0IC0zNiAtMTA3DQogICAgICAgIC0xMDQgLTE3OCAtMjE1IC0yMjcgLTQzIC0xOSAtNzIgLTIzIC0yMDMgLTI3IGwtMTUyIC00IDAgLTg5IDAgLTg5IDE0OCAwDQogICAgICAgIGMxNjcgMCAyMzAgMTIgMzI2IDYzIDc5IDQxIDE5MiAxNTQgMjM0IDIzMyA2MiAxMjAgNjcgMTUzIDY3IDUyNCBsMCAzMzUgLTg1DQogICAgICAgIDMgYy00NyAxIC04OSAwIC05MyAtNHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTgzNyAxMTkzIGMtMTEgLTEwIC04IC01NzEgMyAtNjM3IDE5IC0xMTkgODMgLTIwNyAxODggLTI1OCA2NSAtMzINCiAgICAgICAgNzEgLTMzIDIxNCAtMzYgbDE0OCAtNCAwIDk1IDAgOTUgLTEzNyA0IGMtMTI0IDMgLTE0MSA1IC0xNjkgMjUgLTY2IDQ3IC02OQ0KICAgICAgICA2NCAtNzIgNDExIGwtMyAzMTIgLTgzIDAgYy00NSAwIC04NiAtMyAtODkgLTd6Ii8+DQogICAgICAgIDxwYXRoIGQ9Ik0xNjEwIDczMCBsMCAtNDcwIDEyMCAwIDEyMCAwIDAgNDcwIDAgNDcwIC0xMjAgMCAtMTIwIDAgMCAtNDcweiIvPg0KICAgICAgICA8cGF0aCBkPSJNMjAyMCA3MzAgbDAgLTQ3MCAxMTUgMCAxMTUgMCAwIDE4MCAwIDE4MCAxMzUgMCAxMzUgMCAwIDEwNSAwIDEwNQ0KICAgICAgICAtMTM1IDAgLTEzNSAwIDAgODAgMCA4MCAxNDAgMCAxNDAgMCAwIDEwNSAwIDEwNSAtMjU1IDAgLTI1NSAwIDAgLTQ3MHoiLz4NCiAgICAgICAgPHBhdGggZD0iTTI3MDMgNzQ4IGMtMTAwIC0yNDkgLTE4NSAtNDYxIC0xODkgLTQ3MCAtNiAtMTcgNCAtMTggMTIzIC0xOCBsMTI4DQogICAgICAgIDAgMjMgNjUgMjQgNjUgMTYzIDAgMTYzIDAgMjIgLTY1IDIyIC02NSAxMjkgMCBjNzEgMCAxMjkgMiAxMjkgNCAwIDIgLTgzIDIxMg0KICAgICAgICAtMTg0IDQ2NyBsLTE4NSA0NjQgLTkzIDMgLTkzIDMgLTE4MiAtNDUzeiBtMzI2IC0xMiBjMjMgLTc2IDQwIC0xNDAgMzggLTE0Mw0KICAgICAgICAtMyAtMiAtNDUgLTIgLTk0IC0xIGwtOTAgMyA0NSAxNTMgYzI2IDg2IDQ5IDE0NyA1MyAxNDAgNCAtNyAyNSAtNzUgNDggLTE1MnoiLz4NCiAgICAgICAgPHBhdGggZD0iTTM1MjcgMTE5MyBjLTQgLTMgLTcgLTIxNSAtNyAtNDcwIGwwIC00NjMgMjAzIDAgYzI5MiAwIDM5NSAyNyA0OTANCiAgICAgICAgMTI5IDg0IDg5IDExNyAxODcgMTE3IDM0MiAwIDE1OSAtNDMgMjY0IC0xNDUgMzU3IC02NiA2MCAtMTM3IDkwIC0yNTAgMTAzDQogICAgICAgIC05MiAxMCAtMzk4IDEyIC00MDggMnogbTQ1NyAtMjM2IGM3NSAtNDEgMTA2IC0xMTEgMTA2IC0yNDMgMCAtMTA2IC0zMCAtMTcyDQogICAgICAgIC05OCAtMjExIC0zOSAtMjMgLTYwIC0yOCAtMTM5IC0zMSBsLTkzIC00IDAgMjU0IGMwIDE0MCAzIDI1OCA4IDI2MiAxNSAxNg0KICAgICAgICAxNzQgLTQgMjE2IC0yN3oiLz4NCiAgICA8L2c+DQo8L3N2Zz4NCg==\">\r\n        </a>\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item nav-title\">\r\n                <a class=\"nav-link\">WCA | Knowledge Gap Map</a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#gapmapNavbar\" aria-controls=\"gapmapNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"gapmapNavbar\">\r\n            <ul class=\"navbar-nav mr-auto navbar-options\">\r\n                <li class=\"nav-item dropdown dropdown-region dropdown-filter\" data-dropdown=\"Region\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Regions</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"regions") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":23,"column":24},"end":{"line":25,"column":33}}})) != null ? stack1 : "")
-    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-country dropdown-filter\" data-dropdown=\"Country\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Countries</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-country dropdown-filter\" data-dropdown=\"Country\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Countries</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"countries") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":35,"column":24},"end":{"line":37,"column":33}}})) != null ? stack1 : "")
-    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-evidence dropdown-filter\" data-dropdown=\"Evidence\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Study Type</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
+    + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown dropdown-evidence dropdown-filter\" data-dropdown=\"Evidence\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Filter Study Type</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-clear\"><span class=\"clear-filters\"></span>Clear Filter</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <span class=\"dropdown-item dropdown-control dropdown-item-uncheck\"><span class=\"uncheck-all\"></span>Uncheck All</span>\r\n                        <div class=\"dropdown-divider\"></div>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"evidence") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":47,"column":24},"end":{"line":49,"column":33}}})) != null ? stack1 : "")
     + "                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" data-dropdown=\"View\">\r\n                    <a class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Select View</a>\r\n                    <div class=\"dropdown-menu\">\r\n                        <span class=\"dropdown-item dropdown-change-view\" data-view=\"0\">Study Type</span>\r\n                        <span class=\"dropdown-item dropdown-change-view\" data-view=\"1\">Direction of Impact</span>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n            <ul class=\"navbar-nav ml-auto collapse settings-container\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link settings-link\" data-toggle=\"modal\" data-target=\"#settingsMenu\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNNTEyLjEgMTkxbC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwTDU1MiA2LjNjMy01LjMgOS40LTcuNSAxNS4xLTUuNCAxMS44IDQuNCAyMi42IDEwLjcgMzIuMSAxOC42IDQuNiAzLjggNS44IDEwLjUgMi44IDE1LjdsLTguMiAxNC4zYzYuOSA4IDEyLjMgMTcuMyAxNS45IDI3LjRoMTYuNWM2IDAgMTEuMiA0LjMgMTIuMiAxMC4zIDIgMTIgMi4xIDI0LjYgMCAzNy4xLTEgNi02LjIgMTAuNC0xMi4yIDEwLjRoLTE2LjVjLTMuNiAxMC4xLTkgMTkuNC0xNS45IDI3LjRsOC4yIDE0LjNjMyA1LjIgMS45IDExLjktMi44IDE1LjctOS41IDcuOS0yMC40IDE0LjItMzIuMSAxOC42LTUuNyAyLjEtMTIuMS0uMS0xNS4xLTUuNGwtOC4yLTE0LjNjLTEwLjQgMS45LTIxLjIgMS45LTMxLjcgMHptLTEwLjUtNTguOGMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjctODIuNCAxNC4zLTUyLjggNTIuOHpNMzg2LjMgMjg2LjFsMzMuNyAxNi44YzEwLjEgNS44IDE0LjUgMTguMSAxMC41IDI5LjEtOC45IDI0LjItMjYuNCA0Ni40LTQyLjYgNjUuOC03LjQgOC45LTIwLjIgMTEuMS0zMC4zIDUuM2wtMjkuMS0xNi44Yy0xNiAxMy43LTM0LjYgMjQuNi01NC45IDMxLjd2MzMuNmMwIDExLjYtOC4zIDIxLjYtMTkuNyAyMy42LTI0LjYgNC4yLTUwLjQgNC40LTc1LjkgMC0xMS41LTItMjAtMTEuOS0yMC0yMy42VjQxOGMtMjAuMy03LjItMzguOS0xOC01NC45LTMxLjdMNzQgNDAzYy0xMCA1LjgtMjIuOSAzLjYtMzAuMy01LjMtMTYuMi0xOS40LTMzLjMtNDEuNi00Mi4yLTY1LjctNC0xMC45LjQtMjMuMiAxMC41LTI5LjFsMzMuMy0xNi44Yy0zLjktMjAuOS0zLjktNDIuNCAwLTYzLjRMMTIgMjA1LjhjLTEwLjEtNS44LTE0LjYtMTguMS0xMC41LTI5IDguOS0yNC4yIDI2LTQ2LjQgNDIuMi02NS44IDcuNC04LjkgMjAuMi0xMS4xIDMwLjMtNS4zbDI5LjEgMTYuOGMxNi0xMy43IDM0LjYtMjQuNiA1NC45LTMxLjdWNTcuMWMwLTExLjUgOC4yLTIxLjUgMTkuNi0yMy41IDI0LjYtNC4yIDUwLjUtNC40IDc2LS4xIDExLjUgMiAyMCAxMS45IDIwIDIzLjZ2MzMuNmMyMC4zIDcuMiAzOC45IDE4IDU0LjkgMzEuN2wyOS4xLTE2LjhjMTAtNS44IDIyLjktMy42IDMwLjMgNS4zIDE2LjIgMTkuNCAzMy4yIDQxLjYgNDIuMSA2NS44IDQgMTAuOS4xIDIzLjItMTAgMjkuMWwtMzMuNyAxNi44YzMuOSAyMSAzLjkgNDIuNSAwIDYzLjV6bS0xMTcuNiAyMS4xYzU5LjItNzctMjguNy0xNjQuOS0xMDUuNy0xMDUuNy01OS4yIDc3IDI4LjcgMTY0LjkgMTA1LjcgMTA1Ljd6bTI0My40IDE4Mi43bC04LjIgMTQuM2MtMyA1LjMtOS40IDcuNS0xNS4xIDUuNC0xMS44LTQuNC0yMi42LTEwLjctMzIuMS0xOC42LTQuNi0zLjgtNS44LTEwLjUtMi44LTE1LjdsOC4yLTE0LjNjLTYuOS04LTEyLjMtMTcuMy0xNS45LTI3LjRoLTE2LjVjLTYgMC0xMS4yLTQuMy0xMi4yLTEwLjMtMi0xMi0yLjEtMjQuNiAwLTM3LjEgMS02IDYuMi0xMC40IDEyLjItMTAuNGgxNi41YzMuNi0xMC4xIDktMTkuNCAxNS45LTI3LjRsLTguMi0xNC4zYy0zLTUuMi0xLjktMTEuOSAyLjgtMTUuNyA5LjUtNy45IDIwLjQtMTQuMiAzMi4xLTE4LjYgNS43LTIuMSAxMi4xLjEgMTUuMSA1LjRsOC4yIDE0LjNjMTAuNS0xLjkgMjEuMi0xLjkgMzEuNyAwbDguMi0xNC4zYzMtNS4zIDkuNC03LjUgMTUuMS01LjQgMTEuOCA0LjQgMjIuNiAxMC43IDMyLjEgMTguNiA0LjYgMy44IDUuOCAxMC41IDIuOCAxNS43bC04LjIgMTQuM2M2LjkgOCAxMi4zIDE3LjMgMTUuOSAyNy40aDE2LjVjNiAwIDExLjIgNC4zIDEyLjIgMTAuMyAyIDEyIDIuMSAyNC42IDAgMzcuMS0xIDYtNi4yIDEwLjQtMTIuMiAxMC40aC0xNi41Yy0zLjYgMTAuMS05IDE5LjQtMTUuOSAyNy40bDguMiAxNC4zYzMgNS4yIDEuOSAxMS45LTIuOCAxNS43LTkuNSA3LjktMjAuNCAxNC4yLTMyLjEgMTguNi01LjcgMi4xLTEyLjEtLjEtMTUuMS01LjRsLTguMi0xNC4zYy0xMC40IDEuOS0yMS4yIDEuOS0zMS43IDB6TTUwMS42IDQzMWMzOC41IDI5LjYgODIuNC0xNC4zIDUyLjgtNTIuOC0zOC41LTI5LjYtODIuNCAxNC4zLTUyLjggNTIuOHoiLz48L3N2Zz4=\"></a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<div class=\"ifad-bar\">\r\n    <div class=\"ifad-bar-nen\"></div>\r\n    <div class=\"ifad-bar-lac\"></div>\r\n    <div class=\"ifad-bar-esa\"></div>\r\n    <div class=\"ifad-bar-wca\"></div>\r\n    <div class=\"ifad-bar-apr\"></div>\r\n</div>";
 },"useData":true});
@@ -42212,7 +42212,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 
 module.exports = function (interventionIndex, outcomeIndex) {
   var context = gapmap.view;
-  var resources = gapmap.data.current ? gapmap.data.current : gapmap.data.resources;
+  var resources = gapmap.current;
   var intervention = gapmap.data.interventions[parseInt(interventionIndex)].Title;
   var outcome = gapmap.data.outcomes[parseInt(outcomeIndex)].Title;
 
@@ -42260,58 +42260,50 @@ module.exports = function (interventionIndex, outcomeIndex) {
   };
 
   var result = {
-    a: [],
-    b: [],
-    c: []
-  }; // let isInArray = [];
-
+    0: [],
+    1: [],
+    2: []
+  };
   resources.forEach(i => {
-    var id = i.Id;
-    i.Data.forEach(d => {
-      var a = gapmap.data.interventions[parseInt(d.Intervention) - 1].Title;
-      var b = gapmap.data.outcomes[parseInt(d.Outcome) - 1].Title; // I should probably remove isInArray check. It is true that this information is the same for each Data resource, but probably it should be counter more than once. Ask juanjo
+    var a = gapmap.data.interventions[parseInt(i.Intervention) - 1].Title;
+    var b = gapmap.data.outcomes[parseInt(i.Outcome) - 1].Title;
 
-      if (a == intervention && b == outcome
-      /*&& !isInArray.includes(id)*/
-      ) {
-          if (context == 0
-          /*&& !isInArray.includes(id)*/
-          ) {
-              switch (i.Study.toLowerCase()) {
-                case "systematic review":
-                  result.a.push(i);
-                  break;
+    if (a == intervention && b == outcome) {
+      if (context == 0) {
+        switch (i.Study.toLowerCase()) {
+          case "systematic review":
+            result[0].push(i);
+            break;
 
-                case "impact evaluation":
-                  result.b.push(i);
-                  break;
+          case "impact evaluation":
+            result[1].push(i);
+            break;
 
-                default:
-                  result.c.push(i);
-                  break;
-              } // isInArray.push(id);
-
-            } else if (context == 1) {
-            switch (d.Impact) {
-              case "Positive":
-                result.a.push(i);
-                break;
-
-              case "Mixed":
-                result.b.push(i);
-                break;
-
-              case "Negative":
-                result.c.push(i);
-                break;
-            }
-          }
+          default:
+            result[2].push(i);
+            break;
         }
-    });
+      } else if (context == 1) {
+        switch (i.Impact) {
+          case "Positive":
+            result[0].push(i);
+            break;
+
+          case "Mixed":
+            result[1].push(i);
+            break;
+
+          case "Negative":
+            result[2].push(i);
+            break;
+        }
+      }
+    }
   });
-  var a = createDot(result.a.length, interventionIndex, outcomeIndex, 0, context);
-  var b = createDot(result.b.length, interventionIndex, outcomeIndex, 1, context);
-  var c = createDot(result.c.length, interventionIndex, outcomeIndex, 2, context);
+  gapmap.matrix[context]["".concat(interventionIndex, "-").concat(outcomeIndex)] = result;
+  var a = createDot(result[0].length, interventionIndex, outcomeIndex, 0, context);
+  var b = createDot(result[1].length, interventionIndex, outcomeIndex, 1, context);
+  var c = createDot(result[2].length, interventionIndex, outcomeIndex, 2, context);
   return a + b + c;
 };
 
@@ -42534,8 +42526,57 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 
 var Handlebars = __webpack_require__(/*! ../../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"tooltip-title\">\r\n    <span></span>\r\n    <h5>Test</h5>\r\n</div>\r\n<div>\r\n    <p>This is a test</p>\r\n</div>";
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "    <div>\r\n        <h6>Externals</h6>\r\n        <ul>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"externals") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":12},"end":{"line":12,"column":21}}})) != null ? stack1 : "")
+    + "        </ul>\r\n    </div>\r\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "            <li><a target=\"_blank\" href=\""
+    + alias1(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"AttachmentFiles") : depth0)) != null ? lookupProperty(stack1,"URL") : stack1), depth0))
+    + "\">"
+    + alias1(((helper = (helper = lookupProperty(helpers,"Title") || (depth0 != null ? lookupProperty(depth0,"Title") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"Title","hash":{},"data":data,"loc":{"start":{"line":11,"column":66},"end":{"line":11,"column":75}}}) : helper)))
+    + "</a></li>\r\n";
+},"4":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "    <div>\r\n        <h6>Internals</h6>\r\n        <ul>\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"internals") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":20,"column":12},"end":{"line":22,"column":21}}})) != null ? stack1 : "")
+    + "        </ul>\r\n    </div>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div class=\"tooltip-title\">\r\n    <span>"
+    + alias4(((helper = (helper = lookupProperty(helpers,"length") || (depth0 != null ? lookupProperty(depth0,"length") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"length","hash":{},"data":data,"loc":{"start":{"line":2,"column":10},"end":{"line":2,"column":20}}}) : helper)))
+    + "</span>\r\n    <h5>"
+    + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":3,"column":8},"end":{"line":3,"column":17}}}) : helper)))
+    + "</h5>\r\n</div>\r\n<div class=\"tooltip-body\">\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"externals") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":4},"end":{"line":15,"column":11}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"internals") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":16,"column":4},"end":{"line":25,"column":11}}})) != null ? stack1 : "")
+    + "</div>";
 },"useData":true});
 
 /***/ }),
@@ -42612,17 +42653,7 @@ function initGapmap() {
       Object(_js_requests_js__WEBPACK_IMPORTED_MODULE_4__["receiveData"])(resourceData).then(resources => {
         var dialog = document.getElementById("gapmap-dialog");
         var settingsButton = document.querySelector('.navbar-collapse');
-        data.resources = resources.d.results.map(item => {
-          var resource = item;
-          resource.Data = JSON.parse(item.Data).map(f => {
-            var element = f;
-            f.Income = f.Income ? f.Income.split(', ') : [];
-            f.Region = f.Region ? f.Region.split(', ') : [];
-            f.Country = f.Country ? f.Country.split('; ') : [];
-            return element;
-          });
-          return resource;
-        });
+        data.resources = createResources(resources);
 
         if (isAdmin) {
           dialog.innerHTML = Object(_src_js_settings_js__WEBPACK_IMPORTED_MODULE_5__["settingsTemplate"])(data);
@@ -42655,6 +42686,20 @@ function queryOptions(target) {
   var expand = "$expand=AttachmentFiles";
   var select = "$select=".concat(columns[target].join());
   return "?".concat(expand, "&").concat(select);
+}
+
+function createResources(resources) {
+  return resources.d.results.map(item => {
+    var resource = item;
+    resource.Data = JSON.parse(item.Data).map(f => {
+      var element = f;
+      f.Income = f.Income ? f.Income.split(', ') : [];
+      f.Region = f.Region ? f.Region.split(', ') : [];
+      f.Country = f.Country ? f.Country.split('; ') : [];
+      return element;
+    });
+    return resource;
+  });
 }
 
 function createData(data, settingsList, resourceList, resourceMetadata) {
@@ -42741,13 +42786,14 @@ class ModalError {
 /*!**************************!*\
   !*** ./src/js/gapmap.js ***!
   \**************************/
-/*! exports provided: GapMap, Settings */
+/*! exports provided: GapMap, Settings, GapmapResource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GapMap", function() { return GapMap; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Settings", function() { return Settings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GapmapResource", function() { return GapmapResource; });
 /* harmony import */ var _css_gapmap_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/gapmap.css */ "./src/css/gapmap.css");
 /* harmony import */ var _css_gapmap_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_gapmap_css__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -42756,8 +42802,31 @@ class GapMap {
   constructor(data) {
     this.data = data;
     this.view = 0;
+    this.tooltips = null;
+    this.matrix = {
+      0: {},
+      1: {}
+    };
+    this.current = this.getCurrent(data);
     this.maxStudyViewValue = this.getMax(data, "studyView");
     this.maxImpactViewValue = this.getMax(data, "impactView");
+  }
+
+  initMatrix() {
+    this.matrix = {
+      0: {},
+      1: {}
+    };
+  }
+
+  getCurrent(data) {
+    var result = [];
+    data.resources.forEach(i => {
+      i.Data.forEach(d => {
+        result.push(new GapmapResource(i, d));
+      });
+    });
+    return result;
   }
 
   getMax(data, context) {
@@ -42817,6 +42886,10 @@ class GapMap {
     return Math.max(...maxValues);
   }
 
+  removeTooltips() {
+    Object.values(gapmap.tooltips).forEach(i => i.destroy());
+  }
+
 }
 
 class Settings extends GapMap {
@@ -42829,6 +42902,33 @@ class Settings extends GapMap {
     this.sortOutcomes = options.sortOutcomes;
     this.interventionsOrder = options.interventionsOrder;
     this.outcomesOrder = options.outcomesOrder;
+  }
+
+}
+
+class GapmapResource {
+  constructor(item, selection) {
+    this.Title = item.Title;
+    this.Author = item.Author0;
+    this.Evidence = item.Evidence;
+    this.Study = item.Study;
+    this.AttachmentFiles = this.getAttachment(item.AttachmentFiles);
+    this.Country = selection.Country;
+    this.Region = selection.Region;
+    this.Intervention = selection.Intervention;
+    this.Outcome = selection.Outcome;
+    this.Impact = selection.Impact;
+  }
+
+  getAttachment(element) {
+    if (element.results.length) {
+      return {
+        FileName: element.results[0].FileName,
+        URL: element.results[0].ServerRelativeUrl
+      };
+    }
+
+    return {};
   }
 
 }
@@ -42847,10 +42947,9 @@ class Settings extends GapMap {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addHeaderListeners", function() { return addHeaderListeners; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
-/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
+/* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_utilities_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_gapmap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/gapmap.js */ "./src/js/gapmap.js");
 /* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hbs/header.hbs */ "./src/hbs/header.hbs");
 /* harmony import */ var _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "headerTemplate", function() { return _hbs_header_hbs__WEBPACK_IMPORTED_MODULE_2___default.a; });
@@ -42863,7 +42962,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var switchView = e => {
   gapmap.view = e.target.dataset.view;
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.updateView();
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.updateView();
 };
 
 var isResourceIncluded = (resource, target, values) => {
@@ -42876,12 +42975,12 @@ var isResourceIncluded = (resource, target, values) => {
   return a;
 };
 
-var updateData = e => {
-  var regions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.get.getNodeList('.dropdown-region .dropdown-item-element input:checked').map(i => i.parentNode.innerText);
-  var totalRegions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.get.getNodeList('.dropdown-region .dropdown-item-element input').length;
-  var countries = _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.get.getNodeList('.dropdown-country .dropdown-item-element input:checked').map(i => i.parentNode.innerText);
-  var totalCountries = _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.get.getNodeList('.dropdown-country .dropdown-item-element input').length;
-  var evidence = _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.get.getNodeList('.dropdown-evidence .dropdown-item-element input:checked').map(i => i.parentNode.innerText);
+var updateData = () => {
+  var regions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList('.dropdown-region input:checked').map(i => i.parentNode.innerText);
+  var totalRegions = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList('.dropdown-region input').length;
+  var countries = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList('.dropdown-country input:checked').map(i => i.parentNode.innerText);
+  var totalCountries = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList('.dropdown-country input').length;
+  var evidence = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.get.getNodeList('.dropdown-evidence input:checked').map(i => i.parentNode.innerText);
   var isRegionFilterActive = regions.length != totalRegions;
   var isCountryFilterActive = countries.length != totalCountries;
   var result = [];
@@ -42896,35 +42995,26 @@ var updateData = e => {
         var isCountryEmpty = !d.Country.length;
 
         if (!isRegionFilterActive && !isCountryFilterActive) {
-          result.push(new GapmapResource(f, d));
+          result.push(new _js_gapmap_js__WEBPACK_IMPORTED_MODULE_1__["GapmapResource"](f, d));
         } else if (isRegionFilterActive && !isCountryFilterActive) {
-          if (isRegionIncluded || isRegionEmpty) {
-            result.push(new GapmapResource(f, d));
-          }
+          (isRegionIncluded || isRegionEmpty) && result.push(new _js_gapmap_js__WEBPACK_IMPORTED_MODULE_1__["GapmapResource"](f, d));
         } else if (!isRegionFilterActive && isCountryFilterActive) {
-          if (isCountryIncluded || isCountryEmpty) {
-            result.push(new GapmapResource(f, d));
-          }
+          (isCountryIncluded || isCountryEmpty) && result.push(new _js_gapmap_js__WEBPACK_IMPORTED_MODULE_1__["GapmapResource"](f, d));
         } else if (isRegionFilterActive && isCountryFilterActive) {
-          if ((isRegionIncluded || isRegionEmpty) && (isCountryIncluded || isCountryEmpty)) {
-            result.push(new GapmapResource(f, d));
-          }
+          (isRegionIncluded || isRegionEmpty) && (isCountryIncluded || isCountryEmpty) && result.push(new _js_gapmap_js__WEBPACK_IMPORTED_MODULE_1__["GapmapResource"](f, d));
         }
       });
     }
   });
-  console.log(result);
-};
-
-var dropdownUncheck = e => {
-  var target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
-  target.forEach(i => i.querySelector('input').checked = false);
-  e.stopPropagation();
+  return result;
 };
 
 var dropdownReset = e => {
+  var isReset = e.target.classList.contains("dropdown-item-clear");
   var target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
-  target.forEach(i => i.querySelector('input').checked = true);
+  target.forEach(i => i.querySelector('input').checked = isReset);
+  gapmap.current = updateData();
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.updateView();
   e.stopPropagation();
 };
 
@@ -42932,40 +43022,16 @@ var dropdownItemSelection = e => {
   var input = e.target.querySelector('input');
   var inputValue = input.checked;
   input.checked = !inputValue;
-  updateData(e);
+  gapmap.current = updateData(e);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.updateView();
   e.stopPropagation();
 };
 
 var addHeaderListeners = () => {
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-uncheck', dropdownUncheck);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-clear', dropdownReset);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_1___default.a.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.on('#gapmap-header', 'click', '.dropdown-control', dropdownReset);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
 };
-
-class GapmapResource {
-  constructor(item, selection) {
-    this.Title = item.Title;
-    this.Author = item.Author0;
-    this.Evidence = item.Evidence;
-    this.Study = item.Study;
-    this.AttachmentFiles = this.getAttachment(item.AttachmentFiles);
-    this.Country = selection.Country;
-    this.Region = selection.Region;
-  }
-
-  getAttachment(element) {
-    if (element.results.length) {
-      return {
-        FileName: element.results[0].FileName,
-        URL: element.results[0].ServerRelativeUrl
-      };
-    }
-
-    return {};
-  }
-
-}
 
 
 
@@ -43718,9 +43784,10 @@ function updateView() {
   var tooltips = {};
 
   if (gapmap.tooltips) {
-    Object.values(gapmap.tooltips).forEach(i => i.destroy());
+    gapmap.removeTooltips();
   }
 
+  gapmap.initMatrix();
   document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
   getNodeList('.gapmap-dot').forEach(i => {
     var id = i.id;
@@ -43915,11 +43982,50 @@ function selectOptions(list, placeholder, auto, multiple, value) {
 }
 
 function tooltipOptions(id, style) {
-  var description = tooltipTemplate();
+  var view = gapmap.view;
+  var coordinates = id.replace('dot-', '').split('-');
+  var position = "".concat(coordinates[0], "-").concat(coordinates[1]);
+  var type = parseInt(coordinates[2]);
+  var externals = gapmap.matrix[view][position][type].filter(i => i.Evidence == "External");
+  var internals = gapmap.matrix[view][position][type].filter(i => i.Evidence == "Internal");
+  var length = gapmap.matrix[view][position][type].length;
+  var title;
+
+  switch (true) {
+    case type == 0 && view == 0:
+      title = "Systematic Reviews";
+      break;
+
+    case type == 1 && view == 0:
+      title = "Impact Evaluations";
+      break;
+
+    case type == 2 && view == 0:
+      title = "Other";
+      break;
+
+    case type == 0 && view == 1:
+      title = "Positive";
+      break;
+
+    case type == 1 && view == 1:
+      title = "Mixed";
+      break;
+
+    case type == 2 && view == 1:
+      title = "Negative";
+      break;
+  }
+
   return {
     theme: style,
     attach: "#".concat(id),
-    content: description,
+    content: tooltipTemplate({
+      length: length,
+      title: title,
+      internals: internals,
+      externals: externals
+    }),
     closeOnMouseleave: true,
     maxWidth: 600,
     minWidth: 200,

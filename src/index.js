@@ -33,21 +33,7 @@ function initGapmap() {
                 const dialog = document.getElementById("gapmap-dialog");
                 const settingsButton = document.querySelector('.navbar-collapse');
 
-                data.resources = resources.d.results.map( (item) => {
-                    let resource = item;
-
-                    resource.Data = JSON.parse(item.Data).map( (f) => {
-                        let element = f;
-
-                        f.Income = f.Income ? f.Income.split(', ') : [];
-                        f.Region = f.Region ? f.Region.split(', ') : [];
-                        f.Country = f.Country ? f.Country.split('; ') : [];
-                    
-                        return element;
-                    });
-
-                    return resource;
-                });
+                data.resources = createResources(resources);
 
                 if (isAdmin) {
                     dialog.innerHTML = settingsTemplate(data);
@@ -63,11 +49,8 @@ function initGapmap() {
 
                 document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
                 utilities.updateView();
-
                 addHeaderListeners();
-
                 // autoUpdateToken(site);
-
             });
         });
     });
@@ -89,6 +72,24 @@ function queryOptions(target) {
     const select = `$select=${columns[target].join()}`;
 
     return `?${expand}&${select}`;
+}
+
+function createResources(resources) {
+    return resources.d.results.map( (item) => {
+        let resource = item;
+
+        resource.Data = JSON.parse(item.Data).map( (f) => {
+            let element = f;
+
+            f.Income = f.Income ? f.Income.split(', ') : [];
+            f.Region = f.Region ? f.Region.split(', ') : [];
+            f.Country = f.Country ? f.Country.split('; ') : [];
+        
+            return element;
+        });
+
+        return resource;
+    });
 }
 
 function createData(data, settingsList, resourceList, resourceMetadata) {

@@ -47,9 +47,9 @@ module.exports = function(interventionIndex, outcomeIndex) {
     };
 
     let result = {
-        a: [],
-        b: [],
-        c: []
+        0: [],
+        1: [],
+        2: []
     };
 
     resources.forEach((i) => {
@@ -60,35 +60,37 @@ module.exports = function(interventionIndex, outcomeIndex) {
             if (context == 0) {
                 switch (i.Study.toLowerCase()) {
                     case "systematic review":
-                        result.a.push(i);
+                        result[0].push(i);
                         break;
                     case "impact evaluation":
-                        result.b.push(i);
+                        result[1].push(i);
                         break;
                     default:
-                        result.c.push(i);
+                        result[2].push(i);
                         break;
                 }
 
             } else if (context == 1) {
                 switch (i.Impact) {
                     case "Positive":
-                        result.a.push(i);
+                        result[0].push(i);
                         break;
                     case "Mixed":
-                        result.b.push(i);
+                        result[1].push(i);
                         break;
                     case "Negative":
-                        result.c.push(i);
+                        result[2].push(i);
                         break;
                 }
             }
         }
     });
 
-    let a = createDot(result.a.length, interventionIndex, outcomeIndex, 0, context);
-    let b = createDot(result.b.length, interventionIndex, outcomeIndex, 1, context);
-    let c = createDot(result.c.length, interventionIndex, outcomeIndex, 2, context);
+    gapmap.matrix[context][`${interventionIndex}-${outcomeIndex}`] = result;
+
+    let a = createDot(result[0].length, interventionIndex, outcomeIndex, 0, context);
+    let b = createDot(result[1].length, interventionIndex, outcomeIndex, 1, context);
+    let c = createDot(result[2].length, interventionIndex, outcomeIndex, 2, context);
 
     return a + b + c;
 };
