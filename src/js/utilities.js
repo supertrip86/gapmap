@@ -1,5 +1,12 @@
+const $ = require("jquery");
+const jbox = require("jbox");
+const jboxCss = require("jbox/dist/jBox.all.css");
+const gapmapView = require("../hbs/gapmap.hbs");
+const tooltipTemplate = require("../hbs/partials/tooltip.hbs");
+
 module.exports = {
 	on: on,
+	updateView: updateView,
 	removeClass: removeClass,
 	currentMenu: currentMenu,
 	startLoader: startLoader,
@@ -26,6 +33,7 @@ module.exports = {
 		selectOptions: selectOptions,
 		sortableOptions: sortableOptions,
 		datePickerOptions: datePickerOptions,
+		tooltipOptions: tooltipOptions,
 		editorOptions: editorOptions
   	}
 };
@@ -41,6 +49,25 @@ function on(selector, eventType, childSelector, eventHandler) {
 			}
       	});
     }
+}
+
+function updateView() {
+	let tooltips = {};
+
+	if (gapmap.tooltips) {
+		Object.values(gapmap.tooltips).forEach( (i) => i.destroy() );
+	}
+
+	document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
+
+	getNodeList('.gapmap-dot').forEach( (i) => {
+		const id = i.id;
+		const style = i.className.replace('gapmap-dot ', '');
+
+		tooltips[id] = new jbox('Tooltip', tooltipOptions(id, style));
+	});
+
+	gapmap.tooltips = tooltips;
 }
 
 function removeClass(target, nodeClass) {
@@ -232,6 +259,21 @@ function selectOptions(list, placeholder, auto, multiple, value) {
 		value: value,
 		icon: "remove-country",
 		onChange: () => getNodeList('.select-pure__select').forEach( (i) => i.style = "" )
+	};
+}
+
+function tooltipOptions(id, style) {
+	const description = tooltipTemplate();
+
+	return {
+		theme: style,
+		attach: `#${id}`,
+		content: description,
+		closeOnMouseleave: true,
+		maxWidth: 600,
+		minWidth: 200,
+		maxHeight: 400,
+		minHeight: 100
 	};
 }
 

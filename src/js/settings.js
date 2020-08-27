@@ -291,12 +291,9 @@ const loadResource = (value) => {
         target.querySelector('.intervention-outcome-container').innerHTML = template(item);
 
         element.Data.forEach( (i, j) => {
-            const incomeValue = i.Income ? i.Income.split(', ') : [];
-            const regionValue = i.Region ? i.Region.split(', ') : [];
-            const countryValue = i.Country ? i.Country.split('; ') : [];
-            const incomeOptions = utilities.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true, incomeValue);
-            const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, regionValue);
-            const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, countryValue);
+            const incomeOptions = utilities.options.selectOptions(gapmap.data.incomes, "Select an Income Group", true, true, i.Income);
+            const regionOptions = utilities.options.selectOptions(gapmap.data.regions, "Select a Region", true, true, i.Region);
+            const countryOptions = utilities.options.selectOptions(gapmap.data.countries, "Select a Country", true, true, i.Country);
             const editorOptions = utilities.options.editorOptions();
 
             new SelectPure(target.querySelectorAll('.modal-income')[j], incomeOptions);

@@ -1,75 +1,74 @@
-import $ from "jquery";
 import utilities from "../js/utilities.js";
-import gapmapView from "../hbs/gapmap.hbs";
+import { GapmapResource } from "../js/gapmap.js";
 import headerTemplate from "../hbs/header.hbs";
 import "../css/header.css";
 
 const switchView = (e) => {
     gapmap.view = e.target.dataset.view;
-    document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
+    utilities.updateView();
 };
 
-const updateData = (filter, values) => {
+const isResourceIncluded = (resource, target, values) => {
+    let a = false;
+
+    resource[target].forEach( (j) => {
+        if (values.includes(j)) {
+            a = true;
+        }
+    });
+
+    return a;
+};
+
+const updateData = () => {
+    const regions = utilities.get.getNodeList('.dropdown-region input:checked').map( (i) => i.parentNode.innerText );
+    const totalRegions = utilities.get.getNodeList('.dropdown-region input').length;
+    const countries = utilities.get.getNodeList('.dropdown-country input:checked').map( (i) => i.parentNode.innerText );
+    const totalCountries = utilities.get.getNodeList('.dropdown-country input').length;
+    const evidence = utilities.get.getNodeList('.dropdown-evidence input:checked').map( (i) => i.parentNode.innerText );
+    const isRegionFilterActive = regions.length != totalRegions;
+    const isCountryFilterActive = countries.length != totalCountries;
+
     let result = [];
-    let isInArray = [];
 
-    if (filter == "Region" || filter == "Country") {
-        const separator = (filter == "Region") ? ', ' : '; ';
+    gapmap.data.resources.forEach((f) => {
+        const evidenceType = f.Evidence;
 
-        gapmap.data.resources.forEach((i) => {
-            const id = i.Id;
+        if (evidence.includes(evidenceType)) {
+            f.Data.forEach((d) => {
+                const isRegionIncluded = isResourceIncluded(d, 'Region', regions);
+                const isCountryIncluded = isResourceIncluded(d, 'Country', countries);
+                const isRegionEmpty = !d.Region.length;
+                const isCountryEmpty = !d.Country.length;
 
-            i.Data.forEach((d) => {
-                const target = d[filter].split(separator);
+                if (!isRegionFilterActive && !isCountryFilterActive) {
+                    result.push(new GapmapResource(f, d));
 
-                target.forEach( (j) => {
-                    if (values.includes(j) && !isInArray.includes(id)) {
-                        isInArray.push(id);
-                        result.push(i);
-                    }
-                });
+                } else if (isRegionFilterActive && !isCountryFilterActive) {
+                    (isRegionIncluded || isRegionEmpty) && result.push(new GapmapResource(f, d));
+
+                } else if (!isRegionFilterActive && isCountryFilterActive) {
+                    (isCountryIncluded || isCountryEmpty) && result.push(new GapmapResource(f, d));
+
+                } else if (isRegionFilterActive && isCountryFilterActive) {
+                    ((isRegionIncluded || isRegionEmpty) && (isCountryIncluded || isCountryEmpty)) && result.push(new GapmapResource(f, d));
+
+                }
             });
-        });
-
-    } else {
-        gapmap.data.resources.forEach((i) => {            
-            values.includes(i.Evidence) && result.push(i);
-        });
-    }
+        }
+    });
 
     return result;
 };
 
-const dropdownClose = (e) => {
-    const filter = e.target.dataset.dropdown;
-
-    if (filter != "View") {
-        const total = Array.from(e.target.querySelectorAll('.dropdown-item-element input'));
-        const checked = Array.from(e.target.querySelectorAll('.dropdown-item-element input:checked'));
-        const values = checked.map( (i) => i.parentNode.innerText );
-
-        if (values.length != total.length) {
-            gapmap.data.current = updateData(filter, values);
-            document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
-
-        } else {
-            gapmap.data.current = null;
-            document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
-        }
-    }
-};
-
-const dropdownUncheck = (e) => {
-    const target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
-
-    target.forEach( (i) => i.querySelector('input').checked = false );
-    e.stopPropagation();
-};
-
 const dropdownReset = (e) => {
+    const isReset = e.target.classList.contains("dropdown-item-clear");
     const target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
 
-    target.forEach( (i) => i.querySelector('input').checked = true );
+    target.forEach( (i) => i.querySelector('input').checked = isReset );
+    gapmap.current = updateData();
+    utilities.updateView();
+
     e.stopPropagation();
 };
 
@@ -78,15 +77,14 @@ const dropdownItemSelection = (e) => {
     const inputValue = input.checked;
 
     input.checked = !inputValue;
+    gapmap.current = updateData(e);
+    utilities.updateView();
     e.stopPropagation();
 };
 
 const addHeaderListeners = () => {
-    $('#gapmap-header').on('hide.bs.dropdown', dropdownClose); // change event in bootstrap triggered by jQuery
-
     utilities.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
-    utilities.on('#gapmap-header', 'click', '.dropdown-item-uncheck', dropdownUncheck);
-    utilities.on('#gapmap-header', 'click', '.dropdown-item-clear', dropdownReset);
+    utilities.on('#gapmap-header', 'click', '.dropdown-control', dropdownReset);
     utilities.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
 };
 

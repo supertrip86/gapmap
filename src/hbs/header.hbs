@@ -13,36 +13,36 @@
         </button>
         <div class="collapse navbar-collapse" id="gapmapNavbar">
             <ul class="navbar-nav mr-auto navbar-options">
-                <li class="nav-item dropdown" data-dropdown="Region">
+                <li class="nav-item dropdown dropdown-region dropdown-filter" data-dropdown="Region">
                     <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Regions</a>
                     <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
                         <div class="dropdown-divider"></div>
-                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
                         <div class="dropdown-divider"></div>
                         {{#each regions}}
                         <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this.value}}</span>
                         {{/each}}
                     </div>
                 </li>
-                <li class="nav-item dropdown dropdown-country" data-dropdown="Country">
+                <li class="nav-item dropdown dropdown-country dropdown-filter" data-dropdown="Country">
                     <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Countries</a>
                     <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
                         <div class="dropdown-divider"></div>
-                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
                         <div class="dropdown-divider"></div>
                         {{#each countries}}
                         <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this.value}}</span>
                         {{/each}}
                     </div>
                 </li>
-                <li class="nav-item dropdown" data-dropdown="Evidence">
+                <li class="nav-item dropdown dropdown-evidence dropdown-filter" data-dropdown="Evidence">
                     <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter Study Type</a>
                     <div class="dropdown-menu">
-                        <span class="dropdown-item dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-clear"><span class="clear-filters"></span>Clear Filter</span>
                         <div class="dropdown-divider"></div>
-                        <span class="dropdown-item dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
+                        <span class="dropdown-item dropdown-control dropdown-item-uncheck"><span class="uncheck-all"></span>Uncheck All</span>
                         <div class="dropdown-divider"></div>
                         {{#each evidence}}
                         <span class="dropdown-item dropdown-item-element"><input class="dropdown-item-checkbox" type="checkbox" checked="checked">{{this}}</span>

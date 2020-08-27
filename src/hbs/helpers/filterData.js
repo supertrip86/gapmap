@@ -1,6 +1,6 @@
 module.exports = function(interventionIndex, outcomeIndex) {
     const context = gapmap.view;
-    const resources = gapmap.data.current ? gapmap.data.current : gapmap.data.resources;
+    const resources = gapmap.current;
     const intervention = gapmap.data.interventions[parseInt(interventionIndex)].Title;
     const outcome = gapmap.data.outcomes[parseInt(outcomeIndex)].Title;
 
@@ -51,46 +51,39 @@ module.exports = function(interventionIndex, outcomeIndex) {
         b: [],
         c: []
     };
-    let isInArray = [];
 
     resources.forEach((i) => {
-        const id = i.Id;
+        const a = gapmap.data.interventions[parseInt(i.Intervention) -1].Title;
+        const b = gapmap.data.outcomes[parseInt(i.Outcome) -1].Title;
 
-        i.Data.forEach((d) => {
-            const a = gapmap.data.interventions[parseInt(d.Intervention) -1].Title;
-            const b = gapmap.data.outcomes[parseInt(d.Outcome) -1].Title;
+        if (a == intervention && b == outcome) {
+            if (context == 0) {
+                switch (i.Study.toLowerCase()) {
+                    case "systematic review":
+                        result.a.push(i);
+                        break;
+                    case "impact evaluation":
+                        result.b.push(i);
+                        break;
+                    default:
+                        result.c.push(i);
+                        break;
+                }
 
-            if (a == intervention && b == outcome && !isInArray.includes(id)) {
-                if (context == 0 && !isInArray.includes(id)) {
-                    switch (i.Study.toLowerCase()) {
-                        case "systematic review":
-                            result.a.push(i);
-                            break;
-                        case "impact evaluation":
-                            result.b.push(i);
-                            break;
-                        default:
-                            result.c.push(i);
-                            break;
-                    }
-
-                    isInArray.push(id);
-
-                } else if (context == 1) {
-                    switch (d.Impact) {
-                        case "Positive":
-                            result.a.push(i);
-                            break;
-                        case "Mixed":
-                            result.b.push(i);
-                            break;
-                        case "Negative":
-                            result.c.push(i);
-                            break;
-                    }
+            } else if (context == 1) {
+                switch (i.Impact) {
+                    case "Positive":
+                        result.a.push(i);
+                        break;
+                    case "Mixed":
+                        result.b.push(i);
+                        break;
+                    case "Negative":
+                        result.c.push(i);
+                        break;
                 }
             }
-        });
+        }
     });
 
     let a = createDot(result.a.length, interventionIndex, outcomeIndex, 0, context);

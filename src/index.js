@@ -1,10 +1,11 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/css/main.css";
+import utilities from "./js/utilities.js";
 import { receiveData } from "./js/requests.js";
 import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/js/settings.js";
 import { headerTemplate, addHeaderListeners } from "../src/js/header.js";
-import { gapmapView, GapMap, Settings } from "../src/js/gapmap.js";
+import { GapMap, Settings } from "../src/js/gapmap.js";
 
 initGapmap();
 
@@ -34,7 +35,16 @@ function initGapmap() {
 
                 data.resources = resources.d.results.map( (item) => {
                     let resource = item;
-                    resource.Data = JSON.parse(item.Data);
+
+                    resource.Data = JSON.parse(item.Data).map( (f) => {
+                        let element = f;
+
+                        f.Income = f.Income ? f.Income.split(', ') : [];
+                        f.Region = f.Region ? f.Region.split(', ') : [];
+                        f.Country = f.Country ? f.Country.split('; ') : [];
+                    
+                        return element;
+                    });
 
                     return resource;
                 });
@@ -52,7 +62,7 @@ function initGapmap() {
                 }
 
                 document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
-                document.getElementById("gapmap-content").innerHTML = gapmapView(data);
+                utilities.updateView();
 
                 addHeaderListeners();
 

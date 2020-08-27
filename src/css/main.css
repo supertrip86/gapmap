@@ -1,4 +1,23 @@
-:root {--main-bright-blue: #003870; --main-dark-blue: #1C4269; --main-nav-height: 60px;}
+:root {
+    --main-bright-blue: #003870; 
+    --main-dark-blue: #1C4269; 
+    --main-nav-height: 60px;
+    --gapmap-red: rgb(200, 55, 55);
+    --gapmap-background-red: rgba(200, 55, 55, 0.5);
+    --gapmap-hover-red: rgba(200, 55, 55, 0.2);
+    --gapmap-blue: rgb(32, 55, 125);
+    --gapmap-background-blue: rgba(32, 55, 125, 0.5);
+    --gapmap-hover-blue: rgba(32, 55, 125, 0.2);
+    --gapmap-grey: rgb(176, 176, 176);
+    --gapmap-background-grey: rgba(176, 176, 176, 0.5);
+    --gapmap-hover-grey: rgba(176, 176, 176, 0.2);
+    --gapmap-yellow: rgb(216, 105, 33);
+    --gapmap-background-yellow: rgba(216, 105, 33, 0.5);
+    --gapmap-hover-yellow: rgba(216, 105, 33, 0.2);
+    --gapmap-green: rgb(143, 177, 0);
+    --gapmap-background-green: rgba(143, 177, 0, 0.5);
+    --gapmap-hover-green: rgba(143, 177, 0, 0.2);
+}
 body {color: #333;margin: 0;background-color: #f8f8f8;}
 .vanish {display: none;}
 .hidden {opacity: 0;}
