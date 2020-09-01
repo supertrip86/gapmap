@@ -3,7 +3,6 @@ import "../css/gapmap.css";
 class GapMap {
     constructor(data) {
         this.data = data;
-        this.view = 0;
         this.tooltips = null;
         this.matrix = {0 : {}, 1: {}};
         this.current = this.getCurrent(data);

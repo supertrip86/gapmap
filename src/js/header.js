@@ -4,7 +4,7 @@ import headerTemplate from "../hbs/header.hbs";
 import "../css/header.css";
 
 const switchView = (e) => {
-    gapmap.view = e.target.dataset.view;
+    gapmap.data.view = parseInt(e.target.dataset.view);
     utilities.updateView();
 };
 

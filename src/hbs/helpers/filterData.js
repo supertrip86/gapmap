@@ -1,5 +1,5 @@
 module.exports = function(interventionIndex, outcomeIndex) {
-    const context = gapmap.view;
+    const context = gapmap.data.view;
     const resources = gapmap.current;
     const intervention = gapmap.data.interventions[parseInt(interventionIndex)].Title;
     const outcome = gapmap.data.outcomes[parseInt(outcomeIndex)].Title;

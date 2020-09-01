@@ -60,7 +60,10 @@ module.exports = {
             loader: "handlebars-loader",
             options: {
               helperDirs: path.resolve(__dirname, "./src/hbs/helpers"),
-              partialDirs: path.join(__dirname, 'src/hbs/partials')
+              partialDirs: path.join(__dirname, 'src/hbs/partials'),
+              precompileOptions: {
+                knownHelpersOnly: false
+              }
             }
           }
         ]

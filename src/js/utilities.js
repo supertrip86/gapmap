@@ -265,7 +265,7 @@ function selectOptions(list, placeholder, auto, multiple, value) {
 }
 
 function tooltipOptions(id, style) {
-    const view = gapmap.view;
+    const view = gapmap.data.view;
     const coordinates = id.replace('dot-', '').split('-');
     const position = `${coordinates[0]}-${coordinates[1]}`;
 	const type = parseInt(coordinates[2]);

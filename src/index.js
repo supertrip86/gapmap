@@ -95,6 +95,7 @@ function createResources(resources) {
 function createData(data, settingsList, resourceList, resourceMetadata) {
     let result = {};
 
+    result.view = 0;
     result.regions = JSON.parse(data.regions);
     result.countries = JSON.parse(data.countries);
     result.languages = JSON.parse(data.languages);
