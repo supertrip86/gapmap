@@ -40,10 +40,9 @@ module.exports = function(interventionIndex, outcomeIndex) {
 
             return `<span id="dot-${x}-${y}-${v}" class="gapmap-dot ${z}" style="${w}"></span>`;
 
-        } else {
-            return '';
-
         }
+        
+        return '';
     };
 
     let result = {
@@ -92,5 +91,12 @@ module.exports = function(interventionIndex, outcomeIndex) {
     let b = createDot(result[1].length, interventionIndex, outcomeIndex, 1, context);
     let c = createDot(result[2].length, interventionIndex, outcomeIndex, 2, context);
 
-    return a + b + c;
+    let isCellEmpty = !Math.max(result[0].length,result[1].length,result[2].length);
+    let grayedCell = isCellEmpty ? ' grayed-cell' : '';
+
+    return `
+        <td class="border-right${grayedCell}">
+            <div>${a}${b}${c}</div>
+        </td>
+    `;
 };
