@@ -67,11 +67,13 @@ const validateAttachmentDeletion = () => {
 
 const validateResourceCreation = (target, id) => {
     const titleElement = target.querySelector('.attachment-title');
+    const studyElement = target.querySelector('.modal-study');
     const selectElement = target.querySelector('.modal-select-item .select-pure__select');
     const input = target.querySelectorAll('input.form-control');
     const editors = target.querySelectorAll('.ql-editor');
 
     const title = utilities.get.getValue(`#${target.id} .attachment-title`);
+    const study = utilities.get.getValue(`#${target.id} .modal-study`);
     const editMode = (target.id == "modal-edit");
     const emptyValue = !gapmap.selectResource.value();
     const findDuplication = !!gapmap.data.resources.filter((i) => (i.label == title)).length;
@@ -84,6 +86,11 @@ const validateResourceCreation = (target, id) => {
 
     if (!title) {
         rejectRequest(titleElement, 'addFormInvalid', false);
+        return false;
+    }
+
+    if (!study) {
+        rejectRequest(studyElement, 'addFormInvalid', false);
         return false;
     }
 
