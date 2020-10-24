@@ -22,7 +22,7 @@
 .gapmap-table .gapmap-dot.gapmap-dot-yellow, .gapmap-dot-legend.gapmap-dot-yellow {border-color: var(--gapmap-yellow);background-color: var(--gapmap-background-yellow);}
 .gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-yellow);}
 
-.gapmap-legend {max-width: 50%;margin: auto;}
+.gapmap-legend {margin: 20px auto;}
 .gapmap-legend .col {display: flex;align-items: center;}
 .gapmap-legend .gapmap-dot-legend {margin-left: auto;}
 .gapmap-legend .gapmap-info {margin-right: auto;margin-left: 5px;font-size: .8rem;}
@@ -53,3 +53,9 @@
 .jBox-gapmap-dot-yellow .jBox-container {box-shadow: 0 0 3px var(--gapmap-yellow);}
 .jBox-gapmap-dot-yellow .jBox-container .tooltip-title h5 {color: var(--gapmap-yellow);}
 .jBox-gapmap-dot-yellow .jBox-container .tooltip-title span {background-color: var(--gapmap-yellow);}
+
+@media (min-width: 992px) {
+    .gapmap-legend {
+        max-width: 50%;
+    }
+}

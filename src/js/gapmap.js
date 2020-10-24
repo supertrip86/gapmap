@@ -74,7 +74,7 @@ class GapMap {
                                     case "Mixed":
                                         y.push(i);
                                         break;
-                                    case "Negative":
+                                    case "No Impact":
                                         z.push(i);
                                         break;
                                 }
@@ -114,9 +114,11 @@ class GapmapResource {
         this.Author = item.Author0;
         this.Evidence = item.Evidence;
         this.Study = item.Study;
+        this.Attachments = item.Attachments;
         this.AttachmentFiles = this.getAttachment(item.AttachmentFiles);
         this.Country = selection.Country;
         this.Region = selection.Region;
+        this.Income = selection.Income;
         this.Intervention = selection.Intervention;
         this.Outcome = selection.Outcome;
         this.Impact = selection.Impact;

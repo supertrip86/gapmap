@@ -267,7 +267,8 @@ const loadResource = (value) => {
 
     target.dataset.item = element.Id;
     target.dataset.etag = element.__metadata.etag.replace(/"/g, '');
-    gapmap.editDate.datepicker('setDate', new Date(element.Date).toLocaleDateString('en-GB'));
+
+    gapmap.editDate.datepicker('setDate', new Date(element.Date));
 
     target.querySelector('.attachment-title').value = element.Title;
     target.querySelector('.attachment-title').dataset.origin = element.Title;

@@ -155,7 +155,7 @@ function getNodeList(value, context) {
 }
 
 // when inserting missing data in Settings Menu, this function removes red highlighting
-function clearStyle() {
+function clearStyle(event) {
 	event.target.style = "";
 }
 
@@ -297,7 +297,7 @@ function tooltipOptions(id, style) {
             break;
 
         case type == 2 && view == 1:
-            title = "Negative";
+            title = "No Impact";
             break;
 
 	}

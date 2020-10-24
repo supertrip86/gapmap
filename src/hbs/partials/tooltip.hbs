@@ -8,7 +8,13 @@
         <h6>Externals</h6>
         <ul>
             {{#each externals}}
-            <li><a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a></li>
+                <li>
+                    {{#if Attachments}}
+                    <a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a>
+                    {{else}}
+                    <span>{{Title}}</span>
+                    {{/if}}
+                </li>
             {{/each}}
         </ul>
     </div>
@@ -18,7 +24,13 @@
         <h6>Internals</h6>
         <ul>
             {{#each internals}}
-            <li><a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a></li>
+            <li>
+                {{#if Attachments}}
+                <a target="_blank" href="{{AttachmentFiles.URL}}">{{Title}}</a>
+                {{else}}
+                <span>{{Title}}</span>
+                {{/if}}
+            </li>
             {{/each}}
         </ul>
     </div>

@@ -78,7 +78,7 @@ module.exports = function(interventionIndex, outcomeIndex) {
                     case "Mixed":
                         result[1].push(i);
                         break;
-                    case "Negative":
+                    case "No Impact":
                         result[2].push(i);
                         break;
                 }

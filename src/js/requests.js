@@ -188,6 +188,7 @@ class SharepointResourceItem {
             const item = {
                 Region: utilities.get.getOptions('.modal-region', i),
                 Country: utilities.get.getOptions('.modal-country', i),
+                Income: utilities.get.getOptions('.modal-income', i),
                 Impact: utilities.get.getValue(`.modal-impact option:checked`, i),
                 Population: utilities.get.getValue(`.modal-population`, i),
                 Metrics: utilities.get.getValue(`.modal-metrics`, i),
