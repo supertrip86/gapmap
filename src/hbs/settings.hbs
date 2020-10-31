@@ -5,7 +5,9 @@
                 <div class="modal-title">
                     <span class="modal-tab modal-active-tab" data-tab="1">Add Resource</span>
                     <span class="modal-tab" data-tab="2">Edit Resource</span>
-                    <span class="modal-tab" data-tab="3">Set Parameters</span>
+                    <span class="modal-tab" data-tab="3">Add Project</span>
+                    <span class="modal-tab" data-tab="4">Edit Project</span>
+                    <span class="modal-tab" data-tab="5">Set Parameters</span>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
@@ -23,6 +25,19 @@
                     </div>
                     <div id="edit-resource" class="vanish">
                         {{> resourceForm}}
+                    </div>
+                </div>
+                <div id="modal-project-add" class="container vanish">
+                    {{> addProject}}
+                </div>
+                <div id="modal-project-edit" class="container vanish">
+                    <div class="row">
+                        <div class="col">
+                            <div class="modal-select-project"></div>
+                        </div>
+                    </div>
+                    <div id="edit-project" class="vanish">
+                        {{> addProject}}
                     </div>
                 </div>
                 <div id="modal-modify" class="container vanish">

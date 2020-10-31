@@ -99,6 +99,7 @@ class Settings extends GapMap {
     constructor(data, options) {
         super(data);
         this.selectResource = options.selectResource;
+        this.selectProject = options.selectProject;
         this.addDate = options.addDate;
         this.editDate = options.editDate;
         this.sortInterventions = options.sortInterventions;

@@ -85,8 +85,12 @@ function currentMenu() {
         case 1:
             return document.getElementById('modal-add');
         case 2:
-            return document.getElementById('modal-edit');
-        case 3:
+			return document.getElementById('modal-edit');
+		case 3:
+			return document.getElementById('modal-project-add');
+		case 4:
+			return document.getElementById('modal-project-edit');
+        case 5:
             return document.getElementById('modal-modify');
     }
 }

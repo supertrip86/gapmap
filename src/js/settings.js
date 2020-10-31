@@ -131,6 +131,10 @@ const validateResourceDeletion = () => {
     }
 };
 
+const validateProjectCreation = (target, id) => {
+
+};
+
 const validateParametersModification = (context) => {
     const input = context.querySelectorAll('input.form-control');
     const style = '1px solid red';
@@ -191,7 +195,6 @@ const deleteResourceForm = (event) => {
 
 const saveChanges = () => {
     const target = utilities.currentMenu();
-    const resourceId = document.getElementById('edit-resource').dataset.item;
 
     if (target.id == 'modal-add') {
         return validateResourceCreation(target);
@@ -199,8 +202,36 @@ const saveChanges = () => {
     if (target.id == 'modal-modify') {
         return validateParametersModification(target);
     }
+    // to be completed
+    if (target.id == 'modal-project-add') {
+        const pipelineList = gapmap.data.storage.pipelineList;
+        const projectId = document.getElementById('edit-resource').dataset.item;
+        const options = "?$select=Modified,Editor/Title&$expand=Editor";
+        const url = `${_spPageContextInfo.webServerRelativeUrl}/_api/web/lists/getbytitle('${pipelineList}')/items(${projectId})${options}`;
+
+        receiveData(url).then( (result) => {
+            try {
+                const etag = result.d.__metadata.etag.replace(/"/g, '');
+                const current = document.getElementById('edit-resource').dataset.etag;
+
+                if (etag != current) {
+                    display('resourceModified', false);
+                    
+                    return false;
+                }
+                
+                return validateProjectCreation(target, projectId);
+                
+            } catch (error) {
+                throw new TypeError('Resource concurrently deleted by other user');
+            }
+
+        });
+    }
+    // to be completed
     if (target.id == 'modal-edit') {
         const resourceList = gapmap.data.storage.resourceList;
+        const resourceId = document.getElementById('edit-resource').dataset.item;
         const options = "?$select=Modified,Editor/Title&$expand=Editor";
         const url = `${_spPageContextInfo.webServerRelativeUrl}/_api/web/lists/getbytitle('${resourceList}')/items(${resourceId})${options}`;
 
@@ -226,7 +257,8 @@ const saveChanges = () => {
 };
 
 const resetForm = () => {
-    const target = document.getElementById('edit-resource');
+    const resource = document.getElementById('edit-resource');
+    const project = document.getElementById('edit-project');
 
     utilities.get.getNodeList('select.form-control').forEach( (i) => i.selectedIndex = 0 );
     utilities.get.getNodeList('.form-resource').forEach( (i) => i.value = "" );
@@ -238,22 +270,28 @@ const resetForm = () => {
     utilities.get.getNodeList('.select-pure__select').forEach( (i) => i.removeAttribute('style') );
     utilities.get.getNodeList('.intervention-outcome-container').forEach( (i) => i.innerHTML = "" );
 
-    target.classList.add('vanish');
-    target.removeAttribute('data-item');
-    target.querySelector('.attachment-title').removeAttribute('data-origin');
+    resource.classList.add('vanish');
+    project.classList.add('vanish');
+    resource.removeAttribute('data-item');
+    project.removeAttribute('data-item');
+    resource.removeAttribute('data-etag');
+    project.removeAttribute('data-etag');
+    resource.querySelector('.attachment-title').removeAttribute('data-origin');
+    
     document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
 
     gapmap.sortInterventions.sort(gapmap.interventionsOrder);
     gapmap.sortOutcomes.sort(gapmap.outcomesOrder);
 
     gapmap.selectResource.reset();
+    gapmap.selectProject.reset();
 };
 
-const switchForm = () => {
+const switchForm = (e) => {
     utilities.get.getNodeList('.modal-tab').forEach( (i) => i.classList.remove('modal-active-tab') );
     utilities.get.getNodeList('#gapmap-dialog .container').forEach( (i) => i.classList.add('vanish') );
 
-    event.target.classList.add('modal-active-tab');
+    e.target.classList.add('modal-active-tab');
     utilities.currentMenu().classList.remove('vanish');
 
     if (utilities.currentMenu().id == 'modal-edit') {
@@ -323,6 +361,22 @@ const loadResource = (value) => {
     button.classList.remove('hidden');
 };
 
+const loadProject = (value) => {
+    const target = document.getElementById('edit-project');
+    const element = gapmap.data.projects.filter( (i) => i.Title == value )[0];
+
+    target.dataset.item = element.Id;
+    target.dataset.etag = element.etag.replace(/"/g, '');
+
+    target.querySelector('.modal-project-title').value = element.Title;
+    target.querySelector('.modal-project-intout').value = element.IntOut;
+    target.querySelector('.modal-project-region').value = element.Region;
+    target.querySelector('.modal-project-status').value = element.Status;
+    target.querySelector('.modal-project-originator').value = element.Originator;
+
+    target.classList.remove('vanish');
+};
+
 const resourceList = (list, placeholder, auto, value) => {
 	return {
 		options: list,
@@ -330,6 +384,16 @@ const resourceList = (list, placeholder, auto, value) => {
 		autocomplete: auto,
 		value: value,
 		onChange: (value) => loadResource(value)
+	};
+};
+
+const projectsList = (list, placeholder, auto, value) => {
+    return {
+		options: list,
+		placeholder: placeholder,
+		autocomplete: auto,
+		value: value,
+		onChange: (value) => loadProject(value)
 	};
 };
 
@@ -354,11 +418,13 @@ const settingsOptions = (data) => {
     const datePickerOptions = utilities.options.datePickerOptions("mm / yyyy", true);
     const sortableOptions = utilities.options.sortableOptions(150, 'vertical', '.modal-drag');
     const resourceListOptions = resourceList(data.resources, "Select a Resource", true);
+    const projectsListOptions = projectsList(data.projects, "Select a Project", true)
 
     const addDate = $('#modal-add .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
     const editDate = $('#modal-edit .modal-datepicker').datepicker(datePickerOptions); // jQuery needed as @chenfengyuan/datepicker dependency
 
     const selectResource = new SelectPure(document.querySelector('.modal-select-item'), resourceListOptions);
+    const selectProject = new SelectPure(document.querySelector('.modal-select-project'), projectsListOptions);
     const sortInterventions = new Sortable(document.querySelector('.card-interventions'), sortableOptions);
     const sortOutcomes = new Sortable(document.querySelector('.card-outcomes'), sortableOptions);
     const interventionsOrder = sortInterventions.toArray();
@@ -366,10 +432,10 @@ const settingsOptions = (data) => {
 
     return {
         data: data,
-        selectResource: selectResource,
         addDate: addDate,
         editDate: editDate,
         selectResource: selectResource,
+        selectProject: selectProject,
         sortInterventions: sortInterventions,
         sortOutcomes: sortOutcomes,
         interventionsOrder: interventionsOrder,
