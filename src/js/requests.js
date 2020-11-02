@@ -17,16 +17,37 @@ const receiveData = async (url) => {
     return await response.json();
 };
 
-const saveResource = (id) => {
-    const resourceList = gapmap.data.storage.resourceList;
-    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items${id ? `(${id})` : ``}`;
+const spData = (id) => {
+    const site = _spPageContextInfo.webAbsoluteUrl;
+    const context = utilities.currentMenu();
+    const contextId = context.id;
+    const resourceContext = contextId == 'modal-add' || contextId == 'modal-edit';
+    const projectContext = contextId == 'modal-project-add' || contextId == 'modal-project-edit';
 
-    const item = new SharepointResourceItem();
+    if (resourceContext) {
+        let list = gapmap.data.storage.resourceList;
+        return {
+            url: `${site}/_api/web/lists/GetByTitle('${list}')/items${id ? `(${id})` : ``}`,
+            item: new SharepointResourceItem(context)
+        }
+    } else if (projectContext) {
+        let list = gapmap.data.storage.pipelineList;
+
+        return {
+            url: `${site}/_api/web/lists/GetByTitle('${list}')/items${id ? `(${id})` : ``}`,
+            item: new SharepointProjectItem(context)
+        }
+    }
+};
+
+const saveData = (id) => {
+    const url = spData(id)['url'];
+    const item = spData(id)['item'];
 
     const options = {
         method: "POST",
         credentials: "same-origin",
-        headers: { 
+        headers: {
             "Accept": "application/json;odata=verbose",
             "Content-Type": "application/json;odata=verbose",
             "X-RequestDigest": document.getElementById('__REQUESTDIGEST').value
@@ -43,9 +64,10 @@ const saveResource = (id) => {
 
     fetch(url, options).then( (data) => {
         const context = utilities.currentMenu();
-        const attachment = context.querySelector('.attachment-fileinput').files;
+        const attachment = context.querySelector('.attachment-fileinput');
+        const attachmentFiles = attachment ? attachment.files.length : null;
         
-        if (attachment.length) {
+        if (attachmentFiles) {
 
             if (id) {
                 saveAttachment(id, attachment);
@@ -165,24 +187,21 @@ const modifyParameters = () => {
 };
 
 class SharepointResourceItem {
-    constructor() {
-        this.Title = utilities.get.getValue(`.attachment-title`, this.getContext());
-        this.label = utilities.get.getValue(`.attachment-title`, this.getContext());
-        this.value = utilities.get.getValue(`.attachment-title`, this.getContext());
-        this.Evidence = utilities.get.getValue(`.modal-evidence select option:checked`, this.getContext());
-        this.Language = utilities.get.getValue(`.modal-language option:checked`, this.getContext());
-        this.Date = utilities.get.getDate(`.modal-datepicker`, this.getContext());
-        this.Author0 = utilities.get.getValue(`.modal-author`, this.getContext());
-        this.Study = utilities.get.getValue(`.modal-study`, this.getContext());
+    constructor(context) {
+        this.Title = utilities.get.getValue(`.attachment-title`, context);
+        this.label = utilities.get.getValue(`.attachment-title`, context);
+        this.value = utilities.get.getValue(`.attachment-title`, context);
+        this.Evidence = utilities.get.getValue(`.modal-evidence select option:checked`, context);
+        this.Language = utilities.get.getValue(`.modal-language option:checked`, context);
+        this.Date = utilities.get.getDate(`.modal-datepicker`, context);
+        this.Author0 = utilities.get.getValue(`.modal-author`, context);
+        this.Study = utilities.get.getValue(`.modal-study`, context);
         this.Data = this.getData();
-        this.__metadata = { type: this.getMetadataType() };
-    }
-    getContext() {
-        return utilities.currentMenu();
+        this.__metadata = { type: gapmap.data.storage.resourceMetadata };
     }
     getData() {
         const data = [];
-        const context = `#${this.getContext().id} .card-resource`;
+        const context = `#${context.id} .card-resource`;
 
         utilities.get.getNodeList(context).forEach( (i) => {
             const item = {
@@ -203,8 +222,16 @@ class SharepointResourceItem {
 
         return JSON.stringify(data);
     }
-    getMetadataType() {
-        return gapmap.data.storage.resourceMetadata;
+}
+
+class SharepointProjectItem {
+    constructor(context) {
+        this.Title = context.querySelector('.modal-project-title').value;
+        this.IntOut = context.querySelector('.modal-project-intout').value;
+        this.Region = context.querySelector('.modal-project-region').value;
+        this.Status = context.querySelector('.modal-project-status').value;
+        this.Originator = context.querySelector('.modal-project-originator').value;
+        this.__metadata = { type: gapmap.data.storage.pipelineMetadata };
     }
 }
 
@@ -212,7 +239,7 @@ class SharepointSettingsItem {
     constructor() {
         this.interventions = this.getInterventions();
         this.outcomes = this.getOutcomes();
-        this.__metadata = { type: this.getMetadataType() };
+        this.__metadata = { type: gapmap.data.storage.settingsMetadata };
     }
     getInterventions() {
         const DOMelements = Array.from(document.querySelectorAll('.modal-intervention-title input'));
@@ -226,9 +253,6 @@ class SharepointSettingsItem {
 
         return JSON.stringify(items);
     }
-    getMetadataType() {
-        return gapmap.data.storage.settingsMetadata;
-    }
 }
 
-export { receiveData, saveResource, deleteResource, deleteAttachment, modifyParameters };
+export { receiveData, saveData, deleteResource, deleteAttachment, modifyParameters };

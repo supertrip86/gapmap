@@ -5,7 +5,7 @@ import datepicker from "@chenfengyuan/datepicker";
 import quill from 'quill';
 import utilities from "../js/utilities.js";
 import { display } from "../js/errorHandler.js";
-import { saveResource, deleteResource, deleteAttachment, modifyParameters, receiveData } from "../js/requests.js";
+import { saveData, deleteResource, deleteAttachment, modifyParameters, receiveData } from "../js/requests.js";
 import settingsTemplate from "../hbs/settings.hbs";
 import "@chenfengyuan/datepicker/dist/datepicker.css";
 import "quill/dist/quill.snow.css";
@@ -74,12 +74,12 @@ const validateResourceCreation = (target, id) => {
 
     const title = utilities.get.getValue(`#${target.id} .attachment-title`);
     const study = utilities.get.getValue(`#${target.id} .modal-study`);
-    const editMode = (target.id == "modal-edit");
+    const editResource = (target.id == "modal-edit");
     const emptyValue = !gapmap.selectResource.value();
     const findDuplication = !!gapmap.data.resources.filter((i) => (i.label == title)).length;
-    const modifiedTitle = !(title == titleElement.dataset.origin);
+    const modifiedTitle = (title != titleElement.dataset.origin);
 
-    if (editMode && emptyValue) {
+    if (editResource && emptyValue) {
         rejectRequest(selectElement, 'selectResource', false);
         return false;
     }
@@ -94,7 +94,7 @@ const validateResourceCreation = (target, id) => {
         return false;
     }
 
-    if ((editMode && modifiedTitle && findDuplication) || (!editMode && findDuplication)) {
+    if ((editResource && modifiedTitle && findDuplication) || (!editResource && findDuplication)) {
         rejectRequest(titleElement, 'invalidTitle', false);
         return false;
     }
@@ -113,7 +113,7 @@ const validateResourceCreation = (target, id) => {
         }
     }
 
-    display('saveResource', true, saveResource, id);
+    display('saveData', true, saveData, id);
 
     function rejectRequest(element, message, confirm) {
         display(message, confirm);
@@ -127,12 +127,26 @@ const validateResourceDeletion = () => {
     const id = document.getElementById('edit-resource').dataset.item;
 
     if (context && id) {
-        display('deleteResource', true, deleteResource, parseInt(id));
+        display('deleteData', true, deleteResource, parseInt(id));
     }
 };
 
 const validateProjectCreation = (target, id) => {
+    const input = target.querySelectorAll('input.form-control');
 
+    for (element of input) {
+        if (element.value.length > 250 && element.value == "") {
+            rejectRequest(element, 'addFormInvalid', false);
+            return false;
+        }
+    }
+
+    display('saveData', true, saveData, id);
+
+    function rejectRequest(element, message, confirm) {
+        display(message, confirm);
+        element.style.border = '1px solid red';
+    }
 };
 
 const validateParametersModification = (context) => {
@@ -199,36 +213,6 @@ const saveChanges = () => {
     if (target.id == 'modal-add') {
         return validateResourceCreation(target);
     }
-    if (target.id == 'modal-modify') {
-        return validateParametersModification(target);
-    }
-    // to be completed
-    if (target.id == 'modal-project-add') {
-        const pipelineList = gapmap.data.storage.pipelineList;
-        const projectId = document.getElementById('edit-resource').dataset.item;
-        const options = "?$select=Modified,Editor/Title&$expand=Editor";
-        const url = `${_spPageContextInfo.webServerRelativeUrl}/_api/web/lists/getbytitle('${pipelineList}')/items(${projectId})${options}`;
-
-        receiveData(url).then( (result) => {
-            try {
-                const etag = result.d.__metadata.etag.replace(/"/g, '');
-                const current = document.getElementById('edit-resource').dataset.etag;
-
-                if (etag != current) {
-                    display('resourceModified', false);
-                    
-                    return false;
-                }
-                
-                return validateProjectCreation(target, projectId);
-                
-            } catch (error) {
-                throw new TypeError('Resource concurrently deleted by other user');
-            }
-
-        });
-    }
-    // to be completed
     if (target.id == 'modal-edit') {
         const resourceList = gapmap.data.storage.resourceList;
         const resourceId = document.getElementById('edit-resource').dataset.item;
@@ -245,14 +229,45 @@ const saveChanges = () => {
                     
                     return false;
                 }
-                
+
                 return validateResourceCreation(target, resourceId);
-                
+
             } catch (error) {
                 throw new TypeError('Resource concurrently deleted by other user');
             }
 
         });
+    }
+    if (target.id == 'modal-project-add') {
+        return validateProjectCreation(target);
+    }
+    if (target.id == 'modal-project-edit') {
+        const pipelineList = gapmap.data.storage.pipelineList;
+        const projectId = document.getElementById('edit-project').dataset.item;
+        const options = "?$select=Modified,Editor/Title&$expand=Editor";
+        const url = `${_spPageContextInfo.webServerRelativeUrl}/_api/web/lists/getbytitle('${pipelineList}')/items(${projectId})${options}`;
+
+        receiveData(url).then( (result) => {
+            try {
+                const etag = result.d.__metadata.etag.replace(/"/g, '');
+                const current = document.getElementById('edit-project').dataset.etag;
+
+                if (etag != current) {
+                    display('resourceModified', false);
+                    
+                    return false;
+                }
+                
+                return validateProjectCreation(target, projectId);
+
+            } catch (error) {
+                throw new TypeError('Resource concurrently deleted by other user');
+            }
+
+        });
+    }
+    if (target.id == 'modal-modify') {
+        return validateParametersModification(target);
     }
 };
 

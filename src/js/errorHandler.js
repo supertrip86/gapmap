@@ -11,9 +11,10 @@ const errorList = {
     addFormInvalid: 'Missing or invalid information',
     resourceNotFound: 'The changes you made cannot be saved.<br>This Resource has been deleted by another user while you were working on it.<br><br>Reload the Gapmap to update the list of available Resources',
     resourceModified: 'The selected Resource has been modified by another user while you were working on it.<br><br>To prevent overriding changes, reload the Gapmap and access this Resource again.',
+    projectModified: 'The selected Project has been modified by another user while you were working on it.<br><br>To prevent overriding changes, reload the Gapmap and access this Project again.',
     selectResource: 'Select a Resource from the menu',
-    saveResource: 'Are you sure you want to save?',
-    deleteResource: 'Are you sure you want to delete this Resource?',
+    saveData: 'Are you sure you want to save this Item?',
+    deleteData: 'Are you sure you want to delete this Item?',
     deleteAttachment: 'Do you want to delete this Document?',
     modifyParameters: 'You are about to modify the Gapmap core parameters. Do you want to proceed?',
 };
