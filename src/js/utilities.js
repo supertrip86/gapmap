@@ -27,7 +27,9 @@ module.exports = {
   	check: {
 		isFileInvalid: isFileInvalid,
 		isFilenameInvalid: isFilenameInvalid,
-		isFilesizeExceeded: isFilesizeExceeded
+		isFilesizeExceeded: isFilesizeExceeded,
+		isEditMode: isEditMode,
+		isItemLoaded: isItemLoaded
   	},
   	options: {
 		selectOptions: selectOptions,
@@ -244,6 +246,21 @@ function isFilesizeExceeded(size) {
 	const convertedValue = size / 1000000;
 
 	return convertedValue > 20;
+}
+
+function isEditMode() {
+	const context = currentMenu();
+	const isResourcedEdit = (context.id == 'modal-edit');
+	const isProjectEdit = (context.id == 'modal-project-edit');
+
+	return isResourcedEdit || isProjectEdit;
+}
+
+function isItemLoaded() {
+	const context = currentMenu();
+	const isItemLoaded = context.querySelector('.item-container').dataset.item;
+
+	return isItemLoaded;
 }
 
 // options for SortableJS instances in Settings Menu

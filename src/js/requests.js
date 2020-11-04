@@ -83,9 +83,10 @@ const saveData = (id) => {
     });
 };
 
-const deleteResource = (id) => {
-    const resourceList = gapmap.data.storage.resourceList;
-    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/getbytitle('${resourceList}')/items(${id})/recycle()`;
+const deleteItem = (id) => {
+    const context = utilities.currentMenu().id;
+    const list = (context == 'modal-edit') ? gapmap.data.storage.resourceList : gapmap.data.storage.pipelineList;
+    const url = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/getbytitle('${list}')/items(${id})/recycle()`;
 
     const options = {
         method: "DELETE",
@@ -255,4 +256,4 @@ class SharepointSettingsItem {
     }
 }
 
-export { receiveData, saveData, deleteResource, deleteAttachment, modifyParameters };
+export { receiveData, saveData, deleteItem, deleteAttachment, modifyParameters };

@@ -42358,7 +42358,7 @@ module.exports = function (a, b, block) {
 var Handlebars = __webpack_require__(/*! ../../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Project Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control modal-project-title\" placeholder=\"Insert Project Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-8\">\r\n            <span class=\"modal-required\">Intervention/Outcome</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control modal-project-intout\" placeholder=\"Insert Intervention and Outcome\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <span class=\"modal-required\">Region</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control modal-project-region\" placeholder=\"Insert Region\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Project Status</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control modal-project-status\" placeholder=\"Insert Project Status\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Originator</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control modal-project-originator\" placeholder=\"Insert Originator\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+    return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Project Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-title\" placeholder=\"Insert Project Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-8\">\r\n            <span class=\"modal-required\">Intervention/Outcome</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-intout\" placeholder=\"Insert Intervention and Outcome\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <span class=\"modal-required\">Region</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-region\" placeholder=\"Insert Region\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Project Status</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-status\" placeholder=\"Insert Project Status\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Originator</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-originator\" placeholder=\"Insert Originator\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -42723,15 +42723,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,"
 
   return "<div class=\"modal fade\" id=\"settingsMenu\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"settingsMenuLabel\" style=\"display: none;\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <div class=\"modal-title\">\r\n                    <span class=\"modal-tab modal-active-tab\" data-tab=\"1\">Add Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"2\">Edit Resource</span>\r\n                    <span class=\"modal-tab\" data-tab=\"3\">Add Project</span>\r\n                    <span class=\"modal-tab\" data-tab=\"4\">Edit Project</span>\r\n                    <span class=\"modal-tab\" data-tab=\"5\">Set Parameters</span>\r\n                </div>\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div id=\"modal-add\" class=\"container\">\r\n"
     + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/resourceForm.hbs */ "./src/hbs/partials/resourceForm.hbs"),depth0,{"name":"resourceForm","data":data,"indent":"                    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "                </div>\r\n                <div id=\"modal-edit\" class=\"container vanish\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <div class=\"modal-select-item\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"edit-resource\" class=\"vanish\">\r\n"
+    + "                </div>\r\n                <div id=\"modal-edit\" class=\"container vanish\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <div class=\"modal-select-item\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"edit-resource\" class=\"item-container vanish\">\r\n"
     + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/resourceForm.hbs */ "./src/hbs/partials/resourceForm.hbs"),depth0,{"name":"resourceForm","data":data,"indent":"                        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "                    </div>\r\n                </div>\r\n                <div id=\"modal-project-add\" class=\"container vanish\">\r\n"
     + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/addProject.hbs */ "./src/hbs/partials/addProject.hbs"),depth0,{"name":"addProject","data":data,"indent":"                    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "                </div>\r\n                <div id=\"modal-project-edit\" class=\"container vanish\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <div class=\"modal-select-project\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"edit-project\" class=\"vanish\">\r\n"
+    + "                </div>\r\n                <div id=\"modal-project-edit\" class=\"container vanish\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <div class=\"modal-select-project\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"edit-project\" class=\"item-container vanish\">\r\n"
     + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/addProject.hbs */ "./src/hbs/partials/addProject.hbs"),depth0,{"name":"addProject","data":data,"indent":"                        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "                    </div>\r\n                </div>\r\n                <div id=\"modal-modify\" class=\"container vanish\">\r\n"
     + ((stack1 = container.invokePartial(__webpack_require__(/*! ./partials/modifyParameters.hbs */ "./src/hbs/partials/modifyParameters.hbs"),depth0,{"name":"modifyParameters","data":data,"indent":"                    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <div class=\"invisible hidden\">\r\n                    <button type=\"button\" id=\"remove-resource\" class=\"btn btn-primary\">Delete Resource</button>\r\n                </div>\r\n                <div>\r\n                    <button type=\"button\" id=\"close-modal\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\r\n                    <button type=\"button\" id=\"save-changes\" class=\"btn btn-primary\">Save changes</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+    + "                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <div class=\"hidden\">\r\n                    <button type=\"button\" id=\"remove-item\" class=\"btn btn-primary\">Delete Item</button>\r\n                </div>\r\n                <div>\r\n                    <button type=\"button\" id=\"close-modal\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\r\n                    <button type=\"button\" id=\"save-changes\" class=\"btn btn-primary\">Save changes</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 },"usePartial":true,"useData":true});
 
 /***/ }),
@@ -43204,14 +43204,14 @@ var addHeaderListeners = () => {
 /*!****************************!*\
   !*** ./src/js/requests.js ***!
   \****************************/
-/*! exports provided: receiveData, saveData, deleteResource, deleteAttachment, modifyParameters */
+/*! exports provided: receiveData, saveData, deleteItem, deleteAttachment, modifyParameters */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "receiveData", function() { return receiveData; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveData", function() { return saveData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteResource", function() { return deleteResource; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteItem", function() { return deleteItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteAttachment", function() { return deleteAttachment; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modifyParameters", function() { return modifyParameters; });
 /* harmony import */ var _js_utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/utilities.js */ "./src/js/utilities.js");
@@ -43308,9 +43308,10 @@ var saveData = id => {
   });
 };
 
-var deleteResource = id => {
-  var resourceList = gapmap.data.storage.resourceList;
-  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/getbytitle('").concat(resourceList, "')/items(").concat(id, ")/recycle()");
+var deleteItem = id => {
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_0___default.a.currentMenu().id;
+  var list = context == 'modal-edit' ? gapmap.data.storage.resourceList : gapmap.data.storage.pipelineList;
+  var url = "".concat(_spPageContextInfo.webAbsoluteUrl, "/_api/web/lists/getbytitle('").concat(list, "')/items(").concat(id, ")/recycle()");
   var options = {
     method: "DELETE",
     credentials: "same-origin",
@@ -43455,7 +43456,7 @@ class SharepointSettingsItem {
     this.interventions = this.getInterventions();
     this.outcomes = this.getOutcomes();
     this.__metadata = {
-      type: this.getMetadataType()
+      type: gapmap.data.storage.settingsMetadata
     };
   }
 
@@ -43480,10 +43481,6 @@ class SharepointSettingsItem {
       };
     });
     return JSON.stringify(items);
-  }
-
-  getMetadataType() {
-    return gapmap.data.storage.settingsMetadata;
   }
 
 }
@@ -43646,12 +43643,12 @@ var validateResourceCreation = (target, id) => {
   }
 };
 
-var validateResourceDeletion = () => {
-  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().id == "modal-edit";
-  var id = document.getElementById('edit-resource').dataset.item;
+var validateItemDeletion = () => {
+  var context = _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu();
+  var id = context.querySelector('.item-container').dataset.item;
 
-  if (context && id) {
-    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('deleteData', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["deleteResource"], parseInt(id));
+  if (id) {
+    Object(_js_errorHandler_js__WEBPACK_IMPORTED_MODULE_6__["display"])('deleteData', true, _js_requests_js__WEBPACK_IMPORTED_MODULE_7__["deleteItem"], parseInt(id));
   }
 };
 
@@ -43659,7 +43656,7 @@ var validateProjectCreation = (target, id) => {
   var input = target.querySelectorAll('input.form-control');
 
   for (element of input) {
-    if (element.value.length > 250 && element.value == "") {
+    if (element.value.length > 250 || element.value == "") {
       rejectRequest(element, 'addFormInvalid', false);
       return false;
     }
@@ -43808,7 +43805,7 @@ var resetForm = () => {
   resource.removeAttribute('data-etag');
   project.removeAttribute('data-etag');
   resource.querySelector('.attachment-title').removeAttribute('data-origin');
-  document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
+  document.getElementById('remove-item').parentNode.classList.add('hidden');
   gapmap.sortInterventions.sort(gapmap.interventionsOrder);
   gapmap.sortOutcomes.sort(gapmap.outcomesOrder);
   gapmap.selectResource.reset();
@@ -43821,16 +43818,16 @@ var switchForm = e => {
   e.target.classList.add('modal-active-tab');
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().classList.remove('vanish');
 
-  if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.currentMenu().id == 'modal-edit') {
-    document.getElementById('remove-resource').parentNode.classList.remove('invisible');
+  if (_js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.check.isEditMode() && _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.check.isItemLoaded()) {
+    document.getElementById('remove-item').parentNode.classList.remove('hidden');
   } else {
-    document.getElementById('remove-resource').parentNode.classList.add('invisible');
+    document.getElementById('remove-item').parentNode.classList.add('hidden');
   }
 };
 
 var loadResource = value => {
   var target = document.getElementById('edit-resource');
-  var button = document.getElementById('remove-resource').parentNode;
+  var button = document.getElementById('remove-item').parentNode;
   var element = gapmap.data.resources.filter(i => i.Title == value)[0];
 
   var template = __webpack_require__(/*! ../hbs/partials/resourceData.hbs */ "./src/hbs/partials/resourceData.hbs");
@@ -43883,6 +43880,7 @@ var loadResource = value => {
 
 var loadProject = value => {
   var target = document.getElementById('edit-project');
+  var button = document.getElementById('remove-item').parentNode;
   var element = gapmap.data.projects.filter(i => i.Title == value)[0];
   target.dataset.item = element.Id;
   target.dataset.etag = element.etag.replace(/"/g, '');
@@ -43892,6 +43890,7 @@ var loadProject = value => {
   target.querySelector('.modal-project-status').value = element.Status;
   target.querySelector('.modal-project-originator').value = element.Originator;
   target.classList.remove('vanish');
+  button.classList.remove('hidden');
 };
 
 var resourceList = (list, placeholder, auto, value) => {
@@ -43930,7 +43929,7 @@ var addSettingsListeners = () => {
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
-  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
+  _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#remove-item', validateItemDeletion);
   _js_utilities_js__WEBPACK_IMPORTED_MODULE_5___default.a.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
@@ -44034,7 +44033,9 @@ module.exports = {
   check: {
     isFileInvalid: isFileInvalid,
     isFilenameInvalid: isFilenameInvalid,
-    isFilesizeExceeded: isFilesizeExceeded
+    isFilesizeExceeded: isFilesizeExceeded,
+    isEditMode: isEditMode,
+    isItemLoaded: isItemLoaded
   },
   options: {
     selectOptions: selectOptions,
@@ -44240,6 +44241,19 @@ function isFilenameInvalid(filename) {
 function isFilesizeExceeded(size) {
   var convertedValue = size / 1000000;
   return convertedValue > 20;
+}
+
+function isEditMode() {
+  var context = currentMenu();
+  var isResourcedEdit = context.id == 'modal-edit';
+  var isProjectEdit = context.id == 'modal-project-edit';
+  return isResourcedEdit || isProjectEdit;
+}
+
+function isItemLoaded() {
+  var context = currentMenu();
+  var isItemLoaded = context.querySelector('.item-container').dataset.item;
+  return isItemLoaded;
 } // options for SortableJS instances in Settings Menu
 
 

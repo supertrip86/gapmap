@@ -5,7 +5,7 @@ import datepicker from "@chenfengyuan/datepicker";
 import quill from 'quill';
 import utilities from "../js/utilities.js";
 import { display } from "../js/errorHandler.js";
-import { saveData, deleteResource, deleteAttachment, modifyParameters, receiveData } from "../js/requests.js";
+import { saveData, deleteItem, deleteAttachment, modifyParameters, receiveData } from "../js/requests.js";
 import settingsTemplate from "../hbs/settings.hbs";
 import "@chenfengyuan/datepicker/dist/datepicker.css";
 import "quill/dist/quill.snow.css";
@@ -122,12 +122,12 @@ const validateResourceCreation = (target, id) => {
 
 };
 
-const validateResourceDeletion = () => {
-    const context = (utilities.currentMenu().id == "modal-edit");
-    const id = document.getElementById('edit-resource').dataset.item;
+const validateItemDeletion = () => {
+    const context = utilities.currentMenu();
+    const id = context.querySelector('.item-container').dataset.item;
 
-    if (context && id) {
-        display('deleteData', true, deleteResource, parseInt(id));
+    if (id) {
+        display('deleteData', true, deleteItem, parseInt(id));
     }
 };
 
@@ -135,7 +135,7 @@ const validateProjectCreation = (target, id) => {
     const input = target.querySelectorAll('input.form-control');
 
     for (element of input) {
-        if (element.value.length > 250 && element.value == "") {
+        if (element.value.length > 250 || element.value == "") {
             rejectRequest(element, 'addFormInvalid', false);
             return false;
         }
@@ -293,7 +293,7 @@ const resetForm = () => {
     project.removeAttribute('data-etag');
     resource.querySelector('.attachment-title').removeAttribute('data-origin');
     
-    document.getElementById('remove-resource').parentNode.classList.add('invisible', 'hidden');
+    document.getElementById('remove-item').parentNode.classList.add('hidden');
 
     gapmap.sortInterventions.sort(gapmap.interventionsOrder);
     gapmap.sortOutcomes.sort(gapmap.outcomesOrder);
@@ -309,16 +309,16 @@ const switchForm = (e) => {
     e.target.classList.add('modal-active-tab');
     utilities.currentMenu().classList.remove('vanish');
 
-    if (utilities.currentMenu().id == 'modal-edit') {
-        document.getElementById('remove-resource').parentNode.classList.remove('invisible');
+    if ( utilities.check.isEditMode() && utilities.check.isItemLoaded() ) {
+        document.getElementById('remove-item').parentNode.classList.remove('hidden');
     } else {
-        document.getElementById('remove-resource').parentNode.classList.add('invisible');
+        document.getElementById('remove-item').parentNode.classList.add('hidden');
     }
 };
 
 const loadResource = (value) => {
     const target = document.getElementById('edit-resource');
-    const button = document.getElementById('remove-resource').parentNode;
+    const button = document.getElementById('remove-item').parentNode;
     const element = gapmap.data.resources.filter( (i) => i.Title == value )[0];
     const template = require('../hbs/partials/resourceData.hbs');
 
@@ -378,6 +378,7 @@ const loadResource = (value) => {
 
 const loadProject = (value) => {
     const target = document.getElementById('edit-project');
+    const button = document.getElementById('remove-item').parentNode;
     const element = gapmap.data.projects.filter( (i) => i.Title == value )[0];
 
     target.dataset.item = element.Id;
@@ -390,6 +391,7 @@ const loadProject = (value) => {
     target.querySelector('.modal-project-originator').value = element.Originator;
 
     target.classList.remove('vanish');
+    button.classList.remove('hidden');
 };
 
 const resourceList = (list, placeholder, auto, value) => {
@@ -425,7 +427,7 @@ const addSettingsListeners = () => {
     utilities.on('#gapmap-dialog', 'click', '.add-resource-button', addResourceForm);
     utilities.on('#gapmap-dialog', 'click', '.delete-resource-button', deleteResourceForm);
     utilities.on('#gapmap-dialog', 'click', '.modal-tab', switchForm);
-    utilities.on('#gapmap-dialog', 'click', '#remove-resource', validateResourceDeletion);
+    utilities.on('#gapmap-dialog', 'click', '#remove-item', validateItemDeletion);
     utilities.on('#gapmap-dialog', 'click', '#save-changes', saveChanges);
 };
 
