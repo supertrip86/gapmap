@@ -10,22 +10,22 @@ import { GapMap, Settings } from "../src/js/gapmap.js";
 initGapmap();
 
 function initGapmap() {
-    // const site = _spPageContextInfo.webServerRelativeUrl;
+    const site = _spPageContextInfo.webServerRelativeUrl;
     const settingsList = 'gapmap-settings';
     const resourceList = 'gapmap-data';
     const pipelineList = 'gapmap-pipeline';
     const pipelineMetadata = 'SP.Data.GapmappipelineListItem';
     const resourceMetadata = 'SP.Data.GapmapdataListItem';
 
-    // const userData = `${site}/_api/web/currentuser/?$expand=groups`;
-    // const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
-    // const projectsData = `${site}/_api/web/lists/getbytitle('${pipelineList}')/items${queryOptions('projects')}`;
-    // const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+    const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+    const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+    const projectsData = `${site}/_api/web/lists/getbytitle('${pipelineList}')/items${queryOptions('projects')}`;
+    const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
 
-    const userData = '/api/user.json';
-    const settingsData = '/api/data.json';
-    const projectsData = '/api/pipeline.json';
-    const resourceData = '/api/resources.json';
+    // const userData = '/api/user.json';
+    // const settingsData = '/api/data.json';
+    // const projectsData = '/api/pipeline.json';
+    // const resourceData = '/api/resources.json';
 
     receiveData(userData).then( (user) => {
         const isAdmin = !!user.d.Groups.results.filter( (i) => (i.Title == "Tools Owners")).length;
@@ -57,7 +57,7 @@ function initGapmap() {
                     document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
                     utilities.updateView();
                     addHeaderListeners();
-                    // autoUpdateToken(site);
+                    autoUpdateToken(site);
                 });
             });
         });
