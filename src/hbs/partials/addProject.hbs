@@ -25,7 +25,11 @@
         <div class="col">
             <span class="modal-required">Project Status</span>
             <div>
-                <input type="text" class="form-control form-resource modal-project-status" placeholder="Insert Project Status" autocomplete="off">
+                <select class="form-control modal-project-status">
+                    {{#each status}}
+                    <option value="{{@index}}">{{this}}</option>
+                    {{/each}}
+                </select>
             </div>
         </div>
         <div class="col">

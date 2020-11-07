@@ -230,7 +230,7 @@ class SharepointProjectItem {
         this.Title = context.querySelector('.modal-project-title').value;
         this.IntOut = context.querySelector('.modal-project-intout').value;
         this.Region = context.querySelector('.modal-project-region').value;
-        this.Status = context.querySelector('.modal-project-status').value;
+        this.Status = parseInt(context.querySelector('.modal-project-status').value);
         this.Originator = context.querySelector('.modal-project-originator').value;
         this.__metadata = { type: gapmap.data.storage.pipelineMetadata };
     }

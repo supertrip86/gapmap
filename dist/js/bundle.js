@@ -42357,8 +42357,30 @@ module.exports = function (a, b, block) {
 
 var Handlebars = __webpack_require__(/*! ../../../node_modules/handlebars/runtime.js */ "./node_modules/handlebars/runtime.js");
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Project Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-title\" placeholder=\"Insert Project Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-8\">\r\n            <span class=\"modal-required\">Intervention/Outcome</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-intout\" placeholder=\"Insert Intervention and Outcome\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <span class=\"modal-required\">Region</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-region\" placeholder=\"Insert Region\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Project Status</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-status\" placeholder=\"Insert Project Status\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Originator</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-originator\" placeholder=\"Insert Originator\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "                    <option value=\""
+    + alias1(((helper = (helper = lookupProperty(helpers,"index") || (data && lookupProperty(data,"index"))) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"index","hash":{},"data":data,"loc":{"start":{"line":30,"column":35},"end":{"line":30,"column":45}}}) : helper)))
+    + "\">"
+    + alias1(container.lambda(depth0, depth0))
+    + "</option>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div class=\"card card-body card-main\">\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Insert Project Title</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-title\" placeholder=\"Insert Project Title\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-8\">\r\n            <span class=\"modal-required\">Intervention/Outcome</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-intout\" placeholder=\"Insert Intervention and Outcome\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <span class=\"modal-required\">Region</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-region\" placeholder=\"Insert Region\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Project Status</span>\r\n            <div>\r\n                <select class=\"form-control modal-project-status\">\r\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"status") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":29,"column":20},"end":{"line":31,"column":29}}})) != null ? stack1 : "")
+    + "                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col\">\r\n            <span class=\"modal-required\">Originator</span>\r\n            <div>\r\n                <input type=\"text\" class=\"form-control form-resource modal-project-originator\" placeholder=\"Insert Originator\" autocomplete=\"off\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 },"useData":true});
 
 /***/ }),
@@ -42820,7 +42842,7 @@ function autoUpdateToken(site) {
 
 function queryOptions(target) {
   var columns = {
-    settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "interventions", "outcomes"],
+    settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "status", "interventions", "outcomes"],
     projects: ["Id", "Title", "Status", "Region", "IntOut", "Originator"],
     resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
   };
@@ -42867,6 +42889,7 @@ function createData(data, settingsList, resourceList, pipelineList, pipelineMeta
   result.languages = JSON.parse(data.languages);
   result.evidence = JSON.parse(data.evidence);
   result.incomes = JSON.parse(data.incomes);
+  result.status = JSON.parse(data.status);
   result.interventions = JSON.parse(data.interventions);
   result.outcomes = JSON.parse(data.outcomes);
   result.storage = {
@@ -43442,7 +43465,7 @@ class SharepointProjectItem {
     this.Title = context.querySelector('.modal-project-title').value;
     this.IntOut = context.querySelector('.modal-project-intout').value;
     this.Region = context.querySelector('.modal-project-region').value;
-    this.Status = context.querySelector('.modal-project-status').value;
+    this.Status = parseInt(context.querySelector('.modal-project-status').value);
     this.Originator = context.querySelector('.modal-project-originator').value;
     this.__metadata = {
       type: gapmap.data.storage.pipelineMetadata

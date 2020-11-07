@@ -10,22 +10,22 @@ import { GapMap, Settings } from "../src/js/gapmap.js";
 initGapmap();
 
 function initGapmap() {
-    const site = _spPageContextInfo.webServerRelativeUrl;
+    // const site = _spPageContextInfo.webServerRelativeUrl;
     const settingsList = 'gapmap-settings';
     const resourceList = 'gapmap-data';
     const pipelineList = 'gapmap-pipeline';
     const pipelineMetadata = 'SP.Data.GapmappipelineListItem';
     const resourceMetadata = 'SP.Data.GapmapdataListItem';
 
-    const userData = `${site}/_api/web/currentuser/?$expand=groups`;
-    const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
-    const projectsData = `${site}/_api/web/lists/getbytitle('${pipelineList}')/items${queryOptions('projects')}`;
-    const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
+    // const userData = `${site}/_api/web/currentuser/?$expand=groups`;
+    // const settingsData = `${site}/_api/web/lists/getbytitle('${settingsList}')/items${queryOptions('settings')}`;
+    // const projectsData = `${site}/_api/web/lists/getbytitle('${pipelineList}')/items${queryOptions('projects')}`;
+    // const resourceData = `${site}/_api/web/lists/getbytitle('${resourceList}')/items${queryOptions('resources')}`;
 
-    // const userData = '/api/user.json';
-    // const settingsData = '/api/data.json';
-    // const projectsData = '/api/projects.json';
-    // const resourceData = '/api/resources.json';
+    const userData = '/api/user.json';
+    const settingsData = '/api/data.json';
+    const projectsData = '/api/pipeline.json';
+    const resourceData = '/api/resources.json';
 
     receiveData(userData).then( (user) => {
         const isAdmin = !!user.d.Groups.results.filter( (i) => (i.Title == "Tools Owners")).length;
@@ -39,25 +39,25 @@ function initGapmap() {
                 receiveData(resourceData).then( (resources) => {
                     const dialog = document.getElementById("gapmap-dialog");
                     const settingsButton = document.querySelector('.navbar-collapse');
-    
+
                     data.resources = createResources(resources);
-    
+
                     if (isAdmin) {
                         dialog.innerHTML = settingsTemplate(data);
-    
+
                         window.gapmap = new Settings(data, settingsOptions(data));
                         addSettingsListeners();
-    
+
                     } else {
                         settingsButton.remove();
-    
+
                         window.gapmap = new GapMap(data);
                     }
-    
+
                     document.getElementById("gapmap-header").innerHTML = headerTemplate(data);
                     utilities.updateView();
                     addHeaderListeners();
-                    autoUpdateToken(site);
+                    // autoUpdateToken(site);
                 });
             });
         });
@@ -72,7 +72,7 @@ function autoUpdateToken(site) {
 
 function queryOptions(target) {
     const columns = {
-        settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "interventions", "outcomes"],
+        settings: ["Id", "regions", "countries", "languages", "evidence", "incomes", "status", "interventions", "outcomes"],
         projects: ["Id", "Title", "Status", "Region", "IntOut", "Originator"],
         resources: ["Id", "Attachments", "AttachmentFiles", "Title", "label", "value", "Evidence", "Language", "Date", "Data", "Study", "Author0"]
     };
@@ -93,7 +93,7 @@ function createResources(resources) {
             f.Income = f.Income ? f.Income.split('; ') : [];
             f.Region = f.Region ? f.Region.split('; ') : [];
             f.Country = f.Country ? f.Country.split('; ') : [];
-        
+
             return element;
         });
 
@@ -128,6 +128,7 @@ function createData(data, settingsList, resourceList, pipelineList, pipelineMeta
     result.languages = JSON.parse(data.languages);
     result.evidence = JSON.parse(data.evidence);
     result.incomes = JSON.parse(data.incomes);
+    result.status = JSON.parse(data.status);
     result.interventions = JSON.parse(data.interventions);
     result.outcomes = JSON.parse(data.outcomes);
     result.storage = {
