@@ -3,6 +3,7 @@ import utilities from "../js/utilities.js";
 import { GapmapResource } from "../js/gapmap.js";
 import gapmapTemplate from "../hbs/gapmap.hbs";
 import headerTemplate from "../hbs/header.hbs";
+import projectsTemplate from "../hbs/partials/pipelineProjects.hbs";
 import "jbox/dist/jBox.all.css";
 import "../css/header.css";
 
@@ -26,6 +27,17 @@ const updateView = () => {
 
 	gapmap.tooltips = tooltips;
 }
+
+const updateProjects = () => {
+    const status = gapmap.data.status;
+    const selection = utilities.get.getNodeList('.dropdown-project .dropdown-item-project').filter((i) => i.querySelector('input').checked);
+    const selectedStatus = selection.map((i) => status.indexOf(i.innerText));
+    const selectedProjects = gapmap.data.projects.filter((i) => {
+        return selectedStatus.indexOf(i.Status) > -1;
+    });
+
+    document.getElementById('pipeline-projects').innerHTML = projectsTemplate({projects: selectedProjects});
+};
 
 const switchView = (e) => {
     gapmap.data.view = parseInt(e.target.dataset.view);
@@ -86,12 +98,28 @@ const updateData = () => {
 };
 
 const dropdownReset = (e) => {
-    const isReset = e.target.classList.contains("dropdown-item-clear");
     const target = Array.from(e.target.parentNode.querySelectorAll('.dropdown-item-element'));
+    const isReset = e.target.classList.contains("dropdown-item-clear");
+    const isPipeline = e.target.closest('li').classList.contains('dropdown-project');
 
     target.forEach( (i) => i.querySelector('input').checked = isReset );
-    gapmap.current = updateData();
-    updateView();
+
+    if (isPipeline) {
+        updateProjects();
+    } else {
+        gapmap.current = updateData();
+        updateView();
+    }
+
+    e.stopPropagation();
+};
+
+const dropdownStatusSelection = (e) => {
+    const input = e.target.querySelector('input');
+    const inputValue = input.checked;
+
+    input.checked = !inputValue;
+    updateProjects();
 
     e.stopPropagation();
 };
@@ -101,7 +129,7 @@ const dropdownItemSelection = (e) => {
     const inputValue = input.checked;
 
     input.checked = !inputValue;
-    gapmap.current = updateData(e);
+    gapmap.current = updateData();
     updateView();
     
     e.stopPropagation();
@@ -110,7 +138,8 @@ const dropdownItemSelection = (e) => {
 const addHeaderListeners = () => {
     utilities.on('#gapmap-header', 'click', '.dropdown-change-view', switchView);
     utilities.on('#gapmap-header', 'click', '.dropdown-control', dropdownReset);
-    utilities.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
+    utilities.on('#gapmap-header', 'click', '.dropdown-item-project', dropdownStatusSelection);
+    utilities.on('#gapmap-header', 'click', '.dropdown-item-gapmap', dropdownItemSelection);
 };
 
 export { headerTemplate, updateView, addHeaderListeners }
