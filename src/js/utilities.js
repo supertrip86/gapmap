@@ -1,12 +1,7 @@
-const $ = require("jquery");
-const jbox = require("jbox");
-const jboxCss = require("jbox/dist/jBox.all.css");
-const gapmapView = require("../hbs/gapmap.hbs");
 const tooltipTemplate = require("../hbs/partials/tooltip.hbs");
 
 module.exports = {
 	on: on,
-	updateView: updateView,
 	removeClass: removeClass,
 	currentMenu: currentMenu,
 	startLoader: startLoader,
@@ -51,27 +46,6 @@ function on(selector, eventType, childSelector, eventHandler) {
 			}
       	});
     }
-}
-
-function updateView() {
-	let tooltips = {};
-
-	if (gapmap.tooltips) {
-		gapmap.removeTooltips();
-	}
-
-	gapmap.initMatrix();
-
-	document.getElementById("gapmap-content").innerHTML = gapmapView(gapmap.data);
-
-	getNodeList('.gapmap-dot').forEach( (i) => {
-		const id = i.id;
-		const style = i.className.replace('gapmap-dot ', '');
-
-		tooltips[id] = new jbox('Tooltip', tooltipOptions(id, style));
-	});
-
-	gapmap.tooltips = tooltips;
 }
 
 function removeClass(target, nodeClass) {

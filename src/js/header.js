@@ -1,11 +1,35 @@
+import jbox from "jbox";
 import utilities from "../js/utilities.js";
 import { GapmapResource } from "../js/gapmap.js";
+import gapmapTemplate from "../hbs/gapmap.hbs";
 import headerTemplate from "../hbs/header.hbs";
+import "jbox/dist/jBox.all.css";
 import "../css/header.css";
+
+const updateView = () => {
+	let tooltips = {};
+
+	if (gapmap.tooltips) {
+		gapmap.removeTooltips();
+	}
+
+	gapmap.initMatrix();
+
+	document.getElementById("gapmap-content").innerHTML = gapmapTemplate(gapmap.data);
+
+	utilities.get.getNodeList('.gapmap-dot').forEach( (i) => {
+		const id = i.id;
+		const style = i.className.replace('gapmap-dot ', '');
+
+		tooltips[id] = new jbox('Tooltip', utilities.options.tooltipOptions(id, style));
+	});
+
+	gapmap.tooltips = tooltips;
+}
 
 const switchView = (e) => {
     gapmap.data.view = parseInt(e.target.dataset.view);
-    utilities.updateView();
+    updateView();
 };
 
 const isResourceIncluded = (resource, target, values) => {
@@ -67,7 +91,7 @@ const dropdownReset = (e) => {
 
     target.forEach( (i) => i.querySelector('input').checked = isReset );
     gapmap.current = updateData();
-    utilities.updateView();
+    updateView();
 
     e.stopPropagation();
 };
@@ -78,7 +102,7 @@ const dropdownItemSelection = (e) => {
 
     input.checked = !inputValue;
     gapmap.current = updateData(e);
-    utilities.updateView();
+    updateView();
     
     e.stopPropagation();
 };
@@ -89,4 +113,4 @@ const addHeaderListeners = () => {
     utilities.on('#gapmap-header', 'click', '.dropdown-item-element', dropdownItemSelection);
 };
 
-export { headerTemplate, addHeaderListeners }
+export { headerTemplate, updateView, addHeaderListeners }

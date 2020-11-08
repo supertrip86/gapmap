@@ -1,7 +1,7 @@
-.gapmap-table {margin: 3rem 0;}
+.gapmap-table {margin: 3rem .5rem;}
 .gapmap-table tr {height: 50px;}
 .gapmap-table tbody td, .gapmap-table thead th {padding: .75rem .5rem;max-width: 180px;font-size: .8rem;vertical-align: middle;}
-.gapmap-table thead th:first-child {background-image: linear-gradient( to top right, transparent 49%, #ddd, transparent 51% );position: relative;}
+.gapmap-table thead th:first-child {/*background-image: linear-gradient( to top right, transparent 49%, #ddd, transparent 51% );*/position: relative;}
 .gapmap-table thead th:first-child .top-right {position: absolute;top: 12px;right: 0.3rem;}
 .gapmap-table thead th:first-child .bottom-left {position: absolute;bottom: 12px;left: .3rem;}
 .gapmap-table thead th:not(:first-child) {font-weight: normal}
