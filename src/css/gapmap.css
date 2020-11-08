@@ -1,4 +1,5 @@
-.gapmap-table {margin: 3rem .5rem;}
+.gapmap-container {margin: 0;}
+.gapmap-table {margin: 3rem 0;}
 .gapmap-table tr {height: 50px;}
 .gapmap-table tbody td, .gapmap-table thead th {padding: .75rem .5rem;max-width: 180px;font-size: .8rem;vertical-align: middle;}
 .gapmap-table thead th:first-child {/*background-image: linear-gradient( to top right, transparent 49%, #ddd, transparent 51% );*/position: relative;}
@@ -27,7 +28,7 @@
 .gapmap-table .gapmap-dot.gapmap-dot-yellow, .gapmap-dot-legend.gapmap-dot-yellow {border-color: var(--gapmap-yellow);background-color: var(--gapmap-background-yellow);}
 .gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-yellow);}
 
-.gapmap-legend {margin: 20px auto;}
+.gapmap-legend {margin: 20px auto 60px auto;}
 .gapmap-legend .col {display: flex;align-items: center;}
 .gapmap-legend .gapmap-dot-legend {margin-left: auto;}
 .gapmap-legend .gapmap-info {margin-right: auto;margin-left: 5px;font-size: .8rem;}
