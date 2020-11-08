@@ -4,7 +4,7 @@ import "../src/css/main.css";
 import { receiveData } from "./js/requests.js";
 import { settingsTemplate, addSettingsListeners, settingsOptions } from "../src/js/settings.js";
 import { headerTemplate, updateView, addHeaderListeners } from "../src/js/header.js";
-import { pipelineTemplate, setPipelineAnimations, addPipelineListeners } from "../src/js/pipeline.js";
+import { pipelineTemplate, setPipelineAnimations } from "../src/js/pipeline.js";
 import { GapMap, Settings } from "../src/js/gapmap.js";
 
 initGapmap();
@@ -60,7 +60,6 @@ function initGapmap() {
                     updateView();
                     setPipelineAnimations();
                     addHeaderListeners();
-                    addPipelineListeners();
                     // autoUpdateToken(site);
                 });
             });

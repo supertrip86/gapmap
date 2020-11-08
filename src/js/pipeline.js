@@ -87,8 +87,4 @@ const setPipelineAnimations = () => {
     document.head.insertAdjacentHTML('beforeend', css);
 };
 
-const addPipelineListeners = () => {
-    console.log('develop');
-};
-
-export { pipelineTemplate, setPipelineAnimations, addPipelineListeners }
+export { pipelineTemplate, setPipelineAnimations }
