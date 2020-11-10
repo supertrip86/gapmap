@@ -50,9 +50,9 @@ const cssAnimation = (data) => {
     `;
 };
 
-const setPercentages = (data) => {
+const setValues = (data) => {
     data.forEach((i, j) => {
-        (i > 0) && (document.getElementById(`chart-percentage-${j + 1}`).innerText = `${i.toFixed(2) * 100}%`);
+        (i > 0) && (document.getElementById(`chart-percentage-${j + 1}`).innerText = i);
     });
 };
 
@@ -73,15 +73,20 @@ const getDegrees = (value) => {
 const setPipelineAnimations = () => {
     const projects = gapmap.data.projects;
 
-    const a = projects.filter((i) => i.Status == 0).length / projects.length;
-    const b = projects.filter((i) => i.Status == 1).length / projects.length;
-    const c = projects.filter((i) => i.Status == 2).length / projects.length;
-    const d = projects.filter((i) => i.Status == 3).length / projects.length;
+    const w = projects.filter((i) => i.Status == 0).length;
+    const x = projects.filter((i) => i.Status == 1).length;
+    const y = projects.filter((i) => i.Status == 2).length;
+    const z = projects.filter((i) => i.Status == 3).length;
+
+    const a = w / projects.length;
+    const b = x / projects.length;
+    const c = y / projects.length;
+    const d = z / projects.length;
     
     const data = [getDegrees(a), getDegrees(a + b), getDegrees(a + b + c), getDegrees(a + b + c + d)];
     const css = cssAnimation(data);
 
-    setPercentages([a,b,c,d]);
+    setValues([w,x,y,z]);
     setLabels([a,b,c,d]);
 
     document.head.insertAdjacentHTML('beforeend', css);
