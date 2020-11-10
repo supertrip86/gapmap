@@ -212,6 +212,7 @@ class SharepointResourceItem {
                 Impact: utilities.get.getValue(`.modal-impact option:checked`, i),
                 Population: utilities.get.getValue(`.modal-population`, i),
                 Metrics: utilities.get.getValue(`.modal-metrics`, i),
+                Crop: utilities.get.getValue(`.modal-crop`, i),
                 Paragraphs: utilities.get.getValue(`.modal-paragraphs`, i),
                 Intervention: utilities.get.getValue(`.modal-intervention select option:checked`, i),
                 Outcome: utilities.get.getValue(`.modal-outcome select option:checked`, i),

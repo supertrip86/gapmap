@@ -366,6 +366,7 @@ const loadResource = (value) => {
             target.querySelectorAll('.modal-impact select')[j].value = i.Impact;
             target.querySelectorAll('.modal-population')[j].value = i.Population;
             target.querySelectorAll('.modal-metrics')[j].value = i.Metrics;
+            target.querySelectorAll('.modal-crop')[j].value = i.Crop;
             target.querySelectorAll('.modal-paragraphs')[j].value = i.Paragraphs;
             target.querySelectorAll('.modal-intervention select')[j].value = i.Intervention;
             target.querySelectorAll('.modal-outcome select')[j].value = i.Outcome;
