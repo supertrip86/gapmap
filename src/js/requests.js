@@ -202,7 +202,7 @@ class SharepointResourceItem {
     }
     getData() {
         const data = [];
-        const context = `#${context.id} .card-resource`;
+        const context = `#${utilities.currentMenu().id} .card-resource`;
 
         utilities.get.getNodeList(context).forEach( (i) => {
             const item = {
