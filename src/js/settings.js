@@ -133,12 +133,21 @@ const validateItemDeletion = () => {
 
 const validateProjectCreation = (target, id) => {
     const input = target.querySelectorAll('input.form-control');
+    const title = target.querySelector('.modal-project-title');
+    const oldTitle = id ? gapmap.data.projects.filter((i) => i.Id == parseInt(id))[0].Title : null; // check if we are modifying an existing product. If so, retrieve its original Title
+    const modifiedTitle = oldTitle ? (oldTitle != title.value) : null; // if we are modifying an existing product, check if we are changing the Product's Title
+    const titleAlreadyExists = (modifiedTitle || !id) ? gapmap.data.projects.filter((i) => i.Title == title.value).length : null; // if we are either modifying an existing Product's Title, or creating a new Product but giving it an existing Title, this variable is set as "true".
 
     for (element of input) {
         if (element.value.length > 250 || element.value == "") {
             rejectRequest(element, 'addFormInvalid', false);
             return false;
         }
+    }
+
+    if (titleAlreadyExists) {
+        rejectRequest(title, 'itemAlreadyExists', false);
+        return false;
     }
 
     display('saveData', true, saveData, id);

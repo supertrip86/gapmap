@@ -14,6 +14,7 @@ const errorList = {
     projectModified: 'The selected Project has been modified by another user while you were working on it.<br><br>To prevent overriding changes, reload the Gapmap and access this Project again.',
     selectResource: 'Select a Resource from the menu',
     saveData: 'Are you sure you want to save this Item?',
+    itemAlreadyExists: 'A Product with this name already exists. Please, select a different name',
     deleteData: 'Are you sure you want to delete this Item?',
     deleteAttachment: 'Do you want to delete this Document?',
     modifyParameters: 'You are about to modify the Gapmap core parameters. Do you want to proceed?',

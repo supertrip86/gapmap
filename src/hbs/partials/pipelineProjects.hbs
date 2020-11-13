@@ -1,19 +1,19 @@
 <div class="projects-container">
     <ul>
         <li class="responsive-header">
-            <div class="col">Knowledge Product</div>
-            <div class="col">Intervention / Outcome</div>
+            <div class="col-3">Knowledge Product</div>
+            <div class="col-3">Intervention / Outcome</div>
             <div class="col">Status</div>
             <div class="col">Region</div>
-            <div class="col">Originator</div>
+            <div class="col-2">Originator</div>
         </li>
         {{#each projects}}
         <li class="responsive-element">
-            <div class="col" data-label="Project">{{Title}}</div>
-            <div class="col" data-label="Intervention / Outcome">{{IntOut}}</div>
+            <div class="col-3" data-label="Project">{{Title}}</div>
+            <div class="col-3" data-label="Intervention / Outcome">{{IntOut}}</div>
             <div class="col" data-label="Status">{{getStatus Status}}</div>
             <div class="col" data-label="Region">{{Region}}</div>
-            <div class="col" data-label="Originator">{{Originator}}</div>
+            <div class="col-2" data-label="Originator">{{Originator}}</div>
         </li>
         {{/each}}
     </ul>

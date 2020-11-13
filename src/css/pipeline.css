@@ -68,13 +68,13 @@
 
 .chart-pipeline li:nth-child(1) {
     z-index: 4;
-    border-color: green;
+    border-color: firebrick;
     animation-name: rotate-one;
 }
 
 .chart-pipeline li:nth-child(2) {
     z-index: 3;
-    border-color: firebrick;
+    border-color: orange;
     animation-name: rotate-two;
     animation-delay: .4s;
 }
@@ -88,7 +88,7 @@
 
 .chart-pipeline li:nth-child(4) {
     z-index: 1;
-    border-color: orange;
+    border-color: green;
     animation-name: rotate-four;
     animation-delay: 1.2s;
 }
@@ -131,7 +131,7 @@
 #pipeline-projects .projects-container {padding: 0;font-size: 13px;}
 #pipeline-projects .projects-container ul {margin: 0;padding: 0;}
 #pipeline-projects .projects-container ul .responsive-header {display: flex;letter-spacing: .03em;color: #fff;background-color: var(--main-dark-blue);padding: 10px 20px;margin-bottom: 10px;border-radius: 4px;}
-#pipeline-projects .projects-container ul .responsive-element {padding: 10px 20px;margin-bottom: 10px;position: relative;display: flex;background-color: #fff;box-shadow: 0 0 9px 0 rgba(0,0,0,0.1);min-height: 40px;border-radius: 4px;}
+#pipeline-projects .projects-container ul .responsive-element {padding: 10px 20px;margin-bottom: 10px;position: relative;display: flex;background-color: #fff;box-shadow: 0 0 9px 0 rgba(0,0,0,0.1);min-height: 58px;border-radius: 4px;}
 
 @media all and (max-width: 767px) {
     .projects-container .responsive-header {display: none!important;}
