@@ -28,7 +28,7 @@
 .gapmap-table .gapmap-dot.gapmap-dot-yellow, .gapmap-dot-legend.gapmap-dot-yellow {border-color: var(--gapmap-yellow);background-color: var(--gapmap-background-yellow);}
 .gapmap-table .gapmap-dot.gapmap-dot-yellow:hover {box-shadow: 0 0 0 4px var(--gapmap-hover-yellow);}
 
-.gapmap-legend {margin: 20px auto 60px auto;}
+.gapmap-legend {margin: 50px auto;}
 .gapmap-legend .col {display: flex;align-items: center;}
 .gapmap-legend .gapmap-dot-legend {margin-left: auto;}
 .gapmap-legend .gapmap-info {margin-right: auto;margin-left: 5px;font-size: .8rem;}

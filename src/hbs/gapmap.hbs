@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container shadow p-3 mb-5 bg-white rounded">
+    <h6 class="container-title">Knowledge Gap Map</h6>
     <div class="row gapmap-container">
         <table class="gapmap-table table">
             <thead>
@@ -10,7 +11,7 @@
                     {{#each outcomes}}
                     <th scope="col" class="border-top-0 border-right border-bottom-0">{{this.Title}}</th>
                     {{/each}}
-                    <th scope="col" class="border-top-0 border-right border-bottom-0 font-weight-bold">Total</th>
+                    <th scope="col" class="border-top-0 border-left border-bottom-0 font-weight-bold">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,15 +21,15 @@
                     {{#each ../outcomes}}
                     {{{filterData @../index @index}}}
                     {{/each}}
-                    <td class="border-right">{{filterInterventions Title}}</td>
+                    <td class="border-left">{{filterInterventions Title}}</td>
                 </tr>
                 {{/each}}
                 <tr>
-                    <td scope="row" class="border-right font-weight-bold">Total</td>
+                    <td scope="row" class="border-right border-bottom-0 font-weight-bold">Total</td>
                     {{#each outcomes}}
-                    <td class="border-right">{{filterOutcomes Title}}</td>
+                    <td class="border-right border-bottom-0">{{filterOutcomes Title}}</td>
                     {{/each}}
-                    <td class="border-right font-weight-bold">{{getGapmapTotal}}</td>
+                    <td class="border-left border-bottom-0 font-weight-bold">{{getGapmapTotal}}</td>
                 </tr>
             </tbody>
         </table>
