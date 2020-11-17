@@ -102,10 +102,9 @@ const deleteItem = (id) => {
 };
 
 const saveAttachment = (itemId, attachment) => {
-
-    getFileBuffer(attachment[0]).then( (buffer) => {
+    getFileBuffer(attachment.files[0]).then( (buffer) => {
         const resourceList = gapmap.data.storage.resourceList;
-        const attachmentURL = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items(${itemId})/AttachmentFiles/add(FileName='${attachment[0].name}')`;
+        const attachmentURL = `${_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/GetByTitle('${resourceList}')/items(${itemId})/AttachmentFiles/add(FileName='${attachment.files[0].name}')`;
         const createitem = new SP.RequestExecutor(_spPageContextInfo.webAbsoluteUrl);
         const bytes = new Uint8Array(buffer);
 
