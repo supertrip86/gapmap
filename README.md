@@ -1,6 +1,7 @@
 ## WCA Knowledge Gap Map
 
-Gap Map chart for Knowledge Resources with list of Products in each Status.
+Gap Map chart for Knowledge Resources with Knowledge Products Tracker.
+[Gap Map on xDesk](https://xdesk.ifad.org/sites/pa/tools/gapmap)
 
 ### Install
 ```
