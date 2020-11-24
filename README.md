@@ -11,7 +11,6 @@ Gap Map chart for Knowledge Resources with Knowledge Products Tracker.
 ```
 
 ### Usage
-```
 This web application ONLY leverages SharePoint lists and libraries in its own site collection via REST API.
 
 For development and testing outside SharePoint: 
