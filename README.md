@@ -18,7 +18,7 @@ For development and testing outside SharePoint:
 - in /src/index.js, comment out SP variables 
 - in /src/index.js, uncomment all links to /dist/api
 
-To produce bundle js and css files:
+To produce bundled js and css files:
 ```
 npm run bundle
 ```
