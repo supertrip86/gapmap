@@ -9,4 +9,7 @@ Gap Map chart for Knowledge Resources with Knowledge Products Tracker.
 2- npm install
 3- npm run start
 ```
-For development and testing outside SharePoint, in /src/index.js comment out SP variables and uncomment links to /dist/api
+For development and testing outside SharePoint: 
+
+- in /src/index.js, comment out SP variables 
+- in /src/index.js, uncomment all links to /dist/api
