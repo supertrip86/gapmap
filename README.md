@@ -4,7 +4,7 @@ Gap Map chart for Knowledge Resources with list of Products in each Status.
 
 ### Install
 ```
-1- git clones https://github.com/supertrip86/gapmap
+1- git clone https://github.com/supertrip86/gapmap
 2- npm install
 3- npm run start
 ```
